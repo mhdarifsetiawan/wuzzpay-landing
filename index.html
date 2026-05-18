@@ -108,26 +108,45 @@
 
         <section id="solusi" class="py-20 lg:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-slate-900">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Mengapa Bermitra dengan Wuzzpay?</h2>
-                <p class="text-slate-400">Kami mengagregasikan volume transaksi dari ratusan platform digital dan UMKM terintegrasi untuk disalurkan langsung melalui jaringan infrastruktur inti Anda.</p>
+                <span class="text-xs font-bold text-indigo-400 uppercase tracking-widest bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20">Mekanisme Orkestrasi</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-4 mb-4">Kendali Rute Transaksi Penuh di Tangan Anda</h2>
+                <p class="text-slate-400">Wuzzpay menjembatani *Merchant* dan *Payment Gateway* berlisensi melalui infrastruktur *routing* dinamis yang dapat disesuaikan dengan strategi bisnis masing-masing platform.</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-8 border border-slate-900 rounded-2xl bg-slate-900/20 hover:border-indigo-500/30 transition">
-                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-6 font-bold text-xl">⚡</div>
-                    <h3 class="text-xl font-bold text-white mb-2">Smart Failover Routing</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Sistem cerdas kami mendeteksi latensi gateway secara *real-time* dan otomatis memindahkan jalur transaksi jika salah satu koneksi hulu mengalami gangguan (*down time*).</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="p-8 border border-slate-900 rounded-2xl bg-gradient-to-b from-slate-900/40 to-slate-950 hover:border-indigo-500/30 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-6 font-bold text-xl group-hover:scale-110 transition">🎛️</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Merchant-Defined Custom Routing</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Kebebasan mutlak bagi *merchant* untuk menentukan vendor *gateway* spesifik di setiap metode pembayaran. Anda memegang kendali penuh atas ekosistem transaksi Anda.</p>
+                    
+                    <div class="space-y-2 font-mono text-[11px] bg-slate-950 p-4 rounded-xl border border-slate-800">
+                        <div class="flex justify-between items-center pb-2 border-b border-slate-900 text-slate-500"><span>Metode</span> <span>Kanal Terpilih (Vendor PG)</span></div>
+                        <div class="flex justify-between"><span>📱 QRIS Static/Dynamic</span> <span class="text-emerald-400">→ Jalur Winpay Sandbox</span></div>
+                        <div class="flex justify-between"><span>🏦 VA BRI (Kemitraan)</span> <span class="text-indigo-400">→ Jalur Doku Engine</span></div>
+                        <div class="flex justify-between"><span>💳 VA BCA (E-Commerce)</span> <span class="text-cyan-400">→ Jalur Midtrans Network</span></div>
+                    </div>
                 </div>
-                <div class="p-8 border border-slate-900 rounded-2xl bg-slate-900/20 hover:border-cyan-500/30 transition">
-                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-6 font-bold text-xl">🛡️</div>
-                    <h3 class="text-xl font-bold text-white mb-2">Penyelarasan SNAP-BI</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Seluruh arsitektur API kami mengadopsi standar SNAP Bank Indonesia. Menjamin integritas struktur *signature payload* dan kelancaran pertukaran data *callback*.</p>
+
+                <div class="p-8 border border-slate-900 rounded-2xl bg-gradient-to-b from-slate-900/40 to-slate-950 hover:border-cyan-500/30 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-6 font-bold text-xl group-hover:scale-110 transition">🤖</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Wuzzpay Auto-Optimization Engine</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Cukup tentukan prioritas metrik bisnis Anda di awal kerja sama. Algoritma cerdas core-routing kami yang akan bekerja mengeksekusi penempatan transaksi secara otomatis.</p>
+                    
+                    <div class="grid grid-cols-2 gap-3 font-mono text-[11px]">
+                        <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+                            <span class="text-amber-400 font-bold block mb-1">💰 Cost-Efficiency Priority</span>
+                            <p class="text-slate-500 text-[10px] leading-tight">Merutekan transaksi secara otomatis ke mitra PG dengan *MDR rate* terendah saat itu untuk menekan biaya operasional.</p>
+                        </div>
+                        <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+                            <span class="text-pink-400 font-bold block mb-1">⚡ High-Availability Priority</span>
+                            <p class="text-slate-500 text-[10px] leading-tight">Mengutamakan jalur *gateway* dengan stabilitas *uptime* tertinggi dan latensi di bawah 200ms guna mencegah kegagalan bayar.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="p-8 border border-slate-900 rounded-2xl bg-slate-900/20 hover:border-pink-500/30 transition">
-                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center text-pink-400 mb-6 font-bold text-xl">📊</div>
-                    <h3 class="text-xl font-bold text-white mb-2">Konsolidasi Transaksi</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Menyediakan dasbor analitik rekonsiliasi terpusat bagi sub-merchant (UMKM/SaaS) untuk pemantauan volume penyelesaian dana secara waktu nyata.</p>
-                </div>
+            </div>
+
+            <div class="mt-12 p-6 rounded-xl bg-slate-900/20 border border-slate-900 text-center text-sm text-slate-400 max-w-4xl mx-auto">
+                💡 <strong class="text-slate-200">Arsitektur Netral:</strong> Wuzzpay bertindak sebagai *Technical Service Provider (TSP)* netral. Kami tidak menampung dana ataupun berkompetisi dengan lini bisnis *Payment Gateway*. Fokus utama kami murni pada optimasi performa *routing* data transaksi demi meningkatkan *Success Rate* bisnis *merchant*.
             </div>
         </section>
 
