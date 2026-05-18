@@ -51,6 +51,42 @@
     }
     </script>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Apakah Wuzzpay memiliki izin dari Bank Indonesia (BI)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wuzzpay beroperasi murni sebagai Technical Service Provider (TSP) atau penyedia sistem teknologi infrastruktur perutean transaksi. Seluruh pemrosesan dana dan lisensi gerbang pembayaran tetap melekat penuh pada mitra Payment Gateway berlisensi Bank Indonesia (seperti Doku, Winpay) yang terhubung dengan sistem kami."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Bagaimana mekanisme penyelesaian (settlement) dana transaksi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wuzzpay tidak menampung atau menyentuh dana transaksi Anda sama sekali. Pencairan dana (settlement) langsung ditransfer oleh institusi Payment Gateway pilihan Anda menuju rekening bank perusahaan Anda secara langsung."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Bagaimana Wuzzpay menjaga keamanan data transaksi finansial?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Seluruh transmisi data di dalam jaringan Wuzzpay diwajibkan melalui protokol enkripsi ketat TLS 1.3 serta validasi tanda tangan digital HMAC-SHA256 berpasangan guna mencegah kebocoran data."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Bagaimana jika terjadi sengketa transaksi atau kendala teknis pada pembayaran?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PT Semantic Digital Nusantara berkomitmen penuh sebagai Single Point of Contact. Jika terjadi sengketa, status transaksi menggantung, atau dispute, Anda cukup melaporkannya ke support Wuzzpay. Tim kami yang berkewajiban melakukan investigasi, rekonsiliasi data, dan menjembatani komunikasi langsung ke pihak Payment Gateway hulu hingga selesai."
+        }
+      }]
+    }
+    </script>
+
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://wuzzpay.com/">
     <meta property="og:title" content="Wuzzpay | Open Multi-Gateway Payment Orchestrator Indonesia">
@@ -73,21 +109,57 @@
 <body x-data="{ openModal: false, modalTitle: '', modalDesc: '' }"
     class="bg-slate-950 text-slate-200 font-sans antialiased selection:bg-indigo-500 selection:text-white text-base">
 
-    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-900">
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-900" x-data="{ mobileMenuOpen: false }">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center gap-2">
-                <span
-                    class="text-3xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-400 to-blue-500">WUZZPAY</span>
+                <span class="text-3xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-400 to-blue-500">WUZZPAY</span>
             </div>
+            
             <nav class="hidden md:flex items-center gap-8 text-base font-semibold text-slate-400">
                 <a href="#solusi" class="hover:text-indigo-400 transition">Solusi Bisnis</a>
                 <a href="#infrastruktur" class="hover:text-indigo-400 transition">Infrastruktur</a>
                 <a href="#api" class="hover:text-indigo-400 transition">Developer API</a>
                 <a href="#kepatuhan" class="hover:text-indigo-400 transition">Kepatuhan & Keamanan</a>
             </nav>
-            <div>
-                <a href="#kontak"
-                    class="inline-flex items-center justify-center px-5 py-2.5 text-base font-bold text-white bg-indigo-600 rounded-lg hover:bg-indigo-500 transition shadow-lg shadow-indigo-600/20">
+
+            <div class="hidden md:block">
+                <a href="#kontak" class="inline-flex items-center justify-center px-5 py-2.5 text-base font-bold text-white bg-indigo-600 rounded-lg hover:bg-indigo-500 transition shadow-lg shadow-indigo-600/20">
+                    Kemitraan Bisnis
+                </a>
+            </div>
+
+            <div class="flex md:hidden">
+                <button @click="mobileMenuOpen = !mobileMenuOpen" type="button" class="text-slate-400 hover:text-white focus:outline-none cursor-pointer p-2" aria-label="Toggle Menu">
+                    <svg x-show="!mobileMenuOpen" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg x-show="mobileMenuOpen" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="display: none;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div x-show="mobileMenuOpen" 
+             x-transition:enter="transition ease-out duration-200"
+             x-transition:enter-start="opacity-0 -translate-y-4"
+             x-transition:enter-end="opacity-100 translate-y-0"
+             x-transition:leave="transition ease-in duration-150"
+             x-transition:leave-start="opacity-100 translate-y-0"
+             x-transition:leave-end="opacity-0 -translate-y-4"
+             @click.away="mobileMenuOpen = false"
+             class="md:hidden border-b border-slate-900 bg-slate-950/95 backdrop-blur-lg px-4 pt-2 pb-6 space-y-4" 
+             style="display: none;">
+            
+            <nav class="flex flex-col gap-4 text-base font-semibold text-slate-400">
+                <a href="#solusi" @click="mobileMenuOpen = false" class="hover:text-indigo-400 py-2 border-b border-slate-900/50 transition">Solusi Bisnis</a>
+                <a href="#infrastruktur" @click="mobileMenuOpen = false" class="hover:text-indigo-400 py-2 border-b border-slate-900/50 transition">Infrastruktur</a>
+                <a href="#api" @click="mobileMenuOpen = false" class="hover:text-indigo-400 py-2 border-b border-slate-900/50 transition">Developer API</a>
+                <a href="#kepatuhan" @click="mobileMenuOpen = false" class="hover:text-indigo-400 py-2 border-b border-slate-900/50 transition">Kepatuhan & Keamanan</a>
+            </nav>
+            
+            <div class="pt-2">
+                <a href="#kontak" @click="mobileMenuOpen = false" class="w-full inline-flex items-center justify-center px-5 py-3 text-base font-bold text-white bg-indigo-600 rounded-lg hover:bg-indigo-500 transition shadow-lg shadow-indigo-600/20 text-center">
                     Kemitraan Bisnis
                 </a>
             </div>
@@ -418,6 +490,16 @@
                     </button>
                     <div x-show="activeFaq === 4" x-collapse class="px-6 pb-6 text-slate-400 text-base leading-relaxed border-t border-slate-900/50 pt-4" style="display: none;">
                         Ya, tentu saja. Anda dapat memasukkan *API Key*, *Client ID*, dan *Secret* yang Anda peroleh langsung dari dashboard komersial Doku, Midtrans, Winpay, atau PG lainnya ke dalam sistem orkestrasi Wuzzpay untuk langsung mulai mengatur pembagian rute transaksi sesuai kebutuhan bisnis Anda.
+                    </div>
+                </div>
+
+                <div class="border border-slate-900 rounded-xl bg-slate-900/10 overflow-hidden">
+                    <button @click="activeFaq = activeFaq === 5 ? null : 5" class="w-full p-6 text-left font-bold text-white text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
+                        <span>Bagaimana jika terjadi sengketa (dispute) atau kendala pada transaksi konsumen kami?</span>
+                        <span class="text-xl text-indigo-400" x-text="activeFaq === 5 ? '−' : '+'"></span>
+                    </button>
+                    <div x-show="activeFaq === 5" x-collapse class="px-6 pb-6 text-slate-400 text-base leading-relaxed border-t border-slate-900/50 pt-4" style="display: none;">
+                        Anda tidak perlu membuang waktu menghubungi atau berurusan birokrasi langsung dengan masing-masing pihak Payment Gateway hulu. <strong>PT Semantic Digital Nusantara berkomitmen penuh sebagai garda terdepan (Single Point of Contact) dalam penyelesaian masalah Anda.</strong> Jika ada laporan dana menggantung, kendala status *callback*, atau sengketa pembayaran dari konsumen, cukup layangkan tiket bantuan ke tim operasional Wuzzpay. Kami berkewajiban penuh melakukan investigasi teknis, rekonsiliasi data, dan mengawal penyelesaiannya langsung bersama komite kepatuhan Payment Gateway terkait hingga tuntas.
                     </div>
                 </div>
             </div>
