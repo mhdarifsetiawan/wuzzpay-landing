@@ -101,7 +101,8 @@
         content="Infrastruktur cerdas penataan rute data transaksi finansial untuk optimasi success rate merchant dan SaaS.">
     <meta property="twitter:image" content="https://wuzzpay.com/assets/og-image.png">
 
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
@@ -109,12 +110,14 @@
 <body x-data="{ openModal: false, modalTitle: '', modalDesc: '' }"
     class="bg-slate-950 text-slate-200 font-sans antialiased selection:bg-indigo-500 selection:text-white text-base">
 
-    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-900" x-data="{ mobileMenuOpen: false }">
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-900"
+        x-data="{ mobileMenuOpen: false }">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center gap-2">
-                <span class="text-3xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-400 to-blue-500">WUZZPAY</span>
+                <span
+                    class="text-3xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-400 to-blue-500">WUZZPAY</span>
             </div>
-            
+
             <nav class="hidden md:flex items-center gap-8 text-base font-semibold text-slate-400">
                 <a href="#solusi" class="hover:text-indigo-400 transition">Solusi Bisnis</a>
                 <a href="#infrastruktur" class="hover:text-indigo-400 transition">Infrastruktur</a>
@@ -124,44 +127,51 @@
             </nav>
 
             <div class="hidden md:block">
-                <a href="#kontak" class="inline-flex items-center justify-center px-5 py-2.5 text-base font-bold text-white bg-indigo-600 rounded-lg hover:bg-indigo-500 transition shadow-lg shadow-indigo-600/20">
+                <a href="#kontak"
+                    class="inline-flex items-center justify-center px-5 py-2.5 text-base font-bold text-white bg-indigo-600 rounded-lg hover:bg-indigo-500 transition shadow-lg shadow-indigo-600/20">
                     Kemitraan Bisnis
                 </a>
             </div>
 
             <div class="flex md:hidden">
-                <button @click="mobileMenuOpen = !mobileMenuOpen" type="button" class="text-slate-400 hover:text-white focus:outline-none cursor-pointer p-2" aria-label="Toggle Menu">
-                    <svg x-show="!mobileMenuOpen" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <button @click="mobileMenuOpen = !mobileMenuOpen" type="button"
+                    class="text-slate-400 hover:text-white focus:outline-none cursor-pointer p-2"
+                    aria-label="Toggle Menu">
+                    <svg x-show="!mobileMenuOpen" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
-                    <svg x-show="mobileMenuOpen" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="display: none;">
+                    <svg x-show="mobileMenuOpen" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" style="display: none;">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
             </div>
         </div>
 
-        <div x-show="mobileMenuOpen" 
-             x-transition:enter="transition ease-out duration-200"
-             x-transition:enter-start="opacity-0 -translate-y-4"
-             x-transition:enter-end="opacity-100 translate-y-0"
-             x-transition:leave="transition ease-in duration-150"
-             x-transition:leave-start="opacity-100 translate-y-0"
-             x-transition:leave-end="opacity-0 -translate-y-4"
-             @click.away="mobileMenuOpen = false"
-             class="md:hidden border-b border-slate-900 bg-slate-950/95 backdrop-blur-lg px-4 pt-2 pb-6 space-y-4" 
-             style="display: none;">
-            
+        <div x-show="mobileMenuOpen" x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0 -translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 -translate-y-4" @click.away="mobileMenuOpen = false"
+            class="md:hidden border-b border-slate-900 bg-slate-950/95 backdrop-blur-lg px-4 pt-2 pb-6 space-y-4"
+            style="display: none;">
+
             <nav class="flex flex-col gap-4 text-base font-semibold text-slate-400">
-                <a href="#solusi" @click="mobileMenuOpen = false" class="hover:text-indigo-400 py-2 border-b border-slate-900/50 transition">Solusi Bisnis</a>
-                <a href="#infrastruktur" @click="mobileMenuOpen = false" class="hover:text-indigo-400 py-2 border-b border-slate-900/50 transition">Infrastruktur</a>
-                <a href="#api" @click="mobileMenuOpen = false" class="hover:text-indigo-400 py-2 border-b border-slate-900/50 transition">Developer API</a>
-                <a href="#pricing" @click="mobileMenuOpen = false" class="hover:text-indigo-400 py-2 border-b border-slate-900/50 transition">Paket Layanan</a>
-                <a href="#faq" @click="mobileMenuOpen = false" class="hover:text-indigo-400 py-2 border-b border-slate-900/50 transition">FAQ</a>
+                <a href="#solusi" @click="mobileMenuOpen = false"
+                    class="hover:text-indigo-400 py-2 border-b border-slate-900/50 transition">Solusi Bisnis</a>
+                <a href="#infrastruktur" @click="mobileMenuOpen = false"
+                    class="hover:text-indigo-400 py-2 border-b border-slate-900/50 transition">Infrastruktur</a>
+                <a href="#api" @click="mobileMenuOpen = false"
+                    class="hover:text-indigo-400 py-2 border-b border-slate-900/50 transition">Developer API</a>
+                <a href="#pricing" @click="mobileMenuOpen = false"
+                    class="hover:text-indigo-400 py-2 border-b border-slate-900/50 transition">Paket Layanan</a>
+                <a href="#faq" @click="mobileMenuOpen = false"
+                    class="hover:text-indigo-400 py-2 border-b border-slate-900/50 transition">FAQ</a>
             </nav>
-            
+
             <div class="pt-2">
-                <a href="#kontak" @click="mobileMenuOpen = false" class="w-full inline-flex items-center justify-center px-5 py-3 text-base font-bold text-white bg-indigo-600 rounded-lg hover:bg-indigo-500 transition shadow-lg shadow-indigo-600/20 text-center">
+                <a href="#kontak" @click="mobileMenuOpen = false"
+                    class="w-full inline-flex items-center justify-center px-5 py-3 text-base font-bold text-white bg-indigo-600 rounded-lg hover:bg-indigo-500 transition shadow-lg shadow-indigo-600/20 text-center">
                     Kemitraan Bisnis
                 </a>
             </div>
@@ -170,25 +180,34 @@
 
     <main>
         <section class="relative py-24 lg:py-32 overflow-hidden border-b border-slate-900">
-            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-indigo-500/10 blur-3xl rounded-full pointer-events-none"></div>
+            <div
+                class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-indigo-500/10 blur-3xl rounded-full pointer-events-none">
+            </div>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                     <div class="lg:col-span-7 text-center lg:text-left">
-                        <span class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full text-sm font-bold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-6">
+                        <span
+                            class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full text-sm font-bold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-6">
                             🛡️ Secure B2B Payment Router & Orchestrator
                         </span>
                         <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
                             Satu Unified API untuk<br>
-                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">Multi-Gateway Orchestration.</span>
+                            <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">Multi-Gateway
+                                Orchestration.</span>
                         </h1>
                         <p class="text-xl text-slate-400 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                            Wuzzpay menyediakan infrastruktur *routing* pembayaran pintar untuk SaaS, platform digital, dan UMKM. Membantu mengoptimalkan tingkat keberhasilan transaksi (*success rate*) melalui interkoneksi payment gateway berlisensi resmi.
+                            Wuzzpay menyediakan infrastruktur *routing* pembayaran pintar untuk SaaS, platform digital,
+                            dan UMKM. Membantu mengoptimalkan tingkat keberhasilan transaksi (*success rate*) melalui
+                            interkoneksi payment gateway berlisensi resmi.
                         </p>
                         <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                            <a href="#kontak" class="w-full sm:w-auto px-8 py-4 text-lg font-bold text-slate-950 bg-white rounded-lg hover:bg-slate-100 transition shadow-xl text-center">
+                            <a href="#kontak"
+                                class="w-full sm:w-auto px-8 py-4 text-lg font-bold text-slate-950 bg-white rounded-lg hover:bg-slate-100 transition shadow-xl text-center">
                                 Ajukan Integrasi
                             </a>
-                            <a href="#api" class="w-full sm:w-auto px-8 py-4 text-lg font-semibold text-slate-300 border border-slate-800 rounded-lg hover:bg-slate-900 transition text-center">
+                            <a href="#api"
+                                class="w-full sm:w-auto px-8 py-4 text-lg font-semibold text-slate-300 border border-slate-800 rounded-lg hover:bg-slate-900 transition text-center">
                                 API Reference
                             </a>
                         </div>
@@ -230,7 +249,8 @@
 
         <section id="kepatuhan" class="py-16 bg-slate-900/40 border-b border-slate-900">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <p class="text-center text-sm font-bold tracking-widest text-slate-500 uppercase mb-8">STANDAR KEAMANAN & KEPATUHAN KAMI</p>
+                <p class="text-center text-sm font-bold tracking-widest text-slate-500 uppercase mb-8">STANDAR KEAMANAN
+                    & KEPATUHAN KAMI</p>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center text-center justify-items-center">
                     <div class="p-6 border border-slate-800 rounded-xl bg-slate-950/50 w-full max-w-[240px]">
                         <div class="text-lg font-bold text-slate-200">ISO 27001</div>
@@ -254,83 +274,122 @@
 
         <section id="solusi" class="py-24 lg:py-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-slate-900">
             <div class="text-center max-w-3xl mx-auto mb-20">
-                <span class="text-sm font-bold text-indigo-400 uppercase tracking-widest bg-indigo-500/10 px-4 py-1.5 rounded-full border border-indigo-500/20">Mekanisme Orkestrasi</span>
-                <h2 class="text-4xl sm:text-5xl font-bold text-white mt-4 mb-6">Kendali Rute Transaksi Penuh di Tangan Anda</h2>
-                <p class="text-lg text-slate-400 leading-relaxed">Wuzzpay menjembatani *Merchant* dan *Payment Gateway* berlisensi melalui infrastruktur *routing* dinamis yang dapat disesuaikan dengan strategi bisnis masing-masing platform.</p>
+                <span
+                    class="text-sm font-bold text-indigo-400 uppercase tracking-widest bg-indigo-500/10 px-4 py-1.5 rounded-full border border-indigo-500/20">Mekanisme
+                    Orkestrasi</span>
+                <h2 class="text-4xl sm:text-5xl font-bold text-white mt-4 mb-6">Kendali Rute Transaksi Penuh di Tangan
+                    Anda</h2>
+                <p class="text-lg text-slate-400 leading-relaxed">Wuzzpay menjembatani *Merchant* dan *Payment Gateway*
+                    berlisensi melalui infrastruktur *routing* dinamis yang dapat disesuaikan dengan strategi bisnis
+                    masing-masing platform.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                <div class="p-8 border border-slate-900 rounded-2xl bg-gradient-to-b from-slate-900/40 to-slate-950 hover:border-indigo-500/30 transition group">
-                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-6 font-bold text-2xl group-hover:scale-110 transition">🎛️</div>
+                <div
+                    class="p-8 border border-slate-900 rounded-2xl bg-gradient-to-b from-slate-900/40 to-slate-950 hover:border-indigo-500/30 transition group">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-6 font-bold text-2xl group-hover:scale-110 transition">
+                        🎛️</div>
                     <h3 class="text-2xl font-bold text-white mb-4">Merchant-Defined Custom Routing</h3>
                     <p class="text-slate-400 text-base leading-relaxed mb-6">
-                        Kebebasan mutlak bagi *merchant* untuk menentukan vendor *gateway* spesifik di setiap metode pembayaran. Anda memegang kendali penuh atas ekosistem transaksi Anda—**bebas menghubungkan kredensial API dari berbagai Payment Gateway pilihan Anda tanpa batasan.**
+                        Kebebasan mutlak bagi *merchant* untuk menentukan vendor *gateway* spesifik di setiap metode
+                        pembayaran. Anda memegang kendali penuh atas ekosistem transaksi Anda—**bebas menghubungkan
+                        kredensial API dari berbagai Payment Gateway pilihan Anda tanpa batasan.**
                     </p>
 
                     <!-- Contoh Rute di Tabel Monospace -->
-                    <div class="space-y-3 font-mono text-xs sm:text-sm bg-slate-950 p-5 rounded-xl border border-slate-800 mb-6">
-                        <div class="flex justify-between items-center pb-2 border-b border-slate-900 text-slate-500 font-bold">
+                    <div
+                        class="space-y-3 font-mono text-xs sm:text-sm bg-slate-950 p-5 rounded-xl border border-slate-800 mb-6">
+                        <div
+                            class="flex justify-between items-center pb-2 border-b border-slate-900 text-slate-500 font-bold">
                             <span>Metode Pembayaran</span> <span>Kanal Terpilih (Contoh Rute)</span>
                         </div>
-                        <div class="flex justify-between"><span>📱 QRIS All Payments</span> <span class="text-emerald-400 font-medium">→ Jalur Winpay Engine</span></div>
-                        <div class="flex justify-between"><span>🏦 Virtual Account (VA)</span> <span class="text-indigo-400 font-medium">→ Jalur Espay Gateway</span></div>
-                        <div class="flex justify-between"><span>🛒 Retail & E-Wallet</span> <span class="text-cyan-400 font-medium">→ Jalur iPaymu Network</span></div>
+                        <div class="flex justify-between"><span>📱 QRIS All Payments</span> <span
+                                class="text-emerald-400 font-medium">→ Jalur Winpay Engine</span></div>
+                        <div class="flex justify-between"><span>🏦 Virtual Account (VA)</span> <span
+                                class="text-indigo-400 font-medium">→ Jalur Espay Gateway</span></div>
+                        <div class="flex justify-between"><span>🛒 Retail & E-Wallet</span> <span
+                                class="text-cyan-400 font-medium">→ Jalur iPaymu Network</span></div>
                     </div>
 
                     <!-- Badge Multi-Gateway di Bawahnya -->
                     <div class="pt-4 border-t border-slate-900">
-                        <span class="text-xs font-bold text-slate-500 uppercase tracking-wider block mb-3">Mendukung Interkoneksi Multi-Gateway:</span>
+                        <span class="text-xs font-bold text-slate-500 uppercase tracking-wider block mb-3">Mendukung
+                            Interkoneksi Multi-Gateway:</span>
                         <div class="flex flex-wrap gap-2 text-xs font-semibold text-slate-400">
                             <span class="px-3 py-1 bg-slate-900 border border-slate-800 rounded-md">Winpay</span>
                             <span class="px-3 py-1 bg-slate-900 border border-slate-800 rounded-md">Espay</span>
                             <span class="px-3 py-1 bg-slate-900 border border-slate-800 rounded-md">iPaymu</span>
-                            <span class="px-3 py-1 bg-indigo-950/40 border border-indigo-900/40 text-indigo-400 rounded-md font-bold">& Jaringan Mitra Lainnya</span>
+                            <span
+                                class="px-3 py-1 bg-indigo-950/40 border border-indigo-900/40 text-indigo-400 rounded-md font-bold">&
+                                Jaringan Mitra Lainnya</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="p-8 border border-slate-900 rounded-2xl bg-gradient-to-b from-slate-900/40 to-slate-950 hover:border-cyan-500/30 transition group">
-                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-6 font-bold text-2xl group-hover:scale-110 transition">🤖</div>
+                <div
+                    class="p-8 border border-slate-900 rounded-2xl bg-gradient-to-b from-slate-900/40 to-slate-950 hover:border-cyan-500/30 transition group">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-6 font-bold text-2xl group-hover:scale-110 transition">
+                        🤖</div>
                     <h3 class="text-2xl font-bold text-white mb-4">Wuzzpay Auto-Optimization Engine</h3>
-                    <p class="text-slate-400 text-base leading-relaxed mb-6">Cukup tentukan prioritas metrik bisnis Anda di awal kerja sama. Algoritma cerdas core-routing kami yang akan bekerja mengeksekusi penempatan transaksi secara otomatis.</p>
+                    <p class="text-slate-400 text-base leading-relaxed mb-6">Cukup tentukan prioritas metrik bisnis Anda
+                        di awal kerja sama. Algoritma cerdas core-routing kami yang akan bekerja mengeksekusi penempatan
+                        transaksi secara otomatis.</p>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-xs sm:text-sm">
                         <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
                             <span class="text-amber-400 font-bold block mb-2">💰 Cost-Efficiency Priority</span>
-                            <p class="text-slate-500 text-xs leading-relaxed">Merutekan transaksi secara otomatis ke mitra PG dengan *MDR rate* terendah saat itu untuk menekan biaya operasional.</p>
+                            <p class="text-slate-500 text-xs leading-relaxed">Merutekan transaksi secara otomatis ke
+                                mitra PG dengan *MDR rate* terendah saat itu untuk menekan biaya operasional.</p>
                         </div>
                         <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
                             <span class="text-pink-400 font-bold block mb-2">⚡ High-Availability Priority</span>
-                            <p class="text-slate-500 text-xs leading-relaxed">Mengutamakan jalur *gateway* dengan stabilitas *uptime* tertinggi dan latensi di bawah 200ms guna mencegah kegagalan bayar.</p>
+                            <p class="text-slate-500 text-xs leading-relaxed">Mengutamakan jalur *gateway* dengan
+                                stabilitas *uptime* tertinggi dan latensi di bawah 200ms guna mencegah kegagalan bayar.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="p-6 rounded-xl bg-slate-900/20 border border-slate-900 text-center text-base text-slate-300 max-w-4xl mx-auto leading-relaxed">
-                💡 <strong class="text-white">Arsitektur Netral:</strong> Wuzzpay bertindak sebagai *Technical Service Provider (TSP)* netral. Kami tidak menampung dana ataupun berkompetisi dengan lini bisnis *Payment Gateway*. Fokus utama kami murni pada optimasi performa *routing* data transaksi demi meningkatkan *Success Rate* bisnis *merchant*.
+            <div
+                class="p-6 rounded-xl bg-slate-900/20 border border-slate-900 text-center text-base text-slate-300 max-w-4xl mx-auto leading-relaxed">
+                💡 <strong class="text-white">Arsitektur Netral:</strong> Wuzzpay bertindak sebagai *Technical Service
+                Provider (TSP)* netral. Kami tidak menampung dana ataupun berkompetisi dengan lini bisnis *Payment
+                Gateway*. Fokus utama kami murni pada optimasi performa *routing* data transaksi demi meningkatkan
+                *Success Rate* bisnis *merchant*.
             </div>
         </section>
 
         <!-- REVISI TOTAL: INFRASTRUKTUR YANG MENGUNTUNGKAN MERCHANT -->
         <section id="infrastruktur" class="py-24 lg:py-32 bg-slate-900/10 border-b border-slate-900">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center text-left">
-                
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center text-left">
+
                 <div class="lg:col-span-7">
-                    <span class="inline-flex items-center gap-1 py-1 px-3 rounded-full text-xs font-bold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-4">
+                    <span
+                        class="inline-flex items-center gap-1 py-1 px-3 rounded-full text-xs font-bold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-4">
                         🛡️ Jaminan Kelancaran Transaksi Bisnis
                     </span>
-                    <h4 class="text-3xl font-bold text-white mb-4">Wuzzpay Smart Failover: Jaga Bisnis Anda Tetap Berjalan Tanpa Henti</h4>
+                    <h4 class="text-3xl font-bold text-white mb-4">Wuzzpay Smart Failover: Jaga Bisnis Anda Tetap
+                        Berjalan Tanpa Henti</h4>
                     <p class="text-slate-400 text-base leading-relaxed mb-4">
-                        Jangan biarkan gangguan eksternal pada salah satu gerbang pembayaran menggagalkan transaksi konsumen Anda.
+                        Jangan biarkan gangguan eksternal pada salah satu gerbang pembayaran menggagalkan transaksi
+                        konsumen Anda.
                     </p>
                     <p class="text-slate-400 text-base leading-relaxed">
-                        Melalui sistem <strong class="text-white">Auto-Failover Cerdas Wuzzpay</strong>, jika infrastruktur mendeteksi adanya keterlambatan respons atau gangguan jaringan pada salah satu Payment Gateway yang Anda pilih, sistem kami akan <strong class="text-indigo-400">secara otomatis memindahkan jalur pembayaran ke gateway cadangan dalam hitungan milidetik</strong>. Konsumen Anda tidak akan merasakan kendala apa pun, dan transaksi tetap sukses 100%.
+                        Melalui sistem <strong class="text-white">Auto-Failover Cerdas Wuzzpay</strong>, jika
+                        infrastruktur mendeteksi adanya keterlambatan respons atau gangguan jaringan pada salah satu
+                        Payment Gateway yang Anda pilih, sistem kami akan <strong class="text-indigo-400">secara
+                            otomatis memindahkan jalur pembayaran ke gateway cadangan dalam hitungan milidetik</strong>.
+                        Konsumen Anda tidak akan merasakan kendala apa pun, dan transaksi tetap sukses 100%.
                     </p>
                 </div>
 
                 <!-- VISUAL TELEMETRI DIUBAH MENJADI LOGIKA FAILOVER AUTOMATIS -->
-                <div class="lg:col-span-5 bg-slate-950 border border-indigo-500/20 rounded-xl p-5 font-mono text-xs sm:text-sm shadow-lg shadow-indigo-500/5 leading-relaxed">
+                <div
+                    class="lg:col-span-5 bg-slate-950 border border-indigo-500/20 rounded-xl p-5 font-mono text-xs sm:text-sm shadow-lg shadow-indigo-500/5 leading-relaxed">
                     <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-4">
                         <span class="text-indigo-400 font-bold flex items-center gap-2">
                             <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
@@ -339,11 +398,15 @@
                         <span class="text-xs text-slate-500 font-bold">REAL-TIME</span>
                     </div>
                     <div class="space-y-2 text-slate-300">
-                        <div><span class="text-slate-500">[DETEKSI]</span> Gateway Utama: <span class="text-amber-400 font-bold">Latency > 500ms (Melambat)</span></div>
-                        <div><span class="text-slate-500">[TINDAKAN]</span> <span class="text-emerald-400 font-bold">Triggering Auto-Failover Protocol...</span></div>
-                        <div><span class="text-slate-500">[RUTE BARU]</span> Dialihkan ke: <span class="text-indigo-400 font-bold">Gateway_Cadangan_Aktif</span></div>
+                        <div><span class="text-slate-500">[DETEKSI]</span> Gateway Utama: <span
+                                class="text-amber-400 font-bold">Latency > 500ms (Melambat)</span></div>
+                        <div><span class="text-slate-500">[TINDAKAN]</span> <span
+                                class="text-emerald-400 font-bold">Triggering Auto-Failover Protocol...</span></div>
+                        <div><span class="text-slate-500">[RUTE BARU]</span> Dialihkan ke: <span
+                                class="text-indigo-400 font-bold">Gateway_Cadangan_Aktif</span></div>
                         <div class="pt-3 text-slate-500 text-xs border-t border-slate-800 mt-2">
-                            ⚡ <span class="text-emerald-400">Status Transaksi: Berhasil Diambil Alih & Sukses Terbayar!</span>
+                            ⚡ <span class="text-emerald-400">Status Transaksi: Berhasil Diambil Alih & Sukses
+                                Terbayar!</span>
                         </div>
                     </div>
                 </div>
@@ -354,9 +417,11 @@
         <section id="api" class="py-24 lg:py-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-slate-900">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Arsitektur API Level Sandbox & Production Ready</h2>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Arsitektur API Level Sandbox & Production
+                        Ready</h2>
                     <p class="text-slate-400 text-base mb-6 leading-relaxed">
-                        Kami membangun gerbang pembayaran dengan keamanan otentikasi ketat menggunakan mekanisme tanda tangan HMAC-SHA256 berpasangan (*Asymmetric/Symmetric signature validation*).
+                        Kami membangun gerbang pembayaran dengan keamanan otentikasi ketat menggunakan mekanisme tanda
+                        tangan HMAC-SHA256 berpasangan (*Asymmetric/Symmetric signature validation*).
                     </p>
                     <ul class="space-y-4 text-base text-slate-300 font-medium">
                         <li class="flex items-center gap-3">
@@ -374,7 +439,8 @@
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
                     <div class="bg-slate-950 px-5 py-4 border-b border-slate-800 flex items-center justify-between">
                         <div class="flex items-center gap-2">
-                            <span class="px-2.5 py-1 text-xs font-bold bg-green-500/20 text-green-400 rounded">POST</span>
+                            <span
+                                class="px-2.5 py-1 text-xs font-bold bg-green-500/20 text-green-400 rounded">POST</span>
                             <span class="text-sm font-mono text-slate-300">/v1/payments/qris</span>
                         </div>
                         <span class="text-xs text-slate-500 font-mono font-bold">Response: 201 Created</span>
@@ -396,75 +462,121 @@
         </section>
 
         <!-- REVISI COHERENCY TOTAL PADA SECTION FAQ WUZZPAY (CLEAN PRODUCTION READY) -->
-        <section id="faq" class="py-24 lg:py-32 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-slate-900" x-data="{ activeFaq: null }">
+        <section id="faq" class="py-24 lg:py-32 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-slate-900"
+            x-data="{ activeFaq: null }">
             <div class="text-center mb-16">
-                <span class="text-sm font-bold text-indigo-400 uppercase tracking-widest bg-indigo-500/10 px-4 py-1.5 rounded-full border border-indigo-500/20">Pertanyaan Umum</span>
+                <span
+                    class="text-sm font-bold text-indigo-400 uppercase tracking-widest bg-indigo-500/10 px-4 py-1.5 rounded-full border border-indigo-500/20">Pertanyaan
+                    Umum</span>
                 <h2 class="text-3xl sm:text-4xl font-bold text-white mt-4">Frequently Asked Questions</h2>
             </div>
 
             <div class="space-y-4 text-left">
                 <!-- FAQ 1 -->
                 <div class="border border-slate-900 rounded-xl bg-slate-900/10 overflow-hidden">
-                    <button @click="activeFaq = activeFaq === 1 ? null : 1" class="w-full p-6 text-left font-bold text-white text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
+                    <button @click="activeFaq = activeFaq === 1 ? null : 1"
+                        class="w-full p-6 text-left font-bold text-white text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
                         <span>Apakah Wuzzpay memiliki izin dari Bank Indonesia (BI)?</span>
                         <span class="text-xl text-indigo-400" x-text="activeFaq === 1 ? '−' : '+'"></span>
                     </button>
-                    <div x-show="activeFaq === 1" x-collapse class="px-6 pb-6 text-slate-400 text-base leading-relaxed border-t border-slate-900/50 pt-4" style="display: none;">
-                        Wuzzpay beroperasi murni sebagai <strong>Technical Service Provider (TSP)</strong> atau penyedia sistem teknologi infrastruktur perutean transaksi. Berdasarkan regulasi PBI Nomor 23/6/PBI/2021, penyedia teknologi yang tidak menyelenggarakan transfer dana atau menampung likuiditas tidak diwajibkan memegang lisensi PJP (Penyelenggara Jasa Pembayaran). Seluruh pemrosesan dana dan lisensi gerbang pembayaran tetap melekat penuh pada mitra Payment Gateway berlisensi resmi yang terhubung dengan infrastruktur kami.
+                    <div x-show="activeFaq === 1" x-collapse
+                        class="px-6 pb-6 text-slate-400 text-base leading-relaxed border-t border-slate-900/50 pt-4"
+                        style="display: none;">
+                        Wuzzpay beroperasi murni sebagai <strong>Technical Service Provider (TSP)</strong> atau penyedia
+                        sistem teknologi infrastruktur perutean transaksi. Berdasarkan regulasi PBI Nomor 23/6/PBI/2021,
+                        penyedia teknologi yang tidak menyelenggarakan transfer dana atau menampung likuiditas tidak
+                        diwajibkan memegang lisensi PJP (Penyelenggara Jasa Pembayaran). Seluruh pemrosesan dana dan
+                        lisensi gerbang pembayaran tetap melekat penuh pada mitra Payment Gateway berlisensi resmi yang
+                        terhubung dengan infrastruktur kami.
                     </div>
                 </div>
 
                 <!-- FAQ 2 -->
                 <div class="border border-slate-900 rounded-xl bg-slate-900/10 overflow-hidden">
-                    <button @click="activeFaq = activeFaq === 2 ? null : 2" class="w-full p-6 text-left font-bold text-white text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
+                    <button @click="activeFaq = activeFaq === 2 ? null : 2"
+                        class="w-full p-6 text-left font-bold text-white text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
                         <span>Bagaimana mekanisme penyelesaian (settlement) dana transaksi?</span>
                         <span class="text-xl text-indigo-400" x-text="activeFaq === 2 ? '−' : '+'"></span>
                     </button>
-                    <div x-show="activeFaq === 2" x-collapse class="px-6 pb-6 text-slate-400 text-base leading-relaxed border-t border-slate-900/50 pt-4" style="display: none;">
-                        Karena Wuzzpay menganut arsitektur <em>Netral/Decoupled</em>, <strong>kami tidak menampung atau menyentuh dana transaksi Anda sama sekali</strong>. Pencairan dana (*settlement*) langsung ditransfer oleh institusi Payment Gateway pilihan Anda (seperti Winpay, Espay, atau iPaymu) langsung menuju rekening bank bisnis Anda sesuai dengan ketentuan skema SLA dan MDR yang akun Anda miliki dengan pihak gateway penampung tersebut.
+                    <div x-show="activeFaq === 2" x-collapse
+                        class="px-6 pb-6 text-slate-400 text-base leading-relaxed border-t border-slate-900/50 pt-4"
+                        style="display: none;">
+                        Karena Wuzzpay menganut arsitektur <em>Netral/Decoupled</em>, <strong>kami tidak menampung atau
+                            menyentuh dana transaksi Anda sama sekali</strong>. Pencairan dana (*settlement*) langsung
+                        ditransfer oleh institusi Payment Gateway pilihan Anda (seperti Winpay, Espay, atau iPaymu)
+                        langsung menuju rekening bank bisnis Anda sesuai dengan ketentuan skema SLA dan MDR yang akun
+                        Anda miliki dengan pihak gateway penampung tersebut.
                     </div>
                 </div>
 
                 <!-- FAQ 3 -->
                 <div class="border border-slate-900 rounded-xl bg-slate-900/10 overflow-hidden">
-                    <button @click="activeFaq = activeFaq === 3 ? null : 3" class="w-full p-6 text-left font-bold text-white text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
+                    <button @click="activeFaq = activeFaq === 3 ? null : 3"
+                        class="w-full p-6 text-left font-bold text-white text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
                         <span>Bagaimana Wuzzpay menjaga keamanan data transaksi finansial?</span>
                         <span class="text-xl text-indigo-400" x-text="activeFaq === 3 ? '−' : '+'"></span>
                     </button>
-                    <div x-show="activeFaq === 3" x-collapse class="px-6 pb-6 text-slate-400 text-base leading-relaxed border-t border-slate-900/50 pt-4" style="display: none;">
-                        Seluruh pengiriman data transaksi di dalam jaringan Wuzzpay diwajibkan melalui protokol enkripsi ketat **TLS 1.3**. Integrasi API dienkripsi end-to-end menggunakan mekanisme validasi tanda tangan digital **HMAC-SHA256** berpasangan guna mencegah pemalsuan data (*tampering*) atau serangan *Man-in-the-Middle*.
+                    <div x-show="activeFaq === 3" x-collapse
+                        class="px-6 pb-6 text-slate-400 text-base leading-relaxed border-t border-slate-900/50 pt-4"
+                        style="display: none;">
+                        Seluruh pengiriman data transaksi di dalam jaringan Wuzzpay diwajibkan melalui protokol enkripsi
+                        ketat **TLS 1.3**. Integrasi API dienkripsi end-to-end menggunakan mekanisme validasi tanda
+                        tangan digital **HMAC-SHA256** berpasangan guna mencegah pemalsuan data (*tampering*) atau
+                        serangan *Man-in-the-Middle*.
                     </div>
                 </div>
 
                 <!-- FAQ 4 (REVISI BERSIH DARI INFORMASI NEGOSIASI INTERN) -->
                 <div class="border border-slate-900 rounded-xl bg-slate-900/10 overflow-hidden">
-                    <button @click="activeFaq = activeFaq === 4 ? null : 4" class="w-full p-6 text-left font-bold text-white text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
+                    <button @click="activeFaq = activeFaq === 4 ? null : 4"
+                        class="w-full p-6 text-left font-bold text-white text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
                         <span>Apakah kami bisa membawa kredensial / akun Payment Gateway kami sendiri?</span>
                         <span class="text-xl text-indigo-400" x-text="activeFaq === 4 ? '−' : '+'"></span>
                     </button>
-                    <div x-show="activeFaq === 4" x-collapse class="px-6 pb-6 text-slate-400 text-base leading-relaxed border-t border-slate-900/50 pt-4" style="display: none;">
-                        Ya, tentu saja. Anda dapat langsung memasukkan *API Key*, *Client ID*, dan *Secret* yang Anda peroleh dari dashboard komersial institusi Payment Gateway mitra pilihan Anda (seperti Winpay, Espay, iPaymu, dan barisan gateway terintegrasi lainnya) ke dalam sistem orkestrasi Wuzzpay untuk mulai mengatur pembagian rute transaksi sesuai kebutuhan bisnis Anda.
+                    <div x-show="activeFaq === 4" x-collapse
+                        class="px-6 pb-6 text-slate-400 text-base leading-relaxed border-t border-slate-900/50 pt-4"
+                        style="display: none;">
+                        Ya, tentu saja. Anda dapat langsung memasukkan *API Key*, *Client ID*, dan *Secret* yang Anda
+                        peroleh dari dashboard komersial institusi Payment Gateway mitra pilihan Anda (seperti Winpay,
+                        Espay, iPaymu, dan barisan gateway terintegrasi lainnya) ke dalam sistem orkestrasi Wuzzpay
+                        untuk mulai mengatur pembagian rute transaksi sesuai kebutuhan bisnis Anda.
                     </div>
                 </div>
 
                 <!-- FAQ 5 -->
-                <div class="border border-slate-900 rounded-xl bg-slate-950 overflow-hidden border-indigo-500/20 shadow-lg shadow-indigo-500/5">
-                    <button @click="activeFaq = activeFaq === 5 ? null : 5" class="w-full p-6 text-left font-bold text-indigo-400 text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
-                        <span>Bagaimana jika terjadi sengketa (dispute) atau kendala pada transaksi konsumen kami?</span>
+                <div
+                    class="border border-slate-900 rounded-xl bg-slate-950 overflow-hidden border-indigo-500/20 shadow-lg shadow-indigo-500/5">
+                    <button @click="activeFaq = activeFaq === 5 ? null : 5"
+                        class="w-full p-6 text-left font-bold text-indigo-400 text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
+                        <span>Bagaimana jika terjadi sengketa (dispute) atau kendala pada transaksi konsumen
+                            kami?</span>
                         <span class="text-xl text-indigo-400" x-text="activeFaq === 5 ? '−' : '+'"></span>
                     </button>
-                    <div x-show="activeFaq === 5" x-collapse class="px-6 pb-6 text-slate-400 text-base leading-relaxed border-t border-slate-900/50 pt-4" style="display: none;">
-                        Anda tidak perlu membuang waktu menghubungi atau berurusan birokrasi langsung dengan masing-masing pihak Payment Gateway hulu. <strong>PT Semantic Digital Nusantara berkomitmen penuh sebagai garda terdepan (Single Point of Contact) dalam penyelesaian masalah Anda.</strong> Jika ada laporan dana menggantung, kendala status *callback*, atau sengketa pembayaran dari konsumen, cukup layangkan tiket bantuan ke tim operasional Wuzzpay. Kami berkewajiban penuh melakukan investigasi teknis, rekonsiliasi data, dan mengawal penyelesaiannya langsung bersama komite kepatuhan Payment Gateway terkait hingga tuntas.
+                    <div x-show="activeFaq === 5" x-collapse
+                        class="px-6 pb-6 text-slate-400 text-base leading-relaxed border-t border-slate-900/50 pt-4"
+                        style="display: none;">
+                        Anda tidak perlu membuang waktu menghubungi atau berurusan birokrasi langsung dengan
+                        masing-masing pihak Payment Gateway hulu. <strong>PT Semantic Digital Nusantara berkomitmen
+                            penuh sebagai garda terdepan (Single Point of Contact) dalam penyelesaian masalah
+                            Anda.</strong> Jika ada laporan dana menggantung, kendala status *callback*, atau sengketa
+                        pembayaran dari konsumen, cukup layangkan tiket bantuan ke tim operasional Wuzzpay. Kami
+                        berkewajiban penuh melakukan investigasi teknis, rekonsiliasi data, dan mengawal penyelesaiannya
+                        langsung bersama komite kepatuhan Payment Gateway terkait hingga tuntas.
                     </div>
                 </div>
             </div>
 
-            <div class="mt-12 p-6 rounded-2xl bg-gradient-to-r from-indigo-950/30 via-slate-900/50 to-slate-900/20 border border-indigo-500/20 flex flex-col sm:flex-row items-center gap-4 text-left">
-                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 font-bold text-xl shrink-0">🤝</div>
+            <div
+                class="mt-12 p-6 rounded-2xl bg-gradient-to-r from-indigo-950/30 via-slate-900/50 to-slate-900/20 border border-indigo-500/20 flex flex-col sm:flex-row items-center gap-4 text-left">
+                <div
+                    class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 font-bold text-xl shrink-0">
+                    🤝</div>
                 <div>
                     <h4 class="text-base font-bold text-white mb-1">Garda Terdepan Penyelesaian Masalah Anda</h4>
                     <p class="text-sm text-slate-400 leading-relaxed">
-                        Fokus saja pada pertumbuhan bisnis Anda. Segala urusan investigasi eror sistem hulu, rekonsiliasi selisih dana harian, hingga mitigasi sengketa dengan pihak internal *payment gateway* sepenuhnya menjadi kewajiban penanganan tim operasional kami.
+                        Fokus saja pada pertumbuhan bisnis Anda. Segala urusan investigasi eror sistem hulu,
+                        rekonsiliasi selisih dana harian, hingga mitigasi sengketa dengan pihak internal *payment
+                        gateway* sepenuhnya menjadi kewajiban penanganan tim operasional kami.
                     </p>
                 </div>
             </div>
@@ -473,107 +585,165 @@
         <!-- REVISI PRICING DENGAN TAMBAHAN STICKY UTILITY NOTES -->
         <section id="pricing" class="py-24 lg:py-32 bg-slate-900/10 border-b border-slate-900 relative">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-                <span class="text-sm font-bold text-indigo-400 uppercase tracking-widest bg-indigo-500/10 px-4 py-1.5 rounded-full border border-indigo-500/20">Skema Komersial</span>
+                <span
+                    class="text-sm font-bold text-indigo-400 uppercase tracking-widest bg-indigo-500/10 px-4 py-1.5 rounded-full border border-indigo-500/20">Skema
+                    Komersial</span>
                 <h2 class="text-3xl sm:text-4xl font-bold text-white mt-4 mb-4">Pilihan Biaya Layanan Infrastruktur</h2>
-                <p class="text-slate-400 text-base max-w-xl mx-auto mb-10 leading-relaxed">PT Semantic Digital Nusantara menyediakan skema biaya transparan guna mendukung akselerasi digitalisasi berbagai skala dan ekosistem bisnis Anda.</p>
+                <p class="text-slate-400 text-base max-w-xl mx-auto mb-10 leading-relaxed">PT Semantic Digital Nusantara
+                    menyediakan skema biaya transparan guna mendukung akselerasi digitalisasi berbagai skala dan
+                    ekosistem bisnis Anda.</p>
 
                 <!-- STICKY ALERT NOTE: INFORMASI VALUE UTAMA -->
-                <div class="max-w-4xl mx-auto mb-12 p-4 bg-amber-500/10 border border-amber-500/30 rounded-xl flex flex-col sm:flex-row items-center justify-between text-left gap-4 backdrop-blur-sm animate-pulse">
+                <div
+                    class="max-w-4xl mx-auto mb-12 p-4 bg-amber-500/10 border border-amber-500/30 rounded-xl flex flex-col sm:flex-row items-center justify-between text-left gap-4 backdrop-blur-sm animate-pulse">
                     <div class="flex items-start gap-3">
                         <span class="text-2xl mt-0.5">📌</span>
                         <div>
-                            <h5 class="text-sm font-bold text-amber-400 uppercase tracking-wider">Catatan Infrastruktur & Value Added Features</h5>
+                            <h5 class="text-sm font-bold text-amber-400 uppercase tracking-wider">Catatan Infrastruktur
+                                & Value Added Features</h5>
                             <p class="text-xs text-slate-400 leading-relaxed mt-1">
-                                Fitur <strong class="text-slate-200">Automasi WhatsApp Billing (Kirim Tagihan & Kuitansi Digital Otomatis)</strong> serta <strong class="text-slate-200">Satu Pintu Laporan Rekonsiliasi (Eksport Multi-Gateway ke Excel/CSV)</strong> hanya tersedia penuh pada skema <span class="text-indigo-400 font-bold">Wuzz Enterprise</span> dan <span class="text-cyan-400 font-bold">Wuzz Hyper-Drive</span>.
+                                Fitur <strong class="text-slate-200">Automasi WhatsApp Billing (Kirim Tagihan & Kuitansi
+                                    Digital Otomatis)</strong> serta <strong class="text-slate-200">Satu Pintu Laporan
+                                    Rekonsiliasi (Eksport Multi-Gateway ke Excel/CSV)</strong> hanya tersedia penuh pada
+                                skema <span class="text-indigo-400 font-bold">Wuzz Enterprise</span> dan <span
+                                    class="text-cyan-400 font-bold">Wuzz Hyper-Drive</span>.
                             </p>
                         </div>
                     </div>
-                    <div class="shrink-0 font-mono text-[11px] bg-slate-950 px-3 py-1.5 rounded border border-slate-800 text-slate-500 font-bold">
+                    <div
+                        class="shrink-0 font-mono text-[11px] bg-slate-950 px-3 py-1.5 rounded border border-slate-800 text-slate-500 font-bold">
                         NON-CUSTODY COMPLIANT
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto text-left">
-                    
+
                     <!-- PAKET 1: WUZZ STARTER -->
-                    <div class="p-8 border border-slate-900 rounded-2xl bg-slate-950 flex flex-col justify-between hover:border-indigo-500/20 transition group relative">
+                    <div
+                        class="p-8 border border-slate-900 rounded-2xl bg-slate-950 flex flex-col justify-between hover:border-indigo-500/20 transition group relative">
                         <div>
-                            <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-2">Akselerasi UMKM & Startup Tahap Awal</span>
-                            <h3 class="text-xl font-bold text-white mb-4">Wuzz Starter <span class="text-slate-500 font-normal text-sm block mt-1">(Jalur Kilat)</span></h3>
+                            <span
+                                class="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-2">Akselerasi
+                                UMKM & Startup Tahap Awal</span>
+                            <h3 class="text-xl font-bold text-white mb-4">Wuzz Starter <span
+                                    class="text-slate-500 font-normal text-sm block mt-1">(Jalur Kilat)</span></h3>
                             <div class="mb-6 font-mono">
                                 <span class="text-3xl font-bold text-white">Rp 0</span>
                                 <span class="text-xs text-slate-500">/ biaya sistem tambahan</span>
                             </div>
-                            <p class="text-sm text-slate-400 mb-6 leading-relaxed">Sangat cocok untuk validasi pasar secepat kilat tanpa beban biaya tetap harian. Anda hanya dikenakan biaya potongan MDR standar langsung dari pihak Payment Gateway.</p>
+                            <p class="text-sm text-slate-400 mb-6 leading-relaxed">Sangat cocok untuk validasi pasar
+                                secepat kilat tanpa beban biaya tetap harian. Anda hanya dikenakan biaya potongan MDR
+                                standar langsung dari pihak Payment Gateway.</p>
                             <ul class="space-y-3 text-sm text-slate-300 border-t border-slate-900 pt-6">
-                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Tanpa Biaya Langganan Bulanan</span></li>
-                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Direct Settlement 100% Langsung ke Rekening Anda</span></li>
-                                <li class="flex items-center gap-2">✓ <span class="text-slate-300 font-medium">Akses API untuk Semua Kanal Pembayaran (QRIS, VA, E-Wallet, Retail Outlets, & Paylater)</span></li>
-                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Akses Dasbor Merchant (Khusus Monitoring & Pantau Uang Masuk)</span></li>
-                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Automated System Routing (Jalur Pembayaran Dioptimalkan Otomatis)</span></li>
-                                <li class="flex items-center gap-2">✕ <span class="text-slate-600 line-through">Custom Routing Switch (Bebas Pilih PG per Metode Pembayaran)</span></li>
-                                <li class="flex items-center gap-2">✕ <span class="text-slate-600 line-through">Automasi WhatsApp Billing & Ekspor Laporan Excel</span></li>
+                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Tanpa Biaya Langganan
+                                        Bulanan</span></li>
+                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Direct Settlement
+                                        100% Langsung ke Rekening Anda</span></li>
+                                <li class="flex items-center gap-2">✓ <span class="text-slate-300 font-medium">Akses API
+                                        untuk Semua Kanal Pembayaran (QRIS, VA, E-Wallet, Retail Outlets, &
+                                        Paylater)</span></li>
+                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Akses Dasbor Merchant
+                                        (Khusus Monitoring & Pantau Uang Masuk)</span></li>
+                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Automated System
+                                        Routing (Jalur Pembayaran Dioptimalkan Otomatis)</span></li>
+                                <li class="flex items-center gap-2">✕ <span class="text-slate-600 line-through">Custom
+                                        Routing Switch (Bebas Pilih PG per Metode Pembayaran)</span></li>
+                                <li class="flex items-center gap-2">✕ <span class="text-slate-600 line-through">Automasi
+                                        WhatsApp Billing & Ekspor Laporan Excel</span></li>
                             </ul>
                         </div>
                         <div class="mt-8">
-                            <a href="https://api.whatsapp.com/send?phone=6289601014551&text=Halo%20Tim%20Wuzzpay,%20saya%20tertarik%20untuk%20mengajukan%20integrasi%20skema%20*Wuzz%20Starter%20(Rp0)*" target="_blank" class="block w-full py-3 bg-slate-900 hover:bg-slate-800 text-slate-200 text-center font-bold text-sm rounded-lg transition">
+                            <a href="https://api.whatsapp.com/send?phone=6289601014551&text=Halo%20Tim%20Wuzzpay,%20saya%20tertarik%20untuk%20mengajukan%20integrasi%20skema%20*Wuzz%20Starter%20(Rp0)*"
+                                target="_blank"
+                                class="block w-full py-3 bg-slate-900 hover:bg-slate-800 text-slate-200 text-center font-bold text-sm rounded-lg transition">
                                 Mulai Aktivasi Akun
                             </a>
                         </div>
                     </div>
 
                     <!-- PAKET 2: WUZZ ENTERPRISE -->
-                    <div class="p-8 border-2 border-indigo-500/40 rounded-2xl bg-gradient-to-b from-slate-950 to-slate-900/40 flex flex-col justify-between relative shadow-xl shadow-indigo-500/5">
-                        <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3 py-1 bg-indigo-600 text-[10px] font-black uppercase tracking-widest text-white rounded-full">Paling Populer</span>
+                    <div
+                        class="p-8 border-2 border-indigo-500/40 rounded-2xl bg-gradient-to-b from-slate-950 to-slate-900/40 flex flex-col justify-between relative shadow-xl shadow-indigo-500/5">
+                        <span
+                            class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3 py-1 bg-indigo-600 text-[10px] font-black uppercase tracking-widest text-white rounded-full">Paling
+                            Populer</span>
                         <div>
-                            <span class="text-xs font-bold text-indigo-400 uppercase tracking-widest block mb-2">Automasi Bisnis Berjaringan & SaaS</span>
-                            <h3 class="text-xl font-bold text-white mb-4">Wuzz Enterprise <span class="text-indigo-400 font-normal text-sm block mt-1">(Rute Kendali)</span></h3>
+                            <span
+                                class="text-xs font-bold text-indigo-400 uppercase tracking-widest block mb-2">Automasi
+                                Bisnis Berjaringan & SaaS</span>
+                            <h3 class="text-xl font-bold text-white mb-4">Wuzz Enterprise <span
+                                    class="text-indigo-400 font-normal text-sm block mt-1">(Rute Kendali)</span></h3>
                             <div class="mb-6 font-mono">
                                 <span class="text-3xl font-bold text-white">Rp 299.000</span>
                                 <span class="text-xs text-slate-500">/ bulan</span>
                             </div>
-                            <p class="text-sm text-slate-400 mb-6 leading-relaxed">Pilihan ideal untuk bisnis skala berkembang yang membutuhkan kendali rute penuh secara mandiri demi mengoptimalkan efisiensi dan margin keuntungan bulanan.</p>
-                            
+                            <p class="text-sm text-slate-400 mb-6 leading-relaxed">Pilihan ideal untuk bisnis skala
+                                berkembang yang membutuhkan kendali rute penuh secara mandiri demi mengoptimalkan
+                                efisiensi dan margin keuntungan bulanan.</p>
+
                             <!-- MINI STICKY NOTE INSIDE THE CARD -->
-                            <div class="bg-indigo-500/10 border border-indigo-500/30 rounded-lg p-3 mb-6 text-xs text-indigo-300 leading-relaxed font-medium">
-                                🔥 <strong>Infrastruktur Premium:</strong> Termasuk integrasi sistem pengiriman WhatsApp Tagihan Kuitansi & mesin penyamaan format laporan Excel (*One-Click Reconciliation*).
+                            <div
+                                class="bg-indigo-500/10 border border-indigo-500/30 rounded-lg p-3 mb-6 text-xs text-indigo-300 leading-relaxed font-medium">
+                                🔥 <strong>Infrastruktur Premium:</strong> Termasuk integrasi sistem pengiriman WhatsApp
+                                Tagihan Kuitansi & mesin penyamaan format laporan Excel (*One-Click Reconciliation*).
                             </div>
 
                             <ul class="space-y-3 text-sm text-slate-300 border-t border-slate-900 pt-6">
-                                <li class="flex items-center gap-2 text-indigo-400">✓ <span class="text-slate-300 font-bold">Full-Access Dasbor Merchant (Kendali & Kontrol Penuh)</span></li>
-                                <li class="flex items-center gap-2 text-indigo-400">✓ <span class="text-slate-300 font-bold">Custom No-Code Smart Routing (Bebas Pilih PG per Metode Pembayaran)</span></li>
-                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Akses Fitur Otomatisasi WA Tagihan & Kuitansi Kolektif</span></li>
-                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Sistem Eksport Laporan Konsolidasi Multi-PG (.csv / .xlsx)</span></li>
-                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Wuzzpay Auto-Optimization Engine & Failover System</span></li>
-                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Kapasitas Transaksi: s.d 2.500 Transaksi / Bulan</span></li>
-                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">SLA Jaringan Prioritas Node 99.9%</span></li>
+                                <li class="flex items-center gap-2 text-indigo-400">✓ <span
+                                        class="text-slate-300 font-bold">Full-Access Dasbor Merchant (Kendali & Kontrol
+                                        Penuh)</span></li>
+                                <li class="flex items-center gap-2 text-indigo-400">✓ <span
+                                        class="text-slate-300 font-bold">Custom No-Code Smart Routing (Bebas Pilih PG
+                                        per Metode Pembayaran)</span></li>
+                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Akses Fitur
+                                        Otomatisasi WA Tagihan & Kuitansi Kolektif</span></li>
+                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Sistem Eksport
+                                        Laporan Konsolidasi Multi-PG (.csv / .xlsx)</span></li>
+                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Wuzzpay
+                                        Auto-Optimization Engine & Failover System</span></li>
+                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Kapasitas Transaksi:
+                                        s.d 2.500 Transaksi / Bulan</span></li>
+                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">SLA Jaringan
+                                        Prioritas Node 99.9%</span></li>
                             </ul>
                         </div>
                         <div class="mt-8">
-                            <a href="https://api.whatsapp.com/send?phone=6289601014551&text=Halo%20Tim%20Wuzzpay,%20saya%20tertarik%20untuk%20langganan%20paket%20*Wuzz%20Enterprise%20(Rp299.000/bulan)*" target="_blank" class="block w-full py-3 bg-indigo-600 hover:bg-indigo-500 text-white text-center font-bold text-sm rounded-lg transition shadow-lg shadow-indigo-600/20">
+                            <a href="https://api.whatsapp.com/send?phone=6289601014551&text=Halo%20Tim%20Wuzzpay,%20saya%20tertarik%20untuk%20langganan%20paket%20*Wuzz%20Enterprise%20(Rp299.000/bulan)*"
+                                target="_blank"
+                                class="block w-full py-3 bg-indigo-600 hover:bg-indigo-500 text-white text-center font-bold text-sm rounded-lg transition shadow-lg shadow-indigo-600/20">
                                 Berlangganan Wuzz Enterprise
                             </a>
                         </div>
                     </div>
 
                     <!-- PAKET 3: WUZZ HYPER-DRIVE -->
-                    <div class="p-8 border border-slate-900 rounded-2xl bg-slate-950 flex flex-col justify-between hover:border-cyan-500/20 transition group">
+                    <div
+                        class="p-8 border border-slate-900 rounded-2xl bg-slate-950 flex flex-col justify-between hover:border-cyan-500/20 transition group">
                         <div>
-                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">Custom Kebutuhan Khusus</span>
-                            <h3 class="text-xl font-bold text-white mb-4">Wuzz Hyper-Drive <span class="text-cyan-400 font-normal text-sm block mt-1">(Kustom Node)</span></h3>
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">Custom
+                                Kebutuhan Khusus</span>
+                            <h3 class="text-xl font-bold text-white mb-4">Wuzz Hyper-Drive <span
+                                    class="text-cyan-400 font-normal text-sm block mt-1">(Kustom Node)</span></h3>
                             <div class="mb-6 font-mono">
                                 <span class="text-3xl font-bold text-white">Custom SLA</span>
                             </div>
-                            <p class="text-sm text-slate-400 mb-6 leading-relaxed">Dukungan arsitektur infrastruktur terdedikasi (Private Server Cluster) untuk korporasi, platform SaaS berskala besar dengan jutaan mutasi harian.</p>
+                            <p class="text-sm text-slate-400 mb-6 leading-relaxed">Dukungan arsitektur infrastruktur
+                                terdedikasi (Private Server Cluster) untuk korporasi, platform SaaS berskala besar
+                                dengan jutaan mutasi harian.</p>
                             <ul class="space-y-3 text-sm text-slate-300 border-t border-slate-900 pt-6">
-                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Skema Volume Tiering Terendah (Custom Rate)</span></li>
-                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Dedicated Node Telemetry Server</span></li>
-                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Dedicated Support Account Manager (24/7)</span></li>
-                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">IP Whitelisting & Custom Callback Routing</span></li>
+                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Skema Volume Tiering
+                                        Terendah (Custom Rate)</span></li>
+                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Dedicated Node
+                                        Telemetry Server</span></li>
+                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">Dedicated Support
+                                        Account Manager (24/7)</span></li>
+                                <li class="flex items-center gap-2">✓ <span class="text-slate-400">IP Whitelisting &
+                                        Custom Callback Routing</span></li>
                             </ul>
                         </div>
                         <div class="mt-8">
-                            <a href="#kontak" class="block w-full py-3 bg-slate-900 hover:bg-slate-800 text-slate-200 text-center font-bold text-sm rounded-lg transition">
+                            <a href="#kontak"
+                                class="block w-full py-3 bg-slate-900 hover:bg-slate-800 text-slate-200 text-center font-bold text-sm rounded-lg transition">
                                 Hubungi Kemitraan PT
                             </a>
                         </div>
@@ -586,7 +756,8 @@
         <section id="kontak" class="py-24 lg:py-32 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
             x-data="{ company: '', email: '', message: '', whatsappNumber: '6289601014551' }">
             <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Hubungi Tim Kemitraan Bisnis Wuzzpay</h2>
-            <p class="text-slate-400 text-base mb-10 max-w-xl mx-auto leading-relaxed">Diskusikan integrasi ekosistem atau kerja sama penyaluran likuiditas pembayaran khusus instansi formal / korporasi.</p>
+            <p class="text-slate-400 text-base mb-10 max-w-xl mx-auto leading-relaxed">Diskusikan integrasi ekosistem
+                atau kerja sama penyaluran likuiditas pembayaran khusus instansi formal / korporasi.</p>
 
             <form @submit.prevent="
                 if(!company || !email || !message) { alert('Silakan isi semua kolom terlebih dahulu.'); return; }
@@ -596,19 +767,22 @@
                 class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left border border-slate-900 bg-slate-900/10 p-8 rounded-2xl backdrop-blur-sm">
 
                 <div>
-                    <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Nama Instansi / Perusahaan / Bisnis</label>
+                    <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Nama Instansi /
+                        Perusahaan / Bisnis</label>
                     <input type="text" x-model="company" placeholder="PT Digital Solusi Bangsa"
                         class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-base focus:outline-none focus:border-indigo-500 text-slate-100"
                         required>
                 </div>
                 <div>
-                    <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Email Resmi Bisnis</label>
+                    <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Email Resmi
+                        Bisnis</label>
                     <input type="email" x-model="email" placeholder="partnership@company.com"
                         class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-base focus:outline-none focus:border-indigo-500 text-slate-100"
                         required>
                 </div>
                 <div class="sm:col-span-2">
-                    <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Maksud & Keperluan Kerja Sama</label>
+                    <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Maksud &
+                        Keperluan Kerja Sama</label>
                     <textarea rows="4" x-model="message"
                         placeholder="Permohonan pengajuan akun merchant integrator multi-gateway atau kemitraan kesehatan upstream API..."
                         class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-base focus:outline-none focus:border-indigo-500 text-slate-100"
@@ -630,23 +804,28 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12 text-left">
                 <div>
                     <div class="text-base font-bold text-slate-200 mb-4">WUZZPAY CORE</div>
-                    <p class="leading-relaxed text-slate-400 text-sm">Infrastruktur aggregator teknologi *payment orchestrator* berorientasi pada optimalisasi kinerja kanal pembayaran merchant nasional.</p>
+                    <p class="leading-relaxed text-slate-400 text-sm">Infrastruktur aggregator teknologi *payment
+                        orchestrator* berorientasi pada optimalisasi kinerja kanal pembayaran merchant nasional.</p>
                 </div>
                 <div>
                     <div class="text-base font-bold text-slate-200 mb-4">Dokumentasi & Hukum</div>
                     <ul class="space-y-3 text-sm">
                         <li>
-                            <a href="terms.html" class="hover:text-slate-200 text-slate-400 transition border-b border-dashed border-slate-800 pb-0.5 inline-block">
+                            <a href="terms.html"
+                                class="hover:text-slate-200 text-slate-400 transition border-b border-dashed border-slate-800 pb-0.5 inline-block">
                                 Terms of Service (Syarat & Ketentuan)
                             </a>
                         </li>
                         <li>
-                            <a href="privacy.html" class="hover:text-slate-200 text-slate-400 transition border-b border-dashed border-slate-800 pb-0.5 inline-block">
+                            <a href="privacy.html"
+                                class="hover:text-slate-200 text-slate-400 transition border-b border-dashed border-slate-800 pb-0.5 inline-block">
                                 Privacy Policy (Kebijakan Privasi)
                             </a>
                         </li>
                         <li>
-                            <button @click="openModal = true; modalTitle = 'Service Level Agreement (SLA)'; modalDesc = 'Infrastruktur core routing Wuzzpay menjamin ketersediaan sistem jaringan (Uptime SLA) sebesar 99.9% yang dipantau secara real-time melalui node monitoring multi-region. Dokumen kesepakatan tertulis formal akan diterbitkan pasca-validasi badan hukum entitas.'" class="hover:text-slate-200 text-slate-400 transition cursor-pointer text-left focus:outline-none">
+                            <button
+                                @click="openModal = true; modalTitle = 'Service Level Agreement (SLA)'; modalDesc = 'Infrastruktur core routing Wuzzpay menjamin ketersediaan sistem jaringan (Uptime SLA) sebesar 99.9% yang dipantau secara real-time melalui node monitoring multi-region. Dokumen kesepakatan tertulis formal akan diterbitkan pasca-validasi badan hukum entitas.'"
+                                class="hover:text-slate-200 text-slate-400 transition cursor-pointer text-left focus:outline-none">
                                 SLA Agreement
                             </button>
                         </li>
@@ -656,12 +835,16 @@
                     <div class="text-base font-bold text-slate-200 mb-4">Teknis Hubungan</div>
                     <ul class="space-y-3 text-sm">
                         <li>
-                            <button @click="openModal = true; modalTitle = 'SNAP BI Compliance'; modalDesc = 'Arsitektur komunikasi endpoint data transaksi Wuzzpay sepenuhnya patuh pada Standar Nasional Open API Pembayaran (SNAP) Bank Indonesia, mencakup penggunaan Asymmetric Signature (X-SIGNATURE) berbasis RSA-2048 / HMAC-SHA256 untuk interkoneksi hulu ke hilir.'" class="hover:text-slate-200 transition cursor-pointer text-left focus:outline-none">
+                            <button
+                                @click="openModal = true; modalTitle = 'SNAP BI Compliance'; modalDesc = 'Arsitektur komunikasi endpoint data transaksi Wuzzpay sepenuhnya patuh pada Standar Nasional Open API Pembayaran (SNAP) Bank Indonesia, mencakup penggunaan Asymmetric Signature (X-SIGNATURE) berbasis RSA-2048 / HMAC-SHA256 untuk interkoneksi hulu ke hilir.'"
+                                class="hover:text-slate-200 transition cursor-pointer text-left focus:outline-none">
                                 SNAP BI Documentation
                             </button>
                         </li>
                         <li>
-                            <button @click="openModal = true; modalTitle = 'IP Whitelisting Manual'; modalDesc = 'Demi alasan keamanan perimeter finansial, request data transaksi ke core production hanya akan diloloskan dari barisan IP Address merchant yang telah terdaftar resmi dalam database Wuzzpay. Pengaturan IP dapat dikoordinasikan langsung via NOC support.'" class="hover:text-slate-200 transition cursor-pointer text-left focus:outline-none">
+                            <button
+                                @click="openModal = true; modalTitle = 'IP Whitelisting Manual'; modalDesc = 'Demi alasan keamanan perimeter finansial, request data transaksi ke core production hanya akan diloloskan dari barisan IP Address merchant yang telah terdaftar resmi dalam database Wuzzpay. Pengaturan IP dapat dikoordinasikan langsung via NOC support.'"
+                                class="hover:text-slate-200 transition cursor-pointer text-left focus:outline-none">
                                 IP Whitelisting Manual
                             </button>
                         </li>
@@ -670,20 +853,25 @@
                 <div>
                     <div class="text-base font-bold text-slate-200 mb-4">Operasional & Legalitas</div>
                     <p class="leading-relaxed text-slate-400 text-sm mb-3">
-                        Wuzzpay adalah produk teknologi finansial eksklusif yang dikembangkan, dikelola, dan dimiliki sepenuhnya oleh **PT Semantic Digital Nusantara**.
+                        Wuzzpay adalah produk teknologi finansial eksklusif yang dikembangkan, dikelola, dan dimiliki
+                        sepenuhnya oleh **PT Semantic Digital Nusantara**.
                     </p>
                     <div class="text-sm text-slate-300 font-medium space-y-1">
                         <div class="text-slate-400 font-semibold">Corporate Site:</div>
-                        <a href="https://semanticdigital.id" target="_blank" class="text-indigo-400 hover:underline block mb-2">www.semanticdigital.id</a>
+                        <a href="https://semanticdigital.id" target="_blank"
+                            class="text-indigo-400 hover:underline block mb-2">www.semanticdigital.id</a>
                         <span class="block text-slate-400 mt-2">📍 Hub Operasional:</span>
                         <span class="text-slate-400 block">Sidoarjo, Jawa Timur, Indonesia</span>
                     </div>
                 </div>
             </div>
-            
+
             <div class="border-t border-slate-900 pt-8 text-center text-xs text-slate-500 leading-relaxed">
                 <p class="mb-3">&copy; 2026 PT Semantic Digital Nusantara. All rights reserved.</p>
-                <p class="max-w-4xl mx-auto opacity-80">Disclaimer: Wuzzpay bertindak murni sebagai penyedia sistem teknologi perutean transaksi cerdas (*technical service provider*). Pemrosesan, penampungan, dan penyelesaian likuiditas dana sepenuhnya dieksekusi oleh penyedia infrastruktur gerbang pembayaran berlisensi Bank Indonesia yang menjadi mitra resmi kami.</p>
+                <p class="max-w-4xl mx-auto opacity-80">Disclaimer: Wuzzpay bertindak murni sebagai penyedia sistem
+                    teknologi perutean transaksi cerdas (*technical service provider*). Pemrosesan, penampungan, dan
+                    penyelesaian likuiditas dana sepenuhnya dieksekusi oleh penyedia infrastruktur gerbang pembayaran
+                    berlisensi Bank Indonesia yang menjadi mitra resmi kami.</p>
             </div>
         </div>
     </footer>
@@ -691,15 +879,18 @@
     <div x-show="openModal"
         class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm" x-transition
         style="display: none;">
-        <div @click.away="openModal = false" class="bg-slate-900 border border-slate-800 p-8 rounded-2xl max-w-lg w-full shadow-2xl">
+        <div @click.away="openModal = false"
+            class="bg-slate-900 border border-slate-800 p-8 rounded-2xl max-w-lg w-full shadow-2xl">
             <h3 class="text-xl font-bold text-white mb-3" x-text="modalTitle"></h3>
             <p class="text-base text-slate-400 leading-relaxed mb-6" x-text="modalDesc"></p>
             <div class="flex justify-end gap-3 text-sm font-bold">
-                <button @click="openModal = false" class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg transition cursor-pointer">
+                <button @click="openModal = false"
+                    class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg transition cursor-pointer">
                     Tutup
                 </button>
                 <a :href="'https://api.whatsapp.com/send?phone=6289601014551&text=Halo%20Wuzzpay%20Support,%20saya%20ingin%20meminta%20dokumen%20lengkap%20mengenai%20' + encodeURIComponent(modalTitle)"
-                    target="_blank" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg transition text-center flex items-center justify-center">
+                    target="_blank"
+                    class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg transition text-center flex items-center justify-center">
                     Request Dokumen Resmi
                 </a>
             </div>
