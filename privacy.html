@@ -4,36 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kebijakan Privasi | Wuzzpay Orchestrator</title>
+    <meta name="robots" content="noindex, follow">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-slate-950 text-slate-300 font-sans antialiased">
+<body class="bg-slate-950 text-slate-300 font-sans antialiased text-sm sm:text-base selection:bg-indigo-500 selection:text-white">
 
-    <div class="max-w-4xl mx-auto px-4 py-12 sm:py-20">
-        <a href="index.html" class="text-sm text-indigo-400 hover:underline mb-8 inline-block">&larr; Kembali ke Beranda</a>
+    <div class="max-w-4xl mx-auto px-4 py-12 sm:py-20 leading-relaxed">
+        <a href="index.html" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition mb-8 inline-flex items-center gap-2">&larr; Kembali ke Beranda</a>
         
-        <h1 class="text-3xl sm:text-4xl font-extrabold text-white mb-2">Kebijakan Privasi</h1>
-        <p class="text-sm text-slate-500 mb-8">Terakhir diperbarui: 18 Mei 2026</p>
+        <h1 class="text-3xl sm:text-4xl font-black text-white mb-3 tracking-tight">Kebijakan Privasi</h1>
+        <p class="text-sm text-slate-500 mb-10 border-b border-slate-900 pb-6">Terakhir diperbarui: 18 Mei 2026</p>
 
-        <div class="prose prose-invert max-w-none space-y-6 text-sm leading-relaxed">
+        <div class="space-y-8 text-slate-400 text-justify">
+            
             <section>
-                <h2 class="text-xl font-bold text-white mb-2">1. Pengumpulan Informasi Transaksi</h2>
-                <p>Untuk menjalankan fungsi orkestrasi dan perutean pembayaran, sistem Wuzzpay memproses data transaksi kiriman Merchant berupa jumlah nominal, metode pembayaran yang dipilih, serta parameter teknis dasar yang diperlukan untuk meneruskan permintaan ke Payment Gateway tujuan.</p>
+                <h2 class="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2 font-mono">
+                    <span class="text-indigo-400">01.</span> KOMITMEN PERLINDUNGAN DATA PRIBADI
+                </h2>
+                <p class="mb-3">
+                    Kebijakan Privasi ini merupakan wujud komitmen nyata dari **PT Semantic Digital Nusantara** (selanjutnya disebut "Wuzzpay" atau "Kami") dalam kapasitasnya sebagai penyedia teknologi infrastruktur *payment orchestrator* untuk menghormati, melindungi, dan menjaga setiap data pribadi serta informasi finansial milik Merchant dan Konsumen akhir Merchant.
+                </p>
+                <p>
+                    Seluruh aktivitas pemrosesan, penyimpanan, dan pengelolaan data yang dilakukan oleh Wuzzpay dirancang untuk patuh pada peraturan perundang-undangan yang berlaku di Republik Indonesia, termasuk namun tidak terbatas pada **Undang-Undang Nomor 27 Tahun 2022 tentang Perlindungan Data Pribadi (UU PDP)** beserta regulasi turunannya.
+                </p>
             </section>
 
             <section>
-                <h2 class="text-xl font-bold text-white mb-2">2. Penggunaan Data</h2>
-                <p>Data yang dikumpulkan dienkripsi menggunakan standar industri (AES-256) dan digunakan murni untuk keperluan operasional teknis, seperti rekonsiliasi transaksi, evaluasi latensi jaringan guna optimasi rute otomatis (*Smart Routing*), serta deteksi anomali (*Upstream Anomaly Detection*).</p>
+                <h2 class="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2 font-mono">
+                    <span class="text-indigo-400">02.</span> JENIS INFORMASI YANG KAMI PROSES
+                </h2>
+                <p class="mb-3">
+                    Guna menjalankan fungsi perutean data pembayaran secara instan, sistem backend Wuzzpay mengumpulkan dan memproses informasi yang dikirimkan oleh sistem Merchant melalui integrasi Open API, yang terbagi atas:
+                </p>
+                <ul class="list-disc pl-5 space-y-1.5 text-slate-400 mb-3 font-sans">
+                    <li><strong class="text-slate-200">Data Identitas Merchant:</strong> Nama instansi/perusahaan, alamat email resmi bisnis, nomor WhatsApp operasional, serta berkas verifikasi identitas (KYC) yang diperlukan untuk pengajuan akun ke pihak internal Payment Gateway.</li>
+                    <li><strong class="text-slate-200">Data Transaksi (Payload):</strong> Nilai nominal transaksi, ID referensi unik unik (`reference_id`), jenis metode pembayaran (QRIS, VA, E-Wallet), serta data parameter teknis penunjang komunikasi API.</li>
+                    <li><strong class="text-slate-200">Data Telemetri Jaringan:</strong> Alamat IP server, catatan waktu request (*timestamps*), serta performa latensi respons jaringan dari sistem hulu gateway tujuan.</li>
+                </ul>
+                <p class="text-amber-400/90 font-medium">
+                    ⚠️ Wuzzpay tidak pernah meminta, mengoleksi, ataupun menyimpan data sensitif konsumen seperti nomor kartu kredit penuh, kode CVV, PIN perbankan, atau kata sandi akun dompet digital Pengguna.
+                </p>
             </section>
 
             <section>
-                <h2 class="text-xl font-bold text-white mb-2">3. Berbagi Data dengan Pihak Ketiga (Payment Gateway)</h2>
-                <p>Wuzzpay akan meneruskan parameter transaksi ke institusi Payment Gateway yang ditunjuk secara sah oleh Merchant atau yang terpilih melalui algoritma optimasi rute. Kami menjamin tidak akan pernah menjual, menyewakan, atau menyalahgunakan data transaksi Merchant kepada pihak ketiga lainnya yang tidak berkepentingan.</p>
+                <h2 class="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2 font-mono">
+                    <span class="text-indigo-400">03.</span> TUJUAN PENGGUNAAN DATA
+                </h2>
+                <p class="mb-3">
+                    Kami menggunakan data yang terkumpul secara terbatas dan murni untuk keperluan operasional teknologi, antara lain:
+                </p>
+                <ul class="list-disc pl-5 space-y-1.5 text-slate-400 font-sans">
+                    <li>Mengeksekusi fungsi <strong class="text-slate-200">Wuzzpay Smart Failover System</strong> untuk mengalihkan rute data transaksi ke gateway cadangan yang paling stabil secara otomatis jika jalur utama mengalami gangguan.</li>
+                    <li>Memfasilitasi fitur integrasi otomatisasi WhatsApp Billing (pengiriman notifikasi tagihan dan kuitansi digital kolektif).</li>
+                    <li>Menyediakan fungsi dasbor monitoring dan ekspor laporan konsolidasi multi-gateway (.csv/.xlsx) guna mempermudah proses rekonsiliasi harian milik Merchant.</li>
+                    <li>Melakukan investigasi teknis, pelacakan eror (*debugging*), serta mitigasi indikasi aktivitas transaksi mencurigakan (*fraud detection*).</li>
+                </ul>
             </section>
 
             <section>
-                <h2 class="text-xl font-bold text-white mb-2">4. Kepatuhan Hukum & Keamanan</h2>
-                <p>Seluruh transmisi data dilakukan melalui jalur terenkripsi Transport Layer Security (TLS 1.3). Wuzzpay tunduk pada regulasi perlindungan data yang berlaku di Indonesia dan siap bekerja sama dengan otoritas penegak hukum jika terdapat indikasi penyalahgunaan platform untuk tindakan melanggar hukum.</p>
+                <h2 class="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2 font-mono">
+                    <span class="text-indigo-400">04.</span> PROTOKOL ENKRIPSI & PERLINDUNGAN KEAMANAN DATA
+                </h2>
+                <p class="mb-3">
+                    Wuzzpay menerapkan standar keamanan perimeter digital berlapis untuk memastikan data Anda tidak dimanipulasi oleh pihak luar. Seluruh pengiriman data di dalam jaringan diwajibkan menggunakan protokol enkripsi <strong class="text-slate-200">Transport Layer Security (TLS 1.3)</strong> serta validasi tanda tangan digital berbasis <strong class="text-slate-200">HMAC-SHA256 Signature</strong>.
+                </p>
+                <p>
+                    Aset database internal Kami dilindungi enkripsi tingkat lanjut di dalam server *cloud secure cluster* guna mencegah akses tidak sah (*unauthorized access*). Wuzzpay secara berkala melakukan evaluasi perimeter keamanan siber guna menjaga integritas arsitektur persistemannya.
+                </p>
             </section>
+
+            <section>
+                <h2 class="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2 font-mono">
+                    <span class="text-indigo-400">05.</span> PENGUNGKAPAN DATA KEPADA PIHAK KETIGA
+                </h2>
+                <p class="mb-3">
+                    Sebagai platform aggregator, Wuzzpay akan meneruskan parameter data transaksi terenkripsi ke institusi *Payment Gateway* berlisensi resmi Bank Indonesia yang ditunjuk secara sah oleh Merchant (seperti Winpay, Espay, iPaymu, dan jaringan mitra penampung aktif lainnya) guna menyelesaikan proses pembayaran.
+                </p>
+                <p>
+                    Di luar kebutuhan distribusi rute ke gerbang pembayaran resmi tersebut, PT Semantic Digital Nusantara **menjamin tidak akan pernah menjual, menyewakan, memperdagangkan, atau membocorkan** data transaksi maupun data pribadi Merchant/Konsumen kepada pihak ketiga mana pun untuk tujuan komersial atau periklanan.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2 font-mono">
+                    <span class="text-indigo-400">06.</span> RETENSI & PENGHAPUSAN DATA (RIGHT TO BE FORGOTTEN)
+                </h2>
+                <p class="mb-3">
+                    Wuzzpay akan menyimpan data transaksi Merchant selama periode yang diperlukan untuk memenuhi tujuan operasional teknis, rekonsiliasi keuangan tahunan, serta kepatuhan pemenuhan regulasi hukum positif di Indonesia.
+                </p>
+                <p>
+                    Sesuai dengan hak asasi pemilik data dalam UU PDP, Merchant memiliki hak penuh untuk meminta pembaruan data yang tidak akurat atau meminta penghapusan (*deletion/anonymization*) riwayat akun mereka dari database produksi Wuzzpay apabila memutuskan untuk menghentikan layanan kemitraan secara permanen, sepanjang hal tersebut tidak bertentangan dengan kewajiban penyimpanan arsip transaksi finansial yang ditetapkan oleh regulator keuangan negara.
+                </p>
+            </section>
+
+            <section class="border-t border-slate-900 pt-6">
+                <h2 class="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2 font-mono">
+                    <span class="text-indigo-400">07.</span> KONTAK DAN PENANGANAN ADUAN DATA
+                </h2>
+                <p>
+                    Apabila Merchant atau Pemilik Data memiliki pertanyaan, kekhawatiran, aduan terkait potensi celah keamanan, atau ingin menggunakan hak perlindungan data pribadi mereka di dalam platform Kami, Anda dapat menghubungi Petugas Perlindungan Data (*Data Protection Officer*) PT Semantic Digital Nusantara secara resmi melalui email operasional di: <span class="text-indigo-400 font-mono font-bold">support@semanticdigital.id</span>.
+                </p>
+            </section>
+
+        </div>
+        
+        <div class="mt-16 pt-6 border-t border-slate-900 text-center text-xs text-slate-600 font-mono">
+            &copy; 2026 PT Semantic Digital Nusantara. All rights reserved.
         </div>
     </div>
 
