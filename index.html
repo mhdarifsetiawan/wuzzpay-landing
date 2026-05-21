@@ -901,6 +901,12 @@
             <p class="text-slate-400 text-base mb-10 max-w-xl mx-auto leading-relaxed">Diskusikan integrasi ekosistem
                 atau kerja sama penyaluran likuiditas pembayaran khusus instansi formal / korporasi.</p>
 
+            <!-- TAMBAHKAN LINK EMAIL DI SINI -->
+            <p class="text-sm text-slate-500 mb-10">
+                Atau kirimkan surat penawaran resmi Anda via email ke: 
+                <a href="mailto:support@semanticdigital.id" class="text-indigo-400 font-mono hover:underline font-bold">support@semanticdigital.id</a>
+            </p>
+
             <form @submit.prevent="
                 if(!company || !email || !message) { alert('Silakan isi semua kolom terlebih dahulu.'); return; }
                 let text = `Halo Tim Kemitraan Wuzzpay,%0A%0ASaya ingin mengajukan permohonan kerja sama bisnis.%0A%0A*Detail Instansi/Perusahaan/Bisnis:*%0A- Nama: ${company}%0A- Email Resmi: ${email}%0A%0A*Maksud & Keperluan:*%0A${message}`;
@@ -1002,6 +1008,11 @@
                         <div class="text-slate-400 font-semibold">Corporate Site:</div>
                         <a href="https://semanticdigital.id" target="_blank"
                             class="text-indigo-400 hover:underline block mb-2">www.semanticdigital.id</a>
+
+                        <!-- TAMBAHKAN EMAIL UTAMA DI SINI -->
+                        <div class="text-slate-400 font-semibold mt-2">Hubungan & Dukungan:</div>
+                        <a href="mailto:support@semanticdigital.id" class="text-indigo-400 hover:underline block mb-2 font-mono">support@semanticdigital.id</a>
+                        
                         <span class="block text-slate-400 mt-2">📍 Hub Operasional:</span>
                         <span class="text-slate-400 block">Sidoarjo, Jawa Timur, Indonesia</span>
                     </div>
