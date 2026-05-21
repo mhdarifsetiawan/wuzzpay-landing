@@ -118,8 +118,9 @@
                     class="text-3xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-400 to-blue-500">WUZZPAY</span>
             </div>
 
+            <!-- DESKTOP NAVIGATION (REVISI HREF MENU 1) -->
             <nav class="hidden md:flex items-center gap-8 text-base font-semibold text-slate-400">
-                <a href="#solusi" class="hover:text-indigo-400 transition">Solusi Bisnis</a>
+                <a href="#mekanisme-routing" class="hover:text-indigo-400 transition">Solusi Bisnis</a>
                 <a href="#infrastruktur" class="hover:text-indigo-400 transition">Infrastruktur</a>
                 <a href="#api" class="hover:text-indigo-400 transition">Developer API</a>
                 <a href="#pricing" class="hover:text-indigo-400 transition">Paket Layanan</a>
@@ -149,6 +150,7 @@
             </div>
         </div>
 
+        <!-- MOBILE NAVIGATION (REVISI HREF MENU 1) -->
         <div x-show="mobileMenuOpen" x-transition:enter="transition ease-out duration-200"
             x-transition:enter-start="opacity-0 -translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
             x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0"
@@ -157,7 +159,7 @@
             style="display: none;">
 
             <nav class="flex flex-col gap-4 text-base font-semibold text-slate-400">
-                <a href="#solusi" @click="mobileMenuOpen = false"
+                <a href="#mekanisme-routing" @click="mobileMenuOpen = false"
                     class="hover:text-indigo-400 py-2 border-b border-slate-900/50 transition">Solusi Bisnis</a>
                 <a href="#infrastruktur" @click="mobileMenuOpen = false"
                     class="hover:text-indigo-400 py-2 border-b border-slate-900/50 transition">Infrastruktur</a>
@@ -250,15 +252,16 @@
         <!-- KODE REVISI KEPATUHAN AMAN & LEGAL -->
         <section id="kepatuhan" class="py-16 bg-slate-900/40 border-b border-slate-900">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <p class="text-center text-sm font-bold tracking-widest text-slate-500 uppercase mb-8">STANDAR KEAMANAN & KEPATUHAN KAMI</p>
+                <p class="text-center text-sm font-bold tracking-widest text-slate-500 uppercase mb-8">STANDAR KEAMANAN
+                    & KEPATUHAN KAMI</p>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center text-center justify-items-center">
-                    
+
                     <!-- KOTAK 1: DIUBAH DARI ISO 27001 MENJADI SECURE ARCHITECTURE -->
                     <div class="p-6 border border-slate-800 rounded-xl bg-slate-950/50 w-full max-w-[240px]">
                         <div class="text-lg font-bold text-slate-200">ISMS READY</div>
                         <div class="text-xs text-slate-500 mt-1">Information Security Designed</div>
                     </div>
-                    
+
                     <div class="p-6 border border-slate-800 rounded-xl bg-slate-950/50 w-full max-w-[240px]">
                         <div class="text-lg font-bold text-slate-200">AES-256</div>
                         <div class="text-xs text-slate-500 mt-1">End-to-End Data Encryption</div>
@@ -270,6 +273,142 @@
                     <div class="p-6 border border-slate-800 rounded-xl bg-slate-950/50 w-full max-w-[240px]">
                         <div class="text-lg font-bold text-slate-200">ANTI-FRAUD</div>
                         <div class="text-xs text-slate-500 mt-1">Real-Time Risk Monitoring</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION VISUALISASI MEKANISME SMART ROUTING & ARSITEKTUR NETRAL -->
+        <section id="mekanisme-routing"
+            class="py-24 bg-gradient-to-b from-slate-950 via-slate-900/20 to-slate-950 border-b border-slate-900 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <span
+                    class="text-sm font-bold text-indigo-400 uppercase tracking-widest bg-indigo-500/10 px-4 py-1.5 rounded-full border border-indigo-500/20">Arsitektur
+                    Aliran Data</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-4 mb-4">Bagaimana Wuzzpay Mengorkestrasi
+                    Transaksi Anda?</h2>
+                <p class="text-slate-400 text-base max-w-2xl mx-auto mb-16 leading-relaxed">
+                    Wuzzpay beroperasi murni sebagai <strong class="text-slate-200">Lapisan Teknologi Finansial
+                        (Non-Custody Technical Layer)</strong>. Kami tidak menampung dana; fokus kami adalah mengalirkan
+                    data transaksi ke rute terbaik secara real-time.
+                </p>
+
+                <!-- DIAGRAM GRAFIK INFRASTRUKTUR -->
+                <div
+                    class="grid grid-cols-1 lg:grid-cols-11 gap-4 items-center justify-center max-w-6xl mx-auto text-left font-mono">
+
+                    <!-- BLOK LEFT: CONSUMER & PLATFORM MERCHANT -->
+                    <div class="lg:col-span-3 bg-slate-950 border border-slate-800 p-6 rounded-2xl relative shadow-xl">
+                        <div
+                            class="absolute -top-3 left-4 px-2.5 py-1 bg-slate-900 text-slate-400 text-xs font-bold uppercase rounded border border-slate-800">
+                            Sisi Pengguna</div>
+                        <div class="text-center py-4">
+                            <span class="text-4xl block mb-2">🛒</span>
+                            <h4 class="text-base font-bold text-white tracking-wide uppercase">Aplikasi / SaaS /
+                                Merchant</h4>
+                            <p class="text-sm text-slate-400 mt-2 leading-relaxed font-sans">Konsumen melakukan checkout
+                                pembayaran di platform digital Anda.</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-800 text-center">
+                            <span
+                                class="inline-flex items-center gap-1.5 text-xs text-indigo-400 font-bold bg-indigo-500/5 px-3 py-1.5 rounded border border-indigo-500/20 w-full justify-center">
+                                📲 Request Payload (JSON)
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- PANAH KONEKTOR 1 -->
+                    <div
+                        class="lg:col-span-1 flex lg:flex-col items-center justify-center gap-1 py-4 lg:py-0 text-indigo-500 font-bold">
+                        <span class="hidden lg:block text-xl tracking-tighter animate-pulse">────▶</span>
+                        <span class="lg:hidden text-xl rotate-90 animate-pulse">▼</span>
+                    </div>
+
+                    <!-- BLOK CENTER: WUZZPAY SMART ROUTER ENGINE (POSISI KITA) -->
+                    <div
+                        class="lg:col-span-3 bg-indigo-950/20 border-2 border-indigo-500/40 p-6 rounded-2xl relative shadow-2xl shadow-indigo-500/5 backdrop-blur-sm">
+                        <span
+                            class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3 py-1 bg-indigo-600 text-xs font-black uppercase tracking-widest text-white rounded-full">WUZZPAY
+                            SYSTEM (TSP)</span>
+                        <div class="text-center py-2">
+                            <span class="text-4xl block mb-3">🛡️</span>
+                            <h4 class="text-base font-bold text-indigo-400 tracking-wide uppercase">Core Multi-Gateway
+                                Router</h4>
+                            <p class="text-sm text-slate-300 mt-2 leading-relaxed font-sans">
+                                Sistem menganalisis latensi hulu, biaya MDR, dan jenis bank secara instan.
+                            </p>
+                        </div>
+                        <div class="mt-4 space-y-2 text-xs bg-slate-950 p-4 rounded-lg border border-slate-800">
+                            <div class="text-amber-400 font-bold text-sm mb-1">🧠 Logika Smart Routing:</div>
+                            <div class="text-slate-300">├─ VA BRI? <span class="text-indigo-400 font-bold">➔ Alihkan ke
+                                    Espay</span></div>
+                            <div class="text-slate-300">├─ QRIS Down? <span class="text-rose-400 font-bold">➔ Failover
+                                    ke Winpay</span></div>
+                            <div class="text-slate-300">└─ E-Wallet? <span class="text-cyan-400 font-bold">➔ Rute ke
+                                    iPaymu</span></div>
+                        </div>
+                        <div
+                            class="mt-4 text-center text-xs text-slate-200 font-bold bg-slate-950 py-2 rounded border border-slate-800 uppercase tracking-wider">
+                            🚫 NO FUNDS TOUCHED (DANA 0%)
+                        </div>
+                    </div>
+
+                    <!-- PANAH KONEKTOR 2 -->
+                    <div
+                        class="lg:col-span-1 flex lg:flex-col items-center justify-center gap-1 py-4 lg:py-0 text-emerald-500 font-bold">
+                        <span class="hidden lg:block text-xl tracking-tighter animate-pulse">────▶</span>
+                        <span class="lg:hidden text-xl rotate-90 animate-pulse">▼</span>
+                    </div>
+
+                    <!-- BLOK RIGHT: MITRA PAYMENT GATEWAY & BANK (SETTLEMENT) -->
+                    <div class="lg:col-span-3 bg-slate-950 border border-slate-800 p-6 rounded-2xl relative shadow-xl">
+                        <!-- SUB-JUDUL DIUBAH MENJADI LEGAL & REGULASI YANG BENAR -->
+                        <div class="absolute -top-3 left-4 px-2.5 py-1 bg-slate-900 text-slate-400 text-xs font-bold uppercase rounded border border-slate-800">Sisi Gerbang Pemrosesan</div>
+                        <div class="space-y-3 py-2">
+                            <div class="p-2.5 bg-slate-900/60 rounded border border-slate-800 flex items-center justify-between">
+                                <span class="text-sm text-slate-200 font-bold">Winpay Engine</span>
+                                <span class="text-xs text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20 font-bold">PJP LISENSI BI</span>
+                            </div>
+                            <div class="p-2.5 bg-slate-900/60 rounded border border-slate-800 flex items-center justify-between">
+                                <span class="text-sm text-slate-200 font-bold">Espay Gateway</span>
+                                <span class="text-xs text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20 font-bold">PJP LISENSI BI</span>
+                            </div>
+                            <div class="p-2.5 bg-slate-900/60 rounded border border-slate-800 flex items-center justify-between">
+                                <span class="text-sm text-slate-200 font-bold">iPaymu Network</span>
+                                <span class="text-xs text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20 font-bold">PJP LISENSI BI</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-800 text-center">
+                            <span class="inline-flex items-center gap-1 text-xs text-emerald-400 font-bold bg-emerald-500/5 px-3 py-1.5 rounded border border-emerald-500/20 w-full justify-center">
+                                💰 Settlement 100% Direct ke Bank Anda
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- FITUR UTAMA RANGKUMAN MEKANISME -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-16 text-left font-sans">
+                    <div class="p-5 rounded-xl border border-slate-800 bg-slate-950/40">
+                        <h4 class="text-base font-bold text-white mb-2 flex items-center gap-2"><span>1.</span>
+                            Decoupled Architecture</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Aplikasi Anda hanya menembak ke satu endpoint
+                            API Wuzzpay. Urusan pemisahan format data payload ke berbagai PG diurus sepenuhnya oleh
+                            sistem kami.</p>
+                    </div>
+                    <div class="p-5 rounded-xl border border-slate-800 bg-slate-950/40">
+                        <h4 class="text-base font-bold text-white mb-2 flex items-center gap-2"><span>2.</span> Rute
+                            Dinamis Otomatis</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Sistem mengevaluasi kondisi jaringan secara
+                            real-time. Jika salah satu jalur PG mendadak melambat, rute dipindahkan secara otomatis
+                            tanpa disadari konsumen.</p>
+                    </div>
+                    <div class="p-5 rounded-xl border border-slate-800 bg-slate-950/40">
+                        <h4 class="text-base font-bold text-white mb-2 flex items-center gap-2"><span>3.</span> Keamanan
+                            Hukum Berlapis</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Karena posisi kami murni sebagai TSP,
+                            kredensial dan hak penarikan dana tetap berada di bawah kendali enkripsi akun legalitas
+                            resmi milik Anda sendiri.</p>
                     </div>
                 </div>
             </div>

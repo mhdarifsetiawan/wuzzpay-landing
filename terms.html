@@ -4,41 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Syarat & Ketentuan | Wuzzpay Orchestrator</title>
+    <meta name="robots" content="noindex, follow">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-slate-950 text-slate-300 font-sans antialiased">
+<body class="bg-slate-950 text-slate-300 font-sans antialiased text-sm sm:text-base selection:bg-indigo-500 selection:text-white">
 
-    <div class="max-w-4xl mx-auto px-4 py-12 sm:py-20">
-        <a href="index.html" class="text-sm text-indigo-400 hover:underline mb-8 inline-block">&larr; Kembali ke Beranda</a>
+    <div class="max-w-4xl mx-auto px-4 py-12 sm:py-20 leading-relaxed">
+        <a href="index.html" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition mb-8 inline-flex items-center gap-2">&larr; Kembali ke Beranda</a>
         
-        <h1 class="text-3xl sm:text-4xl font-extrabold text-white mb-2">Syarat & Ketentuan Penggunaan</h1>
-        <p class="text-sm text-slate-500 mb-8">Terakhir diperbarui: 18 Mei 2026</p>
+        <h1 class="text-3xl sm:text-4xl font-black text-white mb-3 tracking-tight">Syarat & Ketentuan Penggunaan</h1>
+        <p class="text-sm text-slate-500 mb-10 border-b border-slate-900 pb-6">Terakhir diperbarui: 18 Mei 2026</p>
 
-        <div class="prose prose-invert max-w-none space-y-6 text-sm leading-relaxed">
+        <div class="space-y-8 text-slate-400 text-justify">
+            
             <section>
-                <h2 class="text-xl font-bold text-white mb-2">1. Ketentuan Umum</h2>
-                <p>Wuzzpay menyediakan layanan teknologi berupa *Smart Payment Router & Orchestrator*. Dengan mengakses dan menggunakan platform kami, Anda ("Merchant") menyatakan telah membaca, memahami, dan menyetujui seluruh ketentuan yang tertulis di dalam dokumen ini.</p>
+                <h2 class="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2 font-mono">
+                    <span class="text-indigo-400">01.</span> KETENTUAN UMUM & DEFENISI
+                </h2>
+                <p class="mb-3">
+                    Halaman ini memuat syarat dan ketentuan penggunaan layanan teknologi **Wuzzpay** yang dikembangkan, dikelola, dan dimiliki sepenuhnya oleh **PT Semantic Digital Nusantara** (selanjutnya disebut "Wuzzpay" atau "Kami"). 
+                </p>
+                <p>
+                    Dengan mendaftar, mengintegrasikan API, atau menggunakan platform Wuzzpay, Anda ("Merchant" atau "Pengguna") secara sadar menyatakan telah membaca, memahami, dan mengikatkan diri secara hukum untuk tunduk pada seluruh ketentuan di dalam dokumen ini. Jika Anda tidak menyetujui salah satu klausul di sini, Anda diwajibkan untuk menghentikan penggunaan layanan platform ini saat itu juga.
+                </p>
             </section>
 
             <section>
-                <h2 class="text-xl font-bold text-white mb-2">2. Ruang Lingkup Layanan (Technical Service Provider)</h2>
-                <p>Wuzzpay bertindak murni sebagai penyedia infrastruktur teknologi perutean transaksi dinamis (*Technical Service Provider*). Wuzzpay **tidak bertindak** sebagai penyelenggara transfer dana, pemroses pembayaran, ataupun penampung likuiditas dana merchant. Seluruh pemrosesan dan penyelesaian (*settlement*) dana dijalankan sepenuhnya oleh mitra *Payment Gateway* berlisensi resmi Bank Indonesia (seperti Doku, Winpay, dll) yang terhubung dengan sistem kami.</p>
+                <h2 class="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2 font-mono">
+                    <span class="text-indigo-400">02.</span> RUANG LINGKUP LAYANAN (TECHNICAL SERVICE PROVIDER)
+                </h2>
+                <p class="mb-3">
+                    Wuzzpay beroperasi murni sebagai **Technical Service Provider (TSP)** atau penyedia infrastruktur penunjang teknologi komunikasi data finansial. Berdasarkan Peraturan Bank Indonesia (PBI) Nomor 23/6/PBI/2021, Wuzzpay bertindak sebagai entitas non-lisensi yang **TIDAK** memproses, menampung, menguasai, ataupun mengalirkan dana transaksi milik Merchant.
+                </p>
+                <p>
+                    Seluruh kewajiban kliring, settlement, penampungan likuiditas, dan perizinan Penyelenggara Jasa Pembayaran (PJP) sepenuhnya melekat pada institusi hulu mitra *Payment Gateway* resmi pilihan Merchant yang terintegrasi (seperti Winpay, Espay, iPaymu, dan jaringan mitra penampung lainnya). Kontrak komersial mengenai potongan biaya MDR (*Merchant Discount Rate*) dan jadwal pencairan dana disepakati secara langsung antara Merchant dan pihak institusi gerbang pembayaran terkait.
+                </p>
             </section>
 
             <section>
-                <h2 class="text-xl font-bold text-white mb-2">3. Kewajiban & Kepatuhan Merchant</h2>
-                <p>Merchant berkewajiban untuk memastikan bahwa bisnis yang dijalankan tidak melanggar hukum yang berlaku di Republik Indonesia. Merchant dilarang keras menggunakan infrastruktur Wuzzpay untuk memproses transaksi yang berkaitan dengan judi online, narkotika, pencucian uang, ataupun barang dan layanan ilegal lainnya.</p>
+                <h2 class="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2 font-mono">
+                    <span class="text-indigo-400">03.</span> KEWAJIBAN, LEGALITAS, DAN KEPATUHAN MERCHANT
+                </h2>
+                <p class="mb-3">
+                    Merchant wajib memastikan bahwa seluruh aktivitas operasional bisnis, model usaha, dan produk yang dijual di dalam platform digitalnya mematuhi hukum positif yang berlaku di Republik Indonesia. 
+                </p>
+                <p>
+                    Merchant dilarang keras memanfaatkan Unified API atau dasbor Wuzzpay untuk memfasilitasi transaksi yang berkaitan dengan aktivitas **Perjudian Online (Gambling), Pendanaan Terorisme, Narkotika, Pornografi, Penipuan digital, Pencucian Uang (Money Laundering)**, serta barang/jasa lain yang melanggar hukum. Merchant wajib membebaskan PT Semantic Digital Nusantara dari segala tuntutan hukum pidana maupun perdata apabila terjadi pelanggaran pada sisi operasional bisnis Merchant.
+                </p>
             </section>
 
             <section>
-                <h2 class="text-xl font-bold text-white mb-2">4. Keamanan Integrasi API</h2>
-                <p>Merchant bertanggung jawab penuh atas kerahasiaan *API Keys*, *Client Secret*, serta mekanisme validasi *Signature* (HMAC-SHA256) pada *endpoint callback* mereka. Segala kerugian yang timbul akibat kelalaian Merchant dalam menjaga keamanan kredensial tersebut menjadi tanggung jawab Merchant sepenuhnya.</p>
+                <h2 class="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2 font-mono">
+                    <span class="text-indigo-400">04.</span> KEAMANAN INTEGRASI API & STANDAR SNAP BI
+                </h2>
+                <p class="mb-3">
+                    Integrasi sistem Wuzzpay menggunakan arsitektur enkripsi data ketat. Merchant bertanggung jawab mutlak atas kerahasiaan *API Keys*, *Client ID*, *Client Secret*, serta wajib menerapkan validasi penandatanganan digital berpasangan (**HMAC-SHA256 Signature**) pada infrastruktur server mereka sendiri sesuai dengan cetak biru Standar Nasional Open API Pembayaran (SNAP) Bank Indonesia.
+                </p>
+                <p>
+                    Segala bentuk kebocoran data, penyalahgunaan akses dasbor akibat kelalaian kata sandi, transaksi ganda akibat hilangnya *Idempotency Key* pada server internal Merchant, atau peretasan pada endpoint hilir sepenuhnya menjadi tanggung jawab moril dan finansial Merchant secara mandiri.
+                </p>
             </section>
 
             <section>
-                <h2 class="text-xl font-bold text-white mb-2">5. Batasan Tanggung Jawab</h2>
-                <p>Wuzzpay berusaha menjaga kestabilan sistem dengan menerapkan *Smart Routing* dan *Failover System*. Namun, Wuzzpay tidak bertanggung jawab atas kegagalan transaksi yang disebabkan oleh gangguan teknis langsung dari jaringan hulu (*upstream*) milik mitra Payment Gateway atau bank umum terkait.</p>
+                <h2 class="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2 font-mono">
+                    <span class="text-indigo-400">05.</span> BATASAN TANGGUNG JAWAB (LIMITATION OF LIABILITY)
+                </h2>
+                <p class="mb-3">
+                    Wuzzpay menyediakan sistem optimasi otomatis (*Smart Routing*) dan pemulihan jalur (*Auto-Failover*) demi menjaga tingkat kesuksesan transaksi Merchant. Namun demikian, PT Semantic Digital Nusantara **tidak dapat dituntut atau dimintai ganti rugi** atas kerugian finansial, kegagalan sistem penagihan, hilangnya potensi profit, atau gangguan layanan yang disebabkan oleh:
+                </p>
+                <ul class="list-disc pl-5 space-y-1.5 mb-3 text-slate-400 font-sans">
+                    <li>Gangguan server, keterlambatan respons API (*timeouts*), atau kegagalan sistem interkoneksi pada sisi internal mitra *Payment Gateway* hulu.</li>
+                    <li>Pemeliharaan sistem mendadak (*unannounced maintenance*) dari bank umum penampung atau jaringan switching nasional.</li>
+                    <li>Pembekuan dana, penahanan sepihak, atau penutupan akun Merchant oleh institusi PJP/Bank akibat adanya indikasi transaksi mencurigakan (*fraud*).</li>
+                    <li>Keadaan kahar (*Force Majeure*), termasuk namun tidak terbatas pada bencana alam, sabotase massal, huru-hara, pemutusan jaringan internet skala nasional, atau kebijakan regulasi baru dari Bank Indonesia / OJK.</li>
+                </ul>
             </section>
+
+            <section>
+                <h2 class="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2 font-mono">
+                    <span class="text-indigo-400">06.</span> HAK PEMUTUSAN LAYANAN SEPIHAK
+                </h2>
+                <p>
+                    Wuzzpay (PT Semantic Digital Nusantara) memiliki hak absolut untuk menangguhkan pembagian rute transaksi (*suspension*), menonaktifkan API Key, hingga menutup akun dasbor Merchant secara sepihak tanpa pemberitahuan tertulis terlebih dahulu, apabila ditemukan indikasi kuat atau laporan resmi bahwa infrastruktur sistem Wuzzpay dipergunakan oleh Merchant untuk memproses transaksi ilegal atau melanggar kesepakatan komersial dalam dokumen ini.
+                </p>
+            </section>
+
+            <section class="border-t border-slate-900 pt-6">
+                <h2 class="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2 font-mono">
+                    <span class="text-indigo-400">07.</span> HUKUM YANG BERLAKU & PENYELESAIAN SENGKETA
+                </h2>
+                <p>
+                    Seluruh isi dokumen Syarat dan Ketentuan ini diatur dan ditafsirkan berdasarkan hukum yang berlaku di Negara Kesatuan Republik Indonesia. Apabila timbul perselisihan atau perbedaan penafsiran antara Wuzzpay dan Merchant, kedua belah pihak sepakat untuk menyelesaikannya secara musyawarah mufakat terlebih dahulu. Jika perselisihan tidak menemui titik temu dalam waktu 30 (tiga puluh) hari kalender, maka penyelesaian sengketa akan dilimpahkan secara eksklusif kepada Pengadilan Negeri Sidoarjo, Jawa Timur, Indonesia.
+                </p>
+            </section>
+
+        </div>
+        
+        <div class="mt-16 pt-6 border-t border-slate-900 text-center text-xs text-slate-600 font-mono">
+            &copy; 2026 PT Semantic Digital Nusantara. All rights reserved.
         </div>
     </div>
 
