@@ -26,19 +26,19 @@
                     Wuzzpay beroperasi murni sebagai **Technical Service Provider (TSP)** atau penyedia teknologi modul perutean data otomatis (*Smart Routing Engine*). Berdasarkan koridor regulasi Bank Indonesia, Wuzzpay **TIDAK** memiliki kapabilitas, hak akses, ataupun wewenang hukum untuk menampung, memotong, menguasai, atau menahan likuiditas dana milik Merchant maupun Konsumen Akhir.
                 </p>
                 <p>
-                    Oleh karena itu, seluruh proses persetujuan finansial, alokasi saldo, dan eksekusi riil pemindahan fisik uang dalam mekanisme pengembalian dana *(Refund)* sepenuhnya berada di luar kendali sistem Wuzzpay. Tanggung jawab tersebut mutlak melekat pada gerbang Penyedia Jasa Pembayaran (PJP/Payment Gateway) berizin hulu serta bank penampung yang disepakati oleh Merchant.
+                    Seluruh eksekusi finansial riil pemindahan fisik uang dalam mekanisme pengembalian dana *(Refund)* wajib mengikuti syarat, ketentuan, serta regulasi teknis dari institusi gerbang Penyedia Jasa Pembayaran (PJP) atau *Payment Gateway* terkait. Tanggung jawab akhir atas pencairan, ketersediaan, dan transfer dana *Refund* sepenuhnya berada di pihak *Payment Gateway* mitra selaku pemegang sah dana Merchant.
                 </p>
             </section>
 
             <section>
                 <h2 class="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2 font-mono">
-                    <span class="text-indigo-400">02.</span> MEKANISME HUBUNGAN KONSUMEN & MERCHANT
+                    <span class="text-indigo-400">02.</span> PERAN GARDA TERDEPAN & MANAJEMEN KOMPLAIN (Satu Pintu)
                 </h2>
                 <p class="mb-3">
-                    Wuzzpay tidak melayani, memproses, atau menampung segala bentuk pengaduan klaim pengembalian dana yang diajukan oleh Konsumen Akhir (pembeli/pelanggan dari Merchant). 
+                    Meskipun tanggung jawab finansial akhir berada di pihak *Payment Gateway* hulu, Wuzzpay berkomitmen penuh untuk **not-loose-hand** (tidak lepas tangan) dan bertindak sebagai **mitra garda terdepan** dalam mendampingi operasional Merchant. Kami memfasilitasi, mengawal, dan membantu setiap pengajuan *Refund* yang diajukan oleh Merchant kepada jaringan institusi pembayaran.
                 </p>
                 <p>
-                    Setiap permohonan pembalikan transaksi wajib diselesaikan secara mandiri melalui saluran komunikasi internal antara Konsumen Akhir dan Merchant tempat transaksi awal terjadi. Merchant memiliki kedaulatan penuh untuk melakukan verifikasi data, memeriksa kelayakan retur, serta memutuskan status persetujuan atau penolakan tindakan *Refund* sesuai dengan standardisasi operasional prosedur (SOP) bisnis Merchant.
+                    Guna memastikan efisiensi penanganan, **seluruh jalur komplain, eskalasi kendala transaksi, maupun birokrasi permohonan *Refund* dari Merchant akan diintegrasikan satu pintu melalui Wuzzpay**. Tim Wuzzpay akan menjadi pihak utama yang melakukan pengawalan ketat (*follow-up*) dan menghubungkan secara intensif kepentingan Merchant dengan pihak gerbang pembayaran terkait (*Payment Gateway* / PJP mitra yang terintegrasi) hingga menemui titik kejelasan operasional.
                 </p>
             </section>
 
@@ -47,7 +47,7 @@
                     <span class="text-indigo-400">03.</span> ESTIMASI WAKTU OPERASIONAL REVERSAL FINANSIAL
                 </h2>
                 <p class="mb-3">
-                    Apabila instruksi *Refund* telah disetujui oleh Merchant dan berhasil dipicu (*triggered*) menuju API sistem PJP hulu, maka estimasi waktu sampainya dana ke rekening asal Konsumen Akhir sepenuhnya tunduk pada regulasi institusi kliring perbankan nasional:
+                    Kecepatan sampainya dana ke rekening asal Konsumen Akhir pasca-instruksi disetujui oleh Merchant dan diteruskan oleh Wuzzpay ke sistem hulu sepenuhnya mengikuti ketentuan kliring regulasi perbankan nasional:
                 </p>
                 <ul class="list-disc pl-5 space-y-2 mb-3 text-slate-400 font-sans">
                     <li><strong>Kanal QRIS / E-Wallet:</strong> Diproses melalui skema pembalikan saldo otomatis (*reversal*) dengan durasi berkisar antara 1 s.d 3 hari kerja, tergantung pada kebijakan teknis *Acquirer* dan penerbit instrumen pembayaran terkait.</li>
@@ -70,10 +70,10 @@
 
             <section class="border-t border-slate-900 pt-6">
                 <h2 class="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2 font-mono">
-                    <span class="text-indigo-400">05.</span> EKSKLUSIVITAS BANTUAN TEKNIS API
+                    <span class="text-indigo-400">05.</span> INTEGRASI LAYANAN DAN PUSAT ADUAN B2B
                 </h2>
                 <p>
-                    Wuzzpay menyediakan fungsi jembatan berupa parameter *Refund API* terpadu yang memungkinkankan sistem server Merchant melemparkan data perintah pembalikan secara otomatis ke endpoint PJP hulu (apabila fitur tersebut disupport oleh infrastruktur PJP terkait). Jika tim rekayasa teknologi Merchant membutuhkan asistensi integrasi sintaksis, penanganan skema callback webhook, atau pengujian *payload request*, kordinasi teknis B2B dapat diarahkan melalui email komunikasi resmi kami di: **mhdarifsetiawan@semanticdigital.id**.
+                    Wuzzpay menyediakan fungsi jembatan berupa parameter *Refund API* terpadu untuk kebutuhan otomasi trigger data ke sistem hilir. Jika Merchant menemui kejanggalan status data, membutuhkan bantuan mediasi komunikasi penanganan dengan pihak *Payment Gateway* mitra, atau ingin melakukan eskalasi komplain transaksi massal, Anda dapat langsung mengontak pusat aduan satu pintu kami melalui alamat email resmi: **support@semanticdigital.id**.
                 </p>
             </section>
 
