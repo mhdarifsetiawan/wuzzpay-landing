@@ -20,11 +20,32 @@
       "@graph": [
         {
           "@type": "Organization",
-          "@id": "https://semanticdigital.id/#organization",
+          "@id": "https://wuzzpay.com/#organization",
           "name": "PT Semantic Digital Nusantara",
           "url": "https://semanticdigital.id/",
-          "logo": "https://wuzzpay.com/favicon.png",
-          "sameAs": []
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://wuzzpay.com/logo.png",
+            "caption": "PT Semantic Digital Nusantara Logo"
+          },
+          "sameAs": ["https://semanticdigital.id/"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://wuzzpay.com/#website",
+          "url": "https://wuzzpay.com/",
+          "name": "Wuzzpay",
+          "description": "Infrastruktur Multi-Gateway Penyelamat Transaksi Digital",
+          "publisher": {
+            "@id": "https://wuzzpay.com/#organization"
+          },
+          "hasPart": [
+            { "@type": "WebSite", "name": "Solusi Bisnis", "url": "https://wuzzpay.com/#mekanisme-routing" },
+            { "@type": "WebSite", "name": "Infrastruktur", "url": "https://wuzzpay.com/#infrastruktur" },
+            { "@type": "WebSite", "name": "Developer API", "url": "https://wuzzpay.com/#api" },
+            { "@type": "WebSite", "name": "Biaya Layanan", "url": "https://wuzzpay.com/#pricing" },
+            { "@type": "WebSite", "name": "FAQ", "url": "https://wuzzpay.com/#faq" }
+          ]
         },
         {
           "@type": "SoftwareApplication",
@@ -33,18 +54,9 @@
           "url": "https://wuzzpay.com/",
           "applicationCategory": "BusinessApplication",
           "operatingSystem": "All",
-          "description": "Infrastruktur Penyelamat Transaksi dengan arsitektur Smart Routing & Unified Payload milik PT Semantic Digital Nusantara.",
+          "description": "Infrastruktur Penyelamat Transaksi dengan arsitektur Smart Routing & Unified Payload.",
           "publisher": {
-            "@id": "https://semanticdigital.id/#organization"
-          }
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://wuzzpay.com/#website",
-          "url": "https://wuzzpay.com/",
-          "name": "Wuzzpay by Semantic Digital Nusantara",
-          "publisher": {
-            "@id": "https://semanticdigital.id/#organization"
+            "@id": "https://wuzzpay.com/#organization"
           }
         }
       ]
@@ -120,7 +132,7 @@
             <!-- KODE BARU (Aman & Responsif) -->
             <div class="flex items-center gap-3">
                 <!-- Komponen Logo Gambar -->
-                <img src="logo.png" alt="Wuzzpay Logo" class="h-8 w-auto object-contain block shrink-0" onerror="this.style.display='none'">
+                <img src="logo.png" alt="Wuzzpay Multi-Gateway Engine - PT Semantic Digital Nusantara" class="h-8 w-auto object-contain block shrink-0" onerror="this.style.display='none'">
                 <!-- Komponen Teks Brand (Tetap dipertahankan untuk fleksibilitas keterbacaan) -->
                 <span class="text-2xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-400 to-blue-500 font-sans">WUZZPAY</span>
             </div>
@@ -210,9 +222,10 @@
                             <b>Wuzzpay</b> adalah Multi-Gateway Engine netral dengan arsitektur <i>Smart Routing</i> dan <i>Unified Payload</i>. Cukup daftar 1 kali, otomatisasi sistem kami akan mengurus aktivasi akun Anda ke berbagai Payment Gateway hulu. Menjamin transaksi merchant Anda selalu sukses secara real-time dari risiko timeout pihak luar.
                         </p>
                         <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                            <!-- Dioptimasi agar selaras dengan narasi Promo Launching -->
                             <a href="#pricing"
                                 class="w-full sm:w-auto px-8 py-4 text-lg font-bold text-slate-950 bg-white rounded-lg hover:bg-slate-100 transition shadow-xl text-center">
-                                Coba Lifetime Deal (Rp99rb)
+                                Amankan Launching Deal (Rp99rb)
                             </a>
                             <a href="#api"
                                 class="w-full sm:w-auto px-8 py-4 text-lg font-semibold text-slate-300 border border-slate-800 rounded-lg hover:bg-slate-900 transition text-center">
@@ -284,7 +297,8 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                 <span
                     class="text-sm font-bold text-indigo-400 uppercase tracking-widest bg-indigo-500/10 px-4 py-1.5 rounded-full border border-indigo-500/20">Arsitektur Aliran Data</span>
-                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-4 mb-4">Bagaimana Wuzzpay Mengorkestrasi Transaksi Anda?</h2>
+                <!-- <h2 class="text-3xl sm:text-4xl font-bold text-white mt-4 mb-4">Bagaimana Wuzzpay Mengorkestrasi Transaksi Anda?</h2> -->
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-4 mb-4">Solusi Bisnis & Orkestrasi Multi-Gateway Wuzzpay</h2>
                 <p class="text-slate-400 text-base max-w-2xl mx-auto mb-16 leading-relaxed">
                     Wuzzpay beroperasi murni sebagai <strong class="text-slate-200">Lapisan Teknologi Finansial (Non-Custody Technical Layer)</strong>. Kami tidak menampung dana; fokus kami 100% pada kestabilan jaringan, kegagalan sistem otomatis (Auto-Failover), dan redundansi rute terbaik secara real-time.
                 </p>
@@ -294,7 +308,7 @@
                         <div class="absolute -top-3 left-4 px-2.5 py-1 bg-slate-900 text-slate-400 text-xs font-bold uppercase rounded border border-slate-800">Sisi Pengguna</div>
                         <div class="text-center py-4">
                             <span class="text-4xl block mb-2">🛒</span>
-                            <h4 class="text-base font-bold text-white tracking-wide uppercase">Aplikasi / SaaS / Merchant</h4>
+                            <h3 class="text-base font-bold text-white tracking-wide uppercase">Aplikasi / SaaS / Merchant</h3>
                             <p class="text-sm text-slate-400 mt-2 leading-relaxed font-sans">Konsumen melakukan checkout pembayaran di platform digital Anda.</p>
                         </div>
                         <div class="mt-4 pt-3 border-t border-slate-800 text-center">
@@ -313,7 +327,7 @@
                         <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3 py-1 bg-indigo-600 text-xs font-black uppercase tracking-widest text-white rounded-full">WUZZPAY ENGINE (TSP)</span>
                         <div class="text-center py-2">
                             <span class="text-4xl block mb-3">🛡️</span>
-                            <h4 class="text-base font-bold text-indigo-400 tracking-wide uppercase">Core Multi-Gateway Router</h4>
+                            <h3 class="text-base font-bold text-indigo-400 tracking-wide uppercase">Core Multi-Gateway Router</h3>
                             <p class="text-sm text-slate-300 mt-2 leading-relaxed font-sans">Sistem menganalisis kestabilan hulu, latensi jaringan, dan status down secara instan.</p>
                         </div>
                         <div class="mt-4 space-y-2 text-xs bg-slate-950 p-4 rounded-lg border border-slate-800">
@@ -358,7 +372,7 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-16 text-left font-sans">
                     <div class="p-5 rounded-xl border border-slate-800 bg-slate-950/40">
-                        <h4 class="text-base font-bold text-white mb-2 flex items-center gap-2"><span>1.</span> Unified Payload Architecture</h4>
+                        <h3 class="text-base font-bold text-white mb-2 flex items-center gap-2"><span>1.</span> Unified Payload Architecture</h3>
                         <p class="text-sm text-slate-400 leading-relaxed">Satu-satunya API yang perlu diintegrasikan sistem Anda. Urusan pemetaan dan standardisasi format payload ke berbagai vendor Payment Gateway diurus oleh infrastruktur Wuzzpay.</p>
                     </div>
                     <div class="p-5 rounded-xl border border-slate-800 bg-slate-950/40">
@@ -427,7 +441,8 @@
                     <span class="inline-flex items-center gap-1 py-1 px-3 rounded-full text-xs font-bold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-4">
                         🛡️ Proteksi Stabilitas Tanpa Batas
                     </span>
-                    <h4 class="text-3xl font-bold text-white mb-4">Wuzzpay Smart Failover: Jaga Transaksi Selalu Sukses Secara Real-Time</h4>
+                    <h2 class="text-3xl font-bold text-white mb-4">Infrastruktur Jaringan & Smart Failover Wuzzpay</h2>
+                    <h4 class="font-bold text-white mb-4">Wuzzpay Smart Failover: Jaga Transaksi Selalu Sukses Secara Real-Time</h4>
                     <p class="text-slate-400 text-base leading-relaxed mb-4">
                         Jangan biarkan malafungsi sistem eksternal atau pemeliharaan jaringan mendadak dari salah satu gerbang pembayaran menghancurkan konversi checkout konsumen Anda.
                     </p>
@@ -459,7 +474,8 @@
         <section id="api" class="py-24 lg:py-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-slate-900">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Arsitektur API Cerdas Berbasis Unified Payload</h2>
+                    <!-- <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Arsitektur API Cerdas Berbasis Unified Payload</h2> -->
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Developer API & Unified Payload Architecture</h2>
                     <p class="text-slate-400 text-base mb-6 leading-relaxed">
                         Kami membangun arsitektur sistem dengan standar otentikasi ketat memanfaatkan enkripsi transport data mutakhir dan skema tanda tangan digital berpasangan untuk mengamankan data transaksi bisnis Anda.
                     </p>
@@ -505,7 +521,8 @@
                 <span class="text-sm font-bold text-indigo-400 uppercase tracking-widest bg-indigo-500/10 px-4 py-1.5 rounded-full border border-indigo-500/20">
                     Skema Komersial Baru
                 </span>
-                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-4 mb-4">Satu Penawaran Transparan Sekali Seumur Hidup</h2>
+                <!-- <h2 class="text-3xl sm:text-4xl font-bold text-white mt-4 mb-4">Satu Penawaran Transparan Sekali Seumur Hidup</h2> -->
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-4 mb-4">Biaya Layanan & Penawaran Transparan</h2>
                 <p class="text-slate-400 text-base max-w-xl mx-auto mb-16 leading-relaxed">
                     Kami menghapus seluruh biaya langganan bulanan tetap yang membebani margin laba perusahaan. Bertumbuh bersama Wuzzpay dengan perlindungan transaksi tanpa batas.
                 </p>
@@ -543,21 +560,34 @@
                                     </li>
                                 </ul>
                             </div>
-                            
+
                             <div class="lg:col-span-5 text-center lg:text-right border-t lg:border-t-0 lg:border-l border-slate-900 pt-6 lg:pt-0 lg:pl-8 flex flex-col justify-between h-full">
+                                <div class="mb-6 lg:mb-0 font-mono">
+                                    <span class="text-slate-500 line-through text-sm block">Rp 2.990.000</span>
+                                    <!-- Menambahkan atribut data-price untuk AI Crawler -->
+                                    <span class="text-4xl sm:text-5xl font-black text-white block" data-price="99000">Rp 99.000</span>
+                                    <!-- Menyempurnakan teks agar dibaca AI sebagai kalimat deklaratif yang valid -->
+                                    <span class="text-xs text-slate-400 font-sans mt-2 block font-bold text-amber-400 bg-amber-500/10 py-1.5 px-2.5 rounded-md inline-block text-left sm:text-center">
+                                        ⚠️ HARGA KHUSUS AWAL LAUNCHING (Slot Terbatas. Harga dapat berubah sewaktu-waktu setelah periode rilis perdana selesai).
+                                    </span>
+                                </div>
+                            
+                            <!-- <div class="lg:col-span-5 text-center lg:text-right border-t lg:border-t-0 lg:border-l border-slate-900 pt-6 lg:pt-0 lg:pl-8 flex flex-col justify-between h-full">
                                 <div class="mb-6 lg:mb-0 font-mono">
                                     <span class="text-slate-500 line-through text-sm block">Rp 2.990.000</span>
                                     <span class="text-4xl sm:text-5xl font-black text-white block">Rp 99.000</span>
                                     <span class="text-xs text-slate-400 font-sans mt-2 block font-bold text-indigo-400 bg-indigo-500/10 py-1 px-2.5 rounded-md inline-block">BAYAR SEKALI, PAKAI SELAMANYA</span>
-                                </div>
+                                </div> -->
                                 <div class="mt-6">
-                                    <a href="https://api.whatsapp.com/send?phone=6289504121521&text=Halo%20Tim%20Wuzzpay,%20saya%20ingin%20mengamankan%20slot%20*Early%20Adopter%20Lifetime%20Deal%20(Rp99.000)*%20untuk%20bisnis%20saya."
+                                    <!-- Dioptimasi dengan menyisipkan kata "Launching" pada template pesan WA -->
+                                    <a href="https://api.whatsapp.com/send?phone=6289504121521&text=Halo%20Tim%20Wuzzpay,%20saya%20ingin%20mengamankan%20slot%20*Early%20Launching%20Deal%20(Rp99.000)*%20untuk%20bisnis%20saya."
                                         target="_blank"
                                         class="block w-full py-4 bg-indigo-600 hover:bg-indigo-500 text-white text-center font-bold text-base rounded-xl transition shadow-xl shadow-indigo-600/30">
                                         Amankan Akun Anda Sekarang
                                     </a>
                                     <span class="text-[11px] text-slate-500 mt-2 block text-center font-mono">NON-CUSTODY COMPLIANT SECURE LAYER</span>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -583,11 +613,13 @@
 
             <div class="space-y-4 text-left">
                 <div class="border border-slate-900 rounded-xl bg-slate-900/10 overflow-hidden">
-                    <button @click="activeFaq = activeFaq === 1 ? null : 1"
-                        class="w-full p-6 text-left font-bold text-white text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
-                        <span>Apakah Wuzzpay memiliki izin dari Bank Indonesia (BI)?</span>
-                        <span class="text-xl text-indigo-400" x-text="activeFaq === 1 ? '−' : '+'"></span>
-                    </button>
+                    <h3>
+                        <button @click="activeFaq = activeFaq === 1 ? null : 1"
+                            class="w-full p-6 text-left font-bold text-white text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
+                            <span>Apakah Wuzzpay memiliki izin dari Bank Indonesia (BI)?</span>
+                            <span class="text-xl text-indigo-400" x-text="activeFaq === 1 ? '−' : '+'"></span>
+                        </button>
+                    </h3>
                     <div x-show="activeFaq === 1" x-collapse
                         class="px-6 pb-6 text-slate-400 text-base leading-relaxed border-t border-slate-900/50 pt-4"
                         style="display: none;">
@@ -596,11 +628,13 @@
                 </div>
 
                 <div class="border border-slate-900 rounded-xl bg-slate-900/10 overflow-hidden">
-                    <button @click="activeFaq = activeFaq === 2 ? null : 2"
-                        class="w-full p-6 text-left font-bold text-white text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
-                        <span>Bagaimana mekanisme penyelesaian (settlement) dana transaksi?</span>
-                        <span class="text-xl text-indigo-400" x-text="activeFaq === 2 ? '−' : '+'"></span>
-                    </button>
+                    <h3>
+                        <button @click="activeFaq = activeFaq === 2 ? null : 2"
+                            class="w-full p-6 text-left font-bold text-white text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
+                            <span>Bagaimana mekanisme penyelesaian (settlement) dana transaksi?</span>
+                            <span class="text-xl text-indigo-400" x-text="activeFaq === 2 ? '−' : '+'"></span>
+                        </button>
+                    </h3>
                     <div x-show="activeFaq === 2" x-collapse
                         class="px-6 pb-6 text-slate-400 text-base leading-relaxed border-t border-slate-900/50 pt-4"
                         style="display: none;">
@@ -609,11 +643,13 @@
                 </div>
 
                 <div class="border border-slate-900 rounded-xl bg-slate-900/10 overflow-hidden">
-                    <button @click="activeFaq = activeFaq === 3 ? null : 3"
-                        class="w-full p-6 text-left font-bold text-white text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
-                        <span>Bagaimana Wuzzpay menjaga keamanan data transaksi finansial?</span>
-                        <span class="text-xl text-indigo-400" x-text="activeFaq === 3 ? '−' : '+'"></span>
-                    </button>
+                    <h3>
+                        <button @click="activeFaq = activeFaq === 3 ? null : 3"
+                            class="w-full p-6 text-left font-bold text-white text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
+                            <span>Bagaimana Wuzzpay menjaga keamanan data transaksi finansial?</span>
+                            <span class="text-xl text-indigo-400" x-text="activeFaq === 3 ? '−' : '+'"></span>
+                        </button>
+                    </h3>
                     <div x-show="activeFaq === 3" x-collapse
                         class="px-6 pb-6 text-slate-400 text-base leading-relaxed border-t border-slate-900/50 pt-4"
                         style="display: none;">
@@ -622,11 +658,13 @@
                 </div>
 
                 <div class="border border-slate-900 rounded-xl bg-slate-900/10 overflow-hidden">
-                    <button @click="activeFaq = activeFaq === 4 ? null : 4"
-                        class="w-full p-6 text-left font-bold text-white text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
-                        <span>Apakah kami bisa membawa kredensial / akun Payment Gateway kami sendiri?</span>
-                        <span class="text-xl text-indigo-400" x-text="activeFaq === 4 ? '−' : '+'"></span>
-                    </button>
+                    <h3>
+                        <button @click="activeFaq = activeFaq === 4 ? null : 4"
+                            class="w-full p-6 text-left font-bold text-white text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
+                            <span>Apakah kami bisa membawa kredensial / akun Payment Gateway kami sendiri?</span>
+                            <span class="text-xl text-indigo-400" x-text="activeFaq === 4 ? '−' : '+'"></span>
+                        </button>
+                    </h3>
                     <div x-show="activeFaq === 4" x-collapse
                         class="px-6 pb-6 text-slate-400 text-base leading-relaxed border-t border-slate-900/50 pt-4"
                         style="display: none;">
@@ -635,11 +673,13 @@
                 </div>
 
                 <div class="border border-slate-900 rounded-xl bg-slate-950 overflow-hidden border-indigo-500/20 shadow-lg shadow-indigo-500/5">
-                    <button @click="activeFaq = activeFaq === 5 ? null : 5"
-                        class="w-full p-6 text-left font-bold text-indigo-400 text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
-                        <span>Bagaimana jika terjadi sengketa (dispute) atau kendala pada transaksi konsumen kami?</span>
-                        <span class="text-xl text-indigo-400" x-text="activeFaq === 5 ? '−' : '+'"></span>
-                    </button>
+                    <h3>
+                        <button @click="activeFaq = activeFaq === 5 ? null : 5"
+                            class="w-full p-6 text-left font-bold text-indigo-400 text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
+                            <span>Bagaimana jika terjadi sengketa (dispute) atau kendala pada transaksi konsumen kami?</span>
+                            <span class="text-xl text-indigo-400" x-text="activeFaq === 5 ? '−' : '+'"></span>
+                        </button>
+                    </h3>
                     <div x-show="activeFaq === 5" x-collapse
                         class="px-6 pb-6 text-slate-400 text-base leading-relaxed border-t border-slate-900/50 pt-4"
                         style="display: none;">
@@ -648,11 +688,13 @@
                 </div>
 
                 <div class="border border-slate-900 rounded-xl bg-slate-900/10 overflow-hidden">
-                    <button @click="activeFaq = activeFaq === 6 ? null : 6"
-                        class="w-full p-6 text-left font-bold text-white text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
-                        <span>Bagaimana alur pendaftaran akun dan aktivasi API Key untuk setiap Payment Gateway?</span>
-                        <span class="text-xl text-indigo-400" x-text="activeFaq === 6 ? '−' : '+'"></span>
-                    </button>
+                    <h3>
+                        <button @click="activeFaq = activeFaq === 6 ? null : 6"
+                            class="w-full p-6 text-left font-bold text-white text-base sm:text-lg flex justify-between items-center focus:outline-none cursor-pointer">
+                            <span>Bagaimana alur pendaftaran akun dan aktivasi API Key untuk setiap Payment Gateway?</span>
+                            <span class="text-xl text-indigo-400" x-text="activeFaq === 6 ? '−' : '+'"></span>
+                        </button>
+                    </h3>
                     <div x-show="activeFaq === 6" x-collapse
                         class="px-6 pb-6 text-slate-400 text-base leading-relaxed border-t border-slate-900/50 pt-4"
                         style="display: none;">
