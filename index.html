@@ -16,7 +16,7 @@
 
 <body x-data="{ openModal: false, modalTitle: '', modalDesc: '' }" class="bg-slate-950 text-slate-200 font-sans antialiased selection:bg-indigo-500 selection:text-white text-base">
 
-       <!-- HEADER -->
+    <!-- HEADER -->
     <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-900" x-data="{ mobileMenuOpen: false }">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center gap-3">
@@ -80,7 +80,6 @@
         </div>
     </header>
 
-
     <main>
         <!-- 1. HERO SECTION (Benefit-Oriented Hook) -->
         <section class="relative pb-24 pt-16 lg:pt-32 lg:pb-32 overflow-hidden border-b border-slate-900">
@@ -121,11 +120,11 @@
                     <div class="p-8 border border-slate-800 hover:border-indigo-500/50 rounded-2xl bg-slate-900/40 transition-all flex flex-col justify-between group">
                         <div>
                             <div class="text-4xl mb-4 group-hover:scale-110 transition-transform origin-left">🛒</div>
-                            <h3 class="text-2xl font-bold text-white mb-3">Untuk Pemilik Bisnis & SaaS Pemula</h3>
-                            <p class="text-slate-400 text-sm leading-relaxed mb-6">Butuh sistem pembayaran instan tanpa pusing urusan IT? Cukup satu daftar, terima pembayaran via QRIS, Virtual Account, & E-Wallet dengan pengamanan rute backup anti-gagal otomatis.</p>
+                            <h3 class="text-2xl font-bold text-white mb-3">Untuk Pemilik Bisnis & SaaS</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6">Fokus pada pertumbuhan omzet, bukan pemeliharaan server pembayaran. Lewat satu integrasi API yang rapi, sistem Anda siap menerima QRIS, VA Bank, & E-Wallet dengan pengamanan anti-gagal otomatis di belakang layar.</p>
                         </div>
                         <a href="#jalur-bisnis" class="inline-flex items-center gap-2 text-indigo-400 font-bold hover:text-indigo-300">
-                            Lihat Fitur Bisnis &rarr;
+                            Lihat Fitur Payment Gateway &rarr;
                         </a>
                     </div>
 
@@ -170,13 +169,13 @@
             </div>
         </section>
 
-        <!-- 4. JALUR BISNIS (Menjual Kemudahan) -->
+        <!-- 4. JALUR BISNIS (Menjual Kemudahan API & Operasional) -->
         <section id="jalur-bisnis" class="py-24 bg-slate-950 border-b border-slate-900">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div>
                     <span class="text-xs font-bold text-indigo-400 uppercase tracking-widest bg-indigo-500/10 px-4 py-1.5 rounded-full border border-indigo-500/20">Fokus Jalur Bisnis</span>
-                    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-6 mb-6">Terima Pembayaran Tanpa Pusing Urusan Birokrasi IT</h2>
-                    <p class="text-slate-400 text-base leading-relaxed mb-8">Wuzzpay dirancang agar Anda bisa fokus memikirkan strategi penjualan, sementara kami mengamankan pintu masuk uang Anda dengan teknologi kelas enterprise.</p>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-6 mb-6">Satu Integrasi API, Terima Semua Pembayaran</h2>
+                    <p class="text-slate-400 text-base leading-relaxed mb-8">Tim developer Anda cukup melakukan satu kali integrasi sederhana. Setelahnya, biarkan mesin cerdas Wuzzpay yang mengamankan setiap transaksi dari kegagalan server vendor hulu.</p>
                     
                     <ul class="space-y-6">
                         <li class="flex items-start gap-4">
@@ -190,14 +189,14 @@
                             <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400 font-bold">2</div>
                             <div>
                                 <h4 class="text-white font-bold mb-1">Single Point of Contact Support</h4>
-                                <p class="text-sm text-slate-400">Dana menggantung? Tidak perlu telepon berbagai bank. Hubungi tiket support Wuzzpay, kami yang investigasi dan bereskan dengan pihak hulu.</p>
+                                <p class="text-sm text-slate-400">Dana menggantung? Tidak perlu repot melacak tiket ke banyak bank. Hubungi support Wuzzpay, kami yang investigasi dan bereskan dengan pihak hulu.</p>
                             </div>
                         </li>
                         <li class="flex items-start gap-4">
                             <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400 font-bold">3</div>
                             <div>
                                 <h4 class="text-white font-bold mb-1">Dana Langsung ke Rekening (No Custody)</h4>
-                                <p class="text-sm text-slate-400">Wuzzpay hanya penyedia teknologi. Seluruh uang transaksi Anda diselesaikan (settlement) langsung oleh vendor berlisensi BI ke rekening Anda.</p>
+                                <p class="text-sm text-slate-400">Wuzzpay beroperasi sebagai mesin jaring pengaman. Seluruh dana diselesaikan (settlement) langsung oleh vendor berlisensi BI ke rekening Anda tanpa kami tahan.</p>
                             </div>
                         </li>
                     </ul>
