@@ -45,22 +45,51 @@
 
 <body x-data="{ openModal: false }" class="bg-gray-50 text-sedang font-sans antialiased selection:bg-biruAksen selection:text-white">
 
-    <!-- HEADER (Sama seperti halaman utama) -->
-    <header class="sticky top-0 z-50 backdrop-blur-xl bg-white/90 border-b border-biruAwan/50 shadow-sm">
+    <!-- HEADER: Profesional & Responsif -->
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-white/90 border-b border-biruAwan/50 shadow-sm" x-data="{ mobileMenuOpen: false }">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <!-- Tautan kembali ke beranda -->
-                <a href="https://wuzzpay.com" class="text-2xl font-extrabold tracking-tight text-biruTua hover:text-biruAksen transition">WUZZPAY</a>
+                <a href="index.html" class="text-2xl font-extrabold tracking-tight text-biruTua hover:text-biruAksen transition">WUZZPAY</a>
             </div>
+
+            <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-gelap">
                 <a href="index.html#jalur-bisnis" class="hover:text-biruAksen transition">Fitur Solusi</a>
                 <a href="index.html#pricing" class="hover:text-biruAksen transition">Biaya Platform</a>
                 <a href="#" class="text-biruTua font-bold border-b-2 border-biruTua pb-1">Biaya Transaksi</a>
                 <div class="w-px h-5 bg-gray-300 mx-2"></div>
-                <a href="#" class="hover:text-biruTua font-bold text-biruAksen transition">Login</a>
+                <a href="https://dashboard.wuzzpay.com/login" class="hover:text-biruTua font-bold text-biruAksen transition">Login</a>
             </nav>
+
             <div class="hidden md:block">
-                <a href="https://api.whatsapp.com/send?phone=6289504121521&text=Halo%20Tim%20Wuzzpay,%20saya%20ingin%20melakukan%20pendaftaran%20dan%20meminta%20info%20integrasi%20layanan." target="_blank" class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold text-white bg-biruAksen rounded-xl hover:bg-biruTua transition shadow-[0_8px_20px_rgba(42,142,202,0.3)] hover:-translate-y-0.5">
+                <a href="https://dashboard.wuzzpay.com/register" class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold text-white bg-biruAksen rounded-xl hover:bg-biruTua transition shadow-[0_8px_20px_rgba(42,142,202,0.3)] hover:-translate-y-0.5">
+                    Daftar Sekarang
+                </a>
+            </div>
+
+            <!-- Tombol Hamburger Mobile -->
+            <div class="flex md:hidden">
+                <button @click="mobileMenuOpen = !mobileMenuOpen" type="button" class="text-gelap hover:text-biruAksen focus:outline-none p-2">
+                    <svg x-show="!mobileMenuOpen" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg x-show="mobileMenuOpen" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="display: none;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Dropdown Mobile -->
+        <div x-show="mobileMenuOpen" x-transition @click.away="mobileMenuOpen = false" class="md:hidden border-b border-biruAwan bg-white px-4 pt-2 pb-6 space-y-4" style="display: none;">
+            <nav class="flex flex-col gap-4 text-base font-semibold text-gelap">
+                <a href="index.html#jalur-bisnis" @click="mobileMenuOpen = false" class="hover:text-biruAksen py-2 border-b border-gray-50">Fitur Solusi</a>
+                <a href="index.html#pricing" @click="mobileMenuOpen = false" class="hover:text-biruAksen py-2 border-b border-gray-50">Biaya Platform</a>
+                <a href="#" @click="mobileMenuOpen = false" class="text-biruTua py-2 border-b border-gray-50">Biaya Transaksi</a>
+                <a href="https://dashboard.wuzzpay.com/login" @click="mobileMenuOpen = false" class="hover:text-biruAksen py-2 border-b border-gray-50 font-bold">Login Dashboard</a>
+            </nav>
+            <div class="pt-2">
+                <a href="https://dashboard.wuzzpay.com/register" class="w-full inline-flex items-center justify-center px-5 py-3 text-base font-bold text-white bg-biruAksen rounded-xl hover:bg-biruTua transition shadow-soft text-center">
                     Daftar Sekarang
                 </a>
             </div>
