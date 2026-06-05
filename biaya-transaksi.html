@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biaya Transaksi (MDR) | Wuzzpay</title>
+    <meta name="description" content="Skema harga flat dan transparan untuk setiap transaksi yang berhasil di Wuzzpay. Tidak ada biaya tersembunyi.">
+    
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    
+    <!-- Tipografi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Tailwind Config Wuzzpay -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        biruTua: '#2A5C99',
+                        biruAksen: '#2A8ECA',
+                        biruLangit: '#56B5F0',
+                        biruAwan: '#D0E8F8',
+                        gelap: '#1E293B',
+                        sedang: '#475569',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 20px 40px -15px rgba(42, 142, 202, 0.15)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body x-data="{ openModal: false }" class="bg-gray-50 text-sedang font-sans antialiased selection:bg-biruAksen selection:text-white">
+
+    <!-- HEADER (Sama seperti halaman utama) -->
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-white/90 border-b border-biruAwan/50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <!-- Tautan kembali ke beranda -->
+                <a href="https://wuzzpay.com" class="text-2xl font-extrabold tracking-tight text-biruTua hover:text-biruAksen transition">WUZZPAY</a>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-gelap">
+                <a href="index.html#jalur-bisnis" class="hover:text-biruAksen transition">Fitur Solusi</a>
+                <a href="index.html#pricing" class="hover:text-biruAksen transition">Biaya Platform</a>
+                <a href="#" class="text-biruTua font-bold border-b-2 border-biruTua pb-1">Biaya Transaksi</a>
+                <div class="w-px h-5 bg-gray-300 mx-2"></div>
+                <a href="#" class="hover:text-biruTua font-bold text-biruAksen transition">Login</a>
+            </nav>
+            <div class="hidden md:block">
+                <a href="https://api.whatsapp.com/send?phone=6289504121521&text=Halo%20Tim%20Wuzzpay,%20saya%20ingin%20melakukan%20pendaftaran%20dan%20meminta%20info%20integrasi%20layanan." target="_blank" class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold text-white bg-biruAksen rounded-xl hover:bg-biruTua transition shadow-[0_8px_20px_rgba(42,142,202,0.3)] hover:-translate-y-0.5">
+                    Daftar Sekarang
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="relative pt-20 pb-16 bg-white border-b border-gray-200 overflow-hidden">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full bg-gradient-to-b from-biruAwan/30 to-transparent pointer-events-none"></div>
+            <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-gelap mb-6">Biaya Transaksi <span class="text-biruTua">Transparan</span></h1>
+                <p class="text-lg text-sedang mb-8">Tarif flat untuk semua jenis bisnis. Anda hanya membayar ketika ada transaksi yang berhasil. Tidak ada biaya tersembunyi, tidak ada denda bulanan.</p>
+            </div>
+        </section>
+
+        <!-- DAFTAR HARGA BERDASARKAN KATEGORI (Struktur Vendor Hulu) -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+                
+                <!-- Kategori 1: E-Wallet & QRIS -->
+                <div>
+                    <div class="flex items-center gap-3 mb-6 border-b border-gray-200 pb-4">
+                        <div class="w-12 h-12 bg-biruAwan/50 text-biruTua rounded-xl flex items-center justify-center text-2xl">📱</div>
+                        <h2 class="text-2xl font-bold text-gelap">QRIS & E-Wallet</h2>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- QRIS -->
+                        <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+                            <h3 class="font-bold text-gelap mb-1">QRIS (Semua Pembayaran)</h3>
+                            <div class="text-3xl font-black text-biruTua mb-2">0.7% <span class="text-sm font-normal text-sedang">/ trx</span></div>
+                            <p class="text-xs text-gray-400">Pencairan Real-time / H+1</p>
+                        </div>
+                        
+                        <!-- E-Wallet Group (Range 0.5% - 3%) -->
+                        <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+                            <h3 class="font-bold text-gelap mb-1">E-Wallet (OVO, DANA, dll)</h3>
+                            <div class="text-3xl font-black text-biruTua mb-2">0.5% - 3% <span class="text-sm font-normal text-sedang">/ trx</span></div>
+                            <p class="text-xs text-gray-400">OVO, DANA, LinkAja, ShopeePay</p>
+                        </div>
+
+                        <!-- Info tambahan untuk E-Wallet -->
+                        <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm flex items-center justify-center">
+                            <p class="text-sm text-sedang text-center italic">Tarif E-Wallet bervariasi tergantung pada kebijakan masing-masing penyedia layanan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kategori 2: Virtual Account (Transfer Bank) -->
+                <div>
+                    <div class="flex items-center gap-3 mb-6 border-b border-gray-200 pb-4">
+                        <div class="w-12 h-12 bg-biruAwan/50 text-biruTua rounded-xl flex items-center justify-center text-2xl">🏦</div>
+                        <h2 class="text-2xl font-bold text-gelap">Virtual Account (Bank Transfer)</h2>
+                    </div>
+                    <!-- Info Alert -->
+                    <div class="bg-blue-50 border border-blue-100 rounded-xl p-4 mb-6 flex items-start gap-3">
+                        <span class="text-biruTua font-bold">💡</span>
+                        <p class="text-sm text-sedang">Berlaku tarif flat (tetap) untuk nominal transaksi berapapun. Biaya VA dapat dibebankan ke pembeli (ditambahkan ke total tagihan) melalui pengaturan di Dashboard Wuzzpay.</p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Grup Bank Nasional Utama -->
+                        <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm flex justify-between items-center hover:border-biruAwan transition">
+                            <h3 class="font-bold text-gelap">Mandiri, BNI, BRI</h3>
+                            <div class="text-xl font-black text-biruTua">Rp 4.000</div>
+                        </div>
+                        <!-- Grup BCA (Biasa via Agregator) -->
+                        <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm flex justify-between items-center hover:border-biruAwan transition">
+                            <h3 class="font-bold text-gelap">BCA</h3>
+                            <div class="text-xl font-black text-biruTua">Rp 4.000</div>
+                        </div>
+                        <!-- Grup Bank Syariah -->
+                        <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm flex justify-between items-center hover:border-biruAwan transition">
+                            <h3 class="font-bold text-gelap">BSI & Muamalat</h3>
+                            <div class="text-xl font-black text-biruTua">Rp 4.000</div>
+                        </div>
+                        <!-- Grup Bank Swasta Lainnya -->
+                        <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm flex justify-between items-center hover:border-biruAwan transition">
+                            <h3 class="font-bold text-gelap">Permata, CIMB, Danamon</h3>
+                            <div class="text-xl font-black text-biruTua">Rp 4.000</div>
+                        </div>
+                        <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm flex justify-between items-center hover:border-biruAwan transition">
+                            <h3 class="font-bold text-gelap">Bank Neo Commerce (BNC)</h3>
+                            <div class="text-xl font-black text-biruTua">Rp 4.000</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kategori 3: Gerai Retail (Over The Counter) -->
+                <div>
+                    <div class="flex items-center gap-3 mb-6 border-b border-gray-200 pb-4">
+                        <div class="w-12 h-12 bg-biruAwan/50 text-biruTua rounded-xl flex items-center justify-center text-2xl">🏪</div>
+                        <h2 class="text-2xl font-bold text-gelap">Gerai Retail (Bayar Tunai)</h2>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm flex justify-between items-center">
+                            <h3 class="font-bold text-gelap">Indomaret / Ceriamart</h3>
+                            <div class="text-xl font-black text-biruTua">Rp 5.000</div>
+                        </div>
+                        <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm flex justify-between items-center">
+                            <h3 class="font-bold text-gelap">Alfamart Group</h3>
+                            <div class="text-xl font-black text-biruTua">Rp 5.000</div>
+                        </div>
+                        <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm flex justify-between items-center">
+                            <h3 class="font-bold text-gelap">Kantor Pos & Fastpay</h3>
+                            <div class="text-xl font-black text-biruTua">Rp 3.000</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kategori 4: Paylater & Kartu Kredit -->
+                <div>
+                    <div class="flex items-center gap-3 mb-6 border-b border-gray-200 pb-4">
+                        <div class="w-12 h-12 bg-biruAwan/50 text-biruTua rounded-xl flex items-center justify-center text-2xl">💳</div>
+                        <h2 class="text-2xl font-bold text-gelap">Paylater & Credit Card</h2>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+                            <h3 class="font-bold text-gelap mb-1">Kartu Kredit (Visa/Mastercard)</h3>
+                            <div class="text-3xl font-black text-biruTua mb-2">2.9% <span class="text-lg font-bold text-biruTua">+ Rp 2.000</span></div>
+                            <p class="text-xs text-gray-400">Fitur 3D Secure aktif untuk semua transaksi</p>
+                        </div>
+                        <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+                            <h3 class="font-bold text-gelap mb-1">Kredivo & Akulaku</h3>
+                            <div class="text-3xl font-black text-biruTua mb-2">2.0% <span class="text-sm font-normal text-sedang">/ trx</span></div>
+                            <p class="text-xs text-gray-400">Cicilan tanpa kartu kredit (Cardless Credit)</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA Akhir -->
+        <section class="py-20 bg-biruTua">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-extrabold text-white mb-6">Mulai Terima Pembayaran Sekarang</h2>
+                <p class="text-biruAwan mb-10 text-lg">Buat akun, jalankan integrasi dalam hitungan jam, dan biarkan sistem Wuzzpay yang mengelola sisanya.</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://api.whatsapp.com/send?phone=6289504121521&text=Halo%20Tim%20Wuzzpay,%20saya%20ingin%20memulai%20pendaftaran%20layanan%20pembayaran.%20Mohon%20panduannya." target="_blank" class="w-full sm:w-auto px-8 py-4 text-lg font-bold text-biruTua bg-white rounded-2xl hover:bg-gray-100 transition shadow-lg text-center">
+                        Daftar Gratis
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER Wuzzpay (Sama seperti yang Anda pasang sebelumnya) -->
+    <footer class="border-t border-biruAwan bg-white py-16 text-sm text-sedang">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+             <p class="mb-3 font-semibold text-gelap">&copy; 2026 PT Semantic Digital Nusantara. All rights reserved.</p>
+             <p class="max-w-4xl mx-auto opacity-80 text-xs leading-relaxed">Nilai potongan biaya transaksi (MDR) di atas dapat berubah sewaktu-waktu mengikuti regulasi Bank Indonesia dan kebijakan masing-masing principal prinsipal (mitra PG hulu). Tarif yang tertera belum termasuk Pajak Pertambahan Nilai (PPN) sesuai ketentuan peraturan perundang-undangan perpajakan yang berlaku.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
