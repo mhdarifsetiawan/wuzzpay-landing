@@ -13,6 +13,7 @@ Wuzzpay bukan pengganti payment gateway, melainkan lapisan yang menghubungkan me
 - [Cara Menerima Pembayaran QRIS dan Virtual Account untuk UMKM dan Toko Online](https://wuzzpay.com/cara-menerima-pembayaran-qris-va.html): perbedaan metode, cara memilih penyedia, dan langkah memulai.
 - [Payment Gateway vs Payment Aggregator vs TSP: Apa Bedanya?](https://wuzzpay.com/payment-gateway-vs-aggregator-vs-tsp.html): perbedaan peran, alur dana, lisensi, dan pertanyaan untuk penyedia.
 - [Cara Menghitung Biaya Payment Gateway (MDR) untuk UMKM](https://wuzzpay.com/cara-menghitung-biaya-payment-gateway-mdr.html): rumus MDR, komponen biaya, dan contoh hitungan per metode pembayaran.
+- [Cara Mengintegrasikan Pembayaran ke Aplikasi SaaS](https://wuzzpay.com/cara-integrasi-pembayaran-aplikasi-saas.html): alur transaksi, webhook, idempotensi, pengujian, dan rekonsiliasi.
 
 ## Fakta kunci
 

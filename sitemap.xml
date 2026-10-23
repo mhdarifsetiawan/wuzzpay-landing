@@ -55,4 +55,12 @@
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
    </url>
+
+   <!-- Panduan: Integrasi Pembayaran SaaS -->
+   <url>
+      <loc>https://wuzzpay.com/cara-integrasi-pembayaran-aplikasi-saas.html</loc>
+      <lastmod>2026-10-24</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
 </urlset>
