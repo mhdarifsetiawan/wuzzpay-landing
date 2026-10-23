@@ -113,15 +113,21 @@
                 "url": "https://wuzzpay.com/",
                 "name": "Wuzzpay",
                 "inLanguage": "id-ID",
-                "publisher": { "@id": "https://wuzzpay.com/#organization" }
+                "publisher": {
+                    "@id": "https://wuzzpay.com/#organization"
+                }
             },
             {
                 "@type": "WebPage",
                 "@id": "https://wuzzpay.com/#webpage",
                 "url": "https://wuzzpay.com/",
                 "name": "Wuzzpay | Payment Gateway Multi-Gateway untuk UMKM & SaaS",
-                "isPartOf": { "@id": "https://wuzzpay.com/#website" },
-                "about": { "@id": "https://wuzzpay.com/#service" },
+                "isPartOf": {
+                    "@id": "https://wuzzpay.com/#website"
+                },
+                "about": {
+                    "@id": "https://wuzzpay.com/#service"
+                },
                 "inLanguage": "id-ID"
             },
             {
@@ -130,8 +136,13 @@
                 "name": "Wuzzpay Multi-Gateway Payment Engine",
                 "serviceType": "Penghubung pembayaran digital (payment orchestration)",
                 "description": "Platform yang menghubungkan bisnis ke beberapa payment gateway lewat satu pendaftaran dan satu API, dengan pengalihan transaksi otomatis jika satu gateway bermasalah.",
-                "provider": { "@id": "https://wuzzpay.com/#organization" },
-                "areaServed": { "@type": "Country", "name": "Indonesia" },
+                "provider": {
+                    "@id": "https://wuzzpay.com/#organization"
+                },
+                "areaServed": {
+                    "@type": "Country",
+                    "name": "Indonesia"
+                },
                 "audience": {
                     "@type": "BusinessAudience",
                     "audienceType": "UMKM, toko online, dan startup SaaS"
@@ -151,47 +162,82 @@
                     {
                         "@type": "Question",
                         "name": "Apa itu Wuzzpay?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Wuzzpay adalah platform penghubung pembayaran (payment orchestration) yang menghubungkan bisnis ke beberapa payment gateway lewat satu pendaftaran dan satu integrasi API. Jika satu gateway bermasalah, transaksi dialihkan otomatis ke gateway lain. Penyelesaian dana mengikuti skema gateway mitra berlisensi Bank Indonesia." }
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Wuzzpay adalah platform penghubung pembayaran (payment orchestration) yang menghubungkan bisnis ke beberapa payment gateway lewat satu pendaftaran dan satu integrasi API. Jika satu gateway bermasalah, transaksi dialihkan otomatis ke gateway lain. Penyelesaian dana mengikuti skema gateway mitra berlisensi Bank Indonesia."
+                        }
                     },
                     {
                         "@type": "Question",
                         "name": "Apa bedanya Wuzzpay dengan memakai satu payment gateway langsung?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Dengan satu gateway, jika gateway itu bermasalah maka pembayaran Anda ikut terganggu. Dengan Wuzzpay, ada gateway lain sebagai jalur alternatif, dan Anda hanya perlu mendaftar sekali. Wuzzpay bukan pengganti gateway, melainkan lapisan yang menghubungkan Anda ke beberapa gateway sekaligus." }
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Dengan satu gateway, jika gateway itu bermasalah maka pembayaran Anda ikut terganggu. Dengan Wuzzpay, ada gateway lain sebagai jalur alternatif, dan Anda hanya perlu mendaftar sekali. Wuzzpay bukan pengganti gateway, melainkan lapisan yang menghubungkan Anda ke beberapa gateway sekaligus."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Bagaimana cara punya payment gateway cadangan atau alternatif tanpa daftar dua kali?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Gunakan layanan multi-gateway seperti Wuzzpay: Anda mendaftar sekali, tim Wuzzpay mengurus KYC ke gateway mitra, dan Anda mengintegrasikan satu API. Jika satu gateway bermasalah, transaksi dialihkan ke gateway cadangan atau alternatif yang tersedia. Pengalihan tidak berlaku jika semua gateway terganggu sekaligus atau gangguan ada di sisi bank atau jaringan pelanggan."
+                        }
                     },
                     {
                         "@type": "Question",
                         "name": "Apa yang saya dapat dengan biaya aktivasi Rp 99.000?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Anda mendapat akses Dashboard Merchant, pendaftaran dan KYC ke gateway mitra yang diurus oleh Wuzzpay, serta akses integrasi API. Biaya aktivasi dibayar sekali. Selain itu berlaku biaya per transaksi (MDR) sesuai metode pembayaran. Harga peluncuran dapat berubah sewaktu-waktu." }
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Anda mendapat akses Dashboard Merchant, pendaftaran dan KYC ke gateway mitra yang diurus oleh Wuzzpay, serta akses integrasi API. Biaya aktivasi dibayar sekali. Selain itu berlaku biaya per transaksi (MDR) sesuai metode pembayaran. Harga peluncuran dapat berubah sewaktu-waktu."
+                        }
                     },
                     {
                         "@type": "Question",
                         "name": "Bagaimana alur dana dan pencairan di Wuzzpay?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Alur dana bergantung pada skema gateway mitra yang dipakai. Pada sebagian skema, pencairan dilakukan langsung oleh gateway mitra ke rekening Anda; pada skema lain, dana dapat melalui Wuzzpay sebelum diteruskan. Hubungi tim kami untuk memastikan skema yang berlaku pada akun Anda. Pemrosesan dan penyelesaian pembayaran dijalankan oleh gateway mitra yang berlisensi Bank Indonesia." }
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Alur dana bergantung pada skema gateway mitra yang dipakai. Pada sebagian skema, pencairan dilakukan langsung oleh gateway mitra ke rekening Anda; pada skema lain, dana dapat melalui Wuzzpay sebelum diteruskan. Hubungi tim kami untuk memastikan skema yang berlaku pada akun Anda. Pemrosesan dan penyelesaian pembayaran dijalankan oleh gateway mitra yang berlisensi Bank Indonesia."
+                        }
                     },
                     {
                         "@type": "Question",
                         "name": "Apakah Wuzzpay berlisensi Bank Indonesia?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Wuzzpay menyediakan teknologi perutean transaksi. Kewajiban lisensi penyelenggara jasa pembayaran (PJP) Bank Indonesia melekat pada gateway mitra yang memproses dan menyelesaikan pembayaran." }
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Wuzzpay menyediakan teknologi perutean transaksi. Kewajiban lisensi penyelenggara jasa pembayaran (PJP) Bank Indonesia melekat pada gateway mitra yang memproses dan menyelesaikan pembayaran."
+                        }
                     },
                     {
                         "@type": "Question",
                         "name": "Metode pembayaran apa saja yang didukung Wuzzpay?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Wuzzpay mendukung QRIS, Virtual Account bank, e-wallet, gerai retail, kartu kredit, dan paylater. Rincian biaya setiap metode tersedia di halaman Biaya Transaksi." }
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Wuzzpay mendukung QRIS, Virtual Account bank, e-wallet, gerai retail, kartu kredit, dan paylater. Rincian biaya setiap metode tersedia di halaman Biaya Transaksi."
+                        }
                     },
                     {
                         "@type": "Question",
                         "name": "Bagaimana jika semua gateway bermasalah sekaligus?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Pengalihan otomatis hanya bisa dilakukan jika masih ada jalur yang tersedia. Gangguan di luar kendali kami, misalnya di sisi bank atau jaringan pelanggan, tidak dapat diatasi oleh pengalihan. Dalam kondisi itu, tim support Wuzzpay membantu Anda." }
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Pengalihan otomatis hanya bisa dilakukan jika masih ada jalur yang tersedia. Gangguan di luar kendali kami, misalnya di sisi bank atau jaringan pelanggan, tidak dapat diatasi oleh pengalihan. Dalam kondisi itu, tim support Wuzzpay membantu Anda."
+                        }
                     },
                     {
                         "@type": "Question",
                         "name": "Siapa yang membantu jika ada sengketa atau dana menggantung?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Cukup hubungi support Wuzzpay. Tim kami menelusuri kendala ke mitra gateway sehingga Anda tidak perlu mengurus ke banyak vendor sendiri." }
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Cukup hubungi support Wuzzpay. Tim kami menelusuri kendala ke mitra gateway sehingga Anda tidak perlu mengurus ke banyak vendor sendiri."
+                        }
                     },
                     {
                         "@type": "Question",
                         "name": "Siapa yang mengembangkan Wuzzpay?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Wuzzpay dikembangkan dan dikelola oleh PT Semantic Digital Nusantara yang berlokasi di Sidoarjo, Jawa Timur, Indonesia." }
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Wuzzpay dikembangkan dan dikelola oleh PT Semantic Digital Nusantara yang berlokasi di Sidoarjo, Jawa Timur, Indonesia."
+                        }
                     }
                 ]
             }
@@ -550,6 +596,16 @@
                         </summary>
                         <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
                             Dengan satu gateway, jika gateway itu bermasalah maka pembayaran Anda ikut terganggu. Dengan Wuzzpay, ada gateway lain sebagai jalur alternatif, dan Anda hanya perlu mendaftar sekali. Wuzzpay bukan pengganti gateway, melainkan lapisan yang menghubungkan Anda ke beberapa gateway sekaligus.
+                        </div>
+                    </details>
+
+                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
+                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Bagaimana cara punya payment gateway cadangan atau alternatif tanpa daftar dua kali?</h3>
+                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                            Gunakan layanan multi-gateway seperti Wuzzpay: Anda mendaftar sekali, tim Wuzzpay mengurus KYC ke gateway mitra, dan Anda mengintegrasikan satu API. Jika satu gateway bermasalah, transaksi dialihkan ke gateway cadangan atau alternatif yang tersedia. Pengalihan tidak berlaku jika semua gateway terganggu sekaligus atau gangguan ada di sisi bank atau jaringan pelanggan.
                         </div>
                     </details>
 

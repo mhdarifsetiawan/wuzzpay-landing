@@ -163,6 +163,14 @@
                     },
                     {
                         "@type": "Question",
+                        "name": "Apa solusi jika payment gateway sering down? Apakah perlu gateway cadangan?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Jika pembayaran online adalah sumber pendapatan utama, sebaiknya siapkan gateway cadangan (jalur alternatif) agar penjualan tetap berjalan saat satu gateway bermasalah. Pilihannya: mendaftar ke gateway kedua dan mengurusnya sendiri, atau memakai layanan multi-gateway dengan satu integrasi. Untuk transaksi kecil dengan satu gateway yang stabil, cadangan mungkin belum mendesak."
+                        }
+                    },
+                    {
+                        "@type": "Question",
                         "name": "Apakah gangguan gateway bisa dicegah sepenuhnya?",
                         "acceptedAnswer": {
                             "@type": "Answer",
@@ -312,7 +320,7 @@
                 </section>
 
                 <section aria-labelledby="h-opsi">
-                    <h2 id="h-opsi" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Opsi jalur alternatif: mana yang cocok</h2>
+                    <h2 id="h-opsi" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Opsi gateway cadangan (jalur alternatif): mana yang cocok</h2>
                     <div class="overflow-x-auto rounded-2xl border border-gray-200 bg-white">
                         <table class="w-full text-left text-sm">
                             <caption class="sr-only">Perbandingan opsi jalur alternatif pembayaran</caption>
@@ -363,6 +371,16 @@
                         </summary>
                         <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
                             Siapkan jalur pembayaran alternatif, misalnya gateway kedua atau layanan multi-gateway, sediakan beberapa metode pembayaran, rancang percobaan ulang yang aman, dan pasang pemantauan tingkat keberhasilan pembayaran.
+                        </div>
+                    </details>
+
+                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
+                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Apa solusi jika payment gateway sering down? Apakah perlu gateway cadangan?</h3>
+                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                            Jika pembayaran online adalah sumber pendapatan utama, sebaiknya siapkan gateway cadangan (jalur alternatif) agar penjualan tetap berjalan saat satu gateway bermasalah. Pilihannya: mendaftar ke gateway kedua dan mengurusnya sendiri, atau memakai layanan multi-gateway dengan satu integrasi. Untuk transaksi kecil dengan satu gateway yang stabil, cadangan mungkin belum mendesak.
                         </div>
                     </details>
                     <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">

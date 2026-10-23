@@ -155,6 +155,14 @@
                     },
                     {
                         "@type": "Question",
+                        "name": "Apakah payment orchestration sama dengan gateway cadangan atau failover?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sebagian fungsinya sama. Pengalihan ke gateway cadangan (alternatif) saat satu gateway bermasalah sering disebut failover, dan itu salah satu kegunaan payment orchestration. Payment orchestration lebih luas: ia juga memberi satu integrasi, perutean antar gateway, dan pelaporan terpusat."
+                        }
+                    },
+                    {
+                        "@type": "Question",
                         "name": "Apakah payment orchestration sama dengan payment aggregator?",
                         "acceptedAnswer": {
                             "@type": "Answer",
@@ -268,6 +276,7 @@
                         <li><strong class="text-gelap">Pengalihan saat gangguan.</strong> Jika satu gateway tidak dapat memproses, transaksi diarahkan ke gateway lain yang tersedia.</li>
                         <li><strong class="text-gelap">Pelaporan terpusat.</strong> Transaksi dari semua gateway dapat dilihat di satu dashboard.</li>
                     </ol>
+                    <p class="mt-4">Dalam percakapan sehari-hari, fungsi pengalihan ini sering disebut <em>payment gateway cadangan (alternatif)</em> atau <em>failover</em> antar gateway.</p>
                 </section>
 
                 <section aria-labelledby="h-beda">
@@ -352,6 +361,16 @@
                         </summary>
                         <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
                             Payment gateway adalah penyedia yang memproses pembayaran. Payment orchestration berada di atas beberapa gateway: ia tidak menggantikan gateway, tetapi mengatur penggunaannya, misalnya memilih jalur dan mengalihkan transaksi saat ada gangguan.
+                        </div>
+                    </details>
+
+                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
+                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Apakah payment orchestration sama dengan gateway cadangan atau failover?</h3>
+                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                            Sebagian fungsinya sama. Pengalihan ke gateway cadangan (alternatif) saat satu gateway bermasalah sering disebut failover, dan itu salah satu kegunaan payment orchestration. Payment orchestration lebih luas: ia juga memberi satu integrasi, perutean antar gateway, dan pelaporan terpusat.
                         </div>
                     </details>
                     <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
