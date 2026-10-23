@@ -3,36 +3,16 @@
    <!-- Halaman Utama -->
    <url>
       <loc>https://wuzzpay.com/</loc>
-      <lastmod>2026-10-23</lastmod>
+      <lastmod>2026-10-24</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
    </url>
    
-   <!-- Halaman Biaya Transaksi (Baru) -->
+   <!-- Halaman Biaya Transaksi -->
    <url>
       <loc>https://wuzzpay.com/biaya-transaksi.html</loc>
-      <lastmod>2026-10-23</lastmod>
+      <lastmod>2026-10-24</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
-   </url>
-
-   <!-- Halaman Legal & Dokumentasi -->
-   <url>
-      <loc>https://wuzzpay.com/privacy.html</loc>
-      <lastmod>2026-05-20</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://wuzzpay.com/terms.html</loc>
-      <lastmod>2026-05-20</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://wuzzpay.com/refund-policy.html</loc>
-      <lastmod>2026-05-31</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
    </url>
 </urlset>
