@@ -158,7 +158,7 @@
                         "name": "Apakah payment orchestration sama dengan gateway cadangan atau failover?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Sebagian fungsinya sama. Pengalihan ke gateway cadangan (alternatif) saat satu gateway bermasalah sering disebut failover, dan itu salah satu kegunaan payment orchestration. Payment orchestration lebih luas: ia juga memberi satu integrasi, perutean antar gateway, dan pelaporan terpusat."
+                            "text": "Sebagian fungsinya sama. Pengalihan ke gateway cadangan (backup atau alternatif) saat satu gateway bermasalah sering disebut failover, dan itu salah satu kegunaan payment orchestration. Payment orchestration lebih luas: ia juga memberi satu integrasi, perutean antar gateway, dan pelaporan terpusat."
                         }
                     },
                     {
@@ -254,7 +254,7 @@
                     </nav>
                     <h1 class="text-3xl sm:text-5xl font-extrabold text-gelap mb-6 leading-tight">Apa itu Payment Orchestration (Multi-Gateway)?</h1>
                     <p class="text-lg text-gelap leading-relaxed bg-biruAwan/40 border border-biruAwan rounded-2xl p-5">
-                        <strong class="text-biruTua">Jawaban singkat:</strong> payment orchestration adalah lapisan teknologi yang menghubungkan bisnis ke <strong>beberapa payment gateway lewat satu integrasi</strong>, lalu mengatur ke gateway mana setiap transaksi dikirim. Jika satu gateway bermasalah, transaksi dapat dialihkan ke gateway lain yang tersedia.
+                        <strong class="text-biruTua">Jawaban singkat:</strong> payment orchestration adalah lapisan teknologi yang menghubungkan bisnis ke <strong>beberapa payment gateway (multi payment gateway) lewat satu integrasi</strong>, lalu mengatur ke gateway mana setiap transaksi dikirim. Jika satu gateway bermasalah, transaksi dapat dialihkan ke gateway lain yang tersedia.
                     </p>
                     <p class="text-sm text-sedang mt-4">Ditulis oleh tim <a href="index.html" class="underline text-biruAksen">Wuzzpay</a> (PT Semantic Digital Nusantara) &middot; Diterbitkan <time datetime="2026-10-24">24 Oktober 2026</time></p>
                 </div>
@@ -276,7 +276,7 @@
                         <li><strong class="text-gelap">Pengalihan saat gangguan.</strong> Jika satu gateway tidak dapat memproses, transaksi diarahkan ke gateway lain yang tersedia.</li>
                         <li><strong class="text-gelap">Pelaporan terpusat.</strong> Transaksi dari semua gateway dapat dilihat di satu dashboard.</li>
                     </ol>
-                    <p class="mt-4">Dalam percakapan sehari-hari, fungsi pengalihan ini sering disebut <em>payment gateway cadangan (alternatif)</em> atau <em>failover</em> antar gateway.</p>
+                    <p class="mt-4">Dalam percakapan sehari-hari, fungsi pengalihan ini sering disebut <em>payment gateway cadangan (backup atau alternatif)</em> atau <em>failover</em> antar gateway.</p>
                 </section>
 
                 <section aria-labelledby="h-beda">
@@ -370,7 +370,7 @@
                             <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
                         </summary>
                         <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
-                            Sebagian fungsinya sama. Pengalihan ke gateway cadangan (alternatif) saat satu gateway bermasalah sering disebut failover, dan itu salah satu kegunaan payment orchestration. Payment orchestration lebih luas: ia juga memberi satu integrasi, perutean antar gateway, dan pelaporan terpusat.
+                            Sebagian fungsinya sama. Pengalihan ke gateway cadangan (backup atau alternatif) saat satu gateway bermasalah sering disebut failover, dan itu salah satu kegunaan payment orchestration. Payment orchestration lebih luas: ia juga memberi satu integrasi, perutean antar gateway, dan pelaporan terpusat.
                         </div>
                     </details>
                     <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
