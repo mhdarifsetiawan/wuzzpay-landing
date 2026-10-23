@@ -52,35 +52,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="stylesheet" href="assets/css/tailwind.css">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
 
-    <!-- Injeksi Palet Warna BIRU Kustom ke Tailwind -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        biruTua: '#2A5C99',
-                        biruAksen: '#2A8ECA',
-                        biruLangit: '#56B5F0',
-                        biruAwan: '#D0E8F8',
-                        gelap: '#1E293B',
-                        sedang: '#475569',
-                    },
-                    fontFamily: {
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                    },
-                    boxShadow: {
-                        'soft': '0 20px 40px -15px rgba(42, 142, 202, 0.15)',
-                        'float': '0 25px 50px -12px rgba(42, 92, 153, 0.1)',
-                    }
-                }
-            }
-        }
-    </script>
 
     <!-- Structured Data (JSON-LD): entitas, situs, penawaran, dan FAQ -->
     <script type="application/ld+json">
@@ -713,7 +688,7 @@
 
                     <div class="flex items-center gap-6">
                         <a href="https://instagram.com/wuzzpayid" target="_blank" rel="noopener me" class="text-gray-400 hover:text-biruAksen transition-all duration-300 text-xl" title="Instagram" aria-label="Instagram Wuzzpay">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
                         </a>
                     </div>
                 </div>
