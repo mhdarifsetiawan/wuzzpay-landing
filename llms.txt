@@ -1,8 +1,8 @@
 # Wuzzpay
 
-> Wuzzpay adalah platform Technical Service Provider (TSP) di Indonesia yang menghubungkan bisnis ke beberapa payment gateway lewat satu pendaftaran dan satu integrasi API. Jika satu gateway bermasalah, transaksi dialihkan otomatis ke gateway lain. Ditujukan untuk UMKM, toko online, dan startup SaaS.
+> Wuzzpay adalah platform penghubung pembayaran (payment orchestration) di Indonesia yang menghubungkan bisnis ke beberapa payment gateway lewat satu pendaftaran dan satu integrasi API. Jika satu gateway bermasalah, transaksi dialihkan otomatis ke gateway lain. Ditujukan untuk UMKM, toko online, dan startup SaaS.
 
-Wuzzpay bukan pengganti payment gateway, melainkan lapisan yang menghubungkan merchant ke beberapa gateway mitra berlisensi Bank Indonesia. Wuzzpay tidak menahan dana: pencairan (settlement) dilakukan langsung oleh mitra gateway ke rekening merchant. Wuzzpay dikembangkan dan dikelola oleh PT Semantic Digital Nusantara, Sidoarjo, Jawa Timur, Indonesia.
+Wuzzpay bukan pengganti payment gateway, melainkan lapisan yang menghubungkan merchant ke beberapa gateway mitra berlisensi Bank Indonesia. Alur dana dan pencairan (settlement) mengikuti skema gateway mitra yang dipakai: pada sebagian skema dilakukan langsung oleh gateway mitra, pada skema lain dapat melalui Wuzzpay. Wuzzpay dikembangkan dan dikelola oleh PT Semantic Digital Nusantara, Sidoarjo, Jawa Timur, Indonesia.
 
 ## Halaman utama
 
@@ -11,6 +11,7 @@ Wuzzpay bukan pengganti payment gateway, melainkan lapisan yang menghubungkan me
 - [Apa itu Payment Orchestration (Multi-Gateway)?](https://wuzzpay.com/apa-itu-payment-orchestration.html): panduan konsep, cara kerja, perbandingan dengan gateway tunggal, kapan dibutuhkan, dan batasannya.
 - [Payment Gateway Down: Dampak dan Cara Mengatasinya](https://wuzzpay.com/payment-gateway-down.html): jenis gangguan, dampak bisnis, penyebab, langkah saat terjadi, dan cara mengurangi risikonya.
 - [Cara Menerima Pembayaran QRIS dan Virtual Account untuk UMKM dan Toko Online](https://wuzzpay.com/cara-menerima-pembayaran-qris-va.html): perbedaan metode, cara memilih penyedia, dan langkah memulai.
+- [Payment Gateway vs Payment Aggregator vs TSP: Apa Bedanya?](https://wuzzpay.com/payment-gateway-vs-aggregator-vs-tsp.html): perbedaan peran, alur dana, lisensi, dan pertanyaan untuk penyedia.
 
 ## Fakta kunci
 
@@ -19,7 +20,7 @@ Wuzzpay bukan pengganti payment gateway, melainkan lapisan yang menghubungkan me
 - Biaya aktivasi dan integrasi: Rp 99.000, dibayar sekali (harga peluncuran, dapat berubah sewaktu-waktu). Selain itu berlaku biaya per transaksi (MDR) sesuai metode pembayaran.
 - Contoh MDR: QRIS 0,7% per transaksi; Virtual Account bank Rp 4.000 per transaksi; kartu kredit 2,9% + Rp 2.000. Tarif belum termasuk PPN dan dapat berubah.
 - Pengalihan otomatis tidak dapat mengatasi gangguan di luar kendali Wuzzpay, misalnya di sisi bank atau jaringan pelanggan, atau jika semua gateway terganggu sekaligus.
-- Wuzzpay beroperasi sebagai TSP: pemrosesan dan penyelesaian dana dijalankan oleh mitra gateway berlisensi Bank Indonesia, dan kewajiban lisensi PJP melekat pada mitra tersebut.
+- Wuzzpay dapat berperan sebagai Technical Service Provider (TSP) atau aggregator, tergantung skema gateway mitra. Kewajiban lisensi PJP Bank Indonesia melekat pada gateway mitra yang memproses dan menyelesaikan pembayaran.
 
 ## Kontak
 

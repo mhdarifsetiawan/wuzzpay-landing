@@ -128,7 +128,7 @@
                 "@type": "Service",
                 "@id": "https://wuzzpay.com/#service",
                 "name": "Wuzzpay Multi-Gateway Payment Engine",
-                "serviceType": "Technical Service Provider pembayaran digital",
+                "serviceType": "Penghubung pembayaran digital (payment orchestration)",
                 "description": "Platform yang menghubungkan bisnis ke beberapa payment gateway lewat satu pendaftaran dan satu API, dengan pengalihan transaksi otomatis jika satu gateway bermasalah.",
                 "provider": { "@id": "https://wuzzpay.com/#organization" },
                 "areaServed": { "@type": "Country", "name": "Indonesia" },
@@ -151,7 +151,7 @@
                     {
                         "@type": "Question",
                         "name": "Apa itu Wuzzpay?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Wuzzpay adalah platform Technical Service Provider (TSP) yang menghubungkan bisnis ke beberapa payment gateway lewat satu pendaftaran dan satu integrasi API. Jika satu gateway bermasalah, transaksi dialihkan otomatis ke gateway lain. Pencairan dana dilakukan langsung oleh mitra gateway ke rekening merchant." }
+                        "acceptedAnswer": { "@type": "Answer", "text": "Wuzzpay adalah platform penghubung pembayaran (payment orchestration) yang menghubungkan bisnis ke beberapa payment gateway lewat satu pendaftaran dan satu integrasi API. Jika satu gateway bermasalah, transaksi dialihkan otomatis ke gateway lain. Penyelesaian dana mengikuti skema gateway mitra berlisensi Bank Indonesia." }
                     },
                     {
                         "@type": "Question",
@@ -165,13 +165,13 @@
                     },
                     {
                         "@type": "Question",
-                        "name": "Apakah Wuzzpay menahan dana pencairan merchant?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Tidak. Wuzzpay beroperasi sebagai penyedia teknologi (TSP) dan tidak menahan dana Anda. Pencairan (settlement) diproses dan ditransfer langsung oleh mitra gateway ke rekening Anda." }
+                        "name": "Bagaimana alur dana dan pencairan di Wuzzpay?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "Alur dana bergantung pada skema gateway mitra yang dipakai. Pada sebagian skema, pencairan dilakukan langsung oleh gateway mitra ke rekening Anda; pada skema lain, dana dapat melalui Wuzzpay sebelum diteruskan. Hubungi tim kami untuk memastikan skema yang berlaku pada akun Anda. Pemrosesan dan penyelesaian pembayaran dijalankan oleh gateway mitra yang berlisensi Bank Indonesia." }
                     },
                     {
                         "@type": "Question",
                         "name": "Apakah Wuzzpay berlisensi Bank Indonesia?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Wuzzpay menyediakan teknologi perutean transaksi sebagai Technical Service Provider. Pemrosesan, penampungan, dan penyelesaian dana dijalankan oleh mitra payment gateway yang berlisensi Bank Indonesia." }
+                        "acceptedAnswer": { "@type": "Answer", "text": "Wuzzpay menyediakan teknologi perutean transaksi. Kewajiban lisensi penyelenggara jasa pembayaran (PJP) Bank Indonesia melekat pada gateway mitra yang memproses dan menyelesaikan pembayaran." }
                     },
                     {
                         "@type": "Question",
@@ -285,7 +285,7 @@
                         </div>
 
                         <p class="mt-6 text-sm text-sedang max-w-2xl mx-auto lg:mx-0">
-                            QRIS · Virtual Account · E-Wallet · Gerai Retail · Kartu Kredit. Dana langsung ke rekening Anda, tidak kami tahan.
+                            QRIS · Virtual Account · E-Wallet · Gerai Retail · Kartu Kredit. Terhubung ke gateway mitra berlisensi Bank Indonesia.
                         </p>
                     </div>
 
@@ -318,7 +318,7 @@
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 id="judul-apa-itu" class="text-3xl sm:text-4xl font-extrabold text-gelap mb-6">Apa itu Wuzzpay?</h2>
                 <p class="text-lg text-sedang leading-relaxed">
-                    <strong class="text-biruTua">Wuzzpay</strong> adalah platform <em>Technical Service Provider</em> (TSP) yang menghubungkan bisnis Anda ke beberapa <em>payment gateway</em> lewat <strong>satu pendaftaran dan satu integrasi API</strong>. Jika satu gateway bermasalah, transaksi dialihkan otomatis ke gateway lain. Cocok untuk UMKM, toko online, dan startup SaaS yang ingin menerima QRIS, Virtual Account, dan e-wallet dengan lebih tenang.
+                    <strong class="text-biruTua">Wuzzpay</strong> adalah platform penghubung pembayaran (<em>payment orchestration</em>) yang menghubungkan bisnis Anda ke beberapa <em>payment gateway</em> lewat <strong>satu pendaftaran dan satu integrasi API</strong>. Jika satu gateway bermasalah, transaksi dialihkan otomatis ke gateway lain. Cocok untuk UMKM, toko online, dan startup SaaS yang ingin menerima QRIS, Virtual Account, dan e-wallet dengan lebih tenang.
                 </p>
                 <p class="mt-6">
                     <a href="apa-itu-payment-orchestration.html" class="inline-flex items-center gap-2 text-biruAksen font-bold hover:gap-4 transition-all hover:text-biruTua">Pelajari konsep payment orchestration (multi-gateway) &rarr;</a>
@@ -381,7 +381,7 @@
                             <div class="flex-shrink-0 w-12 h-12 rounded-2xl bg-biruLangit/20 flex items-center justify-center text-biruTua font-extrabold text-xl" aria-hidden="true">3</div>
                             <div>
                                 <h3 class="text-biruTua font-bold text-xl mb-2">Terima pembayaran</h3>
-                                <p class="text-sedang">Jika satu gateway bermasalah, sistem mengalihkan transaksi ke gateway lain. Dana disalurkan langsung oleh mitra berlisensi ke rekening Anda, tanpa kami tahan.</p>
+                                <p class="text-sedang">Jika satu gateway bermasalah, sistem mengalihkan transaksi ke gateway lain. Penyelesaian dana dijalankan bersama gateway mitra berlisensi Bank Indonesia, dengan alur yang mengikuti skema gateway yang dipakai.</p>
                             </div>
                         </li>
                     </ol>
@@ -470,7 +470,7 @@
                                 <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-biruAwan/50 text-biruTua flex items-center justify-center font-bold text-sm" aria-hidden="true">✓</span> Akses Dashboard Merchant</li>
                                 <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-biruAwan/50 text-biruTua flex items-center justify-center font-bold text-sm" aria-hidden="true">✓</span> Pendaftaran & KYC ke gateway mitra diurus Wuzzpay</li>
                                 <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-biruAwan/50 text-biruTua flex items-center justify-center font-bold text-sm" aria-hidden="true">✓</span> Satu API untuk QRIS, Virtual Account, E-Wallet, dan Retail</li>
-                                <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-biruAwan/50 text-biruTua flex items-center justify-center font-bold text-sm" aria-hidden="true">✓</span> Pencairan dana langsung ke rekening Anda</li>
+                                <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-biruAwan/50 text-biruTua flex items-center justify-center font-bold text-sm" aria-hidden="true">✓</span> Pencairan dana ke rekening Anda</li>
                                 <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-biruAwan/50 text-biruTua flex items-center justify-center font-bold text-sm" aria-hidden="true">✓</span> Satu kontak support untuk semua gateway</li>
                             </ul>
                         </div>
@@ -535,7 +535,7 @@
                             <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
                         </summary>
                         <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
-                            Wuzzpay adalah platform <strong>Technical Service Provider (TSP)</strong> yang menghubungkan bisnis ke beberapa payment gateway lewat satu pendaftaran dan satu integrasi API. Jika satu gateway bermasalah, transaksi dialihkan otomatis ke gateway lain. Pencairan dana dilakukan langsung oleh mitra gateway ke rekening merchant.
+                            Wuzzpay adalah platform penghubung pembayaran (<strong>payment orchestration</strong>) yang menghubungkan bisnis ke beberapa payment gateway lewat satu pendaftaran dan satu integrasi API. Jika satu gateway bermasalah, transaksi dialihkan otomatis ke gateway lain. Penyelesaian dana mengikuti skema gateway mitra berlisensi Bank Indonesia.
                         </div>
                     </details>
 
@@ -561,11 +561,11 @@
 
                     <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
                         <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
-                            <h3 class="text-lg font-bold">Apakah Wuzzpay menahan dana pencairan merchant?</h3>
+                            <h3 class="text-lg font-bold">Bagaimana alur dana dan pencairan di Wuzzpay?</h3>
                             <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
                         </summary>
                         <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
-                            Tidak. Wuzzpay beroperasi sebagai penyedia teknologi (TSP) dan tidak menahan dana Anda. Pencairan (settlement) diproses dan ditransfer langsung oleh mitra gateway ke rekening Anda.
+                            Alur dana bergantung pada skema gateway mitra yang dipakai. Pada sebagian skema, pencairan dilakukan langsung oleh gateway mitra ke rekening Anda; pada skema lain, dana dapat melalui Wuzzpay sebelum diteruskan. Hubungi tim kami untuk memastikan skema yang berlaku pada akun Anda. Pemrosesan dan penyelesaian pembayaran dijalankan oleh gateway mitra yang berlisensi Bank Indonesia.
                         </div>
                     </details>
 
@@ -575,7 +575,7 @@
                             <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
                         </summary>
                         <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
-                            Wuzzpay menyediakan teknologi perutean transaksi sebagai Technical Service Provider. Pemrosesan, penampungan, dan penyelesaian dana dijalankan oleh mitra payment gateway yang berlisensi Bank Indonesia.
+                            Wuzzpay menyediakan teknologi perutean transaksi. Kewajiban lisensi penyelenggara jasa pembayaran (PJP) Bank Indonesia melekat pada gateway mitra yang memproses dan menyelesaikan pembayaran.
                         </div>
                     </details>
 
@@ -688,6 +688,7 @@
                         <li><a href="apa-itu-payment-orchestration.html" class="hover:text-biruAksen text-sedang transition">Payment Orchestration</a></li>
                         <li><a href="payment-gateway-down.html" class="hover:text-biruAksen text-sedang transition">Payment Gateway Down</a></li>
                         <li><a href="cara-menerima-pembayaran-qris-va.html" class="hover:text-biruAksen text-sedang transition">Menerima Pembayaran QRIS & VA</a></li>
+                        <li><a href="payment-gateway-vs-aggregator-vs-tsp.html" class="hover:text-biruAksen text-sedang transition">Gateway vs Aggregator vs TSP</a></li>
                         <li><a href="#faq" class="hover:text-biruAksen text-sedang transition">FAQ</a></li>
                     </ul>
                 </div>
@@ -713,7 +714,7 @@
 
             <div class="border-t border-biruAwan pt-8 text-center text-xs text-sedang leading-relaxed">
                 <p class="mb-3 font-semibold text-gelap">&copy; 2026 PT Semantic Digital Nusantara. All rights reserved.</p>
-                <p class="max-w-4xl mx-auto opacity-80">Disclaimer: Wuzzpay bertindak sebagai penyedia sistem teknologi perutean transaksi (<em>technical service provider</em>). Pemrosesan, penampungan, dan penyelesaian dana sepenuhnya dijalankan oleh penyedia payment gateway berlisensi Bank Indonesia yang menjadi mitra resmi kami.</p>
+                <p class="max-w-4xl mx-auto opacity-80">Disclaimer: Wuzzpay menyediakan sistem teknologi perutean transaksi dan, tergantung skema gateway mitra, dapat berperan sebagai <em>technical service provider</em> atau <em>aggregator</em>. Pemrosesan dan penyelesaian pembayaran dijalankan bersama gateway mitra yang berlisensi Bank Indonesia, dan alur dana mengikuti skema masing-masing gateway.</p>
             </div>
         </div>
     </footer>
