@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       colors: {
         biruTua: '#2A5C99',
-        biruAksen: '#2A8ECA',
+        biruAksen: '#1D6FA3',
         biruLangit: '#56B5F0',
         biruAwan: '#D0E8F8',
         gelap: '#1E293B',

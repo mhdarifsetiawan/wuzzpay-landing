@@ -8,6 +8,8 @@ Situs statis (HTML + Tailwind + Alpine.js) untuk https://wuzzpay.com, dihosting 
 - Konfigurasi warna dan font ada di `tailwind.config.js` (jangan taruh konfigurasi Tailwind inline di HTML).
 - `privacy.html`, `terms.html`, `refund-policy.html` memakai Tailwind v4 via CDN dan **tidak** ikut dibangun.
 - Jangan memasang kembali Tailwind CDN atau Font Awesome pada halaman utama. Ikon memakai SVG inline.
+- Aksesibilitas: warna `biruAksen` (#1D6FA3) dipilih agar kontras teks putih di atasnya minimal 4,5:1 (WCAG AA); jangan diterangkan kembali ke #2A8ECA. Gunakan `text-red-700`, bukan `red-500`, untuk teks merah.
+- Aset header memakai `assets/LOGO-sm.webp` (600 px); `assets/LOGO.png` (1200 px) dipakai untuk JSON-LD. Font Google dimuat asinkron (preload + `onload`) di setiap halaman; pertahankan polanya.
 
 ## Halaman dan tautan
 

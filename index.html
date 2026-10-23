@@ -51,7 +51,8 @@
     <!-- Tipografi Humanis & Modern -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
 
     <link rel="stylesheet" href="assets/css/tailwind.css">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
@@ -230,7 +231,7 @@
 
             <div class="flex items-center gap-3">
                 <a href="index.html" class="flex items-center" aria-label="Wuzzpay - Beranda">
-                    <img src="assets/LOGO.png" alt="Wuzzpay" width="1200" height="248" class="h-10 w-auto object-contain">
+                    <img src="assets/LOGO-sm.webp" alt="Wuzzpay" width="600" height="124" class="h-10 w-auto object-contain">
                 </a>
             </div>
 
@@ -319,7 +320,7 @@
                             <source srcset="assets/images/wuzzpay-payment-smart-router.webp" type="image/webp">
                             <img src="assets/images/wuzzpay-payment-smart-router.jpg"
                                 alt="Ilustrasi Wuzzpay mengalihkan transaksi dari satu payment gateway ke gateway lain"
-                                width="1402" height="1122"
+                                width="1100" height="880"
                                 fetchpriority="high"
                                 class="rounded-[3rem] shadow-2xl object-cover w-full h-[500px] border-4 border-white">
                         </picture>
@@ -415,7 +416,7 @@
                     <h3 class="text-2xl font-bold text-biruTua mb-8 text-center">Tanpa vs dengan Wuzzpay</h3>
                     <div class="space-y-6">
                         <div class="p-6 rounded-2xl border border-gray-200 bg-white shadow-sm opacity-80">
-                            <p class="font-bold mb-3 text-red-500 text-lg flex items-center gap-2"><span aria-hidden="true">❌</span> Tanpa Wuzzpay</p>
+                            <p class="font-bold mb-3 text-red-700 text-lg flex items-center gap-2"><span aria-hidden="true">❌</span> Tanpa Wuzzpay</p>
                             <ul class="space-y-3 text-sedang">
                                 <li class="flex items-start gap-2"><span aria-hidden="true">•</span> Bergantung pada satu gateway.</li>
                                 <li class="flex items-start gap-2"><span aria-hidden="true">•</span> KYC berulang untuk setiap vendor.</li>
