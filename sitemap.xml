@@ -23,4 +23,12 @@
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
    </url>
+
+   <!-- Panduan: Payment Gateway Down -->
+   <url>
+      <loc>https://wuzzpay.com/payment-gateway-down.html</loc>
+      <lastmod>2026-10-24</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
 </urlset>

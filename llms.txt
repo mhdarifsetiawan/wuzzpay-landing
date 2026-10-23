@@ -9,6 +9,7 @@ Wuzzpay bukan pengganti payment gateway, melainkan lapisan yang menghubungkan me
 - [Beranda Wuzzpay](https://wuzzpay.com/): penjelasan layanan, cara kerja, harga, dan FAQ.
 - [Biaya Transaksi (MDR)](https://wuzzpay.com/biaya-transaksi.html): tarif lengkap per metode pembayaran (QRIS, Virtual Account, e-wallet, gerai retail, kartu kredit, paylater).
 - [Apa itu Payment Orchestration (Multi-Gateway)?](https://wuzzpay.com/apa-itu-payment-orchestration.html): panduan konsep, cara kerja, perbandingan dengan gateway tunggal, kapan dibutuhkan, dan batasannya.
+- [Payment Gateway Down: Dampak dan Cara Mengatasinya](https://wuzzpay.com/payment-gateway-down.html): jenis gangguan, dampak bisnis, penyebab, langkah saat terjadi, dan cara mengurangi risikonya.
 
 ## Fakta kunci
 
