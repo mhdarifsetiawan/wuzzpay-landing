@@ -11,7 +11,7 @@ Situs statis (HTML + Tailwind + Alpine.js) untuk https://wuzzpay.com, dihosting 
 
 ## Halaman dan tautan
 
-- Halaman terindeks: `index.html`, `biaya-transaksi.html`, dan enam halaman panduan (`apa-itu-payment-orchestration`, `payment-gateway-down`, `cara-menerima-pembayaran-qris-va`, `payment-gateway-vs-aggregator-vs-tsp`, `cara-menghitung-biaya-payment-gateway-mdr`, `cara-integrasi-pembayaran-aplikasi-saas`).
+- Halaman terindeks: `index.html`, `biaya-transaksi.html`, `tentang-wuzzpay.html`, dan enam halaman panduan (`apa-itu-payment-orchestration`, `payment-gateway-down`, `cara-menerima-pembayaran-qris-va`, `payment-gateway-vs-aggregator-vs-tsp`, `cara-menghitung-biaya-payment-gateway-mdr`, `cara-integrasi-pembayaran-aplikasi-saas`).
 - Halaman legal (`privacy`, `terms`, `refund-policy`) sengaja `noindex` dan tidak ada di sitemap. **Jangan ubah isinya tanpa tinjauan pihak legal.**
 - Tautan antar halaman memakai path relatif (`index.html#pricing`), bukan `/#pricing`, agar jalan saat dibuka sebagai file lokal. Kanonik tetap `https://wuzzpay.com/...`.
 - Tombol "Daftar" dan "Masuk" mengarah ke `https://my.wuzzpay.com`. Pertanyaan dan permintaan dokumentasi tetap lewat WhatsApp (`6289504121521`).
@@ -30,7 +30,7 @@ Situs statis (HTML + Tailwind + Alpine.js) untuk https://wuzzpay.com, dihosting 
 Setiap halaman terindeks harus punya: satu `h1`, `<title>` maksimal sekitar 60 karakter dan unik, meta description 70 sampai 160 karakter dan unik, canonical, `hreflang`, Open Graph, Twitter Card, dan JSON-LD.
 
 - **Teks pertanyaan dan jawaban FAQ di HTML (`<details>`) harus identik dengan `FAQPage` di JSON-LD.** Ubah keduanya sekaligus.
-- Halaman panduan baru: tambahkan ke `sitemap.xml` (dengan `lastmod`), `llms.txt`, dan footer "Jelajahi" di `index.html`, serta tautkan dari halaman terkait. Ikuti struktur halaman panduan yang ada: jawaban singkat di atas, bagian bertajuk pertanyaan, tabel perbandingan bila relevan, bagian "Posisi/Pendekatan Wuzzpay", lalu FAQ.
+- Halaman panduan baru: tambahkan ke `sitemap.xml` (dengan `lastmod`), `llms.txt`, dan footer "Jelajahi" di `index.html`, serta tautkan dari halaman terkait. Salin kerangka dari halaman panduan yang ada (header dengan "Masuk" dan "Daftar Sekarang", `assets/css/tailwind.css`, footer), bukan dari sumber lain. Ikuti struktur halaman panduan yang ada: jawaban singkat di atas, bagian bertajuk pertanyaan, tabel perbandingan bila relevan, bagian "Posisi/Pendekatan Wuzzpay", lalu FAQ.
 - Perbarui `lastmod` di `sitemap.xml` untuk halaman yang berubah.
 - Jangan mengubah tarif di `biaya-transaksi.html` tanpa menyamakan semua halaman yang mengutipnya (QRIS 0,7%, VA Rp 4.000 flat, kartu kredit 2,9% + Rp 2.000, dan seterusnya).
 
