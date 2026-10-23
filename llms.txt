@@ -26,6 +26,7 @@ Wuzzpay bukan pengganti payment gateway, melainkan lapisan yang menghubungkan me
 
 ## Kontak
 
+- Pendaftaran dan dashboard merchant: https://my.wuzzpay.com
 - Email: support@semanticdigital.id
 - WhatsApp: +62 895-0412-1521
 - Instagram: https://instagram.com/wuzzpayid
