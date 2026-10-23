@@ -31,4 +31,12 @@
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
    </url>
+
+   <!-- Panduan: Menerima Pembayaran QRIS & VA -->
+   <url>
+      <loc>https://wuzzpay.com/cara-menerima-pembayaran-qris-va.html</loc>
+      <lastmod>2026-10-24</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
 </urlset>
