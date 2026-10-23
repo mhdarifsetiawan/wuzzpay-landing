@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Apa itu Payment Orchestration (Multi-Gateway)? | Wuzzpay</title>
+    <meta name="description" content="Payment orchestration adalah lapisan teknologi yang menghubungkan bisnis ke beberapa payment gateway lewat satu integrasi. Pelajari cara kerja dan batasannya.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <link rel="canonical" href="https://wuzzpay.com/apa-itu-payment-orchestration.html">
+    <link rel="alternate" hreflang="id" href="https://wuzzpay.com/apa-itu-payment-orchestration.html">
+    <link rel="alternate" hreflang="x-default" href="https://wuzzpay.com/apa-itu-payment-orchestration.html">
+    <meta name="author" content="PT Semantic Digital Nusantara">
+
+    <!-- Open Graph & Twitter -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Wuzzpay">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:url" content="https://wuzzpay.com/apa-itu-payment-orchestration.html">
+    <meta property="og:title" content="Apa itu Payment Orchestration (Multi-Gateway)? | Wuzzpay">
+    <meta property="og:description" content="Payment orchestration adalah lapisan teknologi yang menghubungkan bisnis ke beberapa payment gateway lewat satu integrasi. Pelajari cara kerja dan batasannya.">
+    <meta property="og:image" content="https://wuzzpay.com/assets/images/og-wuzzpay.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Wuzzpay: pembayaran tetap jalan, walau satu gateway bermasalah">
+    <meta property="article:published_time" content="2026-10-24">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Apa itu Payment Orchestration (Multi-Gateway)? | Wuzzpay">
+    <meta name="twitter:description" content="Payment orchestration adalah lapisan teknologi yang menghubungkan bisnis ke beberapa payment gateway lewat satu integrasi. Pelajari cara kerja dan batasannya.">
+    <meta name="twitter:image" content="https://wuzzpay.com/assets/images/og-wuzzpay.jpg">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        biruTua: '#2A5C99',
+                        biruAksen: '#2A8ECA',
+                        biruLangit: '#56B5F0',
+                        biruAwan: '#D0E8F8',
+                        gelap: '#1E293B',
+                        sedang: '#475569',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 20px 40px -15px rgba(42, 142, 202, 0.15)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://wuzzpay.com/#organization",
+                "name": "Wuzzpay",
+                "legalName": "PT Semantic Digital Nusantara",
+                "url": "https://wuzzpay.com/",
+                "logo": "https://wuzzpay.com/assets/LOGO.png"
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://wuzzpay.com/apa-itu-payment-orchestration.html#webpage",
+                "url": "https://wuzzpay.com/apa-itu-payment-orchestration.html",
+                "name": "Apa itu Payment Orchestration (Multi-Gateway)? | Wuzzpay",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://wuzzpay.com/#website",
+                    "url": "https://wuzzpay.com/",
+                    "name": "Wuzzpay"
+                },
+                "inLanguage": "id-ID",
+                "breadcrumb": {
+                    "@id": "https://wuzzpay.com/apa-itu-payment-orchestration.html#breadcrumb"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://wuzzpay.com/apa-itu-payment-orchestration.html#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Beranda",
+                        "item": "https://wuzzpay.com/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Apa itu Payment Orchestration (Multi-Gateway)?",
+                        "item": "https://wuzzpay.com/apa-itu-payment-orchestration.html"
+                    }
+                ]
+            },
+            {
+                "@type": "Article",
+                "@id": "https://wuzzpay.com/apa-itu-payment-orchestration.html#article",
+                "headline": "Apa itu Payment Orchestration (Multi-Gateway)?",
+                "description": "Payment orchestration adalah lapisan teknologi yang menghubungkan bisnis ke beberapa payment gateway lewat satu integrasi. Pelajari cara kerja dan batasannya.",
+                "inLanguage": "id-ID",
+                "datePublished": "2026-10-24",
+                "dateModified": "2026-10-24",
+                "mainEntityOfPage": {
+                    "@id": "https://wuzzpay.com/apa-itu-payment-orchestration.html#webpage"
+                },
+                "image": "https://wuzzpay.com/assets/images/og-wuzzpay.jpg",
+                "author": {
+                    "@id": "https://wuzzpay.com/#organization"
+                },
+                "publisher": {
+                    "@id": "https://wuzzpay.com/#organization"
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://wuzzpay.com/apa-itu-payment-orchestration.html#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Apa itu payment orchestration?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Payment orchestration adalah lapisan teknologi yang menghubungkan bisnis ke beberapa payment gateway lewat satu integrasi, lalu mengatur ke gateway mana setiap transaksi dikirim. Jika satu gateway bermasalah, transaksi dapat dialihkan ke gateway lain yang tersedia."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Apa bedanya payment orchestration dengan payment gateway?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Payment gateway adalah penyedia yang memproses pembayaran. Payment orchestration berada di atas beberapa gateway: ia tidak menggantikan gateway, tetapi mengatur penggunaannya, misalnya memilih jalur dan mengalihkan transaksi saat ada gangguan."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Apakah payment orchestration sama dengan payment aggregator?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tidak sama. Payment aggregator umumnya adalah penyelenggara berlisensi yang menampung dan menyalurkan dana banyak merchant. Payment orchestration adalah lapisan teknologi perutean dan tidak harus memegang dana. Pada Wuzzpay, dana disalurkan langsung oleh mitra gateway berlisensi ke rekening merchant."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Apakah UMKM membutuhkan payment orchestration?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tidak selalu. Jika volume transaksi masih kecil dan satu gateway sudah mencukupi, satu gateway bisa cukup. Payment orchestration lebih berguna ketika pembayaran online menjadi sumber pendapatan utama, sehingga gangguan gateway berdampak langsung pada penjualan."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Apa batasan payment orchestration?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Pengalihan otomatis hanya bisa dilakukan jika masih ada jalur lain yang tersedia. Gangguan di luar kendali penyedia, misalnya di sisi bank atau jaringan pelanggan, tidak dapat diatasi oleh pengalihan. Layanan orkestrasi juga dapat menambah biaya dibanding memakai satu gateway langsung."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-sedang font-sans antialiased selection:bg-biruAksen selection:text-white">
+
+    <a href="#konten-utama" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:bg-white focus:text-biruTua focus:px-4 focus:py-2 focus:rounded-lg">Lewati ke konten utama</a>
+
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-white/90 border-b border-biruAwan/50 shadow-sm" x-data="{ mobileMenuOpen: false }">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="flex items-center" aria-label="Wuzzpay - Beranda">
+                    <img src="assets/LOGO.png" alt="Wuzzpay" width="1200" height="248" class="h-10 w-auto object-contain">
+                </a>
+            </div>
+
+            <nav aria-label="Navigasi utama" class="hidden md:flex items-center gap-8 text-sm font-semibold text-gelap">
+                <a href="index.html#cara-kerja" class="hover:text-biruAksen transition">Cara Kerja</a>
+                <a href="index.html#pricing" class="hover:text-biruAksen transition">Harga</a>
+                <a href="biaya-transaksi.html" class="hover:text-biruAksen transition">Biaya Transaksi</a>
+                <a href="index.html#faq" class="hover:text-biruAksen transition">FAQ</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="https://api.whatsapp.com/send?phone=6289504121521&text=Halo%20Tim%20Wuzzpay,%20saya%20ingin%20melakukan%20pendaftaran%20dan%20meminta%20info%20integrasi%20layanan." target="_blank" rel="noopener" class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold text-white bg-biruAksen rounded-xl hover:bg-biruTua transition shadow-[0_8px_20px_rgba(42,142,202,0.3)] hover:-translate-y-0.5">
+                    Daftar Sekarang
+                </a>
+            </div>
+
+            <div class="flex md:hidden">
+                <button @click="mobileMenuOpen = !mobileMenuOpen" type="button" aria-label="Buka menu" :aria-expanded="mobileMenuOpen" class="text-gelap hover:text-biruAksen focus:outline-none p-2">
+                    <svg x-show="!mobileMenuOpen" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg x-show="mobileMenuOpen" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="display: none;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div x-show="mobileMenuOpen" x-transition @click.away="mobileMenuOpen = false" class="md:hidden border-b border-biruAwan bg-white px-4 pt-2 pb-6 space-y-4" style="display: none;">
+            <nav aria-label="Navigasi seluler" class="flex flex-col gap-4 text-base font-semibold text-gelap">
+                <a href="index.html#cara-kerja" @click="mobileMenuOpen = false" class="hover:text-biruAksen py-2 border-b border-gray-50">Cara Kerja</a>
+                <a href="index.html#pricing" @click="mobileMenuOpen = false" class="hover:text-biruAksen py-2 border-b border-gray-50">Harga</a>
+                <a href="biaya-transaksi.html" @click="mobileMenuOpen = false" class="hover:text-biruAksen py-2 border-b border-gray-50">Biaya Transaksi</a>
+                <a href="index.html#faq" @click="mobileMenuOpen = false" class="hover:text-biruAksen py-2 border-b border-gray-50">FAQ</a>
+            </nav>
+            <div class="pt-2">
+                <a href="https://api.whatsapp.com/send?phone=6289504121521&text=Halo%20Tim%20Wuzzpay,%20saya%20ingin%20melakukan%20pendaftaran%20dan%20meminta%20info%20integrasi%20layanan." target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center px-5 py-3 text-base font-bold text-white bg-biruAksen rounded-xl hover:bg-biruTua transition shadow-soft text-center">
+                    Daftar Sekarang
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="konten-utama">
+        <article>
+            <header class="relative pt-16 pb-12 bg-white border-b border-gray-200 overflow-hidden">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full bg-gradient-to-b from-biruAwan/30 to-transparent pointer-events-none"></div>
+                <div class="max-w-3xl mx-auto px-4 relative z-10">
+                    <nav aria-label="Breadcrumb" class="text-sm text-sedang mb-6">
+                        <a href="index.html" class="hover:text-biruAksen">Beranda</a> <span aria-hidden="true">&rsaquo;</span> <span class="font-semibold text-gelap">Payment Orchestration</span>
+                    </nav>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-gelap mb-6 leading-tight">Apa itu Payment Orchestration (Multi-Gateway)?</h1>
+                    <p class="text-lg text-gelap leading-relaxed bg-biruAwan/40 border border-biruAwan rounded-2xl p-5">
+                        <strong class="text-biruTua">Jawaban singkat:</strong> payment orchestration adalah lapisan teknologi yang menghubungkan bisnis ke <strong>beberapa payment gateway lewat satu integrasi</strong>, lalu mengatur ke gateway mana setiap transaksi dikirim. Jika satu gateway bermasalah, transaksi dapat dialihkan ke gateway lain yang tersedia.
+                    </p>
+                    <p class="text-sm text-sedang mt-4">Ditulis oleh tim <a href="index.html" class="underline text-biruAksen">Wuzzpay</a> (PT Semantic Digital Nusantara) &middot; Diterbitkan <time datetime="2026-10-24">24 Oktober 2026</time></p>
+                </div>
+            </header>
+
+            <div class="max-w-3xl mx-auto px-4 py-12 space-y-12 text-base leading-relaxed">
+
+                <section aria-labelledby="h-masalah">
+                    <h2 id="h-masalah" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Masalah yang ingin diselesaikan</h2>
+                    <p class="mb-4">Kebanyakan bisnis online memulai dengan satu payment gateway. Itu praktis, tapi ada konsekuensinya: semua pembayaran bergantung pada satu penyedia. Saat gateway itu mengalami gangguan, metode pembayaran tertentu bisa tidak muncul atau pembayaran gagal, dan pembeli yang sudah di halaman checkout biasanya tidak menunggu.</p>
+                    <p>Cara tradisional mengatasinya adalah mendaftar ke gateway kedua sebagai cadangan. Ini berarti proses KYC dan dokumen yang diulang, integrasi kode kedua, dan dua dashboard laporan yang harus direkonsiliasi. Payment orchestration dibuat untuk mengurangi beban itu.</p>
+                </section>
+
+                <section aria-labelledby="h-cara-kerja">
+                    <h2 id="h-cara-kerja" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Cara kerja payment orchestration</h2>
+                    <ol class="space-y-4 list-decimal pl-6">
+                        <li><strong class="text-gelap">Satu integrasi.</strong> Aplikasi atau toko Anda terhubung ke satu API, bukan ke banyak gateway satu per satu.</li>
+                        <li><strong class="text-gelap">Perutean.</strong> Lapisan orkestrasi memutuskan gateway mana yang dipakai untuk setiap transaksi, berdasarkan aturan yang ditetapkan.</li>
+                        <li><strong class="text-gelap">Pengalihan saat gangguan.</strong> Jika satu gateway tidak dapat memproses, transaksi diarahkan ke gateway lain yang tersedia.</li>
+                        <li><strong class="text-gelap">Pelaporan terpusat.</strong> Transaksi dari semua gateway dapat dilihat di satu dashboard.</li>
+                    </ol>
+                </section>
+
+                <section aria-labelledby="h-beda">
+                    <h2 id="h-beda" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Payment gateway tunggal vs payment orchestration</h2>
+                    <div class="overflow-x-auto rounded-2xl border border-gray-200 bg-white">
+                        <table class="w-full text-left text-sm">
+                            <caption class="sr-only">Perbandingan payment gateway tunggal dan payment orchestration</caption>
+                            <thead class="bg-biruAwan/40 text-gelap">
+                                <tr>
+                                    <th scope="col" class="p-4 font-bold">Aspek</th>
+                                    <th scope="col" class="p-4 font-bold">Satu gateway</th>
+                                    <th scope="col" class="p-4 font-bold">Payment orchestration</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100">
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Jumlah gateway</th><td class="p-4">Satu</td><td class="p-4">Beberapa</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Saat gateway bermasalah</th><td class="p-4">Pembayaran terganggu sampai pulih</td><td class="p-4">Dapat dialihkan ke gateway lain, jika tersedia</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Pendaftaran dan KYC</th><td class="p-4">Per vendor</td><td class="p-4">Dapat satu pintu, tergantung penyedia</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Integrasi</th><td class="p-4">Per vendor</td><td class="p-4">Satu API</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Laporan</th><td class="p-4">Per vendor</td><td class="p-4">Dapat terpusat</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Biaya</th><td class="p-4">Tarif gateway</td><td class="p-4">Tarif gateway, dan dapat ada biaya layanan orkestrasi</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section aria-labelledby="h-kapan">
+                    <h2 id="h-kapan" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Kapan bisnis membutuhkannya, dan kapan belum</h2>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+                            <h3 class="font-bold text-biruTua mb-3">Lebih berguna jika:</h3>
+                            <ul class="space-y-2 list-disc pl-5">
+                                <li>Pembayaran online adalah sumber pendapatan utama.</li>
+                                <li>Gangguan beberapa menit sudah berdampak pada penjualan.</li>
+                                <li>Tidak ingin mengurus KYC dan integrasi ke banyak vendor.</li>
+                                <li>Butuh satu tempat untuk melihat semua transaksi.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+                            <h3 class="font-bold text-biruTua mb-3">Mungkin belum perlu jika:</h3>
+                            <ul class="space-y-2 list-disc pl-5">
+                                <li>Volume transaksi masih sangat kecil.</li>
+                                <li>Pembayaran online hanya pelengkap, ada jalur lain.</li>
+                                <li>Satu gateway sudah memenuhi kebutuhan Anda saat ini.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section aria-labelledby="h-batas">
+                    <h2 id="h-batas" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Batasan yang perlu dipahami</h2>
+                    <ul class="space-y-3 list-disc pl-6">
+                        <li>Pengalihan hanya bisa dilakukan jika masih ada jalur lain yang tersedia. Jika semua gateway terganggu sekaligus, pengalihan tidak membantu.</li>
+                        <li>Gangguan di luar kendali penyedia, misalnya di sisi bank atau jaringan pelanggan, tidak dapat diatasi oleh pengalihan.</li>
+                        <li>Layanan orkestrasi dapat menambah biaya dibanding memakai satu gateway langsung. Periksa total biayanya sebelum memilih.</li>
+                        <li>Pastikan dana disalurkan oleh pihak berlisensi dan tidak ditahan oleh penyedia orkestrasi.</li>
+                    </ul>
+                </section>
+
+                <section aria-labelledby="h-wuzzpay">
+                    <h2 id="h-wuzzpay" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Bagaimana Wuzzpay menerapkannya</h2>
+                    <p class="mb-4">Wuzzpay adalah <em>Technical Service Provider</em> (TSP) yang menerapkan konsep ini untuk UMKM dan startup SaaS di Indonesia. Anda mendaftar sekali, tim Wuzzpay mengurus KYC ke gateway mitra, dan Anda mengintegrasikan satu API. Dana disalurkan langsung oleh mitra gateway berlisensi Bank Indonesia ke rekening merchant, tanpa ditahan Wuzzpay.</p>
+                    <p>Lihat <a href="index.html#pricing" class="underline text-biruAksen">harga</a> dan <a href="biaya-transaksi.html" class="underline text-biruAksen">biaya transaksi</a> untuk rincian lengkapnya.</p>
+                </section>
+
+                <section id="faq" aria-labelledby="h-faq">
+                    <h2 id="h-faq" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-6">Pertanyaan yang sering diajukan</h2>
+                    <div class="space-y-4">
+                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
+                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Apa itu payment orchestration?</h3>
+                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                            Payment orchestration adalah lapisan teknologi yang menghubungkan bisnis ke beberapa payment gateway lewat satu integrasi, lalu mengatur ke gateway mana setiap transaksi dikirim. Jika satu gateway bermasalah, transaksi dapat dialihkan ke gateway lain yang tersedia.
+                        </div>
+                    </details>
+                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
+                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Apa bedanya payment orchestration dengan payment gateway?</h3>
+                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                            Payment gateway adalah penyedia yang memproses pembayaran. Payment orchestration berada di atas beberapa gateway: ia tidak menggantikan gateway, tetapi mengatur penggunaannya, misalnya memilih jalur dan mengalihkan transaksi saat ada gangguan.
+                        </div>
+                    </details>
+                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
+                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Apakah payment orchestration sama dengan payment aggregator?</h3>
+                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                            Tidak sama. Payment aggregator umumnya adalah penyelenggara berlisensi yang menampung dan menyalurkan dana banyak merchant. Payment orchestration adalah lapisan teknologi perutean dan tidak harus memegang dana. Pada Wuzzpay, dana disalurkan langsung oleh mitra gateway berlisensi ke rekening merchant.
+                        </div>
+                    </details>
+                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
+                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Apakah UMKM membutuhkan payment orchestration?</h3>
+                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                            Tidak selalu. Jika volume transaksi masih kecil dan satu gateway sudah mencukupi, satu gateway bisa cukup. Payment orchestration lebih berguna ketika pembayaran online menjadi sumber pendapatan utama, sehingga gangguan gateway berdampak langsung pada penjualan.
+                        </div>
+                    </details>
+                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
+                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Apa batasan payment orchestration?</h3>
+                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                            Pengalihan otomatis hanya bisa dilakukan jika masih ada jalur lain yang tersedia. Gangguan di luar kendali penyedia, misalnya di sisi bank atau jaringan pelanggan, tidak dapat diatasi oleh pengalihan. Layanan orkestrasi juga dapat menambah biaya dibanding memakai satu gateway langsung.
+                        </div>
+                    </details>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+        <section class="py-16 bg-biruTua">
+            <div class="max-w-3xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-extrabold text-white mb-4">Siap mencoba pembayaran dengan jalur alternatif?</h2>
+                <p class="text-biruAwan mb-8 text-lg">Daftar sekali, integrasi sekali, dan tim kami membantu di setiap langkah.</p>
+                <a href="https://api.whatsapp.com/send?phone=6289504121521&text=Halo%20Tim%20Wuzzpay,%20saya%20ingin%20melakukan%20pendaftaran%20dan%20meminta%20info%20integrasi%20layanan." target="_blank" rel="noopener" class="inline-block px-8 py-4 text-lg font-bold text-biruTua bg-white rounded-2xl hover:bg-gray-100 transition shadow-lg">Daftar Sekarang</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-biruAwan bg-white py-16 text-sm text-sedang">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <nav aria-label="Tautan footer" class="mb-4 flex flex-wrap justify-center gap-x-6 gap-y-2 font-medium">
+                <a href="index.html" class="hover:text-biruAksen">Beranda</a>
+                <a href="biaya-transaksi.html" class="hover:text-biruAksen">Biaya Transaksi</a>
+                <a href="terms.html" class="hover:text-biruAksen">Syarat & Ketentuan</a>
+                <a href="privacy.html" class="hover:text-biruAksen">Kebijakan Privasi</a>
+                <a href="refund-policy.html" class="hover:text-biruAksen">Kebijakan Pengembalian Dana</a>
+            </nav>
+            <p class="mb-3 font-semibold text-gelap">&copy; 2026 PT Semantic Digital Nusantara. All rights reserved.</p>
+            <p class="max-w-4xl mx-auto opacity-80 text-xs leading-relaxed">Disclaimer: Wuzzpay bertindak sebagai penyedia sistem teknologi perutean transaksi (<em>technical service provider</em>). Pemrosesan, penampungan, dan penyelesaian dana sepenuhnya dijalankan oleh penyedia payment gateway berlisensi Bank Indonesia yang menjadi mitra resmi kami.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

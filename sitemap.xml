@@ -15,4 +15,12 @@
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
+
+   <!-- Panduan: Payment Orchestration -->
+   <url>
+      <loc>https://wuzzpay.com/apa-itu-payment-orchestration.html</loc>
+      <lastmod>2026-10-24</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
 </urlset>
