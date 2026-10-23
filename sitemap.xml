@@ -39,4 +39,12 @@
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
    </url>
+
+   <!-- Panduan: Gateway vs Aggregator vs TSP -->
+   <url>
+      <loc>https://wuzzpay.com/payment-gateway-vs-aggregator-vs-tsp.html</loc>
+      <lastmod>2026-10-24</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
 </urlset>

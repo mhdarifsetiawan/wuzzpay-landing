@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Payment Gateway vs Aggregator vs TSP: Apa Bedanya? | Wuzzpay</title>
+    <meta name="description" content="Pahami beda payment gateway, payment aggregator, dan TSP: peran, alur dana, lisensi, dan pertanyaan yang perlu diajukan sebelum memilih penyedia.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <link rel="canonical" href="https://wuzzpay.com/payment-gateway-vs-aggregator-vs-tsp.html">
+    <link rel="alternate" hreflang="id" href="https://wuzzpay.com/payment-gateway-vs-aggregator-vs-tsp.html">
+    <link rel="alternate" hreflang="x-default" href="https://wuzzpay.com/payment-gateway-vs-aggregator-vs-tsp.html">
+    <meta name="author" content="PT Semantic Digital Nusantara">
+
+    <!-- Open Graph & Twitter -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Wuzzpay">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:url" content="https://wuzzpay.com/payment-gateway-vs-aggregator-vs-tsp.html">
+    <meta property="og:title" content="Payment Gateway vs Aggregator vs TSP: Apa Bedanya? | Wuzzpay">
+    <meta property="og:description" content="Pahami beda payment gateway, payment aggregator, dan TSP: peran, alur dana, lisensi, dan pertanyaan yang perlu diajukan sebelum memilih penyedia.">
+    <meta property="og:image" content="https://wuzzpay.com/assets/images/og-wuzzpay.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Wuzzpay: pembayaran tetap jalan, walau satu gateway bermasalah">
+    <meta property="article:published_time" content="2026-10-24">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Payment Gateway vs Aggregator vs TSP: Apa Bedanya? | Wuzzpay">
+    <meta name="twitter:description" content="Pahami beda payment gateway, payment aggregator, dan TSP: peran, alur dana, lisensi, dan pertanyaan yang perlu diajukan sebelum memilih penyedia.">
+    <meta name="twitter:image" content="https://wuzzpay.com/assets/images/og-wuzzpay.jpg">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        biruTua: '#2A5C99',
+                        biruAksen: '#2A8ECA',
+                        biruLangit: '#56B5F0',
+                        biruAwan: '#D0E8F8',
+                        gelap: '#1E293B',
+                        sedang: '#475569',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 20px 40px -15px rgba(42, 142, 202, 0.15)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://wuzzpay.com/#organization",
+                "name": "Wuzzpay",
+                "legalName": "PT Semantic Digital Nusantara",
+                "url": "https://wuzzpay.com/",
+                "logo": "https://wuzzpay.com/assets/LOGO.png"
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://wuzzpay.com/payment-gateway-vs-aggregator-vs-tsp.html#webpage",
+                "url": "https://wuzzpay.com/payment-gateway-vs-aggregator-vs-tsp.html",
+                "name": "Payment Gateway vs Aggregator vs TSP: Apa Bedanya? | Wuzzpay",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://wuzzpay.com/#website",
+                    "url": "https://wuzzpay.com/",
+                    "name": "Wuzzpay"
+                },
+                "inLanguage": "id-ID",
+                "breadcrumb": {
+                    "@id": "https://wuzzpay.com/payment-gateway-vs-aggregator-vs-tsp.html#breadcrumb"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://wuzzpay.com/payment-gateway-vs-aggregator-vs-tsp.html#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Beranda",
+                        "item": "https://wuzzpay.com/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Payment Gateway vs Payment Aggregator vs TSP: Apa Bedanya?",
+                        "item": "https://wuzzpay.com/payment-gateway-vs-aggregator-vs-tsp.html"
+                    }
+                ]
+            },
+            {
+                "@type": "Article",
+                "@id": "https://wuzzpay.com/payment-gateway-vs-aggregator-vs-tsp.html#article",
+                "headline": "Payment Gateway vs Payment Aggregator vs TSP: Apa Bedanya?",
+                "description": "Pahami beda payment gateway, payment aggregator, dan TSP: peran, alur dana, lisensi, dan pertanyaan yang perlu diajukan sebelum memilih penyedia.",
+                "inLanguage": "id-ID",
+                "datePublished": "2026-10-24",
+                "dateModified": "2026-10-24",
+                "mainEntityOfPage": {
+                    "@id": "https://wuzzpay.com/payment-gateway-vs-aggregator-vs-tsp.html#webpage"
+                },
+                "image": "https://wuzzpay.com/assets/images/og-wuzzpay.jpg",
+                "author": {
+                    "@id": "https://wuzzpay.com/#organization"
+                },
+                "publisher": {
+                    "@id": "https://wuzzpay.com/#organization"
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://wuzzpay.com/payment-gateway-vs-aggregator-vs-tsp.html#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Apa bedanya payment gateway, payment aggregator, dan TSP?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Payment gateway memproses dan meneruskan transaksi pembayaran. Payment aggregator menaungi banyak merchant dalam satu akun atau izin, dan dana umumnya melalui aggregator. TSP menyediakan teknologi integrasi dan perutean, sedangkan penyelesaian pembayaran dijalankan pihak berlisensi lain."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Apakah Wuzzpay itu TSP atau aggregator?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tergantung skema gateway mitra. Pada sebagian skema Wuzzpay berperan sebagai TSP, dan pada skema lain gateway mitra menempatkan Wuzzpay sebagai aggregator. Kewajiban lisensi PJP Bank Indonesia melekat pada gateway mitra, dan alur dana mengikuti skema gateway yang dipakai."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Apakah dana saya aman jika melalui aggregator?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Keamanannya bergantung pada penyedia dan lisensinya. Periksa siapa pemegang izin penyelenggara jasa pembayaran (PJP), kapan dana diteruskan ke rekening Anda, dan apakah ada batas atau penahanan dana. Daftar penyelenggara berizin dipublikasikan di situs resmi Bank Indonesia."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Mana yang lebih baik untuk UMKM: gateway langsung atau aggregator?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tidak ada jawaban tunggal. Aggregator biasanya lebih cepat untuk memulai, sedangkan kontrak langsung ke gateway memberi kendali lebih tetapi prosesnya lebih panjang. Bandingkan alur dana, biaya total, dan dukungan sebelum memilih."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Mengapa penting tahu perbedaan ini sebelum memilih penyedia pembayaran?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Karena menentukan siapa yang memegang lisensi, ke mana dana mengalir lebih dulu, dan siapa yang bertanggung jawab saat ada masalah. Hal ini memengaruhi risiko, waktu pencairan, dan kendali Anda atas dana."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-sedang font-sans antialiased selection:bg-biruAksen selection:text-white">
+
+    <a href="#konten-utama" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:bg-white focus:text-biruTua focus:px-4 focus:py-2 focus:rounded-lg">Lewati ke konten utama</a>
+
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-white/90 border-b border-biruAwan/50 shadow-sm" x-data="{ mobileMenuOpen: false }">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="flex items-center" aria-label="Wuzzpay - Beranda">
+                    <img src="assets/LOGO.png" alt="Wuzzpay" width="1200" height="248" class="h-10 w-auto object-contain">
+                </a>
+            </div>
+
+            <nav aria-label="Navigasi utama" class="hidden md:flex items-center gap-8 text-sm font-semibold text-gelap">
+                <a href="index.html#cara-kerja" class="hover:text-biruAksen transition">Cara Kerja</a>
+                <a href="index.html#pricing" class="hover:text-biruAksen transition">Harga</a>
+                <a href="biaya-transaksi.html" class="hover:text-biruAksen transition">Biaya Transaksi</a>
+                <a href="index.html#faq" class="hover:text-biruAksen transition">FAQ</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="https://api.whatsapp.com/send?phone=6289504121521&text=Halo%20Tim%20Wuzzpay,%20saya%20ingin%20melakukan%20pendaftaran%20dan%20meminta%20info%20integrasi%20layanan." target="_blank" rel="noopener" class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold text-white bg-biruAksen rounded-xl hover:bg-biruTua transition shadow-[0_8px_20px_rgba(42,142,202,0.3)] hover:-translate-y-0.5">
+                    Daftar Sekarang
+                </a>
+            </div>
+
+            <div class="flex md:hidden">
+                <button @click="mobileMenuOpen = !mobileMenuOpen" type="button" aria-label="Buka menu" :aria-expanded="mobileMenuOpen" class="text-gelap hover:text-biruAksen focus:outline-none p-2">
+                    <svg x-show="!mobileMenuOpen" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg x-show="mobileMenuOpen" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="display: none;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div x-show="mobileMenuOpen" x-transition @click.away="mobileMenuOpen = false" class="md:hidden border-b border-biruAwan bg-white px-4 pt-2 pb-6 space-y-4" style="display: none;">
+            <nav aria-label="Navigasi seluler" class="flex flex-col gap-4 text-base font-semibold text-gelap">
+                <a href="index.html#cara-kerja" @click="mobileMenuOpen = false" class="hover:text-biruAksen py-2 border-b border-gray-50">Cara Kerja</a>
+                <a href="index.html#pricing" @click="mobileMenuOpen = false" class="hover:text-biruAksen py-2 border-b border-gray-50">Harga</a>
+                <a href="biaya-transaksi.html" @click="mobileMenuOpen = false" class="hover:text-biruAksen py-2 border-b border-gray-50">Biaya Transaksi</a>
+                <a href="index.html#faq" @click="mobileMenuOpen = false" class="hover:text-biruAksen py-2 border-b border-gray-50">FAQ</a>
+            </nav>
+            <div class="pt-2">
+                <a href="https://api.whatsapp.com/send?phone=6289504121521&text=Halo%20Tim%20Wuzzpay,%20saya%20ingin%20melakukan%20pendaftaran%20dan%20meminta%20info%20integrasi%20layanan." target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center px-5 py-3 text-base font-bold text-white bg-biruAksen rounded-xl hover:bg-biruTua transition shadow-soft text-center">
+                    Daftar Sekarang
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="konten-utama">
+        <article>
+            <header class="relative pt-16 pb-12 bg-white border-b border-gray-200 overflow-hidden">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full bg-gradient-to-b from-biruAwan/30 to-transparent pointer-events-none"></div>
+                <div class="max-w-3xl mx-auto px-4 relative z-10">
+                    <nav aria-label="Breadcrumb" class="text-sm text-sedang mb-6">
+                        <a href="index.html" class="hover:text-biruAksen">Beranda</a> <span aria-hidden="true">&rsaquo;</span> <span class="font-semibold text-gelap">Gateway vs Aggregator vs TSP</span>
+                    </nav>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-gelap mb-6 leading-tight">Payment Gateway vs Payment Aggregator vs TSP: Apa Bedanya?</h1>
+                    <p class="text-lg text-gelap leading-relaxed bg-biruAwan/40 border border-biruAwan rounded-2xl p-5">
+                        <strong class="text-biruTua">Jawaban singkat:</strong> payment gateway memproses dan meneruskan transaksi pembayaran; payment aggregator menaungi banyak merchant dalam satu akun atau izin, dan dana umumnya melalui aggregator; sedangkan Technical Service Provider (TSP) menyediakan teknologi integrasi dan perutean sementara penyelesaian pembayaran dijalankan pihak berlisensi lain. Yang paling penting bagi merchant: ketahui siapa pemegang lisensi dan lewat siapa dana Anda mengalir.
+                    </p>
+                    <p class="text-sm text-sedang mt-4">Ditulis oleh tim <a href="index.html" class="underline text-biruAksen">Wuzzpay</a> (PT Semantic Digital Nusantara) &middot; Diterbitkan <time datetime="2026-10-24">24 Oktober 2026</time></p>
+                </div>
+            </header>
+
+            <div class="max-w-3xl mx-auto px-4 py-12 space-y-12 text-base leading-relaxed">
+
+                <section aria-labelledby="h-singkat">
+                    <h2 id="h-singkat" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Definisi singkat</h2>
+                    <ul class="space-y-3 list-disc pl-6">
+                        <li><strong class='text-gelap'>Payment gateway</strong>: layanan yang meneruskan data pembayaran antara merchant, bank, dan jaringan pembayaran agar transaksi online bisa diproses.</li>
+                        <li><strong class='text-gelap'>Payment aggregator</strong>: penyedia yang menaungi banyak merchant di bawah satu akun atau izin, sehingga merchant bisa menerima pembayaran tanpa kontrak langsung ke setiap bank atau gateway. Dana umumnya melalui aggregator sebelum diteruskan ke merchant.</li>
+                        <li><strong class='text-gelap'>Technical Service Provider (TSP)</strong>: penyedia teknologi yang membantu integrasi dan perutean transaksi. Pemrosesan dan penyelesaian pembayaran dijalankan oleh pihak berlisensi lain.</li>
+                    </ul>
+                    <p class="mt-4">Pembagian ini membantu memahami peran masing-masing. Dalam praktik, satu penyedia bisa berperan sebagai lebih dari satu, tergantung skema kerja samanya.</p>
+                </section>
+
+                <section aria-labelledby="h-tabel">
+                    <h2 id="h-tabel" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Perbandingan peran</h2>
+                    <div class="overflow-x-auto rounded-2xl border border-gray-200 bg-white">
+                        <table class="w-full text-left text-sm">
+                            <caption class="sr-only">Perbandingan payment gateway, payment aggregator, dan TSP</caption>
+                            <thead class="bg-biruAwan/40 text-gelap"><tr><th scope="col" class="p-4 font-bold">Aspek</th><th scope="col" class="p-4 font-bold">Payment gateway</th><th scope="col" class="p-4 font-bold">Payment aggregator</th><th scope="col" class="p-4 font-bold">TSP</th></tr></thead>
+                            <tbody class="divide-y divide-gray-100">
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Peran utama</th><td class="p-4">Memproses dan meneruskan transaksi pembayaran</td><td class="p-4">Menaungi banyak merchant dalam satu akun atau izin</td><td class="p-4">Menyediakan teknologi integrasi dan perutean</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Alur dana</th><td class="p-4">Mengikuti skema penyedia; sering langsung ke merchant</td><td class="p-4">Umumnya melalui aggregator, lalu diteruskan ke merchant</td><td class="p-4">Mengikuti pihak berlisensi yang menyelesaikan pembayaran</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Pendaftaran merchant</th><td class="p-4">Ke penyedia gateway</td><td class="p-4">Ke aggregator, biasanya lebih cepat</td><td class="p-4">Mengikuti penyedia yang dihubungkan</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Lisensi Bank Indonesia</th><td class="p-4">Dipegang penyedia</td><td class="p-4">Dipegang aggregator atau mitranya</td><td class="p-4">Mengikuti pihak berlisensi yang bekerja sama</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Cocok untuk</th><td class="p-4">Bisnis yang ingin kontrak langsung</td><td class="p-4">Bisnis kecil yang butuh mulai cepat</td><td class="p-4">Bisnis yang ingin satu integrasi ke beberapa jalur</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="mt-4">Tabel ini gambaran umum. Ketentuan sebenarnya berbeda per penyedia dan per skema, jadi tanyakan langsung alur dana dan pemegang lisensinya.</p>
+                </section>
+
+                <section aria-labelledby="h-kenapa">
+                    <h2 id="h-kenapa" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Kenapa perbedaan ini penting bagi merchant</h2>
+                    <ul class="space-y-3 list-disc pl-6">
+                        <li><strong class='text-gelap'>Alur dana.</strong> Siapa yang menerima dana lebih dulu menentukan kapan dan lewat siapa uang Anda cair.</li>
+                        <li><strong class='text-gelap'>Risiko.</strong> Jika dana melalui pihak ketiga, kesehatan dan legalitas pihak itu ikut memengaruhi Anda.</li>
+                        <li><strong class='text-gelap'>Kendali.</strong> Kontrak langsung ke gateway memberi kendali lebih, tetapi proses daftarnya lebih panjang.</li>
+                        <li><strong class='text-gelap'>Kecepatan mulai.</strong> Skema aggregator biasanya lebih cepat untuk memulai, dengan konsekuensi di atas.</li>
+                    </ul>
+                </section>
+
+                <section aria-labelledby="h-cek">
+                    <h2 id="h-cek" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Pertanyaan yang sebaiknya Anda ajukan ke penyedia</h2>
+                    <ol class="space-y-4 list-decimal pl-6">
+                        <li>Siapa yang memegang izin penyelenggara jasa pembayaran (PJP) dari Bank Indonesia?</li>
+                        <li>Ke rekening siapa dana pembeli masuk lebih dulu, dan kapan diteruskan ke rekening saya?</li>
+                        <li>Apakah ada batas nominal, penahanan dana, atau syarat pencairan?</li>
+                        <li>Bagaimana penanganan transaksi bermasalah dan siapa yang dihubungi?</li>
+                        <li>Bagaimana jika penyedia atau salah satu gateway mengalami gangguan?</li>
+                    </ol>
+                    <p class="mt-4">Anda juga bisa memeriksa daftar penyelenggara berizin yang dipublikasikan Bank Indonesia di situs resminya.</p>
+                </section>
+
+                <section aria-labelledby="h-wuzzpay">
+                    <h2 id="h-wuzzpay" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Posisi Wuzzpay</h2>
+                    <p class="mb-4">Wuzzpay adalah platform penghubung pembayaran yang menghubungkan merchant ke beberapa gateway mitra lewat satu pendaftaran dan satu integrasi API. Peran Wuzzpay dapat berbeda tergantung skema gateway mitra: pada sebagian skema Wuzzpay berperan sebagai <em>Technical Service Provider</em>, dan pada skema lain gateway mitra menempatkan Wuzzpay sebagai <em>aggregator</em>.</p>
+                    <p class="mb-4">Kewajiban lisensi PJP Bank Indonesia melekat pada gateway mitra yang memproses dan menyelesaikan pembayaran. Alur dana dan pencairan mengikuti skema gateway yang dipakai, sehingga dapat berbeda antar gateway. Hubungi tim kami untuk memastikan skema yang berlaku pada akun Anda.</p>
+                    <p class="">Konsep di baliknya dijelaskan di <a href='apa-itu-payment-orchestration.html' class='underline text-biruAksen'>panduan payment orchestration</a>. Lihat juga <a href='index.html#pricing' class='underline text-biruAksen'>harga</a> dan <a href='biaya-transaksi.html' class='underline text-biruAksen'>biaya transaksi</a>.</p>
+                </section>
+
+                <section id="faq" aria-labelledby="h-faq">
+                    <h2 id="h-faq" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-6">Pertanyaan yang sering diajukan</h2>
+                    <div class="space-y-4">
+                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
+                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Apa bedanya payment gateway, payment aggregator, dan TSP?</h3>
+                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                            Payment gateway memproses dan meneruskan transaksi pembayaran. Payment aggregator menaungi banyak merchant dalam satu akun atau izin, dan dana umumnya melalui aggregator. TSP menyediakan teknologi integrasi dan perutean, sedangkan penyelesaian pembayaran dijalankan pihak berlisensi lain.
+                        </div>
+                    </details>
+                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
+                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Apakah Wuzzpay itu TSP atau aggregator?</h3>
+                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                            Tergantung skema gateway mitra. Pada sebagian skema Wuzzpay berperan sebagai TSP, dan pada skema lain gateway mitra menempatkan Wuzzpay sebagai aggregator. Kewajiban lisensi PJP Bank Indonesia melekat pada gateway mitra, dan alur dana mengikuti skema gateway yang dipakai.
+                        </div>
+                    </details>
+                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
+                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Apakah dana saya aman jika melalui aggregator?</h3>
+                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                            Keamanannya bergantung pada penyedia dan lisensinya. Periksa siapa pemegang izin penyelenggara jasa pembayaran (PJP), kapan dana diteruskan ke rekening Anda, dan apakah ada batas atau penahanan dana. Daftar penyelenggara berizin dipublikasikan di situs resmi Bank Indonesia.
+                        </div>
+                    </details>
+                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
+                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Mana yang lebih baik untuk UMKM: gateway langsung atau aggregator?</h3>
+                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                            Tidak ada jawaban tunggal. Aggregator biasanya lebih cepat untuk memulai, sedangkan kontrak langsung ke gateway memberi kendali lebih tetapi prosesnya lebih panjang. Bandingkan alur dana, biaya total, dan dukungan sebelum memilih.
+                        </div>
+                    </details>
+                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
+                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Mengapa penting tahu perbedaan ini sebelum memilih penyedia pembayaran?</h3>
+                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                            Karena menentukan siapa yang memegang lisensi, ke mana dana mengalir lebih dulu, dan siapa yang bertanggung jawab saat ada masalah. Hal ini memengaruhi risiko, waktu pencairan, dan kendali Anda atas dana.
+                        </div>
+                    </details>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+        <section class="py-16 bg-biruTua">
+            <div class="max-w-3xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-extrabold text-white mb-4">Ingin tahu skema yang berlaku untuk bisnis Anda?</h2>
+                <p class="text-biruAwan mb-8 text-lg">Daftar sekali, integrasi sekali, dan tim kami membantu di setiap langkah.</p>
+                <a href="https://api.whatsapp.com/send?phone=6289504121521&text=Halo%20Tim%20Wuzzpay,%20saya%20ingin%20melakukan%20pendaftaran%20dan%20meminta%20info%20integrasi%20layanan." target="_blank" rel="noopener" class="inline-block px-8 py-4 text-lg font-bold text-biruTua bg-white rounded-2xl hover:bg-gray-100 transition shadow-lg">Daftar Sekarang</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-biruAwan bg-white py-16 text-sm text-sedang">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <nav aria-label="Tautan footer" class="mb-4 flex flex-wrap justify-center gap-x-6 gap-y-2 font-medium">
+                <a href="index.html" class="hover:text-biruAksen">Beranda</a>
+                <a href="biaya-transaksi.html" class="hover:text-biruAksen">Biaya Transaksi</a>
+                <a href="terms.html" class="hover:text-biruAksen">Syarat & Ketentuan</a>
+                <a href="privacy.html" class="hover:text-biruAksen">Kebijakan Privasi</a>
+                <a href="refund-policy.html" class="hover:text-biruAksen">Kebijakan Pengembalian Dana</a>
+            </nav>
+            <p class="mb-3 font-semibold text-gelap">&copy; 2026 PT Semantic Digital Nusantara. All rights reserved.</p>
+            <p class="max-w-4xl mx-auto opacity-80 text-xs leading-relaxed">Disclaimer: Wuzzpay bertindak sebagai penyedia sistem teknologi perutean transaksi (<em>technical service provider</em>). Pemrosesan, penampungan, dan penyelesaian dana sepenuhnya dijalankan oleh penyedia payment gateway berlisensi Bank Indonesia yang menjadi mitra resmi kami.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
