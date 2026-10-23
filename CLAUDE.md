@@ -4,7 +4,7 @@ Situs statis (HTML + Tailwind + Alpine.js) untuk https://wuzzpay.com, dihosting 
 
 ## Build CSS (wajib)
 
-- CSS dibangun dari kelas Tailwind yang dipakai di HTML. **Setelah menambah atau mengubah kelas Tailwind, jalankan `npm run build:css` lalu commit `assets/css/tailwind.css`.** Kalau lupa, kelas baru tidak punya gaya.
+- CSS dibangun dari kelas Tailwind yang dipakai di HTML. **Setelah menambah atau mengubah kelas Tailwind, jalankan `npm run build:css` lalu commit `assets/css/tailwind.css`.** Kalau lupa, kelas baru tidak punya gaya. Skrip build otomatis menambahkan `?v=<hash>` pada tautan CSS di semua halaman (lewat `scripts/version-css.js`) agar cache Cloudflare tidak menyajikan CSS lama; jangan hapus parameter itu. Bila mengganti isi gambar tanpa mengganti nama file, tambahkan atau naikkan `?v=` pada URL gambarnya di HTML.
 - Konfigurasi warna dan font ada di `tailwind.config.js` (jangan taruh konfigurasi Tailwind inline di HTML).
 - `privacy.html`, `terms.html`, `refund-policy.html` memakai Tailwind v4 via CDN dan **tidak** ikut dibangun.
 - Jangan memasang kembali Tailwind CDN atau Font Awesome pada halaman utama. Ikon memakai SVG inline.

@@ -3,7 +3,7 @@
   "private": true,
   "description": "Landing page statis Wuzzpay. CSS dibangun dengan Tailwind CLI.",
   "scripts": {
-    "build:css": "tailwindcss -c tailwind.config.js -i src/input.css -o assets/css/tailwind.css --minify",
+    "build:css": "tailwindcss -c tailwind.config.js -i src/input.css -o assets/css/tailwind.css --minify && node scripts/version-css.js",
     "watch:css": "tailwindcss -c tailwind.config.js -i src/input.css -o assets/css/tailwind.css --watch"
   },
   "devDependencies": {

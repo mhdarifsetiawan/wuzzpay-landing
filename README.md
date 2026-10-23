@@ -11,6 +11,8 @@ npm install        # sekali saja
 npm run build:css  # menulis assets/css/tailwind.css
 ```
 
+Build juga memperbarui parameter `?v=` pada tautan CSS di semua halaman (cache-busting).
+
 Konfigurasi warna dan font ada di `tailwind.config.js`. File `assets/css/tailwind.css` harus ikut di-commit.
 
 Halaman `privacy.html`, `terms.html`, dan `refund-policy.html` memakai Tailwind v4 via CDN dan tidak ikut dibangun.
