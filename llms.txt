@@ -1,0 +1,32 @@
+# Wuzzpay
+
+> Wuzzpay adalah platform Technical Service Provider (TSP) di Indonesia yang menghubungkan bisnis ke beberapa payment gateway lewat satu pendaftaran dan satu integrasi API. Jika satu gateway bermasalah, transaksi dialihkan otomatis ke gateway lain. Ditujukan untuk UMKM, toko online, dan startup SaaS.
+
+Wuzzpay bukan pengganti payment gateway, melainkan lapisan yang menghubungkan merchant ke beberapa gateway mitra berlisensi Bank Indonesia. Wuzzpay tidak menahan dana: pencairan (settlement) dilakukan langsung oleh mitra gateway ke rekening merchant. Wuzzpay dikembangkan dan dikelola oleh PT Semantic Digital Nusantara, Sidoarjo, Jawa Timur, Indonesia.
+
+## Halaman utama
+
+- [Beranda Wuzzpay](https://wuzzpay.com/): penjelasan layanan, cara kerja, harga, dan FAQ.
+- [Biaya Transaksi (MDR)](https://wuzzpay.com/biaya-transaksi.html): tarif lengkap per metode pembayaran (QRIS, Virtual Account, e-wallet, gerai retail, kartu kredit, paylater).
+
+## Fakta kunci
+
+- Layanan: satu pendaftaran (KYC diurus Wuzzpay ke gateway mitra), satu integrasi API, satu dashboard merchant, dan satu kontak support.
+- Metode pembayaran: QRIS, Virtual Account bank, e-wallet, gerai retail, kartu kredit, dan paylater.
+- Biaya aktivasi dan integrasi: Rp 99.000, dibayar sekali (harga peluncuran, dapat berubah sewaktu-waktu). Selain itu berlaku biaya per transaksi (MDR) sesuai metode pembayaran.
+- Contoh MDR: QRIS 0,7% per transaksi; Virtual Account bank Rp 4.000 per transaksi; kartu kredit 2,9% + Rp 2.000. Tarif belum termasuk PPN dan dapat berubah.
+- Pengalihan otomatis tidak dapat mengatasi gangguan di luar kendali Wuzzpay, misalnya di sisi bank atau jaringan pelanggan, atau jika semua gateway terganggu sekaligus.
+- Wuzzpay beroperasi sebagai TSP: pemrosesan dan penyelesaian dana dijalankan oleh mitra gateway berlisensi Bank Indonesia, dan kewajiban lisensi PJP melekat pada mitra tersebut.
+
+## Kontak
+
+- Email: support@semanticdigital.id
+- WhatsApp: +62 895-0412-1521
+- Instagram: https://instagram.com/wuzzpayid
+- Perusahaan: https://semanticdigital.id
+
+## Optional
+
+- [Syarat & Ketentuan](https://wuzzpay.com/terms.html)
+- [Kebijakan Privasi](https://wuzzpay.com/privacy.html)
+- [Kebijakan Pengembalian Dana](https://wuzzpay.com/refund-policy.html)
