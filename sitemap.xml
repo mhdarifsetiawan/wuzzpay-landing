@@ -3,7 +3,7 @@
    <!-- Halaman Utama -->
    <url>
       <loc>https://wuzzpay.com/</loc>
-      <lastmod>2026-06-05</lastmod>
+      <lastmod>2026-10-23</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
    </url>
@@ -11,7 +11,7 @@
    <!-- Halaman Biaya Transaksi (Baru) -->
    <url>
       <loc>https://wuzzpay.com/biaya-transaksi.html</loc>
-      <lastmod>2026-06-05</lastmod>
+      <lastmod>2026-10-23</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
