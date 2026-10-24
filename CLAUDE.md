@@ -33,7 +33,7 @@ Setiap halaman terindeks harus punya: satu `h1`, `<title>` maksimal sekitar 60 k
 
 - **Teks pertanyaan dan jawaban FAQ di HTML (`<details>`) harus identik dengan `FAQPage` di JSON-LD.** Ubah keduanya sekaligus.
 - Halaman panduan baru: tambahkan ke `sitemap.xml` (dengan `lastmod`), `llms.txt`, dan footer "Jelajahi" di `index.html`, serta tautkan dari halaman terkait. Salin kerangka dari halaman panduan yang ada (header dengan "Masuk" dan "Daftar Sekarang", `assets/css/tailwind.css`, footer), bukan dari sumber lain. Ikuti struktur halaman panduan yang ada: jawaban singkat di atas, bagian bertajuk pertanyaan, tabel perbandingan bila relevan, bagian "Posisi/Pendekatan Wuzzpay", lalu FAQ.
-- Perbarui `lastmod` di `sitemap.xml` untuk halaman yang berubah.
+- Perbarui `lastmod` di `sitemap.xml` untuk halaman yang berubah, format ISO 8601 dengan jam dan zona (`2026-10-24T17:57:58+07:00`); isi hanya saat konten benar-benar berubah.
 - Jangan mengubah tarif di `biaya-transaksi.html` tanpa menyamakan semua halaman yang mengutipnya (QRIS 0,7%, VA Rp 4.000 flat, kartu kredit 2,9% + Rp 2.000, dan seterusnya).
 
 ## Pemberitahuan ke mesin pencari (IndexNow)
