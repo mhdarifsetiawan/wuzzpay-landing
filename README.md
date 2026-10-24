@@ -16,3 +16,7 @@ Build juga memperbarui parameter `?v=` pada tautan CSS di semua halaman (cache-b
 Konfigurasi warna dan font ada di `tailwind.config.js`. File `assets/css/tailwind.css` harus ikut di-commit.
 
 Halaman `privacy.html`, `terms.html`, dan `refund-policy.html` memakai Tailwind v4 via CDN dan tidak ikut dibangun.
+
+## IndexNow (Bing dan mesin pencari lain)
+
+Setelah deploy, `npm run indexnow` memberi tahu mesin pencari tentang semua URL di `sitemap.xml`. Kunci ada di file `<32-hex>.txt` di root.

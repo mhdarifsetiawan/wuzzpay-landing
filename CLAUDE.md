@@ -36,6 +36,11 @@ Setiap halaman terindeks harus punya: satu `h1`, `<title>` maksimal sekitar 60 k
 - Perbarui `lastmod` di `sitemap.xml` untuk halaman yang berubah.
 - Jangan mengubah tarif di `biaya-transaksi.html` tanpa menyamakan semua halaman yang mengutipnya (QRIS 0,7%, VA Rp 4.000 flat, kartu kredit 2,9% + Rp 2.000, dan seterusnya).
 
+## Pemberitahuan ke mesin pencari (IndexNow)
+
+- Kunci IndexNow ada di file `<32-hex>.txt` di root (isinya sama dengan nama file); jangan dihapus atau diganti tanpa mengubah `scripts/indexnow.js`.
+- Setelah halaman baru atau perubahan besar **ter-deploy**, jalankan `npm run indexnow` (semua URL di sitemap) atau `node scripts/indexnow.js <URL>` (URL tertentu). Gunakan `--dry` untuk melihat isi permintaan tanpa mengirim. Ini mengirim data ke layanan eksternal, jadi jalankan hanya atas permintaan pemilik proyek.
+
 ## Git
 
 - Jangan push tanpa diminta. Commit pesan singkat berbahasa Indonesia, dipisah per topik.
