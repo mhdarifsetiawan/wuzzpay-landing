@@ -11,6 +11,8 @@ Wuzzpay bukan pengganti payment gateway, melainkan lapisan yang menghubungkan me
 - [Tentang Wuzzpay](https://wuzzpay.com/tentang-wuzzpay.html): profil, layanan, untuk siapa, hal yang perlu diketahui, dan kontak.
 - [Apa itu Payment Orchestration (Multi-Gateway)?](https://wuzzpay.com/apa-itu-payment-orchestration.html): panduan konsep, cara kerja, perbandingan dengan gateway tunggal, kapan dibutuhkan, dan batasannya.
 - [Payment Gateway Down: Dampak dan Cara Mengatasinya](https://wuzzpay.com/payment-gateway-down.html): jenis gangguan, dampak bisnis, penyebab, langkah saat terjadi, dan cara mengurangi risikonya.
+- [Payment Gateway dengan Failover: Kriteria Memilih yang Tepat](https://wuzzpay.com/memilih-payment-gateway-dengan-failover.html): sepuluh kriteria memilih gateway atau layanan multi-gateway dengan failover, tanda yang perlu diwaspadai, dan cara menguji.
+- [Kapan Bisnis Anda Perlu Gateway Kedua atau Multi-Gateway?](https://wuzzpay.com/kapan-perlu-gateway-kedua.html): tanda perlu dan tidak perlu gateway kedua, serta cara menghitung dampak gangguan.
 - [Cara Menerima Pembayaran QRIS dan Virtual Account untuk UMKM dan Toko Online](https://wuzzpay.com/cara-menerima-pembayaran-qris-va.html): perbedaan metode, cara memilih penyedia, dan langkah memulai.
 - [Payment Gateway vs Payment Aggregator vs TSP: Apa Bedanya?](https://wuzzpay.com/payment-gateway-vs-aggregator-vs-tsp.html): perbedaan peran, alur dana, lisensi, dan pertanyaan untuk penyedia.
 - [Cara Menghitung Biaya Payment Gateway (MDR) untuk UMKM](https://wuzzpay.com/cara-menghitung-biaya-payment-gateway-mdr.html): rumus MDR, komponen biaya, dan contoh hitungan per metode pembayaran.

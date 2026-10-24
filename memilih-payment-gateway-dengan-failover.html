@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Payment Gateway dengan Failover: Kriteria Memilih | Wuzzpay</title>
+    <meta name="description" content="Checklist memilih payment gateway atau layanan multi-gateway dengan failover: jalur cadangan, alur dana, lisensi, biaya, dan batasan yang perlu dicek.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <link rel="canonical" href="https://wuzzpay.com/memilih-payment-gateway-dengan-failover.html">
+    <link rel="alternate" hreflang="id" href="https://wuzzpay.com/memilih-payment-gateway-dengan-failover.html">
+    <link rel="alternate" hreflang="x-default" href="https://wuzzpay.com/memilih-payment-gateway-dengan-failover.html">
+    <meta name="author" content="PT Semantic Digital Nusantara">
+
+    <!-- Open Graph & Twitter -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Wuzzpay">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:url" content="https://wuzzpay.com/memilih-payment-gateway-dengan-failover.html">
+    <meta property="og:title" content="Payment Gateway dengan Failover: Kriteria Memilih | Wuzzpay">
+    <meta property="og:description" content="Checklist memilih payment gateway atau layanan multi-gateway dengan failover: jalur cadangan, alur dana, lisensi, biaya, dan batasan yang perlu dicek.">
+    <meta property="og:image" content="https://wuzzpay.com/assets/images/og-wuzzpay.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Wuzzpay: pembayaran tetap jalan, walau satu gateway bermasalah">
+    <meta property="article:published_time" content="2026-10-25">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Payment Gateway dengan Failover: Kriteria Memilih | Wuzzpay">
+    <meta name="twitter:description" content="Checklist memilih payment gateway atau layanan multi-gateway dengan failover: jalur cadangan, alur dana, lisensi, biaya, dan batasan yang perlu dicek.">
+    <meta name="twitter:image" content="https://wuzzpay.com/assets/images/og-wuzzpay.jpg">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="assets/css/tailwind.css?v=73226649">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
+
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://wuzzpay.com/#organization",
+                "name": "Wuzzpay",
+                "legalName": "PT Semantic Digital Nusantara",
+                "url": "https://wuzzpay.com/",
+                "logo": "https://wuzzpay.com/assets/LOGO.png"
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://wuzzpay.com/memilih-payment-gateway-dengan-failover.html#webpage",
+                "url": "https://wuzzpay.com/memilih-payment-gateway-dengan-failover.html",
+                "name": "Payment Gateway dengan Failover: Kriteria Memilih | Wuzzpay",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://wuzzpay.com/#website",
+                    "url": "https://wuzzpay.com/",
+                    "name": "Wuzzpay"
+                },
+                "inLanguage": "id-ID",
+                "breadcrumb": {
+                    "@id": "https://wuzzpay.com/memilih-payment-gateway-dengan-failover.html#breadcrumb"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://wuzzpay.com/memilih-payment-gateway-dengan-failover.html#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Beranda",
+                        "item": "https://wuzzpay.com/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Payment Gateway dengan Failover: Kriteria Memilih yang Tepat",
+                        "item": "https://wuzzpay.com/memilih-payment-gateway-dengan-failover.html"
+                    }
+                ]
+            },
+            {
+                "@type": "Article",
+                "@id": "https://wuzzpay.com/memilih-payment-gateway-dengan-failover.html#article",
+                "headline": "Payment Gateway dengan Failover: Kriteria Memilih yang Tepat",
+                "description": "Checklist memilih payment gateway atau layanan multi-gateway dengan failover: jalur cadangan, alur dana, lisensi, biaya, dan batasan yang perlu dicek.",
+                "inLanguage": "id-ID",
+                "datePublished": "2026-10-25",
+                "dateModified": "2026-10-25",
+                "mainEntityOfPage": {
+                    "@id": "https://wuzzpay.com/memilih-payment-gateway-dengan-failover.html#webpage"
+                },
+                "image": "https://wuzzpay.com/assets/images/og-wuzzpay.jpg",
+                "author": {
+                    "@id": "https://wuzzpay.com/#organization"
+                },
+                "publisher": {
+                    "@id": "https://wuzzpay.com/#organization"
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://wuzzpay.com/memilih-payment-gateway-dengan-failover.html#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Apa itu payment gateway dengan failover?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Payment gateway atau layanan pembayaran yang mengalihkan transaksi secara otomatis ke jalur lain saat jalur utama bermasalah. Failover yang paling berguna adalah antar gateway yang berbeda, bukan hanya server cadangan dalam satu penyedia."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Apakah failover sama dengan multi-gateway?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tidak persis sama. Multi-gateway berarti Anda terhubung ke beberapa gateway sekaligus, dan failover adalah salah satu kegunaannya: pengalihan ke gateway lain saat satu gateway bermasalah. Multi-gateway juga dapat memberi satu integrasi dan pelaporan terpusat."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Apa yang harus ditanyakan ke penyedia sebelum memilih gateway dengan failover?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tanyakan apakah cadangannya gateway yang berbeda, metode apa saja yang punya jalur alternatif, cara dan kecepatan pengalihan, alur dana dan pemegang lisensi, biaya total, dan bagaimana gangguan diinformasikan serta didukung."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Apakah failover menjamin pembayaran tidak pernah gagal?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tidak. Pengalihan hanya bisa dilakukan jika masih ada jalur lain yang tersedia, dan tidak dapat mengatasi gangguan di sisi bank atau jaringan pelanggan. Waspadai penyedia yang menjanjikan 100% uptime tanpa perjanjian tertulis."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Apakah Wuzzpay termasuk payment gateway dengan failover?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Wuzzpay adalah platform penghubung pembayaran yang menghubungkan merchant ke beberapa gateway mitra lewat satu pendaftaran dan satu API, dan mengalihkan transaksi ke gateway lain yang tersedia saat satu gateway bermasalah. Wuzzpay bukan gateway tunggal."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-sedang font-sans antialiased selection:bg-biruAksen selection:text-white">
+
+    <a href="#konten-utama" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:bg-white focus:text-biruTua focus:px-4 focus:py-2 focus:rounded-lg">Lewati ke konten utama</a>
+
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-white/90 border-b border-biruAwan/50 shadow-sm" x-data="{ mobileMenuOpen: false }">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="flex items-center" aria-label="Wuzzpay - Beranda">
+                    <img src="assets/LOGO-sm.webp" alt="Wuzzpay" width="600" height="124" class="h-10 w-auto object-contain">
+                </a>
+            </div>
+
+            <nav aria-label="Navigasi utama" class="hidden md:flex items-center gap-8 text-sm font-semibold text-gelap">
+                <a href="index.html#cara-kerja" class="hover:text-biruAksen transition">Cara Kerja</a>
+                <a href="index.html#pricing" class="hover:text-biruAksen transition">Harga</a>
+                <a href="biaya-transaksi.html" class="hover:text-biruAksen transition">Biaya Transaksi</a>
+                <a href="index.html#faq" class="hover:text-biruAksen transition">FAQ</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="https://my.wuzzpay.com" class="text-sm font-bold text-biruTua hover:text-biruAksen transition">Masuk</a>
+                <a href="https://my.wuzzpay.com" class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold text-white bg-biruAksen rounded-xl hover:bg-biruTua transition shadow-[0_8px_20px_rgba(42,142,202,0.3)] hover:-translate-y-0.5">
+                    Daftar Sekarang
+                </a>
+            </div>
+
+            <div class="flex md:hidden">
+                <button @click="mobileMenuOpen = !mobileMenuOpen" type="button" aria-label="Buka menu" :aria-expanded="mobileMenuOpen" class="text-gelap hover:text-biruAksen focus:outline-none p-2">
+                    <svg x-show="!mobileMenuOpen" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg x-show="mobileMenuOpen" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="display: none;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div x-show="mobileMenuOpen" x-transition @click.away="mobileMenuOpen = false" class="md:hidden border-b border-biruAwan bg-white px-4 pt-2 pb-6 space-y-4" style="display: none;">
+            <nav aria-label="Navigasi seluler" class="flex flex-col gap-4 text-base font-semibold text-gelap">
+                <a href="index.html#cara-kerja" @click="mobileMenuOpen = false" class="hover:text-biruAksen py-2 border-b border-gray-50">Cara Kerja</a>
+                <a href="index.html#pricing" @click="mobileMenuOpen = false" class="hover:text-biruAksen py-2 border-b border-gray-50">Harga</a>
+                <a href="biaya-transaksi.html" @click="mobileMenuOpen = false" class="hover:text-biruAksen py-2 border-b border-gray-50">Biaya Transaksi</a>
+                <a href="index.html#faq" @click="mobileMenuOpen = false" class="hover:text-biruAksen py-2 border-b border-gray-50">FAQ</a>
+            </nav>
+            <div class="pt-2 space-y-3">
+                <a href="https://my.wuzzpay.com" class="w-full inline-flex items-center justify-center px-5 py-3 text-base font-bold text-biruTua bg-white border border-biruAwan rounded-xl hover:bg-biruAwan/40 transition text-center">Masuk</a>
+                <a href="https://my.wuzzpay.com" class="w-full inline-flex items-center justify-center px-5 py-3 text-base font-bold text-white bg-biruAksen rounded-xl hover:bg-biruTua transition shadow-soft text-center">
+                    Daftar Sekarang
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="konten-utama">
+        <article>
+            <header class="relative pt-16 pb-12 bg-white border-b border-gray-200 overflow-hidden">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full bg-gradient-to-b from-biruAwan/30 to-transparent pointer-events-none"></div>
+                <div class="max-w-3xl mx-auto px-4 relative z-10">
+                    <nav aria-label="Breadcrumb" class="text-sm text-sedang mb-6">
+                        <a href="index.html" class="hover:text-biruAksen">Beranda</a> <span aria-hidden="true">&rsaquo;</span> <span class="font-semibold text-gelap">Memilih Gateway dengan Failover</span>
+                    </nav>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-gelap mb-6 leading-tight">Payment Gateway dengan Failover: Kriteria Memilih yang Tepat</h1>
+                    <p class="text-lg text-gelap leading-relaxed bg-biruAwan/40 border border-biruAwan rounded-2xl p-5">
+                        <strong class="text-biruTua">Jawaban singkat:</strong> saat memilih payment gateway atau layanan multi-gateway dengan failover, periksa sepuluh hal: apakah cadangannya gateway yang benar-benar berbeda, cakupan metode pembayaran, cara dan kecepatan pengalihan, konsistensi status transaksi, alur dana dan lisensi, biaya total, pelaporan, pendaftaran, transparansi gangguan, dan kemudahan integrasi. Waspadai klaim "100% uptime" tanpa perjanjian tertulis.
+                    </p>
+                    <p class="text-sm text-sedang mt-4">Ditulis oleh tim <a href="index.html" class="underline text-biruAksen">Wuzzpay</a> (PT Semantic Digital Nusantara) &middot; Diterbitkan <time datetime="2026-10-25">25 Oktober 2026</time></p>
+                </div>
+            </header>
+
+            <div class="max-w-3xl mx-auto px-4 py-12 space-y-12 text-base leading-relaxed">
+
+                <section aria-labelledby="h-arti">
+                    <h2 id="h-arti" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Apa arti failover pada pembayaran</h2>
+                    <p class="mb-4"><em>Failover</em> adalah pengalihan otomatis ke jalur lain saat jalur utama bermasalah. Pada pembayaran online, istilah ini dipakai untuk dua hal yang berbeda, dan perbedaannya penting saat Anda memilih penyedia:</p>
+                    <ul class="space-y-3 list-disc pl-6">
+                        <li><strong class='text-gelap'>Failover antar gateway (multi-gateway).</strong> Transaksi dialihkan ke payment gateway lain yang berbeda. Jika satu gateway terganggu, gateway lain masih bisa memproses.</li>
+                        <li><strong class='text-gelap'>Redundansi internal satu penyedia.</strong> Penyedia punya server cadangan sendiri. Ini membantu bila satu server rusak, tetapi jika penyedia atau gateway itu sendiri terganggu, pembayaran Anda tetap terganggu.</li>
+                    </ul>
+                    <p class="mt-4 mb-0">Karena itu pertanyaan pertama kepada penyedia mana pun: failover-nya ke mana? Penjelasan konsep multi-gateway ada di <a href='apa-itu-payment-orchestration.html' class='underline text-biruAksen'>panduan payment orchestration</a>.</p>
+                </section>
+
+                <section aria-labelledby="h-kriteria">
+                    <h2 id="h-kriteria" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Sepuluh kriteria memilih payment gateway dengan failover</h2>
+                    <div class="overflow-x-auto rounded-2xl border border-gray-200 bg-white">
+                        <table class="w-full text-left text-sm">
+                            <caption class="sr-only">Kriteria memilih payment gateway dengan failover</caption>
+                            <thead class="bg-biruAwan/40 text-gelap"><tr><th scope="col" class="p-4 font-bold">Kriteria</th><th scope="col" class="p-4 font-bold">Pertanyaan ke penyedia</th><th scope="col" class="p-4 font-bold">Mengapa penting</th></tr></thead>
+                            <tbody class="divide-y divide-gray-100">
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">1. Jalur benar-benar berbeda</th><td class="p-4">Apakah cadangannya gateway lain, atau hanya server lain milik penyedia yang sama?</td><td class="p-4">Cadangan di penyedia yang sama tidak membantu saat penyedia itu terganggu.</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">2. Cakupan metode</th><td class="p-4">Apakah QRIS, Virtual Account, e-wallet, dan retail masing-masing punya jalur alternatif?</td><td class="p-4">Sering hanya sebagian metode yang punya cadangan.</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">3. Cara pengalihan</th><td class="p-4">Otomatis atau manual? Seberapa cepat, dan apa yang dilihat pembeli saat pengalihan terjadi?</td><td class="p-4">Pengalihan manual atau lambat sering terlambat menyelamatkan penjualan.</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">4. Konsistensi status</th><td class="p-4">Bagaimana mencegah pembayaran ganda dan memastikan status transaksi tetap benar setelah pengalihan?</td><td class="p-4">Transaksi menggantung dan tagihan ganda memicu komplain.</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">5. Alur dana dan lisensi</th><td class="p-4">Siapa yang memegang dana lebih dulu, siapa pemegang izin PJP Bank Indonesia, dan kapan dana cair?</td><td class="p-4">Menentukan risiko, waktu pencairan, dan siapa yang bertanggung jawab.</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">6. Biaya total</th><td class="p-4">Berapa biaya setup, MDR tiap gateway (sama atau berbeda), biaya layanan tambahan, dan apakah sudah termasuk PPN?</td><td class="p-4">Cadangan yang mahal bisa menghapus manfaatnya.</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">7. Pelaporan dan rekonsiliasi</th><td class="p-4">Apakah transaksi dari semua gateway terlihat di satu laporan?</td><td class="p-4">Banyak dashboard berarti rekonsiliasi manual.</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">8. Pendaftaran dan KYC</th><td class="p-4">Satu proses atau harus mendaftar ke tiap gateway?</td><td class="p-4">Menentukan waktu dan beban administrasi.</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">9. Transparansi gangguan</th><td class="p-4">Apakah ada halaman status, pemberitahuan gangguan, dan kontak dukungan yang jelas?</td><td class="p-4">Anda perlu tahu apa yang terjadi saat gangguan.</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">10. Integrasi</th><td class="p-4">Apakah cukup satu API, dan apakah dokumentasi dan lingkungan uji tersedia?</td><td class="p-4">Integrasi per gateway menambah kerja dan risiko salah.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section aria-labelledby="h-merah">
+                    <h2 id="h-merah" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Tanda yang perlu diwaspadai</h2>
+                    <ul class="space-y-3 list-disc pl-6">
+                        <li>Klaim "100% uptime" atau "anti-gagal" tanpa perjanjian layanan tertulis. Tidak ada penyedia yang dapat menjamin nol gangguan.</li>
+                        <li>Enggan menjelaskan alur dana dan siapa pemegang lisensi.</li>
+                        <li>Failover hanya untuk satu metode pembayaran, tanpa dijelaskan.</li>
+                        <li>Tidak ada kontak dukungan atau jalur eskalasi saat terjadi gangguan.</li>
+                        <li>Biaya yang baru dijelaskan setelah Anda mendaftar.</li>
+                    </ul>
+                </section>
+
+                <section aria-labelledby="h-uji">
+                    <h2 id="h-uji" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Cara menguji sebelum berkomitmen</h2>
+                    <ol class="space-y-4 list-decimal pl-6">
+                        <li>Minta penyedia menjelaskan skenario gangguan: apa yang terjadi, dan berapa lama pengalihan berlangsung.</li>
+                        <li>Uji transaksi di tiap metode pembayaran yang akan Anda buka.</li>
+                        <li>Tanyakan dokumentasi dan lingkungan uji sebelum membayar biaya aktivasi.</li>
+                        <li>Periksa pemegang izin penyelenggara berizin di situs resmi Bank Indonesia.</li>
+                        <li>Minta kontak dukungan dan jam layanannya secara tertulis.</li>
+                    </ol>
+                </section>
+
+                <section aria-labelledby="h-wuzzpay">
+                    <h2 id="h-wuzzpay" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Bagaimana Wuzzpay menjawab kriteria ini</h2>
+                    <p class="mb-4">Wuzzpay adalah platform penghubung pembayaran yang menghubungkan merchant ke beberapa gateway mitra, jadi failover-nya antar gateway, bukan sekadar server cadangan. Ringkasannya:</p>
+                    <ul class="space-y-3 list-disc pl-6">
+                        <li><strong class='text-gelap'>Jalur berbeda dan pengalihan otomatis:</strong> transaksi dialihkan ke gateway lain yang tersedia saat satu gateway bermasalah.</li>
+                        <li><strong class='text-gelap'>Satu pendaftaran, satu API, satu dashboard, satu kontak dukungan:</strong> tim Wuzzpay mengurus KYC ke gateway mitra.</li>
+                        <li><strong class='text-gelap'>Alur dana dan lisensi:</strong> mengikuti skema gateway mitra; lisensi PJP Bank Indonesia melekat pada gateway mitra.</li>
+                        <li><strong class='text-gelap'>Biaya:</strong> biaya aktivasi dan integrasi sekali bayar (harga peluncuran saat ini Rp 99.000 dan dapat berubah) ditambah biaya per transaksi. Lihat <a href='biaya-transaksi.html' class='underline text-biruAksen'>biaya transaksi</a>.</li>
+                        <li><strong class='text-gelap'>Batasannya:</strong> pengalihan hanya bisa dilakukan jika masih ada jalur lain yang tersedia, dan tidak mengatasi gangguan di sisi bank atau jaringan pelanggan. Cakupan metode per gateway dan waktu pengalihan dapat ditanyakan langsung ke tim kami; Wuzzpay juga baru diluncurkan.</li>
+                    </ul>
+                    <p class="mt-4 mb-0">Lihat juga <a href='payment-gateway-down.html' class='underline text-biruAksen'>panduan payment gateway down</a> dan <a href='kapan-perlu-gateway-kedua.html' class='underline text-biruAksen'>kapan bisnis perlu gateway kedua</a>.</p>
+                </section>
+
+                <section id="faq" aria-labelledby="h-faq">
+                    <h2 id="h-faq" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-6">Pertanyaan yang sering diajukan</h2>
+                    <div class="space-y-4">
+                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
+                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Apa itu payment gateway dengan failover?</h3>
+                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                            Payment gateway atau layanan pembayaran yang mengalihkan transaksi secara otomatis ke jalur lain saat jalur utama bermasalah. Failover yang paling berguna adalah antar gateway yang berbeda, bukan hanya server cadangan dalam satu penyedia.
+                        </div>
+                    </details>
+                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
+                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Apakah failover sama dengan multi-gateway?</h3>
+                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                            Tidak persis sama. Multi-gateway berarti Anda terhubung ke beberapa gateway sekaligus, dan failover adalah salah satu kegunaannya: pengalihan ke gateway lain saat satu gateway bermasalah. Multi-gateway juga dapat memberi satu integrasi dan pelaporan terpusat.
+                        </div>
+                    </details>
+                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
+                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Apa yang harus ditanyakan ke penyedia sebelum memilih gateway dengan failover?</h3>
+                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                            Tanyakan apakah cadangannya gateway yang berbeda, metode apa saja yang punya jalur alternatif, cara dan kecepatan pengalihan, alur dana dan pemegang lisensi, biaya total, dan bagaimana gangguan diinformasikan serta didukung.
+                        </div>
+                    </details>
+                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
+                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Apakah failover menjamin pembayaran tidak pernah gagal?</h3>
+                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                            Tidak. Pengalihan hanya bisa dilakukan jika masih ada jalur lain yang tersedia, dan tidak dapat mengatasi gangguan di sisi bank atau jaringan pelanggan. Waspadai penyedia yang menjanjikan 100% uptime tanpa perjanjian tertulis.
+                        </div>
+                    </details>
+                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
+                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Apakah Wuzzpay termasuk payment gateway dengan failover?</h3>
+                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                            Wuzzpay adalah platform penghubung pembayaran yang menghubungkan merchant ke beberapa gateway mitra lewat satu pendaftaran dan satu API, dan mengalihkan transaksi ke gateway lain yang tersedia saat satu gateway bermasalah. Wuzzpay bukan gateway tunggal.
+                        </div>
+                    </details>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+        <section class="py-16 bg-biruTua">
+            <div class="max-w-3xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-extrabold text-white mb-4">Ingin tahu bagaimana Wuzzpay memenuhi kriteria ini?</h2>
+                <p class="text-biruAwan mb-8 text-lg">Daftar sekali, integrasi sekali, dan tim kami membantu di setiap langkah.</p>
+                <a href="https://my.wuzzpay.com" class="inline-block px-8 py-4 text-lg font-bold text-biruTua bg-white rounded-2xl hover:bg-gray-100 transition shadow-lg">Daftar Sekarang</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-biruAwan bg-white py-16 text-sm text-sedang">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <nav aria-label="Tautan footer" class="mb-4 flex flex-wrap justify-center gap-x-6 gap-y-2 font-medium">
+                <a href="index.html" class="hover:text-biruAksen">Beranda</a>
+                <a href="biaya-transaksi.html" class="hover:text-biruAksen">Biaya Transaksi</a>
+                <a href="terms.html" class="hover:text-biruAksen">Syarat & Ketentuan</a>
+                <a href="privacy.html" class="hover:text-biruAksen">Kebijakan Privasi</a>
+                <a href="refund-policy.html" class="hover:text-biruAksen">Kebijakan Pengembalian Dana</a>
+            </nav>
+            <p class="mb-3 font-semibold text-gelap">&copy; 2026 PT Semantic Digital Nusantara. All rights reserved.</p>
+            <p class="max-w-4xl mx-auto opacity-80 text-xs leading-relaxed">Disclaimer: Wuzzpay menyediakan sistem teknologi perutean transaksi dan, tergantung skema gateway mitra, dapat berperan sebagai <em>technical service provider</em> atau <em>aggregator</em>. Pemrosesan dan penyelesaian pembayaran dijalankan bersama gateway mitra yang berlisensi Bank Indonesia, dan alur dana mengikuti skema masing-masing gateway.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
