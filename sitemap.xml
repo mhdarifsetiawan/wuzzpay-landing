@@ -3,7 +3,7 @@
    <!-- Halaman Utama -->
    <url>
       <loc>https://wuzzpay.com/</loc>
-      <lastmod>2026-10-24T17:57:58+07:00</lastmod>
+      <lastmod>2026-10-24T21:21:31+07:00</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
    </url>
@@ -59,7 +59,7 @@
    <!-- Panduan: Integrasi Pembayaran SaaS -->
    <url>
       <loc>https://wuzzpay.com/cara-integrasi-pembayaran-aplikasi-saas.html</loc>
-      <lastmod>2026-10-24T05:37:10+07:00</lastmod>
+      <lastmod>2026-10-24T21:21:31+07:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
    </url>
@@ -67,7 +67,7 @@
    <!-- Tentang Wuzzpay -->
    <url>
       <loc>https://wuzzpay.com/tentang-wuzzpay.html</loc>
-      <lastmod>2026-10-24T05:37:10+07:00</lastmod>
+      <lastmod>2026-10-24T21:21:31+07:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
    </url>
