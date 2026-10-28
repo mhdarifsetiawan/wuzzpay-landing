@@ -37,7 +37,7 @@
                     Guna menjalankan fungsi perutean data pembayaran secara instan, sistem backend Wuzzpay mengumpulkan dan memproses informasi yang dikirimkan oleh sistem Merchant melalui integrasi Open API, yang terbagi atas:
                 </p>
                 <ul class="list-disc pl-5 space-y-1.5 text-slate-400 mb-3 font-sans">
-                    <li><strong class="text-slate-200">Data Identitas Merchant:</strong> Nama instansi/perusahaan, alamat email resmi bisnis, nomor WhatsApp operasional, serta berkas verifikasi identitas (KYC) yang diperlukan untuk pengajuan akun ke pihak internal Payment Gateway.</li>
+                    <li><strong class="text-slate-200">Data Identitas Merchant:</strong> Nama instansi/perusahaan, alamat email resmi bisnis, nomor WhatsApp operasional, serta berkas dokumen KYC yang Wuzzpay bantu kumpulkan dan teruskan ke Payment Gateway mitra. Verifikasi identitas dan kewajiban KYC/CDD dilakukan oleh Payment Gateway mitra, bukan oleh Wuzzpay.</li>
                     <li><strong class="text-slate-200">Data Transaksi (Payload):</strong> Nilai nominal transaksi, ID referensi unik unik (`reference_id`), jenis metode pembayaran (QRIS, VA, E-Wallet), serta data parameter teknis penunjang komunikasi API.</li>
                     <li><strong class="text-slate-200">Data Telemetri Jaringan:</strong> Alamat IP server, catatan waktu request (*timestamps*), serta performa latensi respons jaringan dari sistem hulu gateway tujuan.</li>
                 </ul>
@@ -78,7 +78,7 @@
                     <span class="text-indigo-400">05.</span> PENGUNGKAPAN DATA KEPADA PIHAK KETIGA
                 </h2>
                 <p class="mb-3">
-                    Sebagai platform aggregator, Wuzzpay akan meneruskan parameter data transaksi terenkripsi ke institusi *Payment Gateway* berlisensi resmi Bank Indonesia yang ditunjuk secara sah oleh Merchant (seperti Winpay, Espay, iPaymu, dan jaringan mitra penampung aktif lainnya) guna menyelesaikan proses pembayaran.
+                    Sebagai penyedia teknologi perutean transaksi (TSP), Wuzzpay meneruskan parameter data transaksi terenkripsi ke institusi *Payment Gateway* mitra berlisensi Bank Indonesia yang dipilih atau ditetapkan untuk Merchant, guna menyelesaikan proses pembayaran. Penyelesaian dana dilakukan langsung oleh *Payment Gateway* mitra ke rekening bank Merchant.
                 </p>
                 <p>
                     Di luar kebutuhan distribusi rute ke gerbang pembayaran resmi tersebut, PT Semantic Digital Nusantara **menjamin tidak akan pernah menjual, menyewakan, memperdagangkan, atau membocorkan** data transaksi maupun data pribadi Merchant/Konsumen kepada pihak ketiga mana pun untuk tujuan komersial atau periklanan.

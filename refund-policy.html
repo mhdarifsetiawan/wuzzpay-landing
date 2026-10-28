@@ -20,13 +20,13 @@
             
             <section>
                 <h2 class="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2 font-mono">
-                    <span class="text-indigo-400">01.</span> KEPATUHAN STRUKTUR ALIRAN DANA (NON-CUSTODIAL)
+                    <span class="text-indigo-400">01.</span> ALUR DANA DAN PENGEMBALIAN DANA
                 </h2>
                 <p class="mb-3">
-                    Wuzzpay beroperasi murni sebagai **Technical Service Provider (TSP)** atau penyedia teknologi modul perutean data otomatis (*Smart Routing Engine*). Berdasarkan koridor regulasi Bank Indonesia, Wuzzpay **TIDAK** memiliki kapabilitas, hak akses, ataupun wewenang hukum untuk menampung, memotong, menguasai, atau menahan likuiditas dana milik Merchant maupun Konsumen Akhir.
+                    Wuzzpay beroperasi sebagai **Technical Service Provider (TSP)** atau penyedia teknologi modul perutean data otomatis (*Smart Routing Engine*), dan bukan Penyelenggara Jasa Pembayaran (PJP) berizin. Wuzzpay tidak menampung, menahan, ataupun meneruskan dana Merchant maupun Konsumen Akhir. Kewajiban perizinan PJP melekat pada *Payment Gateway* mitra berlisensi Bank Indonesia yang memproses pembayaran.
                 </p>
                 <p>
-                    Seluruh eksekusi finansial riil pemindahan fisik uang dalam mekanisme pengembalian dana *(Refund)* wajib mengikuti syarat, ketentuan, serta regulasi teknis dari institusi gerbang Penyedia Jasa Pembayaran (PJP) atau *Payment Gateway* terkait. Tanggung jawab akhir atas pencairan, ketersediaan, dan transfer dana *Refund* sepenuhnya berada di pihak *Payment Gateway* mitra selaku pemegang sah dana Merchant.
+                    Seluruh eksekusi finansial riil pemindahan fisik uang dalam mekanisme pengembalian dana *(Refund)* wajib mengikuti syarat, ketentuan, serta regulasi teknis dari institusi gerbang Penyedia Jasa Pembayaran (PJP) atau *Payment Gateway* terkait. Penyelesaian dana dan transfer dana *Refund* dilakukan langsung oleh *Payment Gateway* mitra berlisensi, dan tanggung jawab atasnya berada di pihak *Payment Gateway* tersebut sesuai skema dan ketentuannya.
                 </p>
             </section>
 
@@ -47,7 +47,7 @@
                     <span class="text-indigo-400">03.</span> ESTIMASI WAKTU OPERASIONAL REVERSAL FINANSIAL
                 </h2>
                 <p class="mb-3">
-                    Kecepatan sampainya dana ke rekening asal Konsumen Akhir pasca-instruksi disetujui oleh Merchant dan diteruskan oleh Wuzzpay ke sistem hulu sepenuhnya mengikuti ketentuan kliring regulasi perbankan nasional:
+                    Kecepatan sampainya dana ke rekening asal Konsumen Akhir pasca-instruksi disetujui oleh Merchant dan instruksinya disampaikan melalui sistem Wuzzpay ke *Payment Gateway* mitra sepenuhnya mengikuti ketentuan kliring regulasi perbankan nasional:
                 </p>
                 <ul class="list-disc pl-5 space-y-2 mb-3 text-slate-400 font-sans">
                     <li><strong>Kanal QRIS / E-Wallet:</strong> Diproses melalui skema pembalikan saldo otomatis (*reversal*) dengan durasi berkisar antara 1 s.d 3 hari kerja, tergantung pada kebijakan teknis *Acquirer* dan penerbit instrumen pembayaran terkait.</li>
