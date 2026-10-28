@@ -2,7 +2,7 @@
 
 > Wuzzpay adalah platform penghubung pembayaran (payment orchestration) di Indonesia yang menghubungkan bisnis ke beberapa payment gateway lewat satu pendaftaran dan satu integrasi API. Jika satu gateway bermasalah, transaksi dialihkan otomatis ke gateway lain. Ditujukan untuk UMKM, toko online, dan startup SaaS.
 
-Wuzzpay bukan pengganti payment gateway, melainkan lapisan yang menghubungkan merchant ke beberapa gateway mitra berlisensi Bank Indonesia. Alur dana dan pencairan (settlement) mengikuti skema gateway mitra yang dipakai: pada sebagian skema dilakukan langsung oleh gateway mitra, pada skema lain dapat melalui Wuzzpay. Wuzzpay dikembangkan dan dikelola oleh PT Semantic Digital Nusantara, Sidoarjo, Jawa Timur, Indonesia.
+Wuzzpay bukan pengganti payment gateway, melainkan lapisan yang menghubungkan merchant ke beberapa gateway mitra berlisensi Bank Indonesia. Pencairan (settlement) mengikuti skema gateway mitra yang dipakai dan dilakukan langsung oleh gateway mitra ke rekening bank merchant. Wuzzpay dikembangkan dan dikelola oleh PT Semantic Digital Nusantara, Sidoarjo, Jawa Timur, Indonesia.
 
 ## Halaman utama
 
@@ -20,7 +20,7 @@ Wuzzpay bukan pengganti payment gateway, melainkan lapisan yang menghubungkan me
 
 ## Fakta kunci
 
-- Layanan: satu pendaftaran (KYC diurus Wuzzpay ke gateway mitra), satu integrasi API, satu dashboard merchant, dan satu kontak support.
+- Layanan: satu pendaftaran (Wuzzpay membantu menjembatani pengumpulan dokumen KYC ke gateway mitra), satu integrasi API, satu dashboard merchant, dan satu kontak support.
 - Metode pembayaran: QRIS, Virtual Account bank, e-wallet, gerai retail, kartu kredit, dan paylater.
 - Biaya aktivasi dan integrasi: Rp 99.000, dibayar sekali (harga peluncuran, dapat berubah sewaktu-waktu). Selain itu berlaku biaya per transaksi (MDR) sesuai metode pembayaran.
 - Contoh MDR: QRIS 0,7% per transaksi; Virtual Account bank Rp 4.000 per transaksi; kartu kredit 2,9% + Rp 2.000. Tarif belum termasuk PPN dan dapat berubah.

@@ -3,7 +3,7 @@
    <!-- Halaman Utama -->
    <url>
       <loc>https://wuzzpay.com/</loc>
-      <lastmod>2026-10-24T21:21:31+07:00</lastmod>
+      <lastmod>2026-10-29T12:00:00+07:00</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
    </url>
@@ -11,7 +11,7 @@
    <!-- Halaman Biaya Transaksi -->
    <url>
       <loc>https://wuzzpay.com/biaya-transaksi.html</loc>
-      <lastmod>2026-10-24T05:37:10+07:00</lastmod>
+      <lastmod>2026-10-29T12:00:00+07:00</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
@@ -19,7 +19,7 @@
    <!-- Panduan: Payment Orchestration -->
    <url>
       <loc>https://wuzzpay.com/apa-itu-payment-orchestration.html</loc>
-      <lastmod>2026-10-24T17:57:58+07:00</lastmod>
+      <lastmod>2026-10-29T12:00:00+07:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
    </url>
@@ -27,7 +27,7 @@
    <!-- Panduan: Payment Gateway Down -->
    <url>
       <loc>https://wuzzpay.com/payment-gateway-down.html</loc>
-      <lastmod>2026-10-24T17:57:58+07:00</lastmod>
+      <lastmod>2026-10-29T12:00:00+07:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
    </url>
@@ -35,7 +35,7 @@
    <!-- Panduan: Menerima Pembayaran QRIS & VA -->
    <url>
       <loc>https://wuzzpay.com/cara-menerima-pembayaran-qris-va.html</loc>
-      <lastmod>2026-10-24T05:37:10+07:00</lastmod>
+      <lastmod>2026-10-29T12:00:00+07:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
    </url>
@@ -67,7 +67,7 @@
    <!-- Tentang Wuzzpay -->
    <url>
       <loc>https://wuzzpay.com/tentang-wuzzpay.html</loc>
-      <lastmod>2026-10-24T21:21:31+07:00</lastmod>
+      <lastmod>2026-10-29T12:00:00+07:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
    </url>
@@ -75,7 +75,7 @@
    <!-- Panduan: Memilih Gateway dengan Failover -->
    <url>
       <loc>https://wuzzpay.com/memilih-payment-gateway-dengan-failover.html</loc>
-      <lastmod>2026-10-24T17:57:58+07:00</lastmod>
+      <lastmod>2026-10-29T12:00:00+07:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>

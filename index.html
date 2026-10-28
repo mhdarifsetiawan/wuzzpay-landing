@@ -137,7 +137,7 @@
                         "name": "Apa itu Wuzzpay?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Wuzzpay adalah platform penghubung pembayaran (payment orchestration) yang menghubungkan bisnis ke beberapa payment gateway lewat satu pendaftaran dan satu integrasi API. Jika satu gateway bermasalah, transaksi dialihkan otomatis ke gateway lain. Penyelesaian dana mengikuti skema gateway mitra berlisensi Bank Indonesia."
+                            "text": "Wuzzpay adalah platform penghubung pembayaran (payment orchestration) yang menghubungkan bisnis ke beberapa payment gateway lewat satu pendaftaran dan satu integrasi API. Jika satu gateway bermasalah, transaksi dialihkan otomatis ke gateway lain. Penyelesaian dana dilakukan langsung oleh gateway mitra berlisensi Bank Indonesia ke rekening merchant."
                         }
                     },
                     {
@@ -153,7 +153,7 @@
                         "name": "Bagaimana cara punya payment gateway cadangan (backup) atau alternatif tanpa daftar dua kali?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Gunakan layanan multi payment gateway (multi-gateway) seperti Wuzzpay: Anda mendaftar sekali, tim Wuzzpay mengurus KYC ke gateway mitra, dan Anda mengintegrasikan satu API. Jika satu gateway bermasalah, transaksi dialihkan (failover) ke gateway cadangan atau alternatif yang tersedia. Pengalihan tidak berlaku jika semua gateway terganggu sekaligus atau gangguan ada di sisi bank atau jaringan pelanggan."
+                            "text": "Gunakan layanan multi payment gateway (multi-gateway) seperti Wuzzpay: Anda mendaftar sekali, Wuzzpay membantu menjembatani dan menyederhanakan pengumpulan dokumen KYC ke mitra gateway, dan Anda mengintegrasikan satu API. Jika satu gateway bermasalah, transaksi dialihkan (failover) ke gateway cadangan atau alternatif yang tersedia. Pengalihan tidak berlaku jika semua gateway terganggu sekaligus atau gangguan ada di sisi bank atau jaringan pelanggan."
                         }
                     },
                     {
@@ -161,7 +161,7 @@
                         "name": "Apa yang saya dapat dengan biaya aktivasi Rp 99.000?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Anda mendapat akses Dashboard Merchant, pendaftaran dan KYC ke gateway mitra yang diurus oleh Wuzzpay, serta akses integrasi API. Biaya aktivasi dibayar sekali. Selain itu berlaku biaya per transaksi (MDR) sesuai metode pembayaran. Harga peluncuran dapat berubah sewaktu-waktu."
+                            "text": "Anda mendapat akses Dashboard Merchant, pendaftaran ke gateway mitra dengan bantuan Wuzzpay menjembatani pengumpulan dokumen KYC, serta akses integrasi API. Biaya aktivasi dibayar sekali. Selain itu berlaku biaya per transaksi (MDR) sesuai metode pembayaran. Harga peluncuran dapat berubah sewaktu-waktu."
                         }
                     },
                     {
@@ -169,7 +169,7 @@
                         "name": "Bagaimana alur dana dan pencairan di Wuzzpay?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Alur dana bergantung pada skema gateway mitra yang dipakai. Pada sebagian skema, pencairan dilakukan langsung oleh gateway mitra ke rekening Anda; pada skema lain, dana dapat melalui Wuzzpay sebelum diteruskan. Hubungi tim kami untuk memastikan skema yang berlaku pada akun Anda. Pemrosesan dan penyelesaian pembayaran dijalankan oleh gateway mitra yang berlisensi Bank Indonesia."
+                            "text": "Alur dana mengikuti skema gateway mitra yang dipakai. Pencairan dan penyelesaian dana dilakukan langsung oleh gateway mitra berlisensi Bank Indonesia ke rekening bank Anda, otomatis sesuai ketentuan gateway tersebut. Wuzzpay berperan sebagai penyedia sistem teknologi perutean transaksi. Hubungi tim kami untuk memastikan skema yang berlaku pada akun Anda."
                         }
                     },
                     {
@@ -388,7 +388,7 @@
                             <div class="flex-shrink-0 w-12 h-12 rounded-2xl bg-biruLangit/20 flex items-center justify-center text-biruTua font-extrabold text-xl" aria-hidden="true">1</div>
                             <div>
                                 <h3 class="text-biruTua font-bold text-xl mb-2">Daftar dan lengkapi data satu kali</h3>
-                                <p class="text-sedang">Tim Wuzzpay yang mengurus proses KYC ke gateway mitra. Anda tidak perlu mendaftar satu per satu.</p>
+                                <p class="text-sedang">Wuzzpay membantu menjembatani dan menyederhanakan pengumpulan dokumen KYC ke mitra gateway, jadi Anda tidak perlu menyiapkannya berulang.</p>
                             </div>
                         </li>
                         <li class="flex items-start gap-5">
@@ -402,7 +402,7 @@
                             <div class="flex-shrink-0 w-12 h-12 rounded-2xl bg-biruLangit/20 flex items-center justify-center text-biruTua font-extrabold text-xl" aria-hidden="true">3</div>
                             <div>
                                 <h3 class="text-biruTua font-bold text-xl mb-2">Terima pembayaran</h3>
-                                <p class="text-sedang">Jika satu gateway bermasalah, sistem mengalihkan transaksi ke gateway lain. Penyelesaian dana dijalankan bersama gateway mitra berlisensi Bank Indonesia, dengan alur yang mengikuti skema gateway yang dipakai.</p>
+                                <p class="text-sedang">Jika satu gateway bermasalah, sistem mengalihkan transaksi ke gateway lain. Penyelesaian dana dilakukan langsung oleh gateway mitra berlisensi Bank Indonesia ke rekening bank merchant, mengikuti skema gateway yang dipakai.</p>
                             </div>
                         </li>
                     </ol>
@@ -425,7 +425,7 @@
                             <p class="font-bold mb-3 text-biruTua text-lg flex items-center gap-2"><span aria-hidden="true">✅</span> Dengan Wuzzpay</p>
                             <ul class="space-y-3 text-sedang font-medium">
                                 <li class="flex items-start gap-2"><span class="text-biruAksen" aria-hidden="true">✓</span> Terhubung ke beberapa gateway.</li>
-                                <li class="flex items-start gap-2"><span class="text-biruAksen" aria-hidden="true">✓</span> Satu proses KYC lewat Wuzzpay.</li>
+                                <li class="flex items-start gap-2"><span class="text-biruAksen" aria-hidden="true">✓</span> Pengumpulan dokumen KYC disederhanakan lewat Wuzzpay.</li>
                                 <li class="flex items-start gap-2"><span class="text-biruAksen" aria-hidden="true">✓</span> Semua transaksi di satu dashboard.</li>
                                 <li class="flex items-start gap-2"><span class="text-biruAksen" aria-hidden="true">✓</span> Satu kontak support untuk semua.</li>
                             </ul>
@@ -493,9 +493,9 @@
                             </div>
                             <ul class="space-y-4 text-base text-sedang border-t border-gray-100 pt-6 mb-10">
                                 <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-biruAwan/50 text-biruTua flex items-center justify-center font-bold text-sm" aria-hidden="true">✓</span> Akses Dashboard Merchant</li>
-                                <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-biruAwan/50 text-biruTua flex items-center justify-center font-bold text-sm" aria-hidden="true">✓</span> Pendaftaran & KYC ke gateway mitra diurus Wuzzpay</li>
+                                <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-biruAwan/50 text-biruTua flex items-center justify-center font-bold text-sm" aria-hidden="true">✓</span> Pendaftaran & pengumpulan dokumen KYC ke gateway mitra dibantu Wuzzpay</li>
                                 <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-biruAwan/50 text-biruTua flex items-center justify-center font-bold text-sm" aria-hidden="true">✓</span> Satu API untuk QRIS, Virtual Account, E-Wallet, dan Retail</li>
-                                <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-biruAwan/50 text-biruTua flex items-center justify-center font-bold text-sm" aria-hidden="true">✓</span> Pencairan dana ke rekening Anda</li>
+                                <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-biruAwan/50 text-biruTua flex items-center justify-center font-bold text-sm" aria-hidden="true">✓</span> Penyelesaian dana langsung oleh gateway mitra ke rekening Anda</li>
                                 <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-biruAwan/50 text-biruTua flex items-center justify-center font-bold text-sm" aria-hidden="true">✓</span> Satu kontak support untuk semua gateway</li>
                             </ul>
                         </div>
@@ -560,7 +560,7 @@
                             <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
                         </summary>
                         <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
-                            Wuzzpay adalah platform penghubung pembayaran (<strong>payment orchestration</strong>) yang menghubungkan bisnis ke beberapa payment gateway lewat satu pendaftaran dan satu integrasi API. Jika satu gateway bermasalah, transaksi dialihkan otomatis ke gateway lain. Penyelesaian dana mengikuti skema gateway mitra berlisensi Bank Indonesia.
+                            Wuzzpay adalah platform penghubung pembayaran (<strong>payment orchestration</strong>) yang menghubungkan bisnis ke beberapa payment gateway lewat satu pendaftaran dan satu integrasi API. Jika satu gateway bermasalah, transaksi dialihkan otomatis ke gateway lain. Penyelesaian dana dilakukan langsung oleh gateway mitra berlisensi Bank Indonesia ke rekening merchant.
                         </div>
                     </details>
 
@@ -580,7 +580,7 @@
                             <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
                         </summary>
                         <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
-                            Gunakan layanan multi payment gateway (multi-gateway) seperti Wuzzpay: Anda mendaftar sekali, tim Wuzzpay mengurus KYC ke gateway mitra, dan Anda mengintegrasikan satu API. Jika satu gateway bermasalah, transaksi dialihkan (failover) ke gateway cadangan atau alternatif yang tersedia. Pengalihan tidak berlaku jika semua gateway terganggu sekaligus atau gangguan ada di sisi bank atau jaringan pelanggan.
+                            Gunakan layanan multi payment gateway (multi-gateway) seperti Wuzzpay: Anda mendaftar sekali, Wuzzpay membantu menjembatani dan menyederhanakan pengumpulan dokumen KYC ke mitra gateway, dan Anda mengintegrasikan satu API. Jika satu gateway bermasalah, transaksi dialihkan (failover) ke gateway cadangan atau alternatif yang tersedia. Pengalihan tidak berlaku jika semua gateway terganggu sekaligus atau gangguan ada di sisi bank atau jaringan pelanggan.
                         </div>
                     </details>
 
@@ -590,7 +590,7 @@
                             <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
                         </summary>
                         <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
-                            Anda mendapat akses Dashboard Merchant, pendaftaran dan KYC ke gateway mitra yang diurus oleh Wuzzpay, serta akses integrasi API. Biaya aktivasi dibayar sekali. Selain itu berlaku biaya per transaksi (MDR) sesuai metode pembayaran. Harga peluncuran dapat berubah sewaktu-waktu.
+                            Anda mendapat akses Dashboard Merchant, pendaftaran ke gateway mitra dengan bantuan Wuzzpay menjembatani pengumpulan dokumen KYC, serta akses integrasi API. Biaya aktivasi dibayar sekali. Selain itu berlaku biaya per transaksi (MDR) sesuai metode pembayaran. Harga peluncuran dapat berubah sewaktu-waktu.
                         </div>
                     </details>
 
@@ -600,7 +600,7 @@
                             <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
                         </summary>
                         <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
-                            Alur dana bergantung pada skema gateway mitra yang dipakai. Pada sebagian skema, pencairan dilakukan langsung oleh gateway mitra ke rekening Anda; pada skema lain, dana dapat melalui Wuzzpay sebelum diteruskan. Hubungi tim kami untuk memastikan skema yang berlaku pada akun Anda. Pemrosesan dan penyelesaian pembayaran dijalankan oleh gateway mitra yang berlisensi Bank Indonesia.
+                            Alur dana mengikuti skema gateway mitra yang dipakai. Pencairan dan penyelesaian dana dilakukan langsung oleh gateway mitra berlisensi Bank Indonesia ke rekening bank Anda, otomatis sesuai ketentuan gateway tersebut. Wuzzpay berperan sebagai penyedia sistem teknologi perutean transaksi. Hubungi tim kami untuk memastikan skema yang berlaku pada akun Anda.
                         </div>
                     </details>
 
