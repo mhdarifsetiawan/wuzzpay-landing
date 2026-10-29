@@ -36,6 +36,13 @@ Setiap halaman terindeks harus punya: satu `h1`, `<title>` maksimal sekitar 60 k
 - Perbarui `lastmod` di `sitemap.xml` untuk halaman yang berubah, format ISO 8601 dengan jam dan zona (`2026-10-24T17:57:58+07:00`); isi hanya saat konten benar-benar berubah.
 - Jangan mengubah tarif di `biaya-transaksi.html` tanpa menyamakan semua halaman yang mengutipnya (QRIS 0,7%, VA Rp 4.000 flat, kartu kredit 2,9% + Rp 2.000, dan seterusnya).
 
+## Meta Pixel
+
+- Pixel ID `1664296028753513` dipasang inline di `<head>` 11 halaman terindeks (blok `<!-- Meta Pixel Code -->`), tepat sebelum `</head>`. Halaman legal (`privacy`, `terms`, `refund-policy`) dan `startupranking*.html` sengaja tidak dipasangi.
+- Event: `PageView` di setiap halaman; `Contact` saat klik tautan WhatsApp (`api.whatsapp.com`); `Lead` saat klik tautan ke `my.wuzzpay.com`. Semuanya lewat satu listener klik di blok yang sama.
+- **Halaman terindeks baru wajib menyalin blok Pixel ini** dari halaman panduan yang ada, bersama kerangka lainnya.
+- Belum ada spanduk persetujuan cookie, dan `privacy.html` belum menyebut Pixel; keduanya menunggu tinjauan legal.
+
 ## Pemberitahuan ke mesin pencari (IndexNow)
 
 - Kunci IndexNow ada di file `<32-hex>.txt` di root (isinya sama dengan nama file); jangan dihapus atau diganti tanpa mengubah `scripts/indexnow.js`.
