@@ -41,7 +41,7 @@ Setiap halaman terindeks harus punya: satu `h1`, `<title>` maksimal sekitar 60 k
 - Pixel ID `1664296028753513` dipasang inline di `<head>` 11 halaman terindeks (blok `<!-- Meta Pixel Code -->`), tepat sebelum `</head>`. Halaman legal (`privacy`, `terms`, `refund-policy`) dan `startupranking*.html` sengaja tidak dipasangi.
 - Event: `PageView` di setiap halaman; `Contact` saat klik tautan WhatsApp (`api.whatsapp.com`); `Lead` saat klik tautan ke `my.wuzzpay.com` yang teksnya mengandung "Daftar" (tombol "Masuk" tidak mengirim event). Semuanya lewat satu listener klik di blok yang sama.
 - **Halaman terindeks baru wajib menyalin blok Pixel ini** dari halaman panduan yang ada, bersama kerangka lainnya.
-- Belum ada spanduk persetujuan cookie, dan `privacy.html` belum menyebut Pixel; keduanya menunggu tinjauan legal.
+- Belum ada spanduk persetujuan cookie, dan `privacy.html` belum menyebut Pixel; keduanya menunggu tinjauan legal. Perhatian untuk peninjau legal: `privacy.html` (bagian tentang pihak ketiga) menjanjikan data tidak diberikan ke pihak ketiga "untuk tujuan komersial atau periklanan", sedangkan Pixel mengirim data kunjungan ke Meta. Redaksinya perlu diselaraskan (misalnya dengan pengecualian untuk data kunjungan situs, bukan data transaksi) sebelum Pixel dianggap sesuai kebijakan. Isi `privacy.html` sendiri tidak diubah tanpa tinjauan legal.
 
 ## Pemberitahuan ke mesin pencari (IndexNow)
 
