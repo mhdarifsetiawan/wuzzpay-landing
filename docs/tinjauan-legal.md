@@ -17,7 +17,7 @@ Tanggal: 2026-10-29. Status: teks sudah diselaraskan di repo, menunggu persetuju
 | `refund-policy.html` §01, §03 | Judul "Non-Custodial" diganti "Alur Dana dan Pengembalian Dana"; "pemegang sah dana" dihapus; refund ditransfer langsung oleh gateway mitra; Wuzzpay hanya menyampaikan instruksi. |
 | `privacy.html` §02, §05 | KYC: Wuzzpay membantu mengumpulkan dan meneruskan dokumen, verifikasi oleh gateway; "platform aggregator" diganti TSP; nama mitra dihapus. |
 
-Tanggal "Terakhir diperbarui" di ketiga halaman diisi 29 Oktober 2026 (tanggal perubahan teks, bukan tanggal persetujuan legal).
+Tanggal "Terakhir diperbarui" di ketiga halaman diisi 2 November 2026 (tanggal perubahan teks, bukan tanggal persetujuan legal). Pada tanggal itu istilah "Penyelesaian dana" diganti "Settlement dana" di `terms.html` §02, `refund-policy.html` §01, dan `privacy.html` §05 agar seragam dengan halaman publik; "penyelesaian sengketa" di `terms.html` §07 sengaja tidak diubah. Perubahan istilah ini juga menunggu persetujuan pihak legal.
 
 ## Pertanyaan untuk pihak legal
 
