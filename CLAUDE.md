@@ -9,7 +9,7 @@ Situs statis (HTML + Tailwind + Alpine.js) untuk https://wuzzpay.com, dihosting 
 - `privacy.html`, `terms.html`, `refund-policy.html` memakai Tailwind v4 via CDN dan **tidak** ikut dibangun.
 - Jangan memasang kembali Tailwind CDN atau Font Awesome pada halaman utama. Ikon memakai SVG inline.
 - Aksesibilitas: warna `biruAksen` (#1D6FA3) dipilih agar kontras teks putih di atasnya minimal 4,5:1 (WCAG AA); jangan diterangkan kembali ke #2A8ECA. Gunakan `text-red-700`, bukan `red-500`, untuk teks merah.
-- Aset header memakai `assets/LOGO-sm.webp` (600 px); `assets/LOGO.png` (1200 px) dipakai untuk JSON-LD. Font Plus Jakarta Sans di-host sendiri (`assets/fonts/plus-jakarta-sans-latin.woff2`, `@font-face` di `src/input.css`, preload di setiap halaman); jangan kembali ke Google Fonts. Gambar hero di beranda memakai `loading="lazy"` agar tidak diunduh di layar kecil tempat gambar itu disembunyikan.
+- Aset header memakai `assets/LOGO-sm.webp` (600 px); `assets/LOGO.png` (1200 px) dipakai untuk JSON-LD. Font Plus Jakarta Sans di-host sendiri (`assets/fonts/plus-jakarta-sans-latin.woff2`, `@font-face` di `src/input.css`, preload di setiap halaman); jangan kembali ke Google Fonts. Hero beranda tidak lagi memakai gambar raster: visualnya diagram SVG inline (lihat bagian Desain V2).
 
 ## Halaman dan tautan
 
@@ -26,7 +26,19 @@ Situs statis (HTML + Tailwind + Alpine.js) untuk https://wuzzpay.com, dihosting 
 - **Promo berjalan:** biaya aktivasi & integrasi gratis untuk pendaftaran sampai 31 Desember 2026 (tanpa harga coret dan tanpa hitung mundur). Setelah tanggal itu, kembalikan semua teks ke Rp 99.000 (kartu harga, FAQ + JSON-LD termasuk `price` dan `priceValidUntil`, `llms.txt`, `tentang-wuzzpay.html`, `memilih-payment-gateway-dengan-failover.html`, halaman biaya MDR, meta description beranda, dan `lastmod` sitemap).
 - Harga Rp 99.000 adalah **biaya aktivasi & integrasi sekali bayar, harga peluncuran, dapat berubah** (bisa gratis atau ada kupon). Jangan pakai harga coret atau hitung mundur. Jika harga berubah, perbarui kartu harga, FAQ, JSON-LD, `llms.txt`, dan halaman panduan biaya (angka di tabel dan titik impas Rp 571.000 ikut berubah bila tarif berubah).
 - Istilah merek: pakai "jalur alternatif" dan "pengalihan otomatis" di teks merek. Variasi "gateway cadangan", "backup", "failover", "multi payment gateway" dipakai wajar di judul FAQ dan kalimat jawaban (satu sampai dua kali per halaman, tanpa menjejalkan).
-- Ilustrasi hero dan gambar OG saat ini masih memuat angka metrik ("99.99%", "320 ms") tanpa bukti; ganti bila ada gambar baru.
+- Gambar OG (`assets/images/og-wuzzpay.jpg`, 1200×630) dan diagram hero tidak memuat angka metrik. Jangan menambahkan angka metrik, nama gateway mitra, atau testimoni ke gambar mana pun. Bila gambar OG diganti isinya dengan nama file sama, naikkan `?v=` di semua rujukannya (meta OG, Twitter Card, JSON-LD). Ilustrasi hero lama (`wuzzpay-payment-smart-router.*`, memuat "99.99%" dan "320 ms") sudah dihapus; arsipnya ada di luar repo dan di riwayat git.
+
+## Desain V2 (branch `v2`)
+
+Hanya tampilan yang berubah dari V1; teks, FAQ, JSON-LD, tarif, tautan, dan blok Meta Pixel sengaja tidak disentuh. Saat mengubah halaman, pertahankan hal itu: setelah merombak tampilan, bandingkan teks yang tampil dan blok JSON-LD dengan versi sebelumnya.
+
+- **Warna:** biru tetap warna utama. Token `biruMalam` (#14355E) ditambahkan di `tailwind.config.js` untuk latar gelap. Bagian gelap memakai `bg-gradient-to-br from-biruMalam via-biruTua to-biruMalam`, pendar `biruLangit` (blur), dan pola titik (`radial-gradient` putih, opasitas 0,06 sampai 0,07).
+- **Irama halaman:** hero gelap, lalu bagian terang dan gelap bergantian (developer dan penutup gelap), footer gelap. Navbar tetap terang karena `LOGO-sm.webp` dibuat untuk latar terang; navbar gelap butuh logo putih.
+- **Komponen:** kartu `rounded-3xl` dengan border `biruAwan` dan bayangan `shadow-soft`; kartu sorotan memakai gradien gelap; judul bagian `font-extrabold tracking-tight`; ikon SVG inline (tanpa emoji); FAQ `<details>` dengan tombol "+" bulat; header tabel `bg-biruTua text-white`; bagian "Pendekatan/Posisi Wuzzpay" berupa kartu gradien lembut.
+- **Kontras (WCAG AA):** di atas latar gelap, teks kecil harus putih atau `biruAwan`. `biruLangit` (#56B5F0) hanya sekitar 3:1 di atas `biruTua`, jadi hanya untuk teks besar, ikon, dekorasi, atau di atas `biruMalam` pekat (footer). Jangan beri `opacity` tambahan pada teks yang sudah `biruAwan/80`.
+- **Diagram hero:** SVG inline di `index.html`. Titik animasi memakai kelas `.titik-alur` (`offset-path`) di `src/input.css` dan berhenti bila `prefers-reduced-motion`. Jika posisi node diubah, ubah juga `offset-path` di CSS itu.
+- **Latar body:** `bg-white` di semua halaman terindeks. Halaman legal (Tailwind v4 CDN, `bg-slate-950`) tidak ikut V2.
+- **Cek visual:** Chrome headless tidak mau membuat jendela lebih sempit dari sekitar 500 px; untuk meniru ponsel 390 px, muat halaman di dalam `<iframe width="390">` dan tangkap layarnya.
 
 ## Aturan SEO dan AEO
 
