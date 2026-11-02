@@ -21,6 +21,7 @@ Wuzzpay bukan pengganti payment gateway, melainkan lapisan yang menghubungkan me
 - [Payment Gateway untuk Website](https://wuzzpay.com/payment-gateway-untuk-website.html): cara kerja, pilihan integrasi (API, plugin, tautan pembayaran), kriteria memilih, keamanan, dan langkah memasang.
 - [Payment Gateway Murah: Cara Membandingkan Biaya](https://wuzzpay.com/payment-gateway-murah.html): komponen biaya, persentase vs biaya tetap, biaya tersembunyi, dan checklist membandingkan penyedia.
 - [Payment Gateway Indonesia: Panduan Lengkap](https://wuzzpay.com/payment-gateway-indonesia.html): cara kerja, lisensi Bank Indonesia, jenis penyedia, metode pembayaran umum, dan cara memilih.
+- [Alternatif Payment Gateway di Indonesia](https://wuzzpay.com/alternatif-payment-gateway.html): alasan mencari alternatif, tiga pilihan (pindah, tambah penyedia, multi-gateway), kriteria menilai, dan langkah berpindah dengan aman.
 
 ## Fakta kunci
 
