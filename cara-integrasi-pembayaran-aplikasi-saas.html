@@ -39,7 +39,7 @@
 
     <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 
-    <link rel="stylesheet" href="assets/css/tailwind.css?v=c0c1a3b1">
+    <link rel="stylesheet" href="assets/css/tailwind.css?v=aaca78d0">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
 
 
@@ -249,9 +249,9 @@
                     </nav>
                     <h1 class="text-3xl sm:text-5xl font-extrabold  mb-6 leading-tight tracking-tight">Cara Mengintegrasikan Pembayaran ke Aplikasi SaaS</h1>
                     <p class="text-lg text-white leading-relaxed bg-white/10 border border-white/20 backdrop-blur-sm rounded-2xl p-5">
-                        <strong class="text-biruLangit">Jawaban singkat:</strong> integrasi pembayaran di aplikasi SaaS berjalan dalam lima langkah: buat pesanan dengan ID unik, buat tagihan lewat API dari server, pengguna membayar, terima dan verifikasi notifikasi (webhook) dari penyedia, lalu aktifkan layanan setelah status lunas. Pastikan penerima webhook idempoten, kunci API tersimpan di server, dan transaksi direkonsiliasi secara rutin.
+                        <strong class="font-bold text-white underline decoration-biruLangit decoration-2 underline-offset-4">Jawaban singkat:</strong> integrasi pembayaran di aplikasi SaaS berjalan dalam lima langkah: buat pesanan dengan ID unik, buat tagihan lewat API dari server, pengguna membayar, terima dan verifikasi notifikasi (webhook) dari penyedia, lalu aktifkan layanan setelah status lunas. Pastikan penerima webhook idempoten, kunci API tersimpan di server, dan transaksi direkonsiliasi secara rutin.
                     </p>
-                    <p class="text-sm text-biruAwan mt-4">Ditulis oleh tim <a href="index.html" class="underline text-biruLangit">Wuzzpay</a> (PT Semantic Digital Nusantara) &middot; Diterbitkan <time datetime="2026-10-24">24 Oktober 2026</time></p>
+                    <p class="text-sm text-biruAwan mt-4">Ditulis oleh tim <a href="index.html" class="underline font-semibold text-white">Wuzzpay</a> (PT Semantic Digital Nusantara) &middot; Diterbitkan <time datetime="2026-10-24">24 Oktober 2026</time></p>
                 </div>
             </header>
 
@@ -274,12 +274,12 @@
                     <div class="overflow-x-auto rounded-2xl border border-biruAwan bg-white shadow-sm">
                         <table class="w-full text-left text-sm">
                             <caption class="sr-only">Status transaksi yang umum pada pembayaran online</caption>
-                            <thead class="bg-biruTua text-white"><tr><th scope="col" class="p-4 font-bold">Status</th><th scope="col" class="p-4 font-bold">Artinya</th><th scope="col" class="p-4 font-bold">Tindakan aplikasi</th></tr></thead>
+                            <thead class="bg-biruTua text-white"><tr><th scope="col" class="p-3 sm:p-4 font-bold">Status</th><th scope="col" class="p-3 sm:p-4 font-bold">Artinya</th><th scope="col" class="p-3 sm:p-4 font-bold">Tindakan aplikasi</th></tr></thead>
                             <tbody class="divide-y divide-biruAwan/60">
-                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Menunggu (pending)</th><td class="p-4">Tagihan dibuat, belum dibayar</td><td class="p-4">Tampilkan instruksi bayar dan tunggu</td></tr>
-                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Lunas (paid)</th><td class="p-4">Pembayaran berhasil dikonfirmasi</td><td class="p-4">Aktifkan layanan dan kirim bukti bayar</td></tr>
-                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Kedaluwarsa (expired)</th><td class="p-4">Batas waktu bayar terlewat</td><td class="p-4">Tawarkan membuat tagihan baru</td></tr>
-                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Gagal (failed)</th><td class="p-4">Pembayaran ditolak atau gagal diproses</td><td class="p-4">Beri tahu pengguna dan tawarkan metode lain</td></tr>
+                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-3 sm:p-4 font-semibold text-gelap">Menunggu (pending)</th><td class="p-3 sm:p-4">Tagihan dibuat, belum dibayar</td><td class="p-3 sm:p-4">Tampilkan instruksi bayar dan tunggu</td></tr>
+                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-3 sm:p-4 font-semibold text-gelap">Lunas (paid)</th><td class="p-3 sm:p-4">Pembayaran berhasil dikonfirmasi</td><td class="p-3 sm:p-4">Aktifkan layanan dan kirim bukti bayar</td></tr>
+                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-3 sm:p-4 font-semibold text-gelap">Kedaluwarsa (expired)</th><td class="p-3 sm:p-4">Batas waktu bayar terlewat</td><td class="p-3 sm:p-4">Tawarkan membuat tagihan baru</td></tr>
+                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-3 sm:p-4 font-semibold text-gelap">Gagal (failed)</th><td class="p-3 sm:p-4">Pembayaran ditolak atau gagal diproses</td><td class="p-3 sm:p-4">Beri tahu pengguna dan tawarkan metode lain</td></tr>
                             </tbody>
                         </table>
                     </div>
