@@ -134,7 +134,7 @@
                         "name": "Berapa biaya QRIS dan Virtual Account di Wuzzpay?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Contoh tarif di Wuzzpay: QRIS 0,7% per transaksi dan Virtual Account bank Rp 4.000 per transaksi, belum termasuk PPN. Tarif dapat berubah, jadi cek halaman Biaya Transaksi untuk rincian terbaru."
+                            "text": "Contoh tarif di Wuzzpay: QRIS 0,7% per transaksi dan Virtual Account bank Rp 3.500 sampai Rp 5.000 per transaksi (tergantung bank), belum termasuk PPN. Tarif dapat berubah, jadi cek halaman Biaya Transaksi untuk rincian terbaru."
                         }
                     },
                     {
@@ -142,7 +142,7 @@
                         "name": "Mana yang lebih murah, QRIS atau Virtual Account?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Bergantung pada nominal transaksi. Dengan tarif contoh Wuzzpay (QRIS 0,7% dan VA Rp 4.000 flat), QRIS lebih murah untuk transaksi di bawah sekitar Rp 571.000, dan VA lebih murah di atasnya. Hitung ulang jika tarif berubah."
+                            "text": "Bergantung pada nominal transaksi. Dengan tarif contoh Wuzzpay (QRIS 0,7% dan contoh VA Rp 4.000 flat, di dalam rentang Rp 3.500 sampai Rp 5.000), QRIS lebih murah untuk transaksi di bawah sekitar Rp 571.000, dan VA lebih murah di atasnya. Titik impas bergeser antara sekitar Rp 500.000 dan Rp 714.000 mengikuti tarif VA bank yang dipakai. Hitung ulang jika tarif berubah."
                         }
                     },
                     {
@@ -283,11 +283,11 @@
                             <tbody class="divide-y divide-gray-100">
                                 <tr><th scope="row" class="p-4 font-semibold text-gelap">QRIS</th><td class="p-4">Rp 100.000</td><td class="p-4">0,7%</td><td class="p-4">Rp 700</td><td class="p-4">Rp 99.300</td></tr>
                                 <tr><th scope="row" class="p-4 font-semibold text-gelap">QRIS</th><td class="p-4">Rp 20.000</td><td class="p-4">0,7%</td><td class="p-4">Rp 140</td><td class="p-4">Rp 19.860</td></tr>
-                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Virtual Account bank</th><td class="p-4">Rp 100.000</td><td class="p-4">Rp 4.000 flat</td><td class="p-4">Rp 4.000</td><td class="p-4">Rp 96.000</td></tr>
-                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Virtual Account bank</th><td class="p-4">Rp 20.000</td><td class="p-4">Rp 4.000 flat</td><td class="p-4">Rp 4.000</td><td class="p-4">Rp 16.000</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Virtual Account bank</th><td class="p-4">Rp 100.000</td><td class="p-4">Rp 4.000 flat (contoh)</td><td class="p-4">Rp 4.000</td><td class="p-4">Rp 96.000</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Virtual Account bank</th><td class="p-4">Rp 20.000</td><td class="p-4">Rp 4.000 flat (contoh)</td><td class="p-4">Rp 4.000</td><td class="p-4">Rp 16.000</td></tr>
                                 <tr><th scope="row" class="p-4 font-semibold text-gelap">Kartu kredit</th><td class="p-4">Rp 500.000</td><td class="p-4">2,9% + Rp 2.000</td><td class="p-4">Rp 16.500</td><td class="p-4">Rp 483.500</td></tr>
                                 <tr><th scope="row" class="p-4 font-semibold text-gelap">Kredivo / Akulaku</th><td class="p-4">Rp 300.000</td><td class="p-4">2,0%</td><td class="p-4">Rp 6.000</td><td class="p-4">Rp 294.000</td></tr>
-                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Indomaret / Alfamart</th><td class="p-4">Rp 100.000</td><td class="p-4">Rp 5.000 flat</td><td class="p-4">Rp 5.000</td><td class="p-4">Rp 95.000</td></tr>
+                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Indomaret / Alfamart</th><td class="p-4">Rp 100.000</td><td class="p-4">Rp 5.000 flat (contoh)</td><td class="p-4">Rp 5.000</td><td class="p-4">Rp 95.000</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -295,8 +295,8 @@
 
                 <section aria-labelledby="h-flat">
                     <h2 id="h-flat" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Tarif tetap vs persentase: kapan mana yang lebih murah</h2>
-                    <p class="mb-4">Pada transaksi kecil, biaya tetap terasa jauh lebih berat daripada persentase. Dengan tarif contoh di atas, Virtual Account Rp 4.000 untuk pembelian Rp 20.000 berarti 20% dari nominal, sedangkan QRIS 0,7% hanya Rp 140.</p>
-                    <p class="mb-0">Titik impas kedua tarif itu ada di sekitar Rp 571.000 (Rp 4.000 ÷ 0,7%). Di bawah angka itu QRIS lebih murah, dan di atasnya Virtual Account flat lebih murah. Angka ini hanya berlaku untuk tarif contoh tersebut, jadi hitung ulang dengan tarif penyedia yang Anda bandingkan.</p>
+                    <p class="mb-4">Pada transaksi kecil, biaya tetap terasa jauh lebih berat daripada persentase. Dengan tarif contoh di atas, Virtual Account Rp 4.000 (tarif sebenarnya Rp 3.500 sampai Rp 5.000 tergantung bank) untuk pembelian Rp 20.000 berarti 20% dari nominal, sedangkan QRIS 0,7% hanya Rp 140.</p>
+                    <p class="mb-0">Titik impas kedua tarif itu ada di sekitar Rp 571.000 (Rp 4.000 ÷ 0,7%); dengan tarif VA Rp 3.500 sampai Rp 5.000, titik impasnya berkisar Rp 500.000 sampai Rp 714.000. Di bawah angka itu QRIS lebih murah, dan di atasnya Virtual Account flat lebih murah. Angka ini hanya berlaku untuk tarif contoh tersebut, jadi hitung ulang dengan tarif penyedia yang Anda bandingkan.</p>
                 </section>
 
                 <section aria-labelledby="h-tips">
@@ -342,7 +342,7 @@
                             <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
                         </summary>
                         <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
-                            Contoh tarif di Wuzzpay: QRIS 0,7% per transaksi dan Virtual Account bank Rp 4.000 per transaksi, belum termasuk PPN. Tarif dapat berubah, jadi cek halaman Biaya Transaksi untuk rincian terbaru.
+                            Contoh tarif di Wuzzpay: QRIS 0,7% per transaksi dan Virtual Account bank Rp 3.500 sampai Rp 5.000 per transaksi (tergantung bank), belum termasuk PPN. Tarif dapat berubah, jadi cek halaman Biaya Transaksi untuk rincian terbaru.
                         </div>
                     </details>
                     <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
@@ -351,7 +351,7 @@
                             <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
                         </summary>
                         <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
-                            Bergantung pada nominal transaksi. Dengan tarif contoh Wuzzpay (QRIS 0,7% dan VA Rp 4.000 flat), QRIS lebih murah untuk transaksi di bawah sekitar Rp 571.000, dan VA lebih murah di atasnya. Hitung ulang jika tarif berubah.
+                            Bergantung pada nominal transaksi. Dengan tarif contoh Wuzzpay (QRIS 0,7% dan contoh VA Rp 4.000 flat, di dalam rentang Rp 3.500 sampai Rp 5.000), QRIS lebih murah untuk transaksi di bawah sekitar Rp 571.000, dan VA lebih murah di atasnya. Titik impas bergeser antara sekitar Rp 500.000 dan Rp 714.000 mengikuti tarif VA bank yang dipakai. Hitung ulang jika tarif berubah.
                         </div>
                     </details>
                     <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
