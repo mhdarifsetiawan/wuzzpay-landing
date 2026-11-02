@@ -51,7 +51,7 @@
     <!-- Tipografi Humanis & Modern -->
     <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 
-    <link rel="stylesheet" href="assets/css/tailwind.css?v=ff807931">
+    <link rel="stylesheet" href="assets/css/tailwind.css?v=8dc497f5">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
 
 
@@ -248,8 +248,8 @@
 
     <a href="#konten-utama" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:bg-white focus:text-biruTua focus:px-4 focus:py-2 focus:rounded-lg">Lewati ke konten utama</a>
 
-    <header class="sticky top-0 z-50 backdrop-blur-xl bg-white/90 border-b border-biruAwan/50 shadow-sm" x-data="{ mobileMenuOpen: false }">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-white/80 border-b border-biruAwan/60 supports-[backdrop-filter]:bg-white/70" x-data="{ mobileMenuOpen: false }">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[72px] flex items-center justify-between">
 
             <div class="flex items-center gap-3">
                 <a href="index.html" class="flex items-center" aria-label="Wuzzpay - Beranda">
@@ -257,16 +257,16 @@
                 </a>
             </div>
 
-            <nav aria-label="Navigasi utama" class="hidden md:flex items-center gap-8 text-sm font-semibold text-gelap">
-                <a href="#cara-kerja" class="hover:text-biruAksen transition">Cara Kerja</a>
-                <a href="#pricing" class="hover:text-biruAksen transition">Harga</a>
-                <a href="biaya-transaksi.html" class="hover:text-biruAksen transition">Biaya Transaksi</a>
-                <a href="#faq" class="hover:text-biruAksen transition">FAQ</a>
+            <nav aria-label="Navigasi utama" class="hidden md:flex items-center gap-1 text-sm font-semibold text-gelap">
+                <a href="#cara-kerja" class="px-4 py-2 rounded-lg hover:bg-biruAwan/60 hover:text-biruTua transition">Cara Kerja</a>
+                <a href="#pricing" class="px-4 py-2 rounded-lg hover:bg-biruAwan/60 hover:text-biruTua transition">Harga</a>
+                <a href="biaya-transaksi.html" class="px-4 py-2 rounded-lg hover:bg-biruAwan/60 hover:text-biruTua transition">Biaya Transaksi</a>
+                <a href="#faq" class="px-4 py-2 rounded-lg hover:bg-biruAwan/60 hover:text-biruTua transition">FAQ</a>
             </nav>
 
             <div class="hidden md:flex items-center gap-4">
                 <a href="https://my.wuzzpay.com" class="text-sm font-bold text-biruTua hover:text-biruAksen transition">Masuk</a>
-                <a href="https://my.wuzzpay.com" class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold text-white bg-biruAksen rounded-xl hover:bg-biruTua transition shadow-[0_8px_20px_rgba(42,142,202,0.3)] hover:-translate-y-0.5">
+                <a href="https://my.wuzzpay.com" class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold text-white bg-gradient-to-r from-biruAksen to-biruTua rounded-xl hover:brightness-110 transition shadow-soft">
                     Daftar Sekarang
                 </a>
             </div>
@@ -394,15 +394,18 @@
         </section>
 
         <!-- 2. APA ITU WUZZPAY (jawaban langsung untuk mesin pencari & asisten AI) -->
-        <section aria-labelledby="judul-apa-itu" class="py-16 bg-white">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 id="judul-apa-itu" class="text-3xl sm:text-4xl font-extrabold text-gelap mb-6">Apa itu Wuzzpay?</h2>
+        <section aria-labelledby="judul-apa-itu" class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="relative rounded-3xl border border-biruAwan bg-gradient-to-br from-white to-biruAwan/40 p-8 sm:p-12 text-center shadow-soft overflow-hidden">
+                <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-biruAksen via-biruLangit to-biruAwan" aria-hidden="true"></div>
+                <h2 id="judul-apa-itu" class="text-3xl sm:text-5xl font-extrabold tracking-tight text-gelap mb-6">Apa itu Wuzzpay?</h2>
                 <p class="text-lg text-sedang leading-relaxed">
                     <strong class="text-biruTua">Wuzzpay</strong> adalah platform penghubung pembayaran (<em>payment orchestration</em>) yang menghubungkan bisnis Anda ke beberapa <em>payment gateway</em> lewat <strong>satu pendaftaran dan satu integrasi API</strong>. Jika satu gateway bermasalah, transaksi dialihkan otomatis ke gateway lain. Cocok untuk UMKM, toko online, dan startup SaaS yang ingin menerima QRIS, Virtual Account, dan e-wallet dengan lebih tenang.
                 </p>
                 <p class="mt-6">
-                    <a href="apa-itu-payment-orchestration.html" class="inline-flex items-center gap-2 text-biruAksen font-bold hover:gap-4 transition-all hover:text-biruTua">Pelajari konsep payment orchestration (multi-gateway) &rarr;</a>
+                    <a href="apa-itu-payment-orchestration.html" class="inline-flex items-center gap-2 text-biruAksen font-bold hover:gap-4 transition-all hover:text-biruTua underline-offset-4 hover:underline">Pelajari konsep payment orchestration (multi-gateway) &rarr;</a>
                 </p>
+                </div>
             </div>
         </section>
 
@@ -630,110 +633,110 @@
         </section>
 
         <!-- 7. FAQ (details/summary agar terbaca crawler tanpa JavaScript) -->
-        <section id="faq" aria-labelledby="judul-faq" class="py-24 bg-biruAwan/20 border-t border-biruAwan">
+        <section id="faq" aria-labelledby="judul-faq" class="py-24 lg:py-28 bg-gradient-to-b from-biruAwan/40 to-white">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 id="judul-faq" class="text-3xl sm:text-4xl font-extrabold text-gelap mb-4">Pertanyaan Umum (FAQ)</h2>
+                <div class="text-center mb-12 lg:mb-14">
+                    <h2 id="judul-faq" class="text-3xl sm:text-5xl font-extrabold tracking-tight text-gelap mb-4 leading-tight">Pertanyaan Umum (FAQ)</h2>
                     <p class="text-sedang">Jawaban singkat untuk pertanyaan yang paling sering diajukan tentang Wuzzpay.</p>
                 </div>
 
                 <div class="space-y-4">
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Apa itu Wuzzpay?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Wuzzpay adalah platform penghubung pembayaran (<strong>payment orchestration</strong>) yang menghubungkan bisnis ke beberapa payment gateway lewat satu pendaftaran dan satu integrasi API. Jika satu gateway bermasalah, transaksi dialihkan otomatis ke gateway lain. Settlement dana dilakukan langsung oleh gateway mitra berlisensi Bank Indonesia ke rekening merchant.
                         </div>
                     </details>
 
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Apa bedanya Wuzzpay dengan memakai satu payment gateway langsung?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Dengan satu gateway, jika gateway itu bermasalah maka pembayaran Anda ikut terganggu. Dengan Wuzzpay, ada gateway lain sebagai jalur alternatif, dan Anda hanya perlu mendaftar sekali. Wuzzpay bukan pengganti gateway, melainkan lapisan yang menghubungkan Anda ke beberapa gateway sekaligus.
                         </div>
                     </details>
 
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Bagaimana cara punya payment gateway cadangan (backup) atau alternatif tanpa daftar dua kali?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Gunakan layanan multi payment gateway (multi-gateway) seperti Wuzzpay: Anda mendaftar sekali, Wuzzpay membantu menjembatani dan menyederhanakan pengumpulan dokumen KYC ke mitra gateway, dan Anda mengintegrasikan satu API. Jika satu gateway bermasalah, transaksi dialihkan (failover) ke gateway cadangan atau alternatif yang tersedia. Pengalihan tidak berlaku jika semua gateway terganggu sekaligus atau gangguan ada di sisi bank atau jaringan pelanggan.
                         </div>
                     </details>
 
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Apa yang saya dapat dengan biaya aktivasi & integrasi?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Anda mendapat akses Dashboard Merchant, pendaftaran ke gateway mitra dengan bantuan Wuzzpay menjembatani pengumpulan dokumen KYC, serta akses integrasi API. Biaya aktivasi & integrasi gratis untuk pendaftaran sampai 31 Desember 2026. Setelah itu biayanya Rp 99.000, dibayar sekali. Selain itu berlaku biaya per transaksi (MDR) sesuai metode pembayaran. Harga dapat berubah sewaktu-waktu.
                         </div>
                     </details>
 
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Bagaimana alur dana dan pencairan di Wuzzpay?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Alur dana mengikuti skema gateway mitra yang dipakai. Pencairan dan settlement dana dilakukan langsung oleh gateway mitra berlisensi Bank Indonesia ke rekening bank Anda, otomatis sesuai ketentuan gateway tersebut. Wuzzpay berperan sebagai penyedia sistem teknologi perutean transaksi. Hubungi tim kami untuk memastikan skema yang berlaku pada akun Anda.
                         </div>
                     </details>
 
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Apakah Wuzzpay berlisensi Bank Indonesia?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Wuzzpay menyediakan teknologi perutean transaksi. Kewajiban lisensi penyelenggara jasa pembayaran (PJP) Bank Indonesia melekat pada gateway mitra yang memproses dan menyelesaikan pembayaran.
                         </div>
                     </details>
 
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Metode pembayaran apa saja yang didukung Wuzzpay?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Wuzzpay mendukung QRIS, Virtual Account bank, e-wallet, gerai retail, kartu kredit, dan paylater. Rincian biaya setiap metode tersedia di halaman <a href="biaya-transaksi.html" class="underline text-biruAksen">Biaya Transaksi</a>.
                         </div>
                     </details>
 
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Bagaimana jika semua gateway bermasalah sekaligus?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Pengalihan otomatis hanya bisa dilakukan jika masih ada jalur yang tersedia. Gangguan di luar kendali kami, misalnya di sisi bank atau jaringan pelanggan, tidak dapat diatasi oleh pengalihan. Dalam kondisi itu, tim support Wuzzpay membantu Anda.
                         </div>
                     </details>
 
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Siapa yang membantu jika ada sengketa atau dana menggantung?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Cukup hubungi support Wuzzpay. Tim kami menelusuri kendala ke mitra gateway sehingga Anda tidak perlu mengurus ke banyak vendor sendiri.
                         </div>
                     </details>
 
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Siapa yang mengembangkan Wuzzpay?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Wuzzpay dikembangkan dan dikelola oleh PT Semantic Digital Nusantara yang berlokasi di Sidoarjo, Jawa Timur, Indonesia.
                         </div>
                     </details>
@@ -742,15 +745,17 @@
         </section>
 
         <!-- 8. PENUTUP -->
-        <section aria-labelledby="judul-penutup" class="py-20 bg-biruTua text-center">
-            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 id="judul-penutup" class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Mulai terima pembayaran dengan lebih tenang</h2>
-                <p class="text-white/80 text-lg mb-8">Daftar, ikuti proses aktivasi, dan integrasikan. Tim kami membantu di setiap langkah.</p>
+        <section aria-labelledby="judul-penutup" class="relative overflow-hidden py-24 lg:py-28 bg-gradient-to-br from-biruMalam via-biruTua to-biruMalam text-center">
+            <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[640px] h-[360px] bg-biruLangit/25 blur-[110px] rounded-full pointer-events-none"></div>
+            <div class="absolute inset-0 opacity-[0.06] pointer-events-none" style="background-image:radial-gradient(#fff 1px,transparent 1px);background-size:28px 28px"></div>
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <h2 id="judul-penutup" class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-5 leading-tight">Mulai terima pembayaran dengan lebih tenang</h2>
+                <p class="text-biruAwan text-lg mb-10">Daftar, ikuti proses aktivasi, dan integrasikan. Tim kami membantu di setiap langkah.</p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="https://my.wuzzpay.com" class="w-full sm:w-auto px-8 py-4 text-lg font-bold text-biruTua bg-white rounded-2xl hover:bg-biruAwan transition shadow-float text-center">
+                    <a href="https://my.wuzzpay.com" class="w-full sm:w-auto px-8 py-4 text-lg font-bold text-biruMalam bg-white rounded-2xl hover:bg-biruAwan transition shadow-float text-center">
                         Daftar Sekarang
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=6289504121521&text=Halo%20Tim%20Wuzzpay,%20saya%20ingin%20bertanya%20tentang%20layanan%20Wuzzpay." target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-4 text-lg font-bold text-white border-2 border-white/60 rounded-2xl hover:bg-white/10 transition text-center">
+                    <a href="https://api.whatsapp.com/send?phone=6289504121521&text=Halo%20Tim%20Wuzzpay,%20saya%20ingin%20bertanya%20tentang%20layanan%20Wuzzpay." target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-4 text-lg font-bold text-white border border-white/30 rounded-2xl hover:bg-white/10 transition text-center">
                         Tanya via WhatsApp
                     </a>
                 </div>
@@ -760,16 +765,16 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="border-t border-biruAwan bg-white py-16 text-sm text-sedang">
+    <footer class="bg-biruMalam text-biruAwan/80 py-16 text-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12 text-left">
                 <!-- Kolom 1: Profil -->
                 <div>
-                    <p class="text-base font-bold text-biruTua mb-4">WUZZPAY</p>
-                    <p class="leading-relaxed text-sedang text-sm mb-4">Satu pendaftaran dan satu integrasi untuk banyak payment gateway, dengan pengalihan transaksi otomatis saat satu gateway bermasalah.</p>
+                    <p class="text-base font-bold text-white mb-4">WUZZPAY</p>
+                    <p class="leading-relaxed text-biruAwan/80 text-sm mb-4">Satu pendaftaran dan satu integrasi untuk banyak payment gateway, dengan pengalihan transaksi otomatis saat satu gateway bermasalah.</p>
 
                     <div class="flex items-center gap-6">
-                        <a href="https://instagram.com/wuzzpayid" target="_blank" rel="noopener me" class="text-gray-600 hover:text-biruAksen transition-all duration-300 text-xl" title="Instagram" aria-label="Instagram Wuzzpay">
+                        <a href="https://instagram.com/wuzzpayid" target="_blank" rel="noopener me" class="text-biruAwan hover:text-biruLangit transition-all duration-300 text-xl" title="Instagram" aria-label="Instagram Wuzzpay">
                             <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
                         </a>
                     </div>
@@ -777,20 +782,20 @@
 
                 <!-- Kolom 2: Legalitas -->
                 <div>
-                    <p class="text-base font-bold text-biruTua mb-4">Dokumen & Hukum</p>
+                    <p class="text-base font-bold text-white mb-4">Dokumen & Hukum</p>
                     <ul class="space-y-3 text-sm">
                         <li>
-                            <a href="terms.html" class="hover:text-biruAksen text-sedang transition border-b border-dashed border-gray-300 pb-0.5 inline-block">
+                            <a href="terms.html" class="hover:text-biruLangit text-biruAwan/80 transition border-b border-dashed border-white/30 pb-0.5 inline-block">
                                 Terms of Service (Syarat & Ketentuan)
                             </a>
                         </li>
                         <li>
-                            <a href="privacy.html" class="hover:text-biruAksen text-sedang transition border-b border-dashed border-gray-300 pb-0.5 inline-block">
+                            <a href="privacy.html" class="hover:text-biruLangit text-biruAwan/80 transition border-b border-dashed border-white/30 pb-0.5 inline-block">
                                 Privacy Policy (Kebijakan Privasi)
                             </a>
                         </li>
                         <li>
-                            <a href="refund-policy.html" class="hover:text-biruAksen text-sedang transition border-b border-dashed border-gray-300 pb-0.5 inline-block">
+                            <a href="refund-policy.html" class="hover:text-biruLangit text-biruAwan/80 transition border-b border-dashed border-white/30 pb-0.5 inline-block">
                                 Kebijakan Pengembalian Dana (Refund Policy)
                             </a>
                         </li>
@@ -799,45 +804,45 @@
 
                 <!-- Kolom 3: Navigasi -->
                 <div>
-                    <p class="text-base font-bold text-biruTua mb-4">Jelajahi</p>
+                    <p class="text-base font-bold text-white mb-4">Jelajahi</p>
                     <ul class="space-y-3 text-sm">
-                        <li><a href="#cara-kerja" class="hover:text-biruAksen text-sedang transition">Cara Kerja</a></li>
-                        <li><a href="#pricing" class="hover:text-biruAksen text-sedang transition">Harga</a></li>
-                        <li><a href="biaya-transaksi.html" class="hover:text-biruAksen text-sedang transition">Biaya Transaksi</a></li>
-                        <li><a href="apa-itu-payment-orchestration.html" class="hover:text-biruAksen text-sedang transition">Payment Orchestration</a></li>
-                        <li><a href="payment-gateway-down.html" class="hover:text-biruAksen text-sedang transition">Payment Gateway Down</a></li>
-                        <li><a href="memilih-payment-gateway-dengan-failover.html" class="hover:text-biruAksen text-sedang transition">Gateway dengan Failover</a></li>
-                        <li><a href="kapan-perlu-gateway-kedua.html" class="hover:text-biruAksen text-sedang transition">Kapan Perlu Gateway Kedua</a></li>
-                        <li><a href="cara-menerima-pembayaran-qris-va.html" class="hover:text-biruAksen text-sedang transition">Menerima Pembayaran QRIS & VA</a></li>
-                        <li><a href="payment-gateway-vs-aggregator-vs-tsp.html" class="hover:text-biruAksen text-sedang transition">Gateway vs Aggregator vs TSP</a></li>
-                        <li><a href="cara-menghitung-biaya-payment-gateway-mdr.html" class="hover:text-biruAksen text-sedang transition">Cara Menghitung Biaya (MDR)</a></li>
-                        <li><a href="cara-integrasi-pembayaran-aplikasi-saas.html" class="hover:text-biruAksen text-sedang transition">Integrasi Pembayaran SaaS</a></li>
-                        <li><a href="tentang-wuzzpay.html" class="hover:text-biruAksen text-sedang transition">Tentang Wuzzpay</a></li>
-                        <li><a href="#faq" class="hover:text-biruAksen text-sedang transition">FAQ</a></li>
+                        <li><a href="#cara-kerja" class="hover:text-biruLangit text-biruAwan/80 transition">Cara Kerja</a></li>
+                        <li><a href="#pricing" class="hover:text-biruLangit text-biruAwan/80 transition">Harga</a></li>
+                        <li><a href="biaya-transaksi.html" class="hover:text-biruLangit text-biruAwan/80 transition">Biaya Transaksi</a></li>
+                        <li><a href="apa-itu-payment-orchestration.html" class="hover:text-biruLangit text-biruAwan/80 transition">Payment Orchestration</a></li>
+                        <li><a href="payment-gateway-down.html" class="hover:text-biruLangit text-biruAwan/80 transition">Payment Gateway Down</a></li>
+                        <li><a href="memilih-payment-gateway-dengan-failover.html" class="hover:text-biruLangit text-biruAwan/80 transition">Gateway dengan Failover</a></li>
+                        <li><a href="kapan-perlu-gateway-kedua.html" class="hover:text-biruLangit text-biruAwan/80 transition">Kapan Perlu Gateway Kedua</a></li>
+                        <li><a href="cara-menerima-pembayaran-qris-va.html" class="hover:text-biruLangit text-biruAwan/80 transition">Menerima Pembayaran QRIS & VA</a></li>
+                        <li><a href="payment-gateway-vs-aggregator-vs-tsp.html" class="hover:text-biruLangit text-biruAwan/80 transition">Gateway vs Aggregator vs TSP</a></li>
+                        <li><a href="cara-menghitung-biaya-payment-gateway-mdr.html" class="hover:text-biruLangit text-biruAwan/80 transition">Cara Menghitung Biaya (MDR)</a></li>
+                        <li><a href="cara-integrasi-pembayaran-aplikasi-saas.html" class="hover:text-biruLangit text-biruAwan/80 transition">Integrasi Pembayaran SaaS</a></li>
+                        <li><a href="tentang-wuzzpay.html" class="hover:text-biruLangit text-biruAwan/80 transition">Tentang Wuzzpay</a></li>
+                        <li><a href="#faq" class="hover:text-biruLangit text-biruAwan/80 transition">FAQ</a></li>
                     </ul>
                 </div>
 
                 <!-- Kolom 4: Operasional & Kontak -->
                 <div>
-                    <p class="text-base font-bold text-biruTua mb-4">Operasional & Legalitas</p>
-                    <p class="leading-relaxed text-sedang text-sm mb-3">
+                    <p class="text-base font-bold text-white mb-4">Operasional & Legalitas</p>
+                    <p class="leading-relaxed text-biruAwan/80 text-sm mb-3">
                         Wuzzpay dikembangkan dan dikelola oleh <strong>PT Semantic Digital Nusantara</strong>.
                     </p>
-                    <address class="not-italic text-sm text-gelap font-medium space-y-1">
-                        <div class="text-sedang font-semibold">Corporate Site:</div>
-                        <a href="https://semanticdigital.id" target="_blank" rel="noopener" class="text-biruAksen hover:underline block mb-2">www.semanticdigital.id</a>
+                    <address class="not-italic text-sm text-white font-medium space-y-1">
+                        <div class="text-biruAwan/80 font-semibold">Corporate Site:</div>
+                        <a href="https://semanticdigital.id" target="_blank" rel="noopener" class="text-biruLangit hover:underline block mb-2">www.semanticdigital.id</a>
 
-                        <div class="text-sedang font-semibold mt-2">Hubungan & Dukungan:</div>
-                        <a href="mailto:support@semanticdigital.id" class="text-biruAksen hover:underline block mb-2 font-mono">support@semanticdigital.id</a>
+                        <div class="text-biruAwan/80 font-semibold mt-2">Hubungan & Dukungan:</div>
+                        <a href="mailto:support@semanticdigital.id" class="text-biruLangit hover:underline block mb-2 font-mono">support@semanticdigital.id</a>
 
-                        <span class="block text-sedang mt-2">📍 Hub Operasional:</span>
-                        <span class="text-sedang block">Sidoarjo, Jawa Timur, Indonesia</span>
+                        <span class="block text-biruAwan/80 mt-2"><svg class="inline w-4 h-4 -mt-0.5 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Hub Operasional:</span>
+                        <span class="text-biruAwan/80 block">Sidoarjo, Jawa Timur, Indonesia</span>
                     </address>
                 </div>
             </div>
 
-            <div class="border-t border-biruAwan pt-8 text-center text-xs text-sedang leading-relaxed">
-                <p class="mb-3 font-semibold text-gelap">&copy; 2026 PT Semantic Digital Nusantara. All rights reserved.</p>
+            <div class="border-t border-white/15 pt-8 text-center text-xs text-biruAwan/80 leading-relaxed">
+                <p class="mb-3 font-semibold text-white">&copy; 2026 PT Semantic Digital Nusantara. All rights reserved.</p>
                 <p class="max-w-4xl mx-auto opacity-80">Disclaimer: Wuzzpay bertindak sebagai penyedia sistem teknologi perutean transaksi (<em>technical service provider</em>). Pemrosesan, penampungan, dan settlement dana sepenuhnya dijalankan oleh penyedia payment gateway berlisensi Bank Indonesia yang menjadi mitra resmi kami.</p>
             </div>
         </div>
