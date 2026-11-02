@@ -10,3 +10,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Titik animasi pada diagram hero: berhenti bila pengguna memilih mengurangi gerakan */
+.titik-alur {
+  offset-path: path('M175 170 C 235 170, 235 260, 290 260');
+  offset-rotate: 0deg;
+  animation: alur-titik 2.6s ease-in-out infinite;
+}
+@keyframes alur-titik {
+  0% { offset-distance: 0%; opacity: 0; }
+  10%, 90% { opacity: 1; }
+  100% { offset-distance: 100%; opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .titik-alur { animation: none; offset-distance: 100%; opacity: 1; }
+}
