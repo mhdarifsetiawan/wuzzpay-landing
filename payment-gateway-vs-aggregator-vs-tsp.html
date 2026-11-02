@@ -39,7 +39,7 @@
 
     <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 
-    <link rel="stylesheet" href="assets/css/tailwind.css?v=8dc497f5">
+    <link rel="stylesheet" href="assets/css/tailwind.css?v=19a4e6a9">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
 
 
@@ -188,24 +188,24 @@
 
     <a href="#konten-utama" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:bg-white focus:text-biruTua focus:px-4 focus:py-2 focus:rounded-lg">Lewati ke konten utama</a>
 
-    <header class="sticky top-0 z-50 backdrop-blur-xl bg-white/90 border-b border-biruAwan/50 shadow-sm" x-data="{ mobileMenuOpen: false }">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-white/80 border-b border-biruAwan/60 supports-[backdrop-filter]:bg-white/70" x-data="{ mobileMenuOpen: false }">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[72px] flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <a href="index.html" class="flex items-center" aria-label="Wuzzpay - Beranda">
                     <img src="assets/LOGO-sm.webp" alt="Wuzzpay" width="600" height="124" class="h-10 w-auto object-contain">
                 </a>
             </div>
 
-            <nav aria-label="Navigasi utama" class="hidden md:flex items-center gap-8 text-sm font-semibold text-gelap">
-                <a href="index.html#cara-kerja" class="hover:text-biruAksen transition">Cara Kerja</a>
-                <a href="index.html#pricing" class="hover:text-biruAksen transition">Harga</a>
-                <a href="biaya-transaksi.html" class="hover:text-biruAksen transition">Biaya Transaksi</a>
-                <a href="index.html#faq" class="hover:text-biruAksen transition">FAQ</a>
+            <nav aria-label="Navigasi utama" class="hidden md:flex items-center gap-1 text-sm font-semibold text-gelap">
+                <a href="index.html#cara-kerja" class="px-4 py-2 rounded-lg hover:bg-biruAwan/60 hover:text-biruTua transition">Cara Kerja</a>
+                <a href="index.html#pricing" class="px-4 py-2 rounded-lg hover:bg-biruAwan/60 hover:text-biruTua transition">Harga</a>
+                <a href="biaya-transaksi.html" class="px-4 py-2 rounded-lg hover:bg-biruAwan/60 hover:text-biruTua transition">Biaya Transaksi</a>
+                <a href="index.html#faq" class="px-4 py-2 rounded-lg hover:bg-biruAwan/60 hover:text-biruTua transition">FAQ</a>
             </nav>
 
             <div class="hidden md:flex items-center gap-4">
                 <a href="https://my.wuzzpay.com" class="text-sm font-bold text-biruTua hover:text-biruAksen transition">Masuk</a>
-                <a href="https://my.wuzzpay.com" class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold text-white bg-biruAksen rounded-xl hover:bg-biruTua transition shadow-[0_8px_20px_rgba(42,142,202,0.3)] hover:-translate-y-0.5">
+                <a href="https://my.wuzzpay.com" class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold text-white bg-gradient-to-r from-biruAksen to-biruTua rounded-xl hover:brightness-110 transition shadow-soft">
                     Daftar Sekarang
                 </a>
             </div>
@@ -375,17 +375,17 @@
         </section>
     </main>
 
-    <footer class="border-t border-biruAwan bg-white py-16 text-sm text-sedang">
+    <footer class="bg-biruMalam text-biruAwan/80 py-16 text-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <nav aria-label="Tautan footer" class="mb-4 flex flex-wrap justify-center gap-x-6 gap-y-2 font-medium">
-                <a href="index.html" class="hover:text-biruAksen">Beranda</a>
-                <a href="biaya-transaksi.html" class="hover:text-biruAksen">Biaya Transaksi</a>
-                <a href="terms.html" class="hover:text-biruAksen">Syarat & Ketentuan</a>
-                <a href="privacy.html" class="hover:text-biruAksen">Kebijakan Privasi</a>
-                <a href="refund-policy.html" class="hover:text-biruAksen">Kebijakan Pengembalian Dana</a>
+                <a href="index.html" class="hover:text-biruLangit">Beranda</a>
+                <a href="biaya-transaksi.html" class="hover:text-biruLangit">Biaya Transaksi</a>
+                <a href="terms.html" class="hover:text-biruLangit">Syarat & Ketentuan</a>
+                <a href="privacy.html" class="hover:text-biruLangit">Kebijakan Privasi</a>
+                <a href="refund-policy.html" class="hover:text-biruLangit">Kebijakan Pengembalian Dana</a>
             </nav>
-            <p class="mb-3 font-semibold text-gelap">&copy; 2026 PT Semantic Digital Nusantara. All rights reserved.</p>
-            <p class="max-w-4xl mx-auto opacity-80 text-xs leading-relaxed">Disclaimer: Wuzzpay bertindak sebagai penyedia sistem teknologi perutean transaksi (<em>technical service provider</em>). Pemrosesan, penampungan, dan settlement dana sepenuhnya dijalankan oleh penyedia payment gateway berlisensi Bank Indonesia yang menjadi mitra resmi kami.</p>
+            <p class="mb-3 font-semibold text-white">&copy; 2026 PT Semantic Digital Nusantara. All rights reserved.</p>
+            <p class="max-w-4xl mx-auto text-xs leading-relaxed">Disclaimer: Wuzzpay bertindak sebagai penyedia sistem teknologi perutean transaksi (<em>technical service provider</em>). Pemrosesan, penampungan, dan settlement dana sepenuhnya dijalankan oleh penyedia payment gateway berlisensi Bank Indonesia yang menjadi mitra resmi kami.</p>
         </div>
     </footer>
 
