@@ -51,7 +51,7 @@
     <!-- Tipografi -->
     <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 
-    <link rel="stylesheet" href="assets/css/tailwind.css?v=19a4e6a9">
+    <link rel="stylesheet" href="assets/css/tailwind.css?v=65b44681">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
 
 
@@ -230,36 +230,38 @@
 
     <main id="konten-utama">
         <!-- HERO SECTION -->
-        <section class="relative pt-20 pb-16 bg-white border-b border-gray-200 overflow-hidden">
-            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full bg-gradient-to-b from-biruAwan/30 to-transparent pointer-events-none"></div>
+        <section class="relative pt-20 pb-20 overflow-hidden bg-gradient-to-br from-biruMalam via-biruTua to-biruMalam text-white">
+            <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[640px] h-[360px] bg-biruLangit/25 blur-[110px] rounded-full pointer-events-none"></div>
+            <div class="absolute inset-0 opacity-[0.06] pointer-events-none" style="background-image:radial-gradient(#fff 1px,transparent 1px);background-size:28px 28px"></div>
             <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-                <nav aria-label="Breadcrumb" class="text-sm text-sedang mb-6">
-                    <a href="index.html" class="hover:text-biruAksen">Beranda</a> <span aria-hidden="true">&rsaquo;</span> <span class="font-semibold text-gelap">Biaya Transaksi</span>
+                <nav aria-label="Breadcrumb" class="text-sm text-biruAwan mb-6">
+                    <a href="index.html" class="hover:text-white">Beranda</a> <span aria-hidden="true">&rsaquo;</span> <span class="font-semibold text-white">Biaya Transaksi</span>
                 </nav>
-                <h1 class="text-4xl sm:text-5xl font-extrabold text-gelap mb-6">Biaya Transaksi Payment Gateway: <span class="text-biruTua">QRIS, VA, E-Wallet &amp; Retail</span></h1>
-                <p class="text-lg text-sedang mb-8">Tarif jelas untuk setiap metode pembayaran. Selain biaya aktivasi yang dibayar sekali, biaya transaksi hanya dipotong dari pembayaran yang berhasil. Tidak ada denda bulanan.</p>
-                <p class="text-base text-gelap bg-biruAwan/40 border border-biruAwan rounded-2xl p-5 text-left leading-relaxed">
-                    <strong class="text-biruTua">Ringkasan:</strong> biaya transaksi Wuzzpay mulai dari <strong>0,7% untuk QRIS</strong> dan <strong>Rp 3.500 sampai Rp 5.000 per transaksi untuk Virtual Account bank</strong>. E-wallet 0,5% sampai 3%, gerai retail Rp 5.000 sampai Rp 8.000, kartu kredit 2,9% + Rp 2.000, dan paylater 2,0%. Semua tarif belum termasuk PPN.
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-6 leading-tight">Biaya Transaksi Payment Gateway: <span class="bg-gradient-to-r from-biruLangit to-biruAwan bg-clip-text text-transparent">QRIS, VA, E-Wallet &amp; Retail</span></h1>
+                <p class="text-lg text-biruAwan mb-8">Tarif jelas untuk setiap metode pembayaran. Selain biaya aktivasi yang dibayar sekali, biaya transaksi hanya dipotong dari pembayaran yang berhasil. Tidak ada denda bulanan.</p>
+                <p class="text-base text-white bg-white/10 border border-white/20 backdrop-blur-sm rounded-2xl p-5 text-left leading-relaxed">
+                    <strong class="text-biruLangit">Ringkasan:</strong> biaya transaksi Wuzzpay mulai dari <strong>0,7% untuk QRIS</strong> dan <strong>Rp 3.500 sampai Rp 5.000 per transaksi untuk Virtual Account bank</strong>. E-wallet 0,5% sampai 3%, gerai retail Rp 5.000 sampai Rp 8.000, kartu kredit 2,9% + Rp 2.000, dan paylater 2,0%. Semua tarif belum termasuk PPN.
                 </p>
-                <p class="text-sm text-sedang mt-4 text-left">Semua metode ini tersedia lewat satu integrasi, dengan pengalihan otomatis (failover) ke gateway cadangan (backup) atau alternatif jika satu gateway bermasalah dan masih ada jalur lain yang tersedia.</p>
+                <p class="text-sm text-biruAwan mt-4 text-left">Semua metode ini tersedia lewat satu integrasi, dengan pengalihan otomatis (failover) ke gateway cadangan (backup) atau alternatif jika satu gateway bermasalah dan masih ada jalur lain yang tersedia.</p>
             </div>
         </section>
 
         <!-- DAFTAR HARGA: dua metode utama (sorotan) + tabel metode lain -->
-        <section class="py-16 bg-gray-50" aria-labelledby="judul-daftar-harga">
+        <section class="py-16 lg:py-20 bg-gradient-to-b from-biruAwan/40 to-white" aria-labelledby="judul-daftar-harga">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 id="judul-daftar-harga" class="sr-only">Daftar tarif per metode pembayaran</h2>
 
                 <!-- Sorotan: QRIS dan Virtual Account -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-                    <div class="bg-white border-2 border-biruAwan rounded-3xl p-8 shadow-sm flex flex-col">
+                    <div class="relative overflow-hidden bg-white border border-biruAwan rounded-3xl p-8 shadow-soft flex flex-col hover:border-biruLangit/60 transition">
+                        <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-biruAksen via-biruLangit to-biruAwan" aria-hidden="true"></div>
                         <div class="flex items-center gap-3 mb-5">
-                            <div class="w-12 h-12 bg-biruAwan/50 text-biruTua rounded-xl flex items-center justify-center">
+                            <div class="w-12 h-12 bg-biruAksen text-white rounded-xl flex items-center justify-center shadow-soft">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h7v7H3V3zm11 0h7v7h-7V3zM3 14h7v7H3v-7zm11 0h3v3h-3v-3zm4 4h3v3h-3v-3zm0-4h3m-7 7h3"/></svg>
                             </div>
                             <h3 class="text-xl font-bold text-gelap">QRIS (semua pembayaran)</h3>
                         </div>
-                        <div class="text-3xl sm:text-4xl font-black text-biruTua mb-1">0,7%</div>
+                        <div class="text-3xl sm:text-4xl font-black mb-1 bg-gradient-to-r from-biruAksen to-biruTua bg-clip-text text-transparent">0,7%</div>
                         <p class="text-sm text-sedang mb-5">per transaksi berhasil</p>
                         <dl class="text-sm border-t border-gray-100">
                             <div class="flex justify-between gap-4 py-2 border-b border-gray-100"><dt class="text-sedang">Aplikasi pembayaran</dt><dd class="font-bold text-biruTua text-right">Semua yang mendukung QRIS</dd></div>
@@ -268,14 +270,15 @@
                         <p class="text-xs text-sedang mt-auto pt-4">Tarif persentase dihitung dari nominal transaksi yang berhasil.</p>
                     </div>
 
-                    <div class="bg-white border-2 border-biruAwan rounded-3xl p-8 shadow-sm flex flex-col">
+                    <div class="relative overflow-hidden bg-white border border-biruAwan rounded-3xl p-8 shadow-soft flex flex-col hover:border-biruLangit/60 transition">
+                        <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-biruAksen via-biruLangit to-biruAwan" aria-hidden="true"></div>
                         <div class="flex items-center gap-3 mb-5">
-                            <div class="w-12 h-12 bg-biruAwan/50 text-biruTua rounded-xl flex items-center justify-center">
+                            <div class="w-12 h-12 bg-biruAksen text-white rounded-xl flex items-center justify-center shadow-soft">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10l9-6 9 6M5 10v8m4-8v8m6-8v8m4-8v8M3 21h18"/></svg>
                             </div>
                             <h3 class="text-xl font-bold text-gelap">Virtual Account bank</h3>
                         </div>
-                        <div class="text-3xl sm:text-4xl font-black text-biruTua mb-1">Rp 3.500 - 5.000</div>
+                        <div class="text-3xl sm:text-4xl font-black mb-1 bg-gradient-to-r from-biruAksen to-biruTua bg-clip-text text-transparent">Rp 3.500 - 5.000</div>
                         <p class="text-sm text-sedang mb-5">tarif tetap per transaksi, berapa pun nominalnya</p>
                         <dl class="text-sm border-t border-gray-100">
                             <div class="flex justify-between gap-4 py-2 border-b border-gray-100"><dt class="text-sedang">Mandiri, BNI, BRI, BSI, Muamalat, Permata, CIMB, Danamon, Bank Neo Commerce</dt><dd class="font-bold text-biruTua whitespace-nowrap">Rp 3.500 - 4.000</dd></div>
@@ -291,11 +294,11 @@
                 <div class="space-y-8">
                     <div>
                         <h3 class="text-lg font-bold text-gelap mb-3">E-Wallet</h3>
-                        <div class="overflow-x-auto bg-white border border-gray-100 rounded-2xl shadow-sm">
+                        <div class="overflow-x-auto bg-white border border-biruAwan rounded-2xl shadow-sm">
                             <table class="w-full text-left text-sm">
-                                <thead class="bg-biruAwan/40 text-biruTua"><tr><th scope="col" class="p-4 font-bold">Metode</th><th scope="col" class="p-4 font-bold whitespace-nowrap text-right">Tarif</th></tr></thead>
-                                <tbody class="divide-y divide-gray-100 text-sedang">
-                                    <tr><th scope="row" class="p-4 font-semibold text-gelap">OVO, DANA, LinkAja, ShopeePay, GoPay, Speedcash, AstraPay<span class="block text-xs font-normal text-sedang mt-1">Tarif bervariasi sesuai kebijakan masing-masing penyedia layanan.</span></th><td class="p-4 font-black text-biruTua whitespace-nowrap text-right">0,5% - 3%</td></tr>
+                                <thead class="bg-biruTua text-white"><tr><th scope="col" class="p-4 font-bold">Metode</th><th scope="col" class="p-4 font-bold whitespace-nowrap text-right">Tarif</th></tr></thead>
+                                <tbody class="divide-y divide-biruAwan/60 text-sedang">
+                                    <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">OVO, DANA, LinkAja, ShopeePay, GoPay, Speedcash, AstraPay<span class="block text-xs font-normal text-sedang mt-1">Tarif bervariasi sesuai kebijakan masing-masing penyedia layanan.</span></th><td class="p-4 font-black text-biruTua whitespace-nowrap text-right">0,5% - 3%</td></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -303,13 +306,13 @@
 
                     <div>
                         <h3 class="text-lg font-bold text-gelap mb-3">Gerai Retail (bayar tunai)</h3>
-                        <div class="overflow-x-auto bg-white border border-gray-100 rounded-2xl shadow-sm">
+                        <div class="overflow-x-auto bg-white border border-biruAwan rounded-2xl shadow-sm">
                             <table class="w-full text-left text-sm">
-                                <thead class="bg-biruAwan/40 text-biruTua"><tr><th scope="col" class="p-4 font-bold">Gerai</th><th scope="col" class="p-4 font-bold whitespace-nowrap text-right">Tarif</th></tr></thead>
-                                <tbody class="divide-y divide-gray-100 text-sedang">
-                                    <tr><th scope="row" class="p-4 font-semibold text-gelap">Indomaret<span class="block text-xs font-normal text-sedang mt-1">Settlement oleh gateway H+3</span></th><td class="p-4 font-black text-biruTua whitespace-nowrap text-right">Rp 5.000 - 8.000</td></tr>
-                                    <tr><th scope="row" class="p-4 font-semibold text-gelap">Alfamart Group<span class="block text-xs font-normal text-sedang mt-1">Settlement oleh gateway H+3</span></th><td class="p-4 font-black text-biruTua whitespace-nowrap text-right">Rp 5.000 - 6.000</td></tr>
-                                    <tr><th scope="row" class="p-4 font-semibold text-gelap">Fastpay<span class="block text-xs font-normal text-sedang mt-1">Settlement oleh gateway H+3</span></th><td class="p-4 font-black text-biruTua whitespace-nowrap text-right">Rp 5.000</td></tr>
+                                <thead class="bg-biruTua text-white"><tr><th scope="col" class="p-4 font-bold">Gerai</th><th scope="col" class="p-4 font-bold whitespace-nowrap text-right">Tarif</th></tr></thead>
+                                <tbody class="divide-y divide-biruAwan/60 text-sedang">
+                                    <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Indomaret<span class="block text-xs font-normal text-sedang mt-1">Settlement oleh gateway H+3</span></th><td class="p-4 font-black text-biruTua whitespace-nowrap text-right">Rp 5.000 - 8.000</td></tr>
+                                    <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Alfamart Group<span class="block text-xs font-normal text-sedang mt-1">Settlement oleh gateway H+3</span></th><td class="p-4 font-black text-biruTua whitespace-nowrap text-right">Rp 5.000 - 6.000</td></tr>
+                                    <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Fastpay<span class="block text-xs font-normal text-sedang mt-1">Settlement oleh gateway H+3</span></th><td class="p-4 font-black text-biruTua whitespace-nowrap text-right">Rp 5.000</td></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -317,12 +320,12 @@
 
                     <div>
                         <h3 class="text-lg font-bold text-gelap mb-3">Kartu Kredit &amp; Paylater</h3>
-                        <div class="overflow-x-auto bg-white border border-gray-100 rounded-2xl shadow-sm">
+                        <div class="overflow-x-auto bg-white border border-biruAwan rounded-2xl shadow-sm">
                             <table class="w-full text-left text-sm">
-                                <thead class="bg-biruAwan/40 text-biruTua"><tr><th scope="col" class="p-4 font-bold">Metode</th><th scope="col" class="p-4 font-bold whitespace-nowrap text-right">Tarif</th></tr></thead>
-                                <tbody class="divide-y divide-gray-100 text-sedang">
-                                    <tr><th scope="row" class="p-4 font-semibold text-gelap">Kartu Kredit (Visa / Mastercard)<span class="block text-xs font-normal text-sedang mt-1">3D Secure aktif untuk semua transaksi</span></th><td class="p-4 font-black text-biruTua whitespace-nowrap text-right">2,9% + Rp 2.000</td></tr>
-                                    <tr><th scope="row" class="p-4 font-semibold text-gelap">Kredivo &amp; Akulaku<span class="block text-xs font-normal text-sedang mt-1">Cicilan tanpa kartu kredit (cardless credit)</span></th><td class="p-4 font-black text-biruTua whitespace-nowrap text-right">2,0%</td></tr>
+                                <thead class="bg-biruTua text-white"><tr><th scope="col" class="p-4 font-bold">Metode</th><th scope="col" class="p-4 font-bold whitespace-nowrap text-right">Tarif</th></tr></thead>
+                                <tbody class="divide-y divide-biruAwan/60 text-sedang">
+                                    <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Kartu Kredit (Visa / Mastercard)<span class="block text-xs font-normal text-sedang mt-1">3D Secure aktif untuk semua transaksi</span></th><td class="p-4 font-black text-biruTua whitespace-nowrap text-right">2,9% + Rp 2.000</td></tr>
+                                    <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Kredivo &amp; Akulaku<span class="block text-xs font-normal text-sedang mt-1">Cicilan tanpa kartu kredit (cardless credit)</span></th><td class="p-4 font-black text-biruTua whitespace-nowrap text-right">2,0%</td></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -334,43 +337,43 @@
         </section>
 
         <!-- FAQ Biaya -->
-        <section id="faq-biaya" aria-labelledby="judul-faq-biaya" class="py-16 bg-biruAwan/20 border-t border-biruAwan">
+        <section id="faq-biaya" aria-labelledby="judul-faq-biaya" class="py-16 lg:py-20 bg-gradient-to-b from-biruAwan/40 to-white">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 id="judul-faq-biaya" class="text-3xl font-extrabold text-gelap mb-8 text-center">Pertanyaan seputar biaya transaksi</h2>
                 <div class="space-y-4">
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Berapa biaya transaksi QRIS di Wuzzpay?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Biaya QRIS di Wuzzpay adalah 0,7% per transaksi berhasil, belum termasuk PPN. Settlement dana oleh gateway mitra real-time atau H+1.
                         </div>
                     </details>
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Berapa biaya Virtual Account bank di Wuzzpay?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Tarif tetap per transaksi, berapa pun nominalnya: Rp 3.500 sampai Rp 4.000 untuk Mandiri, BNI, BRI, BSI, Muamalat, Permata, CIMB, Danamon, dan Bank Neo Commerce, dan Rp 4.000 sampai Rp 5.000 untuk BCA. Settlement dana oleh gateway ke rekening bank merchant H+1. Biaya dapat dibebankan ke pembeli lewat pengaturan di Dashboard Wuzzpay.
                         </div>
                     </details>
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Berapa biaya e-wallet, gerai retail, kartu kredit, dan paylater di Wuzzpay?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             E-wallet 0,5% sampai 3% per transaksi tergantung penyedia layanan. Gerai retail Rp 5.000 sampai Rp 8.000 per transaksi (Indomaret Rp 5.000 sampai Rp 8.000, Alfamart Rp 5.000 sampai Rp 6.000, Fastpay Rp 5.000), dengan settlement oleh gateway H+3. Kartu kredit Visa/Mastercard 2,9% + Rp 2.000. Kredivo dan Akulaku 2,0% per transaksi.
                         </div>
                     </details>
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Apakah biaya transaksi Wuzzpay sudah termasuk PPN?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Belum. Tarif yang tertera belum termasuk PPN sesuai ketentuan perpajakan yang berlaku, dan dapat berubah mengikuti regulasi Bank Indonesia serta kebijakan mitra payment gateway.
                         </div>
                     </details>
@@ -379,12 +382,14 @@
         </section>
 
         <!-- CTA Akhir -->
-        <section class="py-20 bg-biruTua">
-            <div class="max-w-4xl mx-auto px-4 text-center">
+        <section class="relative overflow-hidden py-24 bg-gradient-to-br from-biruMalam via-biruTua to-biruMalam text-white">
+            <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[640px] h-[360px] bg-biruLangit/25 blur-[110px] rounded-full pointer-events-none"></div>
+            <div class="absolute inset-0 opacity-[0.06] pointer-events-none" style="background-image:radial-gradient(#fff 1px,transparent 1px);background-size:28px 28px"></div>
+            <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
                 <h2 class="text-3xl font-extrabold text-white mb-6">Mulai Terima Pembayaran Sekarang</h2>
                 <p class="text-biruAwan mb-10 text-lg">Buat akun, jalankan integrasi dalam hitungan jam, dan biarkan sistem Wuzzpay yang mengelola sisanya.</p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="https://my.wuzzpay.com" class="w-full sm:w-auto px-8 py-4 text-lg font-bold text-biruTua bg-white rounded-2xl hover:bg-gray-100 transition shadow-lg text-center">
+                    <a href="https://my.wuzzpay.com" class="w-full sm:w-auto px-8 py-4 text-lg font-bold text-biruMalam bg-white rounded-2xl hover:bg-biruAwan transition shadow-float text-center">
                         Daftar Sekarang
                     </a>
                 </div>
