@@ -26,6 +26,19 @@ Tanggal "Terakhir diperbarui" di ketiga halaman diisi 2 November 2026 (tanggal p
 3. Apakah klausul refund dan sengketa (§02 refund-policy: komplain "satu pintu" lewat Wuzzpay) sudah cukup jelas bahwa Wuzzpay hanya mengawal komunikasi, bukan memproses dana?
 4. Apakah frasa "Merchant wajib membebaskan PT Semantic Digital Nusantara dari tuntutan" dan batasan tanggung jawab di `terms.html` sudah sesuai?
 
+## Halaman publik yang menunggu tinjauan legal (tambahan 2026-11-03)
+
+`alternatif-payment-gateway.html` menyebut nama merek pihak lain (Midtrans, Xendit, DOKU; bukan mitra Wuzzpay) sebagai rujukan netral di satu bagian isi dan satu FAQ. Ini dilakukan atas keputusan pemilik proyek, sebelum ada persetujuan legal, sebagai pengecualian dari aturan "tidak menyebut nama gateway" di `CLAUDE.md`. Pengamanan yang sudah ada: judul, `h1`, title, dan description tidak memuat merek; ada pernyataan merek dagang milik pemiliknya dan Wuzzpay tidak berafiliasi; tidak ada perbandingan fitur, tarif, atau kinerja; tidak ada kalimat yang merendahkan.
+
+Pertanyaan untuk pihak legal:
+
+1. Apakah penyebutan nama merek pihak lain sebagai rujukan netral di halaman ini dapat diterima (penggunaan nominatif), termasuk di teks FAQ yang juga ada di JSON-LD?
+2. Apakah pernyataan merek dagang dan "tidak berafiliasi" sudah memadai, atau perlu redaksi lain?
+3. Apakah posisi "jalur tambahan atau cara akses ke gateway berlisensi" cukup jelas bahwa Wuzzpay bukan gateway dan bukan pengganti layanan merek tersebut?
+4. Apakah halaman per merek (mis. "alternatif [merek]") boleh dibuat di masa depan? Saat ini tidak dibuat.
+
+Empat panduan baru lain (`cara-daftar-payment-gateway`, `payment-gateway-untuk-website`, `payment-gateway-murah`, `payment-gateway-indonesia`) tidak menyebut merek pihak lain. Keempatnya memuat klaim regulasi umum (BI mengatur PJP, daftar penyelenggara berizin ada di situs BI, QRIS standar nasional) dan daftar dokumen KYC yang bersifat umum; legal dapat memeriksa kesesuaiannya bila perlu.
+
 ## Bila skema aggregator diluncurkan
 
 Seluruh teks perlu ditinjau ulang: halaman publik, FAQ dan JSON-LD, `llms.txt`, ketiga halaman legal, dan `CLAUDE.md`.
