@@ -39,7 +39,7 @@
 
     <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 
-    <link rel="stylesheet" href="assets/css/tailwind.css?v=65b44681">
+    <link rel="stylesheet" href="assets/css/tailwind.css?v=c0c1a3b1">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
 
 
@@ -240,30 +240,31 @@
 
     <main id="konten-utama">
         <article>
-            <header class="relative pt-16 pb-12 bg-white border-b border-gray-200 overflow-hidden">
-                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full bg-gradient-to-b from-biruAwan/30 to-transparent pointer-events-none"></div>
+            <header class="relative pt-16 pb-14 overflow-hidden bg-gradient-to-br from-biruMalam via-biruTua to-biruMalam text-white">
+                <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[640px] h-[360px] bg-biruLangit/25 blur-[110px] rounded-full pointer-events-none"></div>
+                <div class="absolute inset-0 opacity-[0.06] pointer-events-none" style="background-image:radial-gradient(#fff 1px,transparent 1px);background-size:28px 28px"></div>
                 <div class="max-w-3xl mx-auto px-4 relative z-10">
-                    <nav aria-label="Breadcrumb" class="text-sm text-sedang mb-6">
-                        <a href="index.html" class="hover:text-biruAksen">Beranda</a> <span aria-hidden="true">&rsaquo;</span> <span class="font-semibold text-gelap">Menghitung Biaya Payment Gateway</span>
+                    <nav aria-label="Breadcrumb" class="text-sm text-biruAwan mb-6">
+                        <a href="index.html" class="hover:text-white">Beranda</a> <span aria-hidden="true">&rsaquo;</span> <span class="font-semibold text-white">Menghitung Biaya Payment Gateway</span>
                     </nav>
-                    <h1 class="text-3xl sm:text-5xl font-extrabold text-gelap mb-6 leading-tight">Cara Menghitung Biaya Payment Gateway (MDR) untuk UMKM</h1>
-                    <p class="text-lg text-gelap leading-relaxed bg-biruAwan/40 border border-biruAwan rounded-2xl p-5">
-                        <strong class="text-biruTua">Jawaban singkat:</strong> biaya payment gateway dihitung dari <em>Merchant Discount Rate</em> (MDR), yaitu rumus (nominal × persentase) + biaya tetap per transaksi, ditambah PPN dan biaya lain jika ada. Contoh dengan tarif Wuzzpay: QRIS Rp 100.000 × 0,7% = Rp 700, sehingga Anda menerima sekitar Rp 99.300 (belum termasuk PPN).
+                    <h1 class="text-3xl sm:text-5xl font-extrabold  mb-6 leading-tight tracking-tight">Cara Menghitung Biaya Payment Gateway (MDR) untuk UMKM</h1>
+                    <p class="text-lg text-white leading-relaxed bg-white/10 border border-white/20 backdrop-blur-sm rounded-2xl p-5">
+                        <strong class="text-biruLangit">Jawaban singkat:</strong> biaya payment gateway dihitung dari <em>Merchant Discount Rate</em> (MDR), yaitu rumus (nominal × persentase) + biaya tetap per transaksi, ditambah PPN dan biaya lain jika ada. Contoh dengan tarif Wuzzpay: QRIS Rp 100.000 × 0,7% = Rp 700, sehingga Anda menerima sekitar Rp 99.300 (belum termasuk PPN).
                     </p>
-                    <p class="text-sm text-sedang mt-4">Ditulis oleh tim <a href="index.html" class="underline text-biruAksen">Wuzzpay</a> (PT Semantic Digital Nusantara) &middot; Diterbitkan <time datetime="2026-10-24">24 Oktober 2026</time></p>
+                    <p class="text-sm text-biruAwan mt-4">Ditulis oleh tim <a href="index.html" class="underline text-biruLangit">Wuzzpay</a> (PT Semantic Digital Nusantara) &middot; Diterbitkan <time datetime="2026-10-24">24 Oktober 2026</time></p>
                 </div>
             </header>
 
             <div class="max-w-3xl mx-auto px-4 py-12 space-y-12 text-base leading-relaxed">
 
                 <section aria-labelledby="h-mdr">
-                    <h2 id="h-mdr" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Apa itu MDR</h2>
+                    <h2 id="h-mdr" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gelap mb-4 pl-4 border-l-4 border-biruAksen">Apa itu MDR</h2>
                     <p class=""><em>Merchant Discount Rate</em> (MDR) adalah biaya yang dipotong dari setiap transaksi pembayaran yang berhasil. Bentuknya bisa persentase dari nominal (misalnya QRIS dan e-wallet), nominal tetap per transaksi (misalnya Virtual Account dan gerai retail), atau gabungan keduanya (misalnya kartu kredit).</p>
                 </section>
 
                 <section aria-labelledby="h-komponen">
-                    <h2 id="h-komponen" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Komponen biaya yang perlu dihitung</h2>
-                    <ul class="space-y-3 list-disc pl-6">
+                    <h2 id="h-komponen" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gelap mb-4 pl-4 border-l-4 border-biruAksen">Komponen biaya yang perlu dihitung</h2>
+                    <ul class="space-y-3 list-disc pl-6 marker:text-biruAksen">
                         <li><strong class='text-gelap'>Biaya setup atau aktivasi</strong>, jika ada, biasanya dibayar sekali.</li>
                         <li><strong class='text-gelap'>Biaya persentase</strong> dari nominal transaksi.</li>
                         <li><strong class='text-gelap'>Biaya tetap</strong> per transaksi, yang terasa besar pada transaksi bernilai kecil.</li>
@@ -273,35 +274,35 @@
                 </section>
 
                 <section aria-labelledby="h-rumus">
-                    <h2 id="h-rumus" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Rumus sederhana</h2>
+                    <h2 id="h-rumus" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gelap mb-4 pl-4 border-l-4 border-biruAksen">Rumus sederhana</h2>
                     <p class="mb-4">Biaya per transaksi = (nominal × persentase) + biaya tetap. Dana yang Anda terima = nominal − biaya − PPN atas biaya, jika berlaku.</p>
                     <p class="mb-4">Contoh di bawah memakai tarif Wuzzpay yang tercantum di halaman <a href='biaya-transaksi.html' class='underline text-biruAksen'>Biaya Transaksi</a>. Angkanya <strong class='text-gelap'>belum termasuk PPN</strong> dan tarif dapat berubah.</p>
-                    <div class="overflow-x-auto rounded-2xl border border-gray-200 bg-white">
+                    <div class="overflow-x-auto rounded-2xl border border-biruAwan bg-white shadow-sm">
                         <table class="w-full text-left text-sm">
                             <caption class="sr-only">Contoh hitungan biaya transaksi</caption>
-                            <thead class="bg-biruAwan/40 text-gelap"><tr><th scope="col" class="p-4 font-bold">Metode</th><th scope="col" class="p-4 font-bold">Nominal</th><th scope="col" class="p-4 font-bold">Tarif</th><th scope="col" class="p-4 font-bold">Biaya</th><th scope="col" class="p-4 font-bold">Estimasi diterima</th></tr></thead>
-                            <tbody class="divide-y divide-gray-100">
-                                <tr><th scope="row" class="p-4 font-semibold text-gelap">QRIS</th><td class="p-4">Rp 100.000</td><td class="p-4">0,7%</td><td class="p-4">Rp 700</td><td class="p-4">Rp 99.300</td></tr>
-                                <tr><th scope="row" class="p-4 font-semibold text-gelap">QRIS</th><td class="p-4">Rp 20.000</td><td class="p-4">0,7%</td><td class="p-4">Rp 140</td><td class="p-4">Rp 19.860</td></tr>
-                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Virtual Account bank</th><td class="p-4">Rp 100.000</td><td class="p-4">Rp 4.000 flat (contoh)</td><td class="p-4">Rp 4.000</td><td class="p-4">Rp 96.000</td></tr>
-                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Virtual Account bank</th><td class="p-4">Rp 20.000</td><td class="p-4">Rp 4.000 flat (contoh)</td><td class="p-4">Rp 4.000</td><td class="p-4">Rp 16.000</td></tr>
-                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Kartu kredit</th><td class="p-4">Rp 500.000</td><td class="p-4">2,9% + Rp 2.000</td><td class="p-4">Rp 16.500</td><td class="p-4">Rp 483.500</td></tr>
-                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Kredivo / Akulaku</th><td class="p-4">Rp 300.000</td><td class="p-4">2,0%</td><td class="p-4">Rp 6.000</td><td class="p-4">Rp 294.000</td></tr>
-                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Indomaret / Alfamart</th><td class="p-4">Rp 100.000</td><td class="p-4">Rp 5.000 flat (contoh)</td><td class="p-4">Rp 5.000</td><td class="p-4">Rp 95.000</td></tr>
+                            <thead class="bg-biruTua text-white"><tr><th scope="col" class="p-4 font-bold">Metode</th><th scope="col" class="p-4 font-bold">Nominal</th><th scope="col" class="p-4 font-bold">Tarif</th><th scope="col" class="p-4 font-bold">Biaya</th><th scope="col" class="p-4 font-bold">Estimasi diterima</th></tr></thead>
+                            <tbody class="divide-y divide-biruAwan/60">
+                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">QRIS</th><td class="p-4">Rp 100.000</td><td class="p-4">0,7%</td><td class="p-4">Rp 700</td><td class="p-4">Rp 99.300</td></tr>
+                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">QRIS</th><td class="p-4">Rp 20.000</td><td class="p-4">0,7%</td><td class="p-4">Rp 140</td><td class="p-4">Rp 19.860</td></tr>
+                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Virtual Account bank</th><td class="p-4">Rp 100.000</td><td class="p-4">Rp 4.000 flat (contoh)</td><td class="p-4">Rp 4.000</td><td class="p-4">Rp 96.000</td></tr>
+                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Virtual Account bank</th><td class="p-4">Rp 20.000</td><td class="p-4">Rp 4.000 flat (contoh)</td><td class="p-4">Rp 4.000</td><td class="p-4">Rp 16.000</td></tr>
+                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Kartu kredit</th><td class="p-4">Rp 500.000</td><td class="p-4">2,9% + Rp 2.000</td><td class="p-4">Rp 16.500</td><td class="p-4">Rp 483.500</td></tr>
+                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Kredivo / Akulaku</th><td class="p-4">Rp 300.000</td><td class="p-4">2,0%</td><td class="p-4">Rp 6.000</td><td class="p-4">Rp 294.000</td></tr>
+                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Indomaret / Alfamart</th><td class="p-4">Rp 100.000</td><td class="p-4">Rp 5.000 flat (contoh)</td><td class="p-4">Rp 5.000</td><td class="p-4">Rp 95.000</td></tr>
                             </tbody>
                         </table>
                     </div>
                 </section>
 
                 <section aria-labelledby="h-flat">
-                    <h2 id="h-flat" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Tarif tetap vs persentase: kapan mana yang lebih murah</h2>
+                    <h2 id="h-flat" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gelap mb-4 pl-4 border-l-4 border-biruAksen">Tarif tetap vs persentase: kapan mana yang lebih murah</h2>
                     <p class="mb-4">Pada transaksi kecil, biaya tetap terasa jauh lebih berat daripada persentase. Dengan tarif contoh di atas, Virtual Account Rp 4.000 (tarif sebenarnya Rp 3.500 sampai Rp 5.000 tergantung bank) untuk pembelian Rp 20.000 berarti 20% dari nominal, sedangkan QRIS 0,7% hanya Rp 140.</p>
                     <p class="mb-0">Titik impas kedua tarif itu ada di sekitar Rp 571.000 (Rp 4.000 ÷ 0,7%); dengan tarif VA Rp 3.500 sampai Rp 5.000, titik impasnya berkisar Rp 500.000 sampai Rp 714.000. Di bawah angka itu QRIS lebih murah, dan di atasnya Virtual Account flat lebih murah. Angka ini hanya berlaku untuk tarif contoh tersebut, jadi hitung ulang dengan tarif penyedia yang Anda bandingkan.</p>
                 </section>
 
                 <section aria-labelledby="h-tips">
-                    <h2 id="h-tips" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Tips menekan biaya</h2>
-                    <ul class="space-y-3 list-disc pl-6">
+                    <h2 id="h-tips" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gelap mb-4 pl-4 border-l-4 border-biruAksen">Tips menekan biaya</h2>
+                    <ul class="space-y-3 list-disc pl-6 marker:text-biruAksen">
                         <li>Arahkan pembeli ke metode yang paling hemat sesuai nominal belanja.</li>
                         <li>Tentukan apakah biaya ditanggung merchant atau dibebankan ke pembeli. Di Wuzzpay, biaya Virtual Account dapat dibebankan ke pembeli lewat pengaturan di Dashboard.</li>
                         <li>Pertimbangkan batas minimum belanja untuk metode dengan biaya tetap.</li>
@@ -311,55 +312,55 @@
                 </section>
 
                 <section aria-labelledby="h-wuzzpay">
-                    <h2 id="h-wuzzpay" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Biaya di Wuzzpay</h2>
+                    <h2 id="h-wuzzpay" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gelap mb-4 pl-4 border-l-4 border-biruAksen">Biaya di Wuzzpay</h2>
                     <p class="">Wuzzpay mengenakan biaya aktivasi dan integrasi yang dibayar sekali (gratis untuk pendaftaran sampai 31 Desember 2026, setelah itu Rp 99.000; harga dapat berubah), ditambah biaya per transaksi sesuai metode pembayaran. Rincian tarif lengkap ada di halaman <a href='biaya-transaksi.html' class='underline text-biruAksen'>Biaya Transaksi</a>, dan ringkasan paket di <a href='index.html#pricing' class='underline text-biruAksen'>bagian harga</a>.</p>
                 </section>
 
                 <section id="faq" aria-labelledby="h-faq">
-                    <h2 id="h-faq" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-6">Pertanyaan yang sering diajukan</h2>
+                    <h2 id="h-faq" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gelap mb-6 pl-4 border-l-4 border-biruAksen">Pertanyaan yang sering diajukan</h2>
                     <div class="space-y-4">
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Apa itu MDR pada payment gateway?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             MDR (Merchant Discount Rate) adalah biaya yang dipotong dari setiap transaksi pembayaran yang berhasil. Bentuknya bisa persentase, nominal tetap, atau gabungan keduanya, tergantung metode pembayaran.
                         </div>
                     </details>
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Bagaimana rumus menghitung biaya transaksi payment gateway?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Biaya per transaksi = (nominal × persentase) + biaya tetap. Dana yang diterima = nominal dikurangi biaya, dan dikurangi PPN atas biaya jika berlaku.
                         </div>
                     </details>
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Berapa biaya QRIS dan Virtual Account di Wuzzpay?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Contoh tarif di Wuzzpay: QRIS 0,7% per transaksi dan Virtual Account bank Rp 3.500 sampai Rp 5.000 per transaksi (tergantung bank), belum termasuk PPN. Tarif dapat berubah, jadi cek halaman Biaya Transaksi untuk rincian terbaru.
                         </div>
                     </details>
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Mana yang lebih murah, QRIS atau Virtual Account?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Bergantung pada nominal transaksi. Dengan tarif contoh Wuzzpay (QRIS 0,7% dan contoh VA Rp 4.000 flat, di dalam rentang Rp 3.500 sampai Rp 5.000), QRIS lebih murah untuk transaksi di bawah sekitar Rp 571.000, dan VA lebih murah di atasnya. Titik impas bergeser antara sekitar Rp 500.000 dan Rp 714.000 mengikuti tarif VA bank yang dipakai. Hitung ulang jika tarif berubah.
                         </div>
                     </details>
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Apakah biaya payment gateway bisa dibebankan ke pembeli?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Bisa, tergantung penyedia dan metodenya. Di Wuzzpay, biaya Virtual Account dapat dibebankan ke pembeli lewat pengaturan di Dashboard. Pastikan penyajiannya jelas kepada pembeli.
                         </div>
                     </details>
@@ -368,11 +369,13 @@
             </div>
         </article>
 
-        <section class="py-16 bg-biruTua">
-            <div class="max-w-3xl mx-auto px-4 text-center">
+        <section class="relative overflow-hidden py-20 bg-gradient-to-br from-biruMalam via-biruTua to-biruMalam text-white">
+            <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[640px] h-[360px] bg-biruLangit/25 blur-[110px] rounded-full pointer-events-none"></div>
+            <div class="absolute inset-0 opacity-[0.06] pointer-events-none" style="background-image:radial-gradient(#fff 1px,transparent 1px);background-size:28px 28px"></div>
+            <div class="max-w-3xl mx-auto px-4 text-center relative z-10">
                 <h2 class="text-3xl font-extrabold text-white mb-4">Ingin tahu tarif lengkap per metode?</h2>
                 <p class="text-biruAwan mb-8 text-lg">Daftar sekali, integrasi sekali, dan tim kami membantu di setiap langkah.</p>
-                <a href="https://my.wuzzpay.com" class="inline-block px-8 py-4 text-lg font-bold text-biruTua bg-white rounded-2xl hover:bg-gray-100 transition shadow-lg">Daftar Sekarang</a>
+                <a href="https://my.wuzzpay.com" class="inline-block px-8 py-4 text-lg font-bold text-biruMalam bg-white rounded-2xl hover:bg-biruAwan transition shadow-float">Daftar Sekarang</a>
             </div>
         </section>
     </main>

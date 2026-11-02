@@ -39,7 +39,7 @@
 
     <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 
-    <link rel="stylesheet" href="assets/css/tailwind.css?v=65b44681">
+    <link rel="stylesheet" href="assets/css/tailwind.css?v=c0c1a3b1">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
 
 
@@ -240,25 +240,26 @@
 
     <main id="konten-utama">
         <article>
-            <header class="relative pt-16 pb-12 bg-white border-b border-gray-200 overflow-hidden">
-                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full bg-gradient-to-b from-biruAwan/30 to-transparent pointer-events-none"></div>
+            <header class="relative pt-16 pb-14 overflow-hidden bg-gradient-to-br from-biruMalam via-biruTua to-biruMalam text-white">
+                <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[640px] h-[360px] bg-biruLangit/25 blur-[110px] rounded-full pointer-events-none"></div>
+                <div class="absolute inset-0 opacity-[0.06] pointer-events-none" style="background-image:radial-gradient(#fff 1px,transparent 1px);background-size:28px 28px"></div>
                 <div class="max-w-3xl mx-auto px-4 relative z-10">
-                    <nav aria-label="Breadcrumb" class="text-sm text-sedang mb-6">
-                        <a href="index.html" class="hover:text-biruAksen">Beranda</a> <span aria-hidden="true">&rsaquo;</span> <span class="font-semibold text-gelap">Gateway vs Aggregator vs TSP</span>
+                    <nav aria-label="Breadcrumb" class="text-sm text-biruAwan mb-6">
+                        <a href="index.html" class="hover:text-white">Beranda</a> <span aria-hidden="true">&rsaquo;</span> <span class="font-semibold text-white">Gateway vs Aggregator vs TSP</span>
                     </nav>
-                    <h1 class="text-3xl sm:text-5xl font-extrabold text-gelap mb-6 leading-tight">Payment Gateway vs Payment Aggregator vs TSP: Apa Bedanya?</h1>
-                    <p class="text-lg text-gelap leading-relaxed bg-biruAwan/40 border border-biruAwan rounded-2xl p-5">
-                        <strong class="text-biruTua">Jawaban singkat:</strong> payment gateway memproses dan meneruskan transaksi pembayaran; payment aggregator menaungi banyak merchant dalam satu akun atau izin, dan dana umumnya melalui aggregator; sedangkan Technical Service Provider (TSP) menyediakan teknologi integrasi dan perutean sementara settlement pembayaran dijalankan pihak berlisensi lain. Yang paling penting bagi merchant: ketahui siapa pemegang lisensi dan lewat siapa dana Anda mengalir.
+                    <h1 class="text-3xl sm:text-5xl font-extrabold  mb-6 leading-tight tracking-tight">Payment Gateway vs Payment Aggregator vs TSP: Apa Bedanya?</h1>
+                    <p class="text-lg text-white leading-relaxed bg-white/10 border border-white/20 backdrop-blur-sm rounded-2xl p-5">
+                        <strong class="text-biruLangit">Jawaban singkat:</strong> payment gateway memproses dan meneruskan transaksi pembayaran; payment aggregator menaungi banyak merchant dalam satu akun atau izin, dan dana umumnya melalui aggregator; sedangkan Technical Service Provider (TSP) menyediakan teknologi integrasi dan perutean sementara settlement pembayaran dijalankan pihak berlisensi lain. Yang paling penting bagi merchant: ketahui siapa pemegang lisensi dan lewat siapa dana Anda mengalir.
                     </p>
-                    <p class="text-sm text-sedang mt-4">Ditulis oleh tim <a href="index.html" class="underline text-biruAksen">Wuzzpay</a> (PT Semantic Digital Nusantara) &middot; Diterbitkan <time datetime="2026-10-24">24 Oktober 2026</time></p>
+                    <p class="text-sm text-biruAwan mt-4">Ditulis oleh tim <a href="index.html" class="underline text-biruLangit">Wuzzpay</a> (PT Semantic Digital Nusantara) &middot; Diterbitkan <time datetime="2026-10-24">24 Oktober 2026</time></p>
                 </div>
             </header>
 
             <div class="max-w-3xl mx-auto px-4 py-12 space-y-12 text-base leading-relaxed">
 
                 <section aria-labelledby="h-singkat">
-                    <h2 id="h-singkat" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Definisi singkat</h2>
-                    <ul class="space-y-3 list-disc pl-6">
+                    <h2 id="h-singkat" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gelap mb-4 pl-4 border-l-4 border-biruAksen">Definisi singkat</h2>
+                    <ul class="space-y-3 list-disc pl-6 marker:text-biruAksen">
                         <li><strong class='text-gelap'>Payment gateway</strong>: layanan yang meneruskan data pembayaran antara merchant, bank, dan jaringan pembayaran agar transaksi online bisa diproses.</li>
                         <li><strong class='text-gelap'>Payment aggregator</strong>: penyedia yang menaungi banyak merchant di bawah satu akun atau izin, sehingga merchant bisa menerima pembayaran tanpa kontrak langsung ke setiap bank atau gateway. Dana umumnya melalui aggregator sebelum diteruskan ke merchant.</li>
                         <li><strong class='text-gelap'>Technical Service Provider (TSP)</strong>: penyedia teknologi yang membantu integrasi dan perutean transaksi. Pemrosesan dan settlement pembayaran dijalankan oleh pihak berlisensi lain.</li>
@@ -267,17 +268,17 @@
                 </section>
 
                 <section aria-labelledby="h-tabel">
-                    <h2 id="h-tabel" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Perbandingan peran</h2>
-                    <div class="overflow-x-auto rounded-2xl border border-gray-200 bg-white">
+                    <h2 id="h-tabel" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gelap mb-4 pl-4 border-l-4 border-biruAksen">Perbandingan peran</h2>
+                    <div class="overflow-x-auto rounded-2xl border border-biruAwan bg-white shadow-sm">
                         <table class="w-full text-left text-sm">
                             <caption class="sr-only">Perbandingan payment gateway, payment aggregator, dan TSP</caption>
-                            <thead class="bg-biruAwan/40 text-gelap"><tr><th scope="col" class="p-4 font-bold">Aspek</th><th scope="col" class="p-4 font-bold">Payment gateway</th><th scope="col" class="p-4 font-bold">Payment aggregator</th><th scope="col" class="p-4 font-bold">TSP</th></tr></thead>
-                            <tbody class="divide-y divide-gray-100">
-                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Peran utama</th><td class="p-4">Memproses dan meneruskan transaksi pembayaran</td><td class="p-4">Menaungi banyak merchant dalam satu akun atau izin</td><td class="p-4">Menyediakan teknologi integrasi dan perutean</td></tr>
-                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Alur dana</th><td class="p-4">Mengikuti skema penyedia; sering langsung ke merchant</td><td class="p-4">Umumnya melalui aggregator, lalu diteruskan ke merchant</td><td class="p-4">Mengikuti pihak berlisensi yang menyelesaikan pembayaran</td></tr>
-                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Pendaftaran merchant</th><td class="p-4">Ke penyedia gateway</td><td class="p-4">Ke aggregator, biasanya lebih cepat</td><td class="p-4">Mengikuti penyedia yang dihubungkan</td></tr>
-                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Lisensi Bank Indonesia</th><td class="p-4">Dipegang penyedia</td><td class="p-4">Dipegang aggregator atau mitranya</td><td class="p-4">Mengikuti pihak berlisensi yang bekerja sama</td></tr>
-                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Cocok untuk</th><td class="p-4">Bisnis yang ingin kontrak langsung</td><td class="p-4">Bisnis kecil yang butuh mulai cepat</td><td class="p-4">Bisnis yang ingin satu integrasi ke beberapa jalur</td></tr>
+                            <thead class="bg-biruTua text-white"><tr><th scope="col" class="p-4 font-bold">Aspek</th><th scope="col" class="p-4 font-bold">Payment gateway</th><th scope="col" class="p-4 font-bold">Payment aggregator</th><th scope="col" class="p-4 font-bold">TSP</th></tr></thead>
+                            <tbody class="divide-y divide-biruAwan/60">
+                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Peran utama</th><td class="p-4">Memproses dan meneruskan transaksi pembayaran</td><td class="p-4">Menaungi banyak merchant dalam satu akun atau izin</td><td class="p-4">Menyediakan teknologi integrasi dan perutean</td></tr>
+                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Alur dana</th><td class="p-4">Mengikuti skema penyedia; sering langsung ke merchant</td><td class="p-4">Umumnya melalui aggregator, lalu diteruskan ke merchant</td><td class="p-4">Mengikuti pihak berlisensi yang menyelesaikan pembayaran</td></tr>
+                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Pendaftaran merchant</th><td class="p-4">Ke penyedia gateway</td><td class="p-4">Ke aggregator, biasanya lebih cepat</td><td class="p-4">Mengikuti penyedia yang dihubungkan</td></tr>
+                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Lisensi Bank Indonesia</th><td class="p-4">Dipegang penyedia</td><td class="p-4">Dipegang aggregator atau mitranya</td><td class="p-4">Mengikuti pihak berlisensi yang bekerja sama</td></tr>
+                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Cocok untuk</th><td class="p-4">Bisnis yang ingin kontrak langsung</td><td class="p-4">Bisnis kecil yang butuh mulai cepat</td><td class="p-4">Bisnis yang ingin satu integrasi ke beberapa jalur</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -285,8 +286,8 @@
                 </section>
 
                 <section aria-labelledby="h-kenapa">
-                    <h2 id="h-kenapa" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Kenapa perbedaan ini penting bagi merchant</h2>
-                    <ul class="space-y-3 list-disc pl-6">
+                    <h2 id="h-kenapa" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gelap mb-4 pl-4 border-l-4 border-biruAksen">Kenapa perbedaan ini penting bagi merchant</h2>
+                    <ul class="space-y-3 list-disc pl-6 marker:text-biruAksen">
                         <li><strong class='text-gelap'>Alur dana.</strong> Siapa yang menerima dana lebih dulu menentukan kapan dan lewat siapa uang Anda cair.</li>
                         <li><strong class='text-gelap'>Risiko.</strong> Jika dana melalui pihak ketiga, kesehatan dan legalitas pihak itu ikut memengaruhi Anda.</li>
                         <li><strong class='text-gelap'>Kendali.</strong> Kontrak langsung ke gateway memberi kendali lebih, tetapi proses daftarnya lebih panjang.</li>
@@ -295,8 +296,8 @@
                 </section>
 
                 <section aria-labelledby="h-cek">
-                    <h2 id="h-cek" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Pertanyaan yang sebaiknya Anda ajukan ke penyedia</h2>
-                    <ol class="space-y-4 list-decimal pl-6">
+                    <h2 id="h-cek" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gelap mb-4 pl-4 border-l-4 border-biruAksen">Pertanyaan yang sebaiknya Anda ajukan ke penyedia</h2>
+                    <ol class="space-y-4 list-decimal pl-6 marker:text-biruAksen marker:font-bold">
                         <li>Siapa yang memegang izin penyelenggara jasa pembayaran (PJP) dari Bank Indonesia?</li>
                         <li>Ke rekening siapa dana pembeli masuk lebih dulu, dan kapan diteruskan ke rekening saya?</li>
                         <li>Apakah ada batas nominal, penahanan dana, atau syarat pencairan?</li>
@@ -306,58 +307,58 @@
                     <p class="mt-4">Anda juga bisa memeriksa daftar penyelenggara berizin yang dipublikasikan Bank Indonesia di situs resminya.</p>
                 </section>
 
-                <section aria-labelledby="h-wuzzpay">
-                    <h2 id="h-wuzzpay" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Posisi Wuzzpay</h2>
+                <section aria-labelledby="h-wuzzpay" class="rounded-3xl bg-gradient-to-br from-biruAwan/50 to-white border border-biruAwan p-6 sm:p-8 shadow-sm">
+                    <h2 id="h-wuzzpay" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gelap mb-4 pl-4 border-l-4 border-biruAksen">Posisi Wuzzpay</h2>
                     <p class="mb-4">Wuzzpay adalah platform penghubung pembayaran yang menghubungkan merchant ke beberapa gateway mitra lewat satu pendaftaran dan satu integrasi API. Wuzzpay berperan sebagai <em>Technical Service Provider</em> (TSP), bukan aggregator dan bukan PJP; settlement dana dilakukan langsung oleh gateway mitra berlisensi.</p>
                     <p class="mb-4">Kewajiban lisensi PJP Bank Indonesia melekat pada gateway mitra yang memproses dan menyelesaikan pembayaran. Alur dana dan pencairan mengikuti skema gateway yang dipakai, sehingga dapat berbeda antar gateway. Hubungi tim kami untuk memastikan skema yang berlaku pada akun Anda.</p>
                     <p class="">Konsep di baliknya dijelaskan di <a href='apa-itu-payment-orchestration.html' class='underline text-biruAksen'>panduan payment orchestration</a>. Lihat juga <a href='index.html#pricing' class='underline text-biruAksen'>harga</a> dan <a href='biaya-transaksi.html' class='underline text-biruAksen'>biaya transaksi</a>.</p>
                 </section>
 
                 <section id="faq" aria-labelledby="h-faq">
-                    <h2 id="h-faq" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-6">Pertanyaan yang sering diajukan</h2>
+                    <h2 id="h-faq" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gelap mb-6 pl-4 border-l-4 border-biruAksen">Pertanyaan yang sering diajukan</h2>
                     <div class="space-y-4">
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Apa bedanya payment gateway, payment aggregator, dan TSP?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Payment gateway memproses dan meneruskan transaksi pembayaran. Payment aggregator menaungi banyak merchant dalam satu akun atau izin, dan dana umumnya melalui aggregator. TSP menyediakan teknologi integrasi dan perutean, sedangkan settlement pembayaran dijalankan pihak berlisensi lain.
                         </div>
                     </details>
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Apakah Wuzzpay itu TSP atau aggregator?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Wuzzpay adalah TSP (Technical Service Provider), bukan aggregator dan bukan PJP. Kewajiban lisensi PJP Bank Indonesia melekat pada gateway mitra, dan settlement dana dilakukan langsung oleh gateway mitra ke rekening bank merchant.
                         </div>
                     </details>
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Apakah dana saya aman jika melalui aggregator?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Keamanannya bergantung pada penyedia dan lisensinya. Periksa siapa pemegang izin penyelenggara jasa pembayaran (PJP), kapan dana diteruskan ke rekening Anda, dan apakah ada batas atau penahanan dana. Daftar penyelenggara berizin dipublikasikan di situs resmi Bank Indonesia.
                         </div>
                     </details>
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Mana yang lebih baik untuk UMKM: gateway langsung atau aggregator?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Tidak ada jawaban tunggal. Aggregator biasanya lebih cepat untuk memulai, sedangkan kontrak langsung ke gateway memberi kendali lebih tetapi prosesnya lebih panjang. Bandingkan alur dana, biaya total, dan dukungan sebelum memilih.
                         </div>
                     </details>
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Mengapa penting tahu perbedaan ini sebelum memilih penyedia pembayaran?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Karena menentukan siapa yang memegang lisensi, ke mana dana mengalir lebih dulu, dan siapa yang bertanggung jawab saat ada masalah. Hal ini memengaruhi risiko, waktu pencairan, dan kendali Anda atas dana.
                         </div>
                     </details>
@@ -366,11 +367,13 @@
             </div>
         </article>
 
-        <section class="py-16 bg-biruTua">
-            <div class="max-w-3xl mx-auto px-4 text-center">
+        <section class="relative overflow-hidden py-20 bg-gradient-to-br from-biruMalam via-biruTua to-biruMalam text-white">
+            <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[640px] h-[360px] bg-biruLangit/25 blur-[110px] rounded-full pointer-events-none"></div>
+            <div class="absolute inset-0 opacity-[0.06] pointer-events-none" style="background-image:radial-gradient(#fff 1px,transparent 1px);background-size:28px 28px"></div>
+            <div class="max-w-3xl mx-auto px-4 text-center relative z-10">
                 <h2 class="text-3xl font-extrabold text-white mb-4">Ingin tahu skema yang berlaku untuk bisnis Anda?</h2>
                 <p class="text-biruAwan mb-8 text-lg">Daftar sekali, integrasi sekali, dan tim kami membantu di setiap langkah.</p>
-                <a href="https://my.wuzzpay.com" class="inline-block px-8 py-4 text-lg font-bold text-biruTua bg-white rounded-2xl hover:bg-gray-100 transition shadow-lg">Daftar Sekarang</a>
+                <a href="https://my.wuzzpay.com" class="inline-block px-8 py-4 text-lg font-bold text-biruMalam bg-white rounded-2xl hover:bg-biruAwan transition shadow-float">Daftar Sekarang</a>
             </div>
         </section>
     </main>

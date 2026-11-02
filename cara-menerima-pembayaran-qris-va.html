@@ -39,7 +39,7 @@
 
     <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 
-    <link rel="stylesheet" href="assets/css/tailwind.css?v=65b44681">
+    <link rel="stylesheet" href="assets/css/tailwind.css?v=c0c1a3b1">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
 
 
@@ -240,25 +240,26 @@
 
     <main id="konten-utama">
         <article>
-            <header class="relative pt-16 pb-12 bg-white border-b border-gray-200 overflow-hidden">
-                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full bg-gradient-to-b from-biruAwan/30 to-transparent pointer-events-none"></div>
+            <header class="relative pt-16 pb-14 overflow-hidden bg-gradient-to-br from-biruMalam via-biruTua to-biruMalam text-white">
+                <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[640px] h-[360px] bg-biruLangit/25 blur-[110px] rounded-full pointer-events-none"></div>
+                <div class="absolute inset-0 opacity-[0.06] pointer-events-none" style="background-image:radial-gradient(#fff 1px,transparent 1px);background-size:28px 28px"></div>
                 <div class="max-w-3xl mx-auto px-4 relative z-10">
-                    <nav aria-label="Breadcrumb" class="text-sm text-sedang mb-6">
-                        <a href="index.html" class="hover:text-biruAksen">Beranda</a> <span aria-hidden="true">&rsaquo;</span> <span class="font-semibold text-gelap">Menerima Pembayaran QRIS & VA</span>
+                    <nav aria-label="Breadcrumb" class="text-sm text-biruAwan mb-6">
+                        <a href="index.html" class="hover:text-white">Beranda</a> <span aria-hidden="true">&rsaquo;</span> <span class="font-semibold text-white">Menerima Pembayaran QRIS & VA</span>
                     </nav>
-                    <h1 class="text-3xl sm:text-5xl font-extrabold text-gelap mb-6 leading-tight">Cara Menerima Pembayaran QRIS dan Virtual Account untuk UMKM dan Toko Online</h1>
-                    <p class="text-lg text-gelap leading-relaxed bg-biruAwan/40 border border-biruAwan rounded-2xl p-5">
-                        <strong class="text-biruTua">Jawaban singkat:</strong> UMKM dan toko online bisa menerima pembayaran QRIS dan Virtual Account lewat payment gateway atau layanan pembayaran online yang menyediakan metode itu melalui API, plugin, atau tautan pembayaran. Langkahnya: siapkan data usaha, pilih penyedia, lewati verifikasi (KYC), integrasikan, uji transaksi, lalu mulai menerima pembayaran.
+                    <h1 class="text-3xl sm:text-5xl font-extrabold  mb-6 leading-tight tracking-tight">Cara Menerima Pembayaran QRIS dan Virtual Account untuk UMKM dan Toko Online</h1>
+                    <p class="text-lg text-white leading-relaxed bg-white/10 border border-white/20 backdrop-blur-sm rounded-2xl p-5">
+                        <strong class="text-biruLangit">Jawaban singkat:</strong> UMKM dan toko online bisa menerima pembayaran QRIS dan Virtual Account lewat payment gateway atau layanan pembayaran online yang menyediakan metode itu melalui API, plugin, atau tautan pembayaran. Langkahnya: siapkan data usaha, pilih penyedia, lewati verifikasi (KYC), integrasikan, uji transaksi, lalu mulai menerima pembayaran.
                     </p>
-                    <p class="text-sm text-sedang mt-4">Ditulis oleh tim <a href="index.html" class="underline text-biruAksen">Wuzzpay</a> (PT Semantic Digital Nusantara) &middot; Diterbitkan <time datetime="2026-10-24">24 Oktober 2026</time></p>
+                    <p class="text-sm text-biruAwan mt-4">Ditulis oleh tim <a href="index.html" class="underline text-biruLangit">Wuzzpay</a> (PT Semantic Digital Nusantara) &middot; Diterbitkan <time datetime="2026-10-24">24 Oktober 2026</time></p>
                 </div>
             </header>
 
             <div class="max-w-3xl mx-auto px-4 py-12 space-y-12 text-base leading-relaxed">
 
                 <section aria-labelledby="h-cara">
-                    <h2 id="h-cara" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Tiga cara menerima pembayaran digital</h2>
-                    <ol class="space-y-4 list-decimal pl-6">
+                    <h2 id="h-cara" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gelap mb-4 pl-4 border-l-4 border-biruAksen">Tiga cara menerima pembayaran digital</h2>
+                    <ol class="space-y-4 list-decimal pl-6 marker:text-biruAksen marker:font-bold">
                         <li><strong class='text-gelap'>Lewat bank atau aplikasi e-wallet langsung.</strong> Cocok untuk toko fisik kecil: Anda mendaftar QRIS lewat bank atau penyedia dompet digital, lalu pembeli memindai kode. Konfirmasi umumnya dicek manual lewat notifikasi atau mutasi.</li>
                         <li><strong class='text-gelap'>Lewat payment gateway atau layanan pembayaran online.</strong> Penyedia menyediakan QRIS, Virtual Account, e-wallet, dan metode lain lewat API, plugin, atau tautan pembayaran. Status pembayaran terupdate otomatis di toko atau aplikasi Anda. Ini yang paling umum untuk toko online dan SaaS.</li>
                         <li><strong class='text-gelap'>Transfer manual.</strong> Pembeli mentransfer ke rekening Anda dan mengirim bukti. Murah, tetapi lambat, rawan salah catat, dan sulit diskalakan.</li>
@@ -267,16 +268,16 @@
                 </section>
 
                 <section aria-labelledby="h-metode">
-                    <h2 id="h-metode" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">QRIS, Virtual Account, e-wallet, dan gerai retail: apa bedanya</h2>
-                    <div class="overflow-x-auto rounded-2xl border border-gray-200 bg-white">
+                    <h2 id="h-metode" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gelap mb-4 pl-4 border-l-4 border-biruAksen">QRIS, Virtual Account, e-wallet, dan gerai retail: apa bedanya</h2>
+                    <div class="overflow-x-auto rounded-2xl border border-biruAwan bg-white shadow-sm">
                         <table class="w-full text-left text-sm">
                             <caption class="sr-only">Perbandingan metode pembayaran digital</caption>
-                            <thead class="bg-biruAwan/40 text-gelap"><tr><th scope="col" class="p-4 font-bold">Metode</th><th scope="col" class="p-4 font-bold">Cara kerja singkat</th><th scope="col" class="p-4 font-bold">Cocok untuk</th></tr></thead>
-                            <tbody class="divide-y divide-gray-100">
-                                <tr><th scope="row" class="p-4 font-semibold text-gelap">QRIS</th><td class="p-4">Satu kode QR standar nasional yang bisa dipindai dari banyak aplikasi bank dan e-wallet.</td><td class="p-4">Hampir semua pembeli, termasuk transaksi kecil dan pembayaran cepat.</td></tr>
-                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Virtual Account (VA)</th><td class="p-4">Nomor rekening virtual unik per tagihan; pembayaran otomatis terkonfirmasi.</td><td class="p-4">Pembeli yang terbiasa transfer bank, tagihan bernilai lebih besar.</td></tr>
-                                <tr><th scope="row" class="p-4 font-semibold text-gelap">E-wallet</th><td class="p-4">Pembayaran dari saldo dompet digital seperti OVO, DANA, LinkAja, atau ShopeePay.</td><td class="p-4">Pembeli yang aktif memakai dompet digital.</td></tr>
-                                <tr><th scope="row" class="p-4 font-semibold text-gelap">Gerai retail</th><td class="p-4">Pembeli membayar tunai di gerai seperti Indomaret atau Alfamart memakai kode pembayaran.</td><td class="p-4">Pembeli yang tidak memakai rekening atau dompet digital.</td></tr>
+                            <thead class="bg-biruTua text-white"><tr><th scope="col" class="p-4 font-bold">Metode</th><th scope="col" class="p-4 font-bold">Cara kerja singkat</th><th scope="col" class="p-4 font-bold">Cocok untuk</th></tr></thead>
+                            <tbody class="divide-y divide-biruAwan/60">
+                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">QRIS</th><td class="p-4">Satu kode QR standar nasional yang bisa dipindai dari banyak aplikasi bank dan e-wallet.</td><td class="p-4">Hampir semua pembeli, termasuk transaksi kecil dan pembayaran cepat.</td></tr>
+                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Virtual Account (VA)</th><td class="p-4">Nomor rekening virtual unik per tagihan; pembayaran otomatis terkonfirmasi.</td><td class="p-4">Pembeli yang terbiasa transfer bank, tagihan bernilai lebih besar.</td></tr>
+                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">E-wallet</th><td class="p-4">Pembayaran dari saldo dompet digital seperti OVO, DANA, LinkAja, atau ShopeePay.</td><td class="p-4">Pembeli yang aktif memakai dompet digital.</td></tr>
+                                <tr class="hover:bg-biruAwan/20 transition"><th scope="row" class="p-4 font-semibold text-gelap">Gerai retail</th><td class="p-4">Pembeli membayar tunai di gerai seperti Indomaret atau Alfamart memakai kode pembayaran.</td><td class="p-4">Pembeli yang tidak memakai rekening atau dompet digital.</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -284,9 +285,9 @@
                 </section>
 
                 <section aria-labelledby="h-pilih">
-                    <h2 id="h-pilih" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Cara memilih penyedia pembayaran</h2>
+                    <h2 id="h-pilih" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gelap mb-4 pl-4 border-l-4 border-biruAksen">Cara memilih penyedia pembayaran</h2>
                     <p class="mb-4">Bandingkan beberapa hal berikut sebelum mendaftar, bukan hanya tarif per transaksi:</p>
-                    <ul class="space-y-3 list-disc pl-6">
+                    <ul class="space-y-3 list-disc pl-6 marker:text-biruAksen">
                         <li><strong class='text-gelap'>Metode yang didukung.</strong> Pastikan metode yang paling dipakai pelanggan Anda tersedia.</li>
                         <li><strong class='text-gelap'>Total biaya.</strong> Hitung biaya setup, biaya per transaksi, dan biaya tambahan lain, serta apakah tarif sudah termasuk PPN.</li>
                         <li><strong class='text-gelap'>Kecepatan dan cara pencairan.</strong> Tanyakan kapan dana masuk ke rekening dan lewat siapa dana disalurkan.</li>
@@ -298,8 +299,8 @@
                 </section>
 
                 <section aria-labelledby="h-langkah">
-                    <h2 id="h-langkah" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Langkah memulai menerima pembayaran online</h2>
-                    <ol class="space-y-4 list-decimal pl-6">
+                    <h2 id="h-langkah" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gelap mb-4 pl-4 border-l-4 border-biruAksen">Langkah memulai menerima pembayaran online</h2>
+                    <ol class="space-y-4 list-decimal pl-6 marker:text-biruAksen marker:font-bold">
                         <li><strong class='text-gelap'>Siapkan data usaha.</strong> Umumnya penyedia meminta identitas pemilik, data usaha, dan rekening penampung dana. Dokumen yang tepat berbeda-beda, jadi tanyakan ke penyedia pilihan Anda.</li>
                         <li><strong class='text-gelap'>Pilih penyedia dan metode.</strong> Tentukan metode pembayaran yang akan dibuka.</li>
                         <li><strong class='text-gelap'>Daftar dan lewati verifikasi (KYC).</strong> Waktu persetujuan bergantung pada penyedia dan kelengkapan dokumen Anda.</li>
@@ -310,8 +311,8 @@
                 </section>
 
                 <section aria-labelledby="h-salah">
-                    <h2 id="h-salah" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Kesalahan yang sering terjadi</h2>
-                    <ul class="space-y-3 list-disc pl-6">
+                    <h2 id="h-salah" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gelap mb-4 pl-4 border-l-4 border-biruAksen">Kesalahan yang sering terjadi</h2>
+                    <ul class="space-y-3 list-disc pl-6 marker:text-biruAksen">
                         <li>Hanya menyediakan satu metode pembayaran, sehingga pembeli yang tidak memakainya pergi.</li>
                         <li>Membandingkan tarif tanpa menghitung biaya tetap seperti biaya VA per transaksi.</li>
                         <li>Tidak memeriksa kapan dan bagaimana dana dicairkan.</li>
@@ -320,57 +321,57 @@
                     </ul>
                 </section>
 
-                <section aria-labelledby="h-wuzzpay">
-                    <h2 id="h-wuzzpay" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-4">Pendekatan Wuzzpay</h2>
+                <section aria-labelledby="h-wuzzpay" class="rounded-3xl bg-gradient-to-br from-biruAwan/50 to-white border border-biruAwan p-6 sm:p-8 shadow-sm">
+                    <h2 id="h-wuzzpay" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gelap mb-4 pl-4 border-l-4 border-biruAksen">Pendekatan Wuzzpay</h2>
                     <p class="mb-4">Wuzzpay menghubungkan merchant ke beberapa payment gateway mitra lewat satu pendaftaran dan satu integrasi API, dengan metode QRIS, Virtual Account, e-wallet, gerai retail, kartu kredit, dan paylater. Wuzzpay membantu menjembatani dan menyederhanakan pengumpulan dokumen KYC ke mitra gateway, dan settlement dana dilakukan langsung oleh mitra berlisensi ke rekening bank merchant. Konsep di baliknya dijelaskan di <a href='apa-itu-payment-orchestration.html' class='underline text-biruAksen'>panduan payment orchestration</a>.</p>
                     <p class="">Lihat <a href='index.html#pricing' class='underline text-biruAksen'>harga</a> dan <a href='biaya-transaksi.html' class='underline text-biruAksen'>biaya transaksi</a> untuk rincian lengkapnya.</p>
                 </section>
 
                 <section id="faq" aria-labelledby="h-faq">
-                    <h2 id="h-faq" class="text-2xl sm:text-3xl font-extrabold text-gelap mb-6">Pertanyaan yang sering diajukan</h2>
+                    <h2 id="h-faq" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gelap mb-6 pl-4 border-l-4 border-biruAksen">Pertanyaan yang sering diajukan</h2>
                     <div class="space-y-4">
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Bagaimana cara menerima pembayaran QRIS untuk toko online?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Daftar ke payment gateway atau layanan pembayaran online yang mendukung QRIS, lewati proses verifikasi (KYC), lalu integrasikan lewat API, plugin, atau tautan pembayaran. Setelah itu pembeli memindai kode QRIS saat checkout dan status pembayaran terupdate otomatis.
                         </div>
                     </details>
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Apa bedanya QRIS dan Virtual Account?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             QRIS adalah kode QR standar nasional yang bisa dipindai dari banyak aplikasi bank dan e-wallet. Virtual Account adalah nomor rekening virtual unik untuk tiap tagihan, dibayar lewat transfer bank dan terkonfirmasi otomatis. Keduanya sering disediakan bersamaan agar pembeli punya pilihan.
                         </div>
                     </details>
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Apakah UMKM perlu payment gateway?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Tidak selalu. Untuk toko fisik kecil, QRIS dari bank atau dompet digital bisa cukup. Untuk toko online atau aplikasi yang butuh konfirmasi pembayaran otomatis dan banyak metode, payment gateway atau layanan pembayaran online umumnya lebih praktis.
                         </div>
                     </details>
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Berapa biaya menerima pembayaran QRIS dan VA di Wuzzpay?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Contoh tarif di Wuzzpay: QRIS 0,7% per transaksi dan Virtual Account bank Rp 3.500 sampai Rp 5.000 per transaksi (tergantung bank), belum termasuk PPN. Ada juga biaya aktivasi dan integrasi yang dibayar sekali. Tarif dapat berubah, jadi cek halaman Biaya Transaksi untuk rincian terbaru.
                         </div>
                     </details>
-                    <details class="group border border-white rounded-3xl bg-white shadow-sm overflow-hidden">
-                        <summary class="cursor-pointer list-none w-full p-6 text-left font-bold text-biruTua text-lg flex justify-between items-center">
+                    <details class="group border border-biruAwan rounded-2xl bg-white overflow-hidden transition hover:border-biruLangit/70 open:border-biruAksen/50 open:shadow-soft">
+                        <summary class="cursor-pointer list-none w-full p-5 sm:p-6 text-left font-bold text-gelap text-lg flex justify-between items-center gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-biruAksen">
                             <h3 class="text-lg font-bold">Dokumen apa yang dibutuhkan untuk mendaftar?</h3>
-                            <span class="text-2xl text-biruAksen transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-biruAwan/60 text-xl leading-none text-biruAksen flex items-center justify-center transition-transform group-open:rotate-45 group-open:bg-biruAksen group-open:text-white" aria-hidden="true">+</span>
                         </summary>
-                        <div class="px-6 pb-6 text-sedang text-base leading-relaxed border-t border-gray-50 pt-4">
+                        <div class="px-5 sm:px-6 pb-6 text-sedang text-base leading-relaxed border-t border-biruAwan/60 pt-4">
                             Umumnya penyedia meminta identitas pemilik, data usaha, dan rekening penampung dana. Persyaratan pastinya berbeda-beda per penyedia dan jenis usaha, jadi tanyakan ke penyedia yang Anda pilih.
                         </div>
                     </details>
@@ -379,11 +380,13 @@
             </div>
         </article>
 
-        <section class="py-16 bg-biruTua">
-            <div class="max-w-3xl mx-auto px-4 text-center">
+        <section class="relative overflow-hidden py-20 bg-gradient-to-br from-biruMalam via-biruTua to-biruMalam text-white">
+            <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[640px] h-[360px] bg-biruLangit/25 blur-[110px] rounded-full pointer-events-none"></div>
+            <div class="absolute inset-0 opacity-[0.06] pointer-events-none" style="background-image:radial-gradient(#fff 1px,transparent 1px);background-size:28px 28px"></div>
+            <div class="max-w-3xl mx-auto px-4 text-center relative z-10">
                 <h2 class="text-3xl font-extrabold text-white mb-4">Siap mulai menerima pembayaran online?</h2>
                 <p class="text-biruAwan mb-8 text-lg">Daftar sekali, integrasi sekali, dan tim kami membantu di setiap langkah.</p>
-                <a href="https://my.wuzzpay.com" class="inline-block px-8 py-4 text-lg font-bold text-biruTua bg-white rounded-2xl hover:bg-gray-100 transition shadow-lg">Daftar Sekarang</a>
+                <a href="https://my.wuzzpay.com" class="inline-block px-8 py-4 text-lg font-bold text-biruMalam bg-white rounded-2xl hover:bg-biruAwan transition shadow-float">Daftar Sekarang</a>
             </div>
         </section>
     </main>
