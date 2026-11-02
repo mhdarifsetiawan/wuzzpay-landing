@@ -14,7 +14,7 @@ Situs statis (HTML + Tailwind + Alpine.js) untuk https://wuzzpay.com, dihosting 
 ## Halaman dan tautan
 
 - Halaman terindeks: `index.html`, `biaya-transaksi.html`, `tentang-wuzzpay.html`, dan delapan halaman panduan (`apa-itu-payment-orchestration`, `payment-gateway-down`, `memilih-payment-gateway-dengan-failover`, `kapan-perlu-gateway-kedua`, `cara-menerima-pembayaran-qris-va`, `payment-gateway-vs-aggregator-vs-tsp`, `cara-menghitung-biaya-payment-gateway-mdr`, `cara-integrasi-pembayaran-aplikasi-saas`).
-- Halaman legal (`privacy`, `terms`, `refund-policy`) sengaja `noindex` dan tidak ada di sitemap. **Jangan ubah isinya tanpa tinjauan pihak legal.**
+- Halaman legal (`privacy`, `terms`, `refund-policy`) sengaja `noindex` dan tidak ada di sitemap. **Jangan ubah isinya tanpa tinjauan pihak legal.** Pengecualian 2026-11-02: atas permintaan pemilik proyek, istilah "penyelesaian dana" diganti "settlement dana" di ketiga halaman (tanggal "Terakhir diperbarui" menjadi 2 November 2026); perubahan ini masih menunggu persetujuan legal, lihat `docs/tinjauan-legal.md`.
 - Tautan antar halaman memakai path relatif (`index.html#pricing`), bukan `/#pricing`, agar jalan saat dibuka sebagai file lokal. Kanonik tetap `https://wuzzpay.com/...`.
 - Tombol "Daftar" dan "Masuk" mengarah ke `https://my.wuzzpay.com`. Pertanyaan dan permintaan dokumentasi tetap lewat WhatsApp (`6289504121521`).
 
@@ -35,7 +35,16 @@ Setiap halaman terindeks harus punya: satu `h1`, `<title>` maksimal sekitar 60 k
 - **Teks pertanyaan dan jawaban FAQ di HTML (`<details>`) harus identik dengan `FAQPage` di JSON-LD.** Ubah keduanya sekaligus.
 - Halaman panduan baru: tambahkan ke `sitemap.xml` (dengan `lastmod`), `llms.txt`, dan footer "Jelajahi" di `index.html`, serta tautkan dari halaman terkait. Salin kerangka dari halaman panduan yang ada (header dengan "Masuk" dan "Daftar Sekarang", `assets/css/tailwind.css`, footer), bukan dari sumber lain. Ikuti struktur halaman panduan yang ada: jawaban singkat di atas, bagian bertajuk pertanyaan, tabel perbandingan bila relevan, bagian "Posisi/Pendekatan Wuzzpay", lalu FAQ.
 - Perbarui `lastmod` di `sitemap.xml` untuk halaman yang berubah, format ISO 8601 dengan jam dan zona (`2026-10-24T17:57:58+07:00`); isi hanya saat konten benar-benar berubah.
-- Jangan mengubah tarif di `biaya-transaksi.html` tanpa menyamakan semua halaman yang mengutipnya (QRIS 0,7%, VA Rp 4.000 flat, kartu kredit 2,9% + Rp 2.000, dan seterusnya).
+- Jangan mengubah tarif di `biaya-transaksi.html` tanpa menyamakan semua halaman yang mengutipnya. Halaman yang mengutip tarif: `index.html` (contoh hitungan), `llms.txt`, `cara-menerima-pembayaran-qris-va.html`, dan `cara-menghitung-biaya-payment-gateway-mdr.html` (FAQ + JSON-LD, tabel contoh, titik impas).
+- **Tarif saat ini (sumber: `biaya-transaksi.html`), semua belum termasuk PPN:**
+  - QRIS 0,7%; settlement real-time / H+1.
+  - Virtual Account (tarif tetap per transaksi): Mandiri, BNI, BRI, BSI, Muamalat, Permata, CIMB, Danamon, Bank Neo Commerce Rp 3.500 sampai Rp 4.000; BCA Rp 4.000 sampai Rp 5.000 (rentang keseluruhan Rp 3.500 sampai Rp 5.000); settlement H+1.
+  - E-wallet 0,5% sampai 3% (OVO, DANA, LinkAja, ShopeePay, GoPay, Speedcash, AstraPay).
+  - Gerai retail: Indomaret Rp 5.000 sampai Rp 8.000, Alfamart Group Rp 5.000 sampai Rp 6.000, Fastpay Rp 5.000 (rentang keseluruhan Rp 5.000 sampai Rp 8.000); settlement H+3.
+  - Kartu kredit 2,9% + Rp 2.000; Kredivo dan Akulaku 2,0%.
+- Halaman panduan MDR memakai angka contoh (VA Rp 4.000, retail Rp 5.000, titik impas Rp 571.000 dari Rp 4.000 ÷ 0,7%) dan menyebut rentang aslinya; titik impas VA berkisar Rp 500.000 sampai Rp 714.000. Hitung ulang bila tarif berubah.
+- Istilah: pakai "settlement" (bukan "penyelesaian") untuk alur dana, mis. "settlement dana oleh gateway". "Penyelesaian sengketa" di `terms.html` berarti hal lain dan tidak diganti.
+- Desain `biaya-transaksi.html`: dua kartu sorotan (QRIS dan VA), lalu tabel dua kolom (Metode, Tarif rata kanan) untuk e-wallet, gerai retail, dan kartu kredit & paylater. Ikon SVG inline, bukan emoji; angka desimal memakai koma. Tambah metode atau gerai baru sebagai baris tabel, lalu samakan teks FAQ (HTML + JSON-LD) dan kotak ringkasan di atas halaman.
 
 ## Meta Pixel
 
