@@ -17,6 +17,8 @@ Wuzzpay bukan pengganti payment gateway, melainkan lapisan yang menghubungkan me
 - [Payment Gateway vs Payment Aggregator vs TSP: Apa Bedanya?](https://wuzzpay.com/payment-gateway-vs-aggregator-vs-tsp.html): perbedaan peran, alur dana, lisensi, dan pertanyaan untuk penyedia.
 - [Cara Menghitung Biaya Payment Gateway (MDR) untuk UMKM](https://wuzzpay.com/cara-menghitung-biaya-payment-gateway-mdr.html): rumus MDR, komponen biaya, dan contoh hitungan per metode pembayaran.
 - [Cara Mengintegrasikan Pembayaran ke Aplikasi SaaS](https://wuzzpay.com/cara-integrasi-pembayaran-aplikasi-saas.html): alur transaksi, webhook, idempotensi, pengujian, dan rekonsiliasi.
+- [Cara Daftar Payment Gateway untuk Bisnis di Indonesia](https://wuzzpay.com/cara-daftar-payment-gateway.html): dokumen yang umumnya diminta, langkah pendaftaran, verifikasi KYC, dan penyebab pendaftaran tertunda.
+- [Payment Gateway untuk Website](https://wuzzpay.com/payment-gateway-untuk-website.html): cara kerja, pilihan integrasi (API, plugin, tautan pembayaran), kriteria memilih, keamanan, dan langkah memasang.
 
 ## Fakta kunci
 

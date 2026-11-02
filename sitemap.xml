@@ -87,4 +87,20 @@
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
+
+   <!-- Panduan: Cara Daftar Payment Gateway -->
+   <url>
+      <loc>https://wuzzpay.com/cara-daftar-payment-gateway.html</loc>
+      <lastmod>2026-11-03T02:20:00+07:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <!-- Panduan: Payment Gateway untuk Website -->
+   <url>
+      <loc>https://wuzzpay.com/payment-gateway-untuk-website.html</loc>
+      <lastmod>2026-11-03T02:20:00+07:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
 </urlset>
