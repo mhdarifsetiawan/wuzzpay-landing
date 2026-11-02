@@ -19,6 +19,7 @@ Wuzzpay bukan pengganti payment gateway, melainkan lapisan yang menghubungkan me
 - [Cara Mengintegrasikan Pembayaran ke Aplikasi SaaS](https://wuzzpay.com/cara-integrasi-pembayaran-aplikasi-saas.html): alur transaksi, webhook, idempotensi, pengujian, dan rekonsiliasi.
 - [Cara Daftar Payment Gateway untuk Bisnis di Indonesia](https://wuzzpay.com/cara-daftar-payment-gateway.html): dokumen yang umumnya diminta, langkah pendaftaran, verifikasi KYC, dan penyebab pendaftaran tertunda.
 - [Payment Gateway untuk Website](https://wuzzpay.com/payment-gateway-untuk-website.html): cara kerja, pilihan integrasi (API, plugin, tautan pembayaran), kriteria memilih, keamanan, dan langkah memasang.
+- [Payment Gateway Murah: Cara Membandingkan Biaya](https://wuzzpay.com/payment-gateway-murah.html): komponen biaya, persentase vs biaya tetap, biaya tersembunyi, dan checklist membandingkan penyedia.
 
 ## Fakta kunci
 
