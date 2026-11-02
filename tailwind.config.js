@@ -15,6 +15,7 @@ module.exports = {
         biruAksen: '#1D6FA3',
         biruLangit: '#56B5F0',
         biruAwan: '#D0E8F8',
+        biruMalam: '#14355E',
         gelap: '#1E293B',
         sedang: '#475569',
       },

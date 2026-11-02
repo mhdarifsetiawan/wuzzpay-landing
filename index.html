@@ -51,7 +51,7 @@
     <!-- Tipografi Humanis & Modern -->
     <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 
-    <link rel="stylesheet" href="assets/css/tailwind.css?v=a2b29040">
+    <link rel="stylesheet" href="assets/css/tailwind.css?v=d2251ffa">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
 
 
@@ -301,57 +301,91 @@
 
     <main id="konten-utama">
         <!-- 1. HERO -->
-        <section aria-labelledby="judul-hero" class="relative py-16 lg:py-28 overflow-hidden bg-biruAwan/40">
-            <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-biruLangit/20 blur-[100px] rounded-full mix-blend-multiply pointer-events-none translate-x-1/4 -translate-y-1/4"></div>
+        <section aria-labelledby="judul-hero" class="relative overflow-hidden bg-gradient-to-br from-biruMalam via-biruTua to-biruMalam text-white py-16 lg:py-28">
+            <div class="absolute -top-40 -right-40 w-[640px] h-[640px] bg-biruLangit/25 blur-[120px] rounded-full pointer-events-none"></div>
+            <div class="absolute -bottom-48 -left-32 w-[480px] h-[480px] bg-biruAksen/40 blur-[120px] rounded-full pointer-events-none"></div>
+            <div class="absolute inset-0 opacity-[0.07] pointer-events-none" style="background-image:radial-gradient(#fff 1px,transparent 1px);background-size:28px 28px"></div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-10 items-center">
 
                     <div class="text-center lg:text-left">
-                        <p class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full text-sm font-bold bg-white/80 text-biruTua border border-biruAwan mb-6 backdrop-blur-sm shadow-sm">
-                            🛡️ Satu pintu untuk banyak payment gateway
+                        <p class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full text-sm font-semibold bg-white/10 text-biruAwan border border-white/20 mb-8 backdrop-blur-sm">
+                            <svg class="w-4 h-4 text-biruLangit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg>
+                            Satu pintu untuk banyak payment gateway
                         </p>
 
-                        <h1 id="judul-hero" class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gelap mb-6 leading-[1.1]">
+                        <h1 id="judul-hero" class="text-4xl sm:text-5xl lg:text-[3.75rem] font-extrabold tracking-tight mb-6 leading-[1.08]">
                             Pembayaran tetap jalan,
-                            <span class="text-biruTua">walau satu gateway bermasalah.</span>
+                            <span class="bg-gradient-to-r from-biruLangit to-biruAwan bg-clip-text text-transparent">walau satu gateway bermasalah.</span>
                         </h1>
 
-                        <p class="text-lg text-gelap/80 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
-                            Satu pendaftaran, satu integrasi, banyak jalur pembayaran. Jika satu <i>payment gateway</i> terganggu, <b>Wuzzpay</b> otomatis mengalihkan transaksi ke jalur lain, sehingga pelanggan Anda tetap bisa membayar.
+                        <p class="text-lg text-biruAwan mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                            Satu pendaftaran, satu integrasi, banyak jalur pembayaran. Jika satu <i>payment gateway</i> terganggu, <b class="text-white">Wuzzpay</b> otomatis mengalihkan transaksi ke jalur lain, sehingga pelanggan Anda tetap bisa membayar.
                         </p>
 
                         <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                            <a href="https://my.wuzzpay.com" class="w-full sm:w-auto px-8 py-4 text-lg font-bold text-white bg-biruAksen rounded-2xl hover:bg-biruTua transition shadow-float text-center">
+                            <a href="https://my.wuzzpay.com" class="w-full sm:w-auto px-8 py-4 text-lg font-bold text-biruMalam bg-white rounded-2xl hover:bg-biruAwan transition shadow-float text-center">
                                 Daftar & Coba Sekarang
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=6289504121521&text=Halo%20Tim%20Wuzzpay,%20saya%20ingin%20bertanya%20tentang%20layanan%20Wuzzpay." target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-4 text-lg font-bold text-biruTua bg-white rounded-2xl hover:bg-gray-50 transition shadow-sm border border-biruAwan text-center">
+                            <a href="https://api.whatsapp.com/send?phone=6289504121521&text=Halo%20Tim%20Wuzzpay,%20saya%20ingin%20bertanya%20tentang%20layanan%20Wuzzpay." target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-4 text-lg font-bold text-white rounded-2xl border border-white/30 hover:bg-white/10 transition text-center">
                                 Tanya via WhatsApp
                             </a>
                         </div>
 
-                        <p class="mt-6 text-sm text-sedang max-w-2xl mx-auto lg:mx-0">
+                        <p class="mt-8 text-sm text-biruAwan/80 max-w-xl mx-auto lg:mx-0">
                             QRIS · Virtual Account · E-Wallet · Gerai Retail · Kartu Kredit. Terhubung ke gateway mitra berlisensi Bank Indonesia.
                         </p>
                     </div>
 
-                    <div class="relative hidden lg:block">
-                        <div class="absolute inset-0 bg-biruAksen/10 rounded-[3rem] transform rotate-3 scale-105 -z-10"></div>
+                    <!-- Diagram pengalihan otomatis (SVG inline, tanpa angka metrik) -->
+                    <div class="relative">
+                        <div class="rounded-3xl lg:rounded-[2rem] bg-white/[0.07] border border-white/15 backdrop-blur-md p-4 sm:p-6 lg:p-8 shadow-2xl max-w-md sm:max-w-lg lg:max-w-none mx-auto">
+                            <div class="flex items-center justify-between mb-4 lg:mb-6">
+                                <div class="flex gap-1.5" aria-hidden="true"><span class="w-2.5 h-2.5 rounded-full bg-white/25"></span><span class="w-2.5 h-2.5 rounded-full bg-white/25"></span><span class="w-2.5 h-2.5 rounded-full bg-white/25"></span></div>
+                                <span class="text-xs font-semibold text-biruAwan/80 tracking-wide uppercase">Ilustrasi alur transaksi</span>
+                            </div>
 
-                        <picture>
-                            <source srcset="assets/images/wuzzpay-payment-smart-router.webp?v=2" type="image/webp">
-                            <img src="assets/images/wuzzpay-payment-smart-router.jpg"
-                                alt="Ilustrasi Wuzzpay mengalihkan transaksi dari satu payment gateway ke gateway lain"
-                                width="1100" height="880"
-                                loading="lazy"
-                                class="rounded-[3rem] shadow-2xl object-cover w-full h-[500px] border-4 border-white">
-                        </picture>
+                            <svg viewBox="0 0 480 340" class="w-full h-auto" role="img" aria-labelledby="judul-diagram deskripsi-diagram">
+                                <title id="judul-diagram">Alur pengalihan otomatis Wuzzpay</title>
+                                <desc id="deskripsi-diagram">Transaksi pelanggan masuk ke Wuzzpay. Gateway A terganggu, sehingga transaksi dialihkan ke Gateway B yang aktif.</desc>
 
-                        <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-float flex items-center gap-4 border border-biruAwan">
-                            <div class="w-12 h-12 bg-biruAwan/50 rounded-full flex items-center justify-center text-2xl">⚡</div>
-                            <div>
-                                <p class="text-sm font-bold text-biruTua">Pengalihan otomatis</p>
-                                <p class="text-xs text-sedang">Jalur alternatif siap saat dibutuhkan</p>
+                                <!-- jalur -->
+                                <path d="M175 170 C 235 170, 235 80, 290 80" stroke="#56B5F0" stroke-opacity=".35" stroke-width="2" stroke-dasharray="5 6" fill="none"/>
+                                <path d="M175 170 C 235 170, 235 260, 290 260" stroke="#56B5F0" stroke-width="3" fill="none"/>
+                                <circle r="5" fill="#D0E8F8" class="titik-alur"/>
+
+                                <line x1="110" y1="170" x2="141" y2="170" stroke="#56B5F0" stroke-width="3"/>
+                                <!-- transaksi -->
+                                <rect x="0" y="140" width="110" height="60" rx="16" fill="#fff" fill-opacity=".1" stroke="#fff" stroke-opacity=".3"/>
+                                <text x="55" y="166" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Transaksi</text>
+                                <text x="55" y="185" text-anchor="middle" fill="#D0E8F8" font-size="14">pelanggan</text>
+
+                                <!-- gateway A (terganggu) -->
+                                <rect x="290" y="50" width="190" height="60" rx="16" fill="#fff" fill-opacity=".05" stroke="#fff" stroke-opacity=".25" stroke-dasharray="5 5"/>
+                                <text x="312" y="76" fill="#D0E8F8" fill-opacity=".7" font-size="16" font-weight="700">Gateway A</text>
+                                <text x="312" y="95" fill="#FCD34D" font-size="14" font-weight="600">Sedang terganggu</text>
+                                <circle cx="460" cy="72" r="6" fill="#FCD34D"/>
+
+                                <!-- gateway B (aktif) -->
+                                <rect x="290" y="230" width="190" height="60" rx="16" fill="#56B5F0" fill-opacity=".18" stroke="#56B5F0"/>
+                                <text x="312" y="256" fill="#fff" font-size="16" font-weight="700">Gateway B</text>
+                                <text x="312" y="275" fill="#D0E8F8" font-size="14" font-weight="600">Jalur alternatif aktif</text>
+                                <circle cx="460" cy="252" r="6" fill="#4ADE80"/>
+
+                                <!-- Wuzzpay -->
+                                <circle cx="175" cy="170" r="34" fill="#1D6FA3" stroke="#fff" stroke-opacity=".6" stroke-width="2"/>
+                                <text x="175" y="175" text-anchor="middle" fill="#fff" font-size="13" font-weight="800">Wuzzpay</text>
+                            </svg>
+
+                            <div class="mt-4 lg:mt-6 flex items-center gap-4 rounded-2xl bg-white/10 border border-white/15 p-4">
+                                <div class="w-11 h-11 rounded-xl bg-biruAksen flex items-center justify-center shrink-0">
+                                    <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-bold">Pengalihan otomatis</p>
+                                    <p class="text-xs text-biruAwan">Jalur alternatif siap saat dibutuhkan</p>
+                                </div>
                             </div>
                         </div>
                     </div>
